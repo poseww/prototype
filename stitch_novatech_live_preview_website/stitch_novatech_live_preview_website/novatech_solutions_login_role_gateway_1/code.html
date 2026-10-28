@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_blank" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"background":"#f8f9ff","on-surface-variant":"#434655","outline-variant":"#c4c5d7","secondary-fixed":"#dae2fd","surface-container-low":"#eff4ff","error-container":"#ffdad6","on-primary-fixed-variant":"#0039b5","on-primary-fixed":"#001551","primary-fixed-dim":"#b7c4ff","on-background":"#0b1c30","on-tertiary":"#ffffff","secondary":"#565e74","on-surface":"#0b1c30","tertiary-fixed":"#dbe1ff","error":"#ba1a1a","on-secondary-container":"#5c647a","surface-variant":"#d3e4fe","inverse-primary":"#b7c4ff","on-tertiary-fixed":"#00174b","on-primary-container":"#cad3ff","on-secondary-fixed":"#131b2e","surface-container-highest":"#d3e4fe","on-primary":"#ffffff","surface":"#f8f9ff","inverse-on-surface":"#eaf1ff","on-tertiary-fixed-variant":"#003ea8","secondary-container":"#dae2fd","surface-container":"#e5eeff","on-secondary":"#ffffff","on-secondary-fixed-variant":"#3f465c","on-error-container":"#93000a","outline":"#747686","primary-container":"#1d4ed8","tertiary-container":"#0051d6","surface-container-high":"#dce9ff","surface-dim":"#cbdbf5","primary-fixed":"#dce1ff","tertiary-fixed-dim":"#b4c5ff","tertiary":"#003ca3","surface-tint":"#2151da","primary":"#0037b0","on-error":"#ffffff","surface-container-lowest":"#ffffff","inverse-surface":"#213145","secondary-fixed-dim":"#bec6e0","on-tertiary-container":"#c9d4ff","surface-bright":"#f8f9ff"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"gutter":"1.5rem","space-xl":"2rem","space-lg":"1.5rem","gutter-sm":"1rem","space-md":"1rem","margin":"2rem","space-sm":"0.5rem","margin-mobile":"1rem","space-xs":"0.25rem"},fontFamily:{"title":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"label-caps":["Plus Jakarta Sans"],"display":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"]},fontSize:{"title":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"400"}],"body-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"700"}],"headline-lg-mobile":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"700"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.005em","fontWeight":"500"}],"label-caps":["11px",{"lineHeight":"14px","letterSpacing":"0.06em","fontWeight":"700"}],"display":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"headline-sm":["16px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"600"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface"><main class="min-h-screen w-full flex items-center justify-center p-gutter bg-surface"><div class="flex flex-col w-full max-w-7xl mx-auto px-space-md py-space-lg">
+<!-- Top Academic Prototype Notice Banner -->
+<div class="mb-space-lg bg-surface-container-low rounded-xl p-space-md shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-space-sm text-on-surface">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-on-primary shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[18px]">school</span>
+</div>
+<div>
+<p class="font-label-caps text-primary uppercase tracking-wider">Academic Sandbox • v2.4 Live Build</p>
+<p class="font-body-sm text-secondary">University Assignment Prototype — Demo authentication active. Select any persona below to inspect contextual role permissions and specialized views.</p>
+</div>
+</div>
+<div class="flex items-center gap-space-xs text-secondary font-label-md bg-surface-container rounded-lg px-space-sm py-1 self-stretch md:self-auto justify-center">
+<span class="w-2 h-2 rounded-full bg-tertiary-container animate-pulse"></span>
+<span>Mock RBAC Guard Active</span>
+</div>
+</div>
+<!-- Main Asymmetric Layout: Left Portal Card + Right Interactive System Dossier -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- LEFT PORTAL CARD (5 cols desktop) -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<div class="bg-surface-container-lowest rounded-xl p-space-xl shadow-md flex flex-col">
+<!-- Brand Header -->
+<div class="flex items-center gap-space-sm mb-space-lg">
+<div class="w-12 h-12 rounded-xl bg-primary flex items-center justify-center text-on-primary shadow-md">
+<span class="material-symbols-outlined text-[26px]">hub</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-md text-on-surface">NovaTech</span>
+<span class="font-headline-md text-primary font-bold">Solutions</span>
+</div>
+<p class="font-body-sm text-secondary">IT Project Management System (Prototype)</p>
+</div>
+</div>
+<!-- Form Heading -->
+<div class="mb-space-md">
+<h1 class="font-headline-sm text-on-surface">Sign In &amp; Role Gateway</h1>
+<p class="font-body-sm text-on-surface-variant">Authenticate with pre-configured domain accounts or pick a quick persona role.</p>
+</div>
+<!-- Interactive Form -->
+<form class="flex flex-col gap-space-md" id="loginForm" onsubmit="event.preventDefault(); handleDirectLogin();">
+<!-- Role Selector Dropdown -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-caps text-secondary uppercase flex items-center justify-between" for="roleSelector">
+<span>Security Clearance / Persona</span>
+<span class="text-primary font-label-md" id="roleBadge">Role 1 of 6</span>
+</label>
+<div class="relative">
+<select class="w-full h-11 bg-surface-container-low text-on-surface font-body-md rounded-lg pl-3 pr-10 appearance-none focus:outline-none focus:ring-0 transition-shadow" id="roleSelector" onchange="syncRoleSelection(this.value)">
+<option value="admin">1. Administrator (Full System Access)</option>
+<option selected="" value="pm">2. Project Manager (Projects, Tasks, Schedules, Issues)</option>
+<option value="employee">3. Employee (Assigned Tasks, Timesheets, Issue Reporting)</option>
+<option value="finance">4. Finance Officer (Invoices, Client Payments, Supplier Payouts)</option>
+<option value="client">5. Client (Project Requests, Proposal Approvals, Feedback)</option>
+<option value="management">6. Management (Executive Dashboards, Reports, Financials)</option>
+</select>
+<div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-secondary">
+<span class="material-symbols-outlined text-[20px]">expand_more</span>
+</div>
+</div>
+<p class="font-body-sm text-on-surface-variant bg-surface-container px-3 py-1.5 rounded-lg flex items-center gap-1.5" id="roleDescription">
+<span class="material-symbols-outlined text-[16px] text-primary">verified_user</span>
+<span>Coordinates workstreams, updates critical path, and allocates tech stacks.</span>
+</p>
+</div>
+<!-- Email Input -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-caps text-secondary uppercase" for="emailInput">Enterprise Email</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-secondary text-[20px]">mail</span>
+<input class="w-full h-11 bg-surface-container-low text-on-surface font-body-md rounded-lg pl-10 pr-3 focus:outline-none focus:ring-0 transition-all" id="emailInput" placeholder="name@novatech.com" required="" type="email" value="alex.morgan@novatech.com"/>
+</div>
+</div>
+<!-- Password Input -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<label class="font-label-caps text-secondary uppercase" for="passInput">Authentication Token</label>
+<button class="font-label-md text-primary hover:underline" onclick="togglePasswordVisibility()" type="button">Reveal</button>
+</div>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-secondary text-[20px]">lock</span>
+<input class="w-full h-11 bg-surface-container-low text-on-surface font-body-md rounded-lg pl-10 pr-10 focus:outline-none focus:ring-0 transition-all font-mono" id="passInput" required="" type="password" value="NovaSecure2025#"/>
+<button class="absolute right-3 text-secondary hover:text-on-surface" onclick="togglePasswordVisibility()" type="button">
+<span class="material-symbols-outlined text-[18px]" id="eyeIcon">visibility</span>
+</button>
+</div>
+</div>
+<!-- Remember me & Prototype note -->
+<div class="flex items-center justify-between pt-1">
+<label class="flex items-center gap-2 cursor-pointer select-none">
+<input checked="" class="w-4 h-4 rounded bg-surface-container text-primary accent-primary cursor-pointer" type="checkbox"/>
+<span class="font-body-sm text-secondary">Retain session context</span>
+</label>
+<span class="font-body-sm text-tertiary">MFA Mock Bypass</span>
+</div>
+<!-- Primary Submit Action -->
+<button class="w-full h-11 mt-space-xs bg-primary text-on-primary font-headline-sm rounded-lg shadow-md hover:bg-primary-container active:scale-[0.99] transition-all flex items-center justify-center gap-2" id="signInBtn" type="submit">
+<span>Sign In to Workspace</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</form>
+<!-- Divider line -->
+<div class="relative my-space-lg flex items-center justify-center">
+<div class="absolute inset-0 flex items-center">
+<div class="w-full bg-surface-container h-[1px]"></div>
+</div>
+<span class="relative bg-surface-container-lowest px-3 font-label-caps text-secondary uppercase tracking-wider">Quick Switcher Personas</span>
+</div>
+<!-- 6 Interactive Role Quick-Switcher Chips -->
+<div class="grid grid-cols-2 gap-2">
+<!-- Administrator -->
+<button class="role-chip group text-left p-2.5 rounded-lg bg-surface-container-low hover:bg-secondary-fixed transition-colors flex flex-col gap-0.5" onclick="quickSelectRole('admin', 'sarah.connor@novatech.com', 'AdminPass99!', 'Full Root Security &amp; RBAC Guard')" type="button">
+<div class="flex items-center justify-between w-full">
+<span class="font-label-md text-on-surface font-bold">Administrator</span>
+<span class="material-symbols-outlined text-[14px] text-secondary group-hover:text-primary">shield_person</span>
+</div>
+<span class="font-body-sm text-secondary truncate">sarah.connor</span>
+</button>
+<!-- Project Manager -->
+<button class="role-chip group text-left p-2.5 rounded-lg bg-primary-fixed hover:bg-primary-fixed-dim transition-colors flex flex-col gap-0.5" onclick="quickSelectRole('pm', 'alex.morgan@novatech.com', 'NovaSecure2025#', 'Projects, Tasks, Schedules, Issues')" type="button">
+<div class="flex items-center justify-between w-full">
+<span class="font-label-md text-primary font-bold">Project Manager</span>
+<span class="material-symbols-outlined text-[14px] text-primary">assignment_turned_in</span>
+</div>
+<span class="font-body-sm text-primary truncate">alex.morgan</span>
+</button>
+<!-- Employee -->
+<button class="role-chip group text-left p-2.5 rounded-lg bg-surface-container-low hover:bg-secondary-fixed transition-colors flex flex-col gap-0.5" onclick="quickSelectRole('employee', 'david.kim@novatech.com', 'DevSprint2025!', 'Assigned Tasks, Timesheets, Issues')" type="button">
+<div class="flex items-center justify-between w-full">
+<span class="font-label-md text-on-surface font-bold">Employee</span>
+<span class="material-symbols-outlined text-[14px] text-secondary group-hover:text-primary">badge</span>
+</div>
+<span class="font-body-sm text-secondary truncate">david.kim</span>
+</button>
+<!-- Finance Officer -->
+<button class="role-chip group text-left p-2.5 rounded-lg bg-surface-container-low hover:bg-secondary-fixed transition-colors flex flex-col gap-0.5" onclick="quickSelectRole('finance', 'elena.rostova@novatech.com', 'LedgerVault#24', 'Invoices, Cashflows, Supplier Payouts')" type="button">
+<div class="flex items-center justify-between w-full">
+<span class="font-label-md text-on-surface font-bold">Finance Officer</span>
+<span class="material-symbols-outlined text-[14px] text-secondary group-hover:text-primary">payments</span>
+</div>
+<span class="font-body-sm text-secondary truncate">elena.rostova</span>
+</button>
+<!-- Client -->
+<button class="role-chip group text-left p-2.5 rounded-lg bg-surface-container-low hover:bg-secondary-fixed transition-colors flex flex-col gap-0.5" onclick="quickSelectRole('client', 'marcus.vance@apexhealth.io', 'ClientPass#2025', 'Requests, Approvals, Scope Feedback')" type="button">
+<div class="flex items-center justify-between w-full">
+<span class="font-label-md text-on-surface font-bold">Client Sponsor</span>
+<span class="material-symbols-outlined text-[14px] text-secondary group-hover:text-primary">corporate_fare</span>
+</div>
+<span class="font-body-sm text-secondary truncate">marcus.vance</span>
+</button>
+<!-- Management -->
+<button class="role-chip group text-left p-2.5 rounded-lg bg-surface-container-low hover:bg-secondary-fixed transition-colors flex flex-col gap-0.5" onclick="quickSelectRole('management', 'clara.thorne@novatech.com', 'ExecStrategic*8', 'Executive Dashboards, ROI Metrics')" type="button">
+<div class="flex items-center justify-between w-full">
+<span class="font-label-md text-on-surface font-bold">Management</span>
+<span class="material-symbols-outlined text-[14px] text-secondary group-hover:text-primary">query_stats</span>
+</div>
+<span class="font-body-sm text-secondary truncate">clara.thorne</span>
+</button>
+</div>
+<!-- Security indicator footer -->
+<div class="mt-space-md pt-space-sm flex items-center justify-between text-secondary font-label-md">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary">lock_reset</span>
+            TLS 1.3 End-to-End
+          </span>
+<span class="text-on-surface-variant font-mono text-[11px]">SAML / OIDC Mock Gateway</span>
+</div>
+</div>
+<!-- Quick Session Indicator -->
+<div class="bg-surface-container rounded-xl p-space-md flex items-center justify-between shadow-sm" id="sessionBanner">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary font-bold">
+            AM
+          </div>
+<div>
+<p class="font-headline-sm text-on-surface leading-tight">Alex Morgan</p>
+<p class="font-body-sm text-secondary">Senior Delivery Lead • Core Infrastructure</p>
+</div>
+</div>
+<div class="bg-primary text-on-primary font-label-caps px-2.5 py-1 rounded-full uppercase">
+          Ready
+        </div>
+</div>
+</div>
+<!-- RIGHT MODULE DOSSIER & SYSTEM CAPABILITIES (7 cols desktop) -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<!-- System Architecture & Stats Overview -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<div>
+<span class="font-label-caps text-primary uppercase tracking-wider">Enterprise Architecture</span>
+<h2 class="font-headline-lg text-on-surface">Integrated Project Operations</h2>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 rounded-lg bg-surface-container font-label-md text-on-surface flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+              Sprint 41 Active
+            </span>
+<span class="px-2.5 py-1 rounded-lg bg-secondary-fixed text-on-secondary-fixed font-label-md">
+              99.98% SLA
+            </span>
+</div>
+</div>
+<p class="font-body-md text-secondary">
+          NovaTech Solutions provides a unified operational canvas linking client engagements, engineering sprint cycles, capacity planning, and automated financial disbursements into a single high-integrity platform.
+        </p>
+<!-- KPI Mini Ribbon -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm pt-space-xs">
+<div class="bg-surface-container-low rounded-lg p-3">
+<p class="font-label-caps text-secondary uppercase">Active Projects</p>
+<p class="font-headline-md text-on-surface font-bold">14 <span class="font-body-sm text-tertiary font-normal">Engaged</span></p>
+</div>
+<div class="bg-surface-container-low rounded-lg p-3">
+<p class="font-label-caps text-secondary uppercase">On-Time Milestones</p>
+<p class="font-headline-md text-on-surface font-bold">92.4%</p>
+</div>
+<div class="bg-surface-container-low rounded-lg p-3">
+<p class="font-label-caps text-secondary uppercase">Team Utilization</p>
+<p class="font-headline-md text-on-surface font-bold">88.1%</p>
+</div>
+<div class="bg-surface-container-low rounded-lg p-3">
+<p class="font-label-caps text-secondary uppercase">Budget Variance</p>
+<p class="font-headline-md text-primary font-bold">-2.6%</p>
+</div>
+</div>
+</div>
+<!-- Core Modules 4-Card Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Module 1: Client CRM & Engagements -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">domain_verification</span>
+</div>
+<span class="font-label-caps text-secondary uppercase bg-surface-container-low px-2 py-0.5 rounded">Module A</span>
+</div>
+<h3 class="font-headline-sm text-on-surface mb-1">Client CRM &amp; Pipeline</h3>
+<p class="font-body-sm text-secondary mb-space-md">
+              Intake project scopes, draft milestone proposals, manage stakeholder approvals, and centralize client feedback loops in real time.
+            </p>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-sm flex items-center justify-between text-on-surface font-label-md">
+<div class="flex items-center gap-2">
+<img class="w-7 h-7 rounded-full object-cover shadow-sm" data-alt="Professional corporate client portrait in a modern architectural conference room with soft natural lighting and refined blue tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3kItwxNqO5c93x-FzEPJvjGyL0uee0nyPSZwbUmgDebb539DhVF9JAodmCt4gvfmod8a7NMxyiVBOYtKtYpuaZ-pRGokNFRSR-IvCyMo1YKZUzhBBW356DQsmspz4f7jnR8rajfWMff9Ww0UGznGdUWPS6P8ZJfPkFYK-x_vTIyAFvMCz9mt1y0zvlR8wi7mkPwBS85skRcJhT4oJJJptdO94CZtZ2rLAiORCIAE"/>
+<span class="truncate">Apex Health Systems</span>
+</div>
+<span class="font-label-caps text-primary bg-primary-fixed px-2 py-0.5 rounded">Proposal Signed</span>
+</div>
+</div>
+<!-- Module 2: Project Milestones & Critical Path -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[22px]">alt_route</span>
+</div>
+<span class="font-label-caps text-secondary uppercase bg-surface-container-low px-2 py-0.5 rounded">Module B</span>
+</div>
+<h3 class="font-headline-sm text-on-surface mb-1">Milestones &amp; Workstreams</h3>
+<p class="font-body-sm text-secondary mb-space-md">
+              Gantt scheduling, automated dependency resolution, task handoffs, and agile sprint tracking across cross-functional engineering teams.
+            </p>
+</div>
+<!-- Progress Visual -->
+<div class="bg-surface-container-low rounded-lg p-space-sm flex flex-col gap-1.5">
+<div class="flex justify-between font-label-md">
+<span class="text-on-surface">Cloud Migration Milestone 3</span>
+<span class="text-primary font-bold">78%</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-2 overflow-hidden">
+<div class="bg-primary h-2 rounded-full w-[78%]"></div>
+</div>
+</div>
+</div>
+<!-- Module 3: Resource Allocation & Timesheets -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[22px]">groups</span>
+</div>
+<span class="font-label-caps text-secondary uppercase bg-surface-container-low px-2 py-0.5 rounded">Module C</span>
+</div>
+<h3 class="font-headline-sm text-on-surface mb-1">Resource Allocation</h3>
+<p class="font-body-sm text-secondary mb-space-md">
+              Assign developers and engineers according to billable capacity, balance workloads, and track logged timesheet entries against targets.
+            </p>
+</div>
+<!-- Sparkline Mini Chart Visual -->
+<div class="bg-surface-container-low rounded-lg p-space-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-caps text-secondary">Capacity Usage</span>
+<span class="font-label-md text-on-surface font-bold">142 hrs / 160 hrs</span>
+</div>
+<svg class="w-24 h-6 text-primary" fill="none" viewbox="0 0 100 25">
+<path d="M0 20 L20 16 L40 18 L60 8 L80 12 L100 4" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+</div>
+<!-- Module 4: Financial Tracking & Invoicing -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">account_balance</span>
+</div>
+<span class="font-label-caps text-secondary uppercase bg-surface-container-low px-2 py-0.5 rounded">Module D</span>
+</div>
+<h3 class="font-headline-sm text-on-surface mb-1">Financial Tracking</h3>
+<p class="font-body-sm text-secondary mb-space-md">
+              Real-time project ledgering, milestone-based automated invoicing, contractor payroll approvals, and executive gross margin reporting.
+            </p>
+</div>
+<!-- Invoice summary pill -->
+<div class="bg-surface-container-low rounded-lg p-space-sm flex items-center justify-between font-label-md">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-tertiary">receipt_long</span>
+<span class="text-on-surface">INV-2025-089</span>
+</div>
+<span class="text-primary font-bold font-mono">$42,500.00 USD</span>
+</div>
+</div>
+</div>
+<!-- Persona Responsibilities Quick Matrix Banner -->
+<div class="bg-surface-container-high rounded-xl p-space-md flex flex-col md:flex-row items-center justify-between gap-space-md shadow-sm">
+<div class="flex items-center gap-space-sm">
+<img class="w-12 h-12 rounded-lg object-cover shadow-sm shrink-0" data-alt="Technical director analyzing enterprise cloud software dashboards on dual monitors in a modern bright glass tech lab" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4qQGH5CD6ChD-RMiN6MznnjRKFlj_XMqFAV9PFjkyxQB4d3dj1RxjtAF9OnACY2BnEkolDzWfnl_8sqcWMHNqVq52y77QFvm4-Oy6D7UsGFA64WhqRWax0M2deuTUbtu4tDu4YMsTMnaANAO7xt9UhmbEKgPp3MMBDeymBfNGauxHh_q_DiPJeNq9eN3Z5A590i0cP0w66gx61_8rKPKo5x23gA47dzUN_nkW9bg"/>
+<div>
+<h4 class="font-headline-sm text-on-surface">Explore Context-Aware Workspaces</h4>
+<p class="font-body-sm text-on-surface-variant">Switch roles at any time. Dashboards dynamically render authorized tools, approvals, and data.</p>
+</div>
+</div>
+<div class="flex items-center gap-space-xs shrink-0">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface font-label-md hover:bg-surface-bright transition-colors" onclick="quickSelectRole('admin', 'sarah.connor@novatech.com', 'AdminPass99!', 'Full Root Security &amp; RBAC Guard')" type="button">Admin View</button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface font-label-md hover:bg-surface-bright transition-colors" onclick="quickSelectRole('management', 'clara.thorne@novatech.com', 'ExecStrategic*8', 'Executive Dashboards, ROI Metrics')" type="button">Exec View</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Toast Notification Container for interactive feedback -->
+<div class="fixed bottom-6 right-6 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none z-50 bg-inverse-surface text-inverse-on-surface px-space-md py-space-sm rounded-xl shadow-xl flex items-center gap-3" id="toastNotification">
+<span class="material-symbols-outlined text-[20px] text-primary-fixed">check_circle</span>
+<span class="font-body-md font-medium" id="toastMessage">Logged in successfully</span>
+</div>
+</div>
+<script>
+  const personaData = {
+    admin: {
+      name: "Sarah Connor",
+      initials: "SC",
+      email: "sarah.connor@novatech.com",
+      pass: "AdminPass99!",
+      title: "Global Platform Administrator",
+      desc: "Full root access: User provisioning, role configurations, audit ledgers, and system policies.",
+      badge: "Role 1 of 6 &bull; Superuser"
+    },
+    pm: {
+      name: "Alex Morgan",
+      initials: "AM",
+      email: "alex.morgan@novatech.com",
+      pass: "NovaSecure2025#",
+      title: "Senior Project Manager & Delivery Lead",
+      desc: "Coordinates workstreams, updates critical path, and allocates tech stacks.",
+      badge: "Role 2 of 6 &bull; Delivery"
+    },
+    employee: {
+      name: "David Kim",
+      initials: "DK",
+      email: "david.kim@novatech.com",
+      pass: "DevSprint2025!",
+      title: "Senior Full-Stack Engineer",
+      desc: "Task checklist execution, sprint code commits, bug reporting, and logged billable timesheets.",
+      badge: "Role 3 of 6 &bull; Contributor"
+    },
+    finance: {
+      name: "Elena Rostova",
+      initials: "ER",
+      email: "elena.rostova@novatech.com",
+      pass: "LedgerVault#24",
+      title: "Chief Billing & Operations Accountant",
+      desc: "Accounts receivable, milestone invoice generation, vendor payments, and cash-flow reports.",
+      badge: "Role 4 of 6 &bull; Fiscal"
+    },
+    client: {
+      name: "Marcus Vance",
+      initials: "MV",
+      email: "marcus.vance@apexhealth.io",
+      pass: "ClientPass#2025",
+      title: "VP of Product, Apex Health Systems",
+      desc: "Submit change requests, review budget milestones, sign proposals, and submit satisfaction ratings.",
+      badge: "Role 5 of 6 &bull; Sponsor"
+    },
+    management: {
+      name: "Clara Thorne",
+      initials: "CT",
+      email: "clara.thorne@novatech.com",
+      pass: "ExecStrategic*8",
+      title: "Managing Director & Executive Sponsor",
+      desc: "Portfolio health indices, profit margins, executive burndown graphs, and corporate KPIs.",
+      badge: "Role 6 of 6 &bull; Executive"
+    }
+  };
+
+  function syncRoleSelection(roleKey) {
+    const data = personaData[roleKey];
+    if (!data) return;
+
+    document.getElementById('emailInput').value = data.email;
+    document.getElementById('passInput').value = data.pass;
+    
+    // Update badge and description text
+    document.getElementById('roleBadge').innerHTML = data.badge;
+    const descEl = document.getElementById('roleDescription');
+    descEl.innerHTML = `<span class="material-symbols-outlined text-[16px] text-primary">verified_user</span><span>${data.desc}</span>`;
+
+    // Update bottom session banner
+    const sessionBanner = document.getElementById('sessionBanner');
+    sessionBanner.innerHTML = `
+      <div class="flex items-center gap-space-sm">
+        <div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary font-bold">
+          ${data.initials}
+        </div>
+        <div>
+          <p class="font-headline-sm text-on-surface leading-tight">${data.name}</p>
+          <p class="font-body-sm text-secondary">${data.title}</p>
+        </div>
+      </div>
+      <div class="bg-primary text-on-primary font-label-caps px-2.5 py-1 rounded-full uppercase">
+        Ready
+      </div>
+    `;
+
+    // Highlight chip
+    const chips = document.querySelectorAll('.role-chip');
+    chips.forEach(chip => {
+      chip.classList.remove('bg-primary-fixed', 'text-primary');
+      chip.classList.add('bg-surface-container-low');
+    });
+  }
+
+  function quickSelectRole(roleKey, email, pass, desc) {
+    const roleSelect = document.getElementById('roleSelector');
+    roleSelect.value = roleKey;
+    syncRoleSelection(roleKey);
+
+    showToast(`Persona loaded: ${personaData[roleKey].name} (${roleKey.toUpperCase()})`);
+  }
+
+  function togglePasswordVisibility() {
+    const input = document.getElementById('passInput');
+    const icon = document.getElementById('eyeIcon');
+    if (input.type === 'password') {
+      input.type = 'text';
+      icon.innerText = 'visibility_off';
+    } else {
+      input.type = 'password';
+      icon.innerText = 'visibility';
+    }
+  }
+
+  function handleDirectLogin() {
+    const roleKey = document.getElementById('roleSelector').value;
+    const persona = personaData[roleKey];
+    const btn = document.getElementById('signInBtn');
+    
+    btn.innerHTML = `<span class="material-symbols-outlined animate-spin text-[20px]">progress_activity</span><span>Authenticating Session...</span>`;
+    btn.disabled = true;
+
+    setTimeout(() => {
+      btn.innerHTML = `<span>Workspace Initialized</span><span class="material-symbols-outlined text-[20px]">check</span>`;
+      btn.classList.remove('bg-primary');
+      btn.classList.add('bg-tertiary-container');
+      showToast(`Redirecting to ${persona.title} console...`);
+      
+      setTimeout(() => {
+        btn.innerHTML = `<span>Sign In to Workspace</span><span class="material-symbols-outlined text-[20px]">arrow_forward</span>`;
+        btn.classList.remove('bg-tertiary-container');
+        btn.classList.add('bg-primary');
+        btn.disabled = false;
+      }, 2500);
+    }, 700);
+  }
+
+  function showToast(msg) {
+    const toast = document.getElementById('toastNotification');
+    const msgEl = document.getElementById('toastMessage');
+    msgEl.innerText = msg;
+    toast.classList.remove('translate-y-24', 'opacity-0');
+    toast.classList.add('translate-y-0', 'opacity-100');
+
+    setTimeout(() => {
+      toast.classList.add('translate-y-24', 'opacity-0');
+      toast.classList.remove('translate-y-0', 'opacity-100');
+    }, 3200);
+  }
+</script></main></body></html>

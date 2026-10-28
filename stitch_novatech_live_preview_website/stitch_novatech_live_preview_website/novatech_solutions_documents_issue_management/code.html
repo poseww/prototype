@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"background":"#f8f9ff","on-surface-variant":"#434655","outline-variant":"#c4c5d7","secondary-fixed":"#dae2fd","surface-container-low":"#eff4ff","error-container":"#ffdad6","on-primary-fixed-variant":"#0039b5","on-primary-fixed":"#001551","primary-fixed-dim":"#b7c4ff","on-background":"#0b1c30","on-tertiary":"#ffffff","secondary":"#565e74","on-surface":"#0b1c30","tertiary-fixed":"#dbe1ff","error":"#ba1a1a","on-secondary-container":"#5c647a","surface-variant":"#d3e4fe","inverse-primary":"#b7c4ff","on-tertiary-fixed":"#00174b","on-primary-container":"#cad3ff","on-secondary-fixed":"#131b2e","surface-container-highest":"#d3e4fe","on-primary":"#ffffff","surface":"#f8f9ff","inverse-on-surface":"#eaf1ff","on-tertiary-fixed-variant":"#003ea8","secondary-container":"#dae2fd","surface-container":"#e5eeff","on-secondary":"#ffffff","on-secondary-fixed-variant":"#3f465c","on-error-container":"#93000a","outline":"#747686","primary-container":"#1d4ed8","tertiary-container":"#0051d6","surface-container-high":"#dce9ff","surface-dim":"#cbdbf5","primary-fixed":"#dce1ff","tertiary-fixed-dim":"#b4c5ff","tertiary":"#003ca3","surface-tint":"#2151da","primary":"#0037b0","on-error":"#ffffff","surface-container-lowest":"#ffffff","inverse-surface":"#213145","secondary-fixed-dim":"#bec6e0","on-tertiary-container":"#c9d4ff","surface-bright":"#f8f9ff"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"gutter":"1.5rem","space-xl":"2rem","space-lg":"1.5rem","gutter-sm":"1rem","space-md":"1rem","margin":"2rem","space-sm":"0.5rem","margin-mobile":"1rem","space-xs":"0.25rem"},fontFamily:{"title":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"label-caps":["Plus Jakarta Sans"],"display":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"]},fontSize:{"title":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"400"}],"body-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"700"}],"headline-lg-mobile":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"700"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.005em","fontWeight":"500"}],"label-caps":["11px",{"lineHeight":"14px","letterSpacing":"0.06em","fontWeight":"700"}],"display":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"headline-sm":["16px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"600"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest z-50 flex flex-col shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-space-md flex items-center gap-space-sm bg-surface-container-lowest"><img alt="NovaTech Solutions Portal Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UrmuOcV0k5SwkNjdal6LCe0FGEsQOl8xqrIG7P3lDLpVGm5nzhIi_H2do5BtI5Mb8ZY6gCH8B4lQqVx5_DRnFAmDD7YEamQwt9jHSQ1YEM9sVvZ28zbbkHVBo0ghYBlad-mHguqQlsZiV0o0XoQ7gcaViFLHRxghzkXZz4mea0kpDxeCsjBZCx1a6TmsbPbF3nfmvpzFc6WkASk8XJ8K9NyhdjOQbewu3e4wBjaDhg"/><div class="flex flex-col"><span class="font-title text-title text-on-surface">NovaTech</span><span class="font-label-caps text-label-caps text-secondary uppercase">IT PM Portal</span></div></div><div class="flex-1 overflow-y-auto px-space-sm py-space-sm"><div class="px-space-sm py-space-xs font-label-caps text-label-caps text-secondary uppercase">Core Navigation</div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-surface-container-low text-primary-container font-headline-sm"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="management-dashboard" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span>Dashboard</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="client-management" href="#"><span class="material-symbols-outlined text-[20px]">business</span><span>Client Management</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="proposals-requests" href="#"><span class="material-symbols-outlined text-[20px]">request_quote</span><span>Proposals &amp; Requests</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="projects-milestones" href="#"><span class="material-symbols-outlined text-[20px]">flag</span><span>Projects &amp; Milestones</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="employees-tasks" href="#"><span class="material-symbols-outlined text-[20px]">assignment_ind</span><span>Employees &amp; Tasks</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="documents-issues" href="#"><span class="material-symbols-outlined text-[20px]">folder_supervised</span><span>Documents &amp; Issues</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="client-meetings-change-requests" href="#"><span class="material-symbols-outlined text-[20px]">published_with_changes</span><span>Meetings &amp; Changes</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="supplier-management" href="#"><span class="material-symbols-outlined text-[20px]">inventory_2</span><span>Supplier Management</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="financials-invoices" href="#"><span class="material-symbols-outlined text-[20px]">receipt_long</span><span>Financials &amp; Invoices</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="project-completion-sign-off" href="#"><span class="material-symbols-outlined text-[20px]">verified</span><span>Completion &amp; Sign-Off</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="reports-analytics" href="#"><span class="material-symbols-outlined text-[20px]">insights</span><span>Reports &amp; Analytics</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="user-role-permissions" href="#"><span class="material-symbols-outlined text-[20px]">admin_panel_settings</span><span>User &amp; Roles</span></a></nav></div><div class="p-space-sm bg-surface-container-low flex items-center justify-between text-on-surface-variant"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-primary-container"></span><span class="font-label-md text-label-md">Production Cloud</span></div><a class="text-secondary hover:text-primary transition-colors flex items-center" data-path="login-portal-gateway" href="#" title="Log Out"><span class="material-symbols-outlined text-[18px]">logout</span></a></div></aside><div class="pl-64 flex flex-col min-h-screen"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md flex-1 max-w-md"><div class="flex items-center w-full bg-surface-container-low px-space-sm py-space-xs rounded-xl gap-space-xs text-on-surface-variant"><span class="material-symbols-outlined text-[18px]">search</span><input class="bg-transparent border-0 outline-none text-body-sm font-body-sm text-on-surface placeholder:text-secondary w-full" placeholder="Search projects, clients, tickets..." type="text"/></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs bg-surface-container-low px-space-sm py-space-xs rounded-xl"><span class="material-symbols-outlined text-[18px] text-secondary">swap_horiz</span><label class="font-label-md text-label-md text-secondary">Role:</label><select class="bg-transparent font-title text-title text-on-surface border-0 outline-none cursor-pointer"><option selected="" value="admin">Administrator</option><option value="pm">Project Manager</option><option value="employee">Employee</option><option value="finance">Finance Officer</option><option value="client">Client</option><option value="management">Management</option></select></div><button class="relative p-space-xs text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-error"></span></button><div class="flex items-center gap-space-sm pl-space-sm"><div class="flex flex-col text-right"><span class="font-title text-title text-on-surface">Alex Morgan</span><span class="font-body-sm text-body-sm text-secondary">Senior Administrator</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 w-full pt-16 px-gutter pb-space-xl bg-surface"><div class="flex flex-col w-full">
+<!-- Top View Heading & Operational Controls -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-lg">
+<div>
+<div class="flex items-center gap-space-xs text-primary font-label-caps text-label-caps uppercase tracking-wider mb-1">
+<span class="inline-block w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+        Enterprise Artifact Engine &amp; SRE Telemetry
+      </div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface">Project Documents &amp; Issue Triage</h1>
+<p class="font-body-md text-body-md text-secondary mt-1">Centralized artifact vault, compliance specifications, and software defect ticketing.</p>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="flex items-center gap-space-xs bg-surface-container-lowest hover:bg-surface-container-low text-on-surface font-label-lg text-label-lg px-4 py-2 rounded-xl shadow-sm transition-all" onclick="document.getElementById('fileUploadInput').click()">
+<span class="material-symbols-outlined text-[18px] text-primary">upload_file</span>
+<span>Upload Document</span>
+</button>
+<input class="hidden" id="fileUploadInput" onchange="simulateFileUpload(event)" type="file"/>
+<button class="flex items-center gap-space-xs bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg px-4 py-2 rounded-xl shadow-sm hover:shadow-md transition-all" onclick="toggleModal('newIssueModal', true)">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>+ Report New Bug/Issue</span>
+</button>
+</div>
+</div>
+<!-- Key Metrics Row -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md mb-space-lg">
+<!-- Stat 1: Total Docs -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-secondary">Total Vault Documents</span>
+<span class="p-1.5 rounded-lg bg-surface-container-low text-primary material-symbols-outlined text-[20px]">folder_special</span>
+</div>
+<div class="mt-4 flex items-baseline justify-between">
+<div class="font-display text-display text-on-surface">142</div>
+<div class="flex items-center gap-1 font-label-md text-label-md text-primary bg-primary-fixed/40 px-2 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-[14px]">add</span>14 this mo
+        </div>
+</div>
+<!-- Tiny Sparkline SVG -->
+<div class="w-full mt-3 h-4 opacity-40">
+<svg class="w-full h-full text-primary" fill="none" preserveaspectratio="none" viewbox="0 0 120 20">
+<path d="M0 16 Q 20 8, 40 12 T 80 4 T 120 2" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.5"></path>
+</svg>
+</div>
+</div>
+<!-- Stat 2: Active Bugs -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-secondary">Active Bugs / Defects</span>
+<span class="p-1.5 rounded-lg bg-surface-container-low text-tertiary material-symbols-outlined text-[20px]">pest_control</span>
+</div>
+<div class="mt-4 flex items-baseline justify-between">
+<div class="font-display text-display text-on-surface">9</div>
+<div class="flex items-center gap-1 font-label-md text-label-md text-secondary bg-surface-container-high px-2 py-0.5 rounded-full">
+<span>In active sprint</span>
+</div>
+</div>
+<!-- Mini Progress Meter -->
+<div class="w-full bg-surface-container-high h-1.5 rounded-full mt-4 overflow-hidden">
+<div class="bg-tertiary h-full rounded-full" style="width: 58%"></div>
+</div>
+</div>
+<!-- Stat 3: Critical Severity -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-secondary">Critical Severity</span>
+<span class="p-1.5 rounded-lg bg-error-container text-error material-symbols-outlined text-[20px]">warning</span>
+</div>
+<div class="mt-4 flex items-baseline justify-between">
+<div class="font-display text-display text-error">2</div>
+<div class="flex items-center gap-1 font-label-md text-label-md text-on-error-container bg-error-container px-2 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-[14px]">timer</span> P1 Escalation
+        </div>
+</div>
+<!-- SVG Donut Chart Minimal -->
+<div class="w-full flex items-center justify-between mt-3 text-body-sm text-secondary">
+<span>Pool 4 Kernel / Safari Auth</span>
+<span class="font-label-md text-error">Action Required</span>
+</div>
+</div>
+<!-- Stat 4: Avg MTTR -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm relative overflow-hidden flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-secondary">Average MTTR</span>
+<span class="p-1.5 rounded-lg bg-secondary-container text-on-secondary-fixed material-symbols-outlined text-[20px]">speed</span>
+</div>
+<div class="mt-4 flex items-baseline justify-between">
+<div class="font-display text-display text-on-surface">4.2 <span class="text-headline-md font-headline-md text-secondary font-normal">hrs</span></div>
+<div class="flex items-center gap-1 font-label-md text-label-md text-primary bg-primary-fixed/50 px-2 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-[14px]">trending_down</span> -18% vs Q3
+        </div>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full mt-4 overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 82%"></div>
+</div>
+</div>
+</div>
+<!-- Notification Banner (Dynamic for upload simulation) -->
+<div class="hidden items-center justify-between bg-primary text-on-primary px-space-md py-space-sm rounded-xl mb-space-lg shadow-sm transition-all duration-300" id="uploadAlert">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[20px]">cloud_done</span>
+<span class="font-body-md text-body-md" id="uploadAlertText">Document successfully processed and indexed into secure vault.</span>
+</div>
+<button class="text-on-primary hover:opacity-80" onclick="document.getElementById('uploadAlert').classList.add('hidden')">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<!-- Dual Layout Switcher / Unified Canvas View -->
+<div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-space-sm mb-space-sm">
+<div class="inline-flex p-1 bg-surface-container-high rounded-xl self-start">
+<button class="px-4 py-1.5 rounded-lg text-title font-title text-on-surface bg-surface-container-lowest shadow-sm transition-all flex items-center gap-2" id="btnTabAll" onclick="switchViewMode('split')">
+<span class="material-symbols-outlined text-[18px]">vertical_split</span> Dual Console
+      </button>
+<button class="px-4 py-1.5 rounded-lg text-title font-title text-secondary hover:text-on-surface transition-all flex items-center gap-2" id="btnTabDocs" onclick="switchViewMode('docs')">
+<span class="material-symbols-outlined text-[18px]">article</span> Vault Only
+      </button>
+<button class="px-4 py-1.5 rounded-lg text-title font-title text-secondary hover:text-on-surface transition-all flex items-center gap-2" id="btnTabBugs" onclick="switchViewMode('bugs')">
+<span class="material-symbols-outlined text-[18px]">bug_report</span> Defects Only
+      </button>
+</div>
+<!-- Quick Search within Vault & Defects -->
+<div class="flex items-center gap-space-sm">
+<div class="flex items-center bg-surface-container-lowest px-3 py-1.5 rounded-xl shadow-sm text-on-surface-variant w-full md:w-64">
+<span class="material-symbols-outlined text-[18px] text-secondary">filter_alt</span>
+<input class="w-full bg-transparent border-0 outline-none text-body-sm font-body-sm text-on-surface placeholder:text-secondary pl-2" id="filterInput" onkeyup="filterContent()" placeholder="Filter files or tickets..." type="text"/>
+</div>
+<span class="text-secondary text-label-md font-label-md hidden md:inline">Showing 6 Files • 6 Issues</span>
+</div>
+</div>
+<!-- Primary Work Surfaces: Split Screen Grid -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg items-start" id="contentGrid">
+<!-- Part A: Project Documents Vault -->
+<section class="xl:col-span-6 bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col transition-all duration-300" id="docSection">
+<div class="px-space-md py-4 bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">folder_supervised</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Document Vault</h2>
+<p class="font-body-sm text-body-sm text-secondary">Verified architectural baselines, SOWs, and compliance logs</p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-caps text-label-caps uppercase bg-surface-container-highest px-2 py-1 rounded text-primary">AES-256</span>
+<button class="text-primary hover:text-primary-container p-1 rounded hover:bg-surface-container transition-colors" onclick="document.getElementById('fileUploadInput').click()" title="Upload Document">
+<span class="material-symbols-outlined text-[20px]">cloud_upload</span>
+</button>
+</div>
+</div>
+<!-- File Table Container -->
+<div class="overflow-x-auto">
+<table class="w-full text-left" id="documentsTable">
+<thead>
+<tr class="bg-surface-container-low/50 text-secondary font-label-caps text-label-caps uppercase border-b-0">
+<th class="py-3 px-space-md">Document &amp; Project</th>
+<th class="py-3 px-space-xs">Metadata</th>
+<th class="py-3 px-space-xs text-right">Size</th>
+<th class="py-3 px-space-md text-right">Action</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-body-md font-body-md text-on-surface" id="docsListBody">
+<!-- Doc 1 -->
+<tr class="hover:bg-surface-container-low transition-colors group">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-error-container/60 text-error flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">picture_as_pdf</span>
+</div>
+<div class="min-w-0">
+<p class="font-title text-title text-on-surface truncate group-hover:text-primary transition-colors">OmniCloud_Architecture_v2.4.pdf</p>
+<span class="font-body-sm text-body-sm text-secondary truncate">OmniCloud Core Infrastructure</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-xs">
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface">Oct 24, 2025</span>
+<span class="font-label-md text-label-md text-secondary">Elena Rostova</span>
+</div>
+</td>
+<td class="py-3.5 px-space-xs text-right font-label-md text-label-md text-secondary">
+                14.8 MB
+              </td>
+<td class="py-3.5 px-space-md text-right">
+<button class="inline-flex items-center gap-1 text-primary hover:bg-surface-container-high px-2.5 py-1.5 rounded-lg text-label-md font-label-md transition-colors" onclick="simulateDownload('OmniCloud_Architecture_v2.4.pdf')">
+<span class="material-symbols-outlined text-[16px]">download</span>
+<span class="hidden sm:inline">Get</span>
+</button>
+</td>
+</tr>
+<!-- Doc 2 -->
+<tr class="hover:bg-surface-container-low transition-colors group">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high text-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">table_chart</span>
+</div>
+<div class="min-w-0">
+<p class="font-title text-title text-on-surface truncate group-hover:text-primary transition-colors">SOC2_Compliance_Audit_Matrix.xlsx</p>
+<span class="font-body-sm text-body-sm text-secondary truncate">Enterprise Security Controls</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-xs">
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface">Nov 02, 2025</span>
+<span class="font-label-md text-label-md text-secondary">Marcus Vance</span>
+</div>
+</td>
+<td class="py-3.5 px-space-xs text-right font-label-md text-label-md text-secondary">
+                4.2 MB
+              </td>
+<td class="py-3.5 px-space-md text-right">
+<button class="inline-flex items-center gap-1 text-primary hover:bg-surface-container-high px-2.5 py-1.5 rounded-lg text-label-md font-label-md transition-colors" onclick="simulateDownload('SOC2_Compliance_Audit_Matrix.xlsx')">
+<span class="material-symbols-outlined text-[16px]">download</span>
+<span class="hidden sm:inline">Get</span>
+</button>
+</td>
+</tr>
+<!-- Doc 3 -->
+<tr class="hover:bg-surface-container-low transition-colors group">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-error-container/60 text-error flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">picture_as_pdf</span>
+</div>
+<div class="min-w-0">
+<p class="font-title text-title text-on-surface truncate group-hover:text-primary transition-colors">HIPAA_Data_Flow_Specification.pdf</p>
+<span class="font-body-sm text-body-sm text-secondary truncate">HealthNet Gateway Migrations</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-xs">
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface">Nov 08, 2025</span>
+<span class="font-label-md text-label-md text-secondary">Sarah Chen</span>
+</div>
+</td>
+<td class="py-3.5 px-space-xs text-right font-label-md text-label-md text-secondary">
+                8.9 MB
+              </td>
+<td class="py-3.5 px-space-md text-right">
+<button class="inline-flex items-center gap-1 text-primary hover:bg-surface-container-high px-2.5 py-1.5 rounded-lg text-label-md font-label-md transition-colors" onclick="simulateDownload('HIPAA_Data_Flow_Specification.pdf')">
+<span class="material-symbols-outlined text-[16px]">download</span>
+<span class="hidden sm:inline">Get</span>
+</button>
+</td>
+</tr>
+<!-- Doc 4 -->
+<tr class="hover:bg-surface-container-low transition-colors group">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high text-secondary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">description</span>
+</div>
+<div class="min-w-0">
+<p class="font-title text-title text-on-surface truncate group-hover:text-primary transition-colors">Kubernetes_Cluster_DR_Manual.docx</p>
+<span class="font-body-sm text-body-sm text-secondary truncate">DevOps Reliability Operations</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-xs">
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface">Nov 11, 2025</span>
+<span class="font-label-md text-label-md text-secondary">Liam Thorne</span>
+</div>
+</td>
+<td class="py-3.5 px-space-xs text-right font-label-md text-label-md text-secondary">
+                2.1 MB
+              </td>
+<td class="py-3.5 px-space-md text-right">
+<button class="inline-flex items-center gap-1 text-primary hover:bg-surface-container-high px-2.5 py-1.5 rounded-lg text-label-md font-label-md transition-colors" onclick="simulateDownload('Kubernetes_Cluster_DR_Manual.docx')">
+<span class="material-symbols-outlined text-[16px]">download</span>
+<span class="hidden sm:inline">Get</span>
+</button>
+</td>
+</tr>
+<!-- Doc 5 -->
+<tr class="hover:bg-surface-container-low transition-colors group">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-secondary-container text-on-secondary-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">code</span>
+</div>
+<div class="min-w-0">
+<p class="font-title text-title text-on-surface truncate group-hover:text-primary transition-colors">Terraform_MultiRegion_Env_v1.0.zip</p>
+<span class="font-body-sm text-body-sm text-secondary truncate">Cloud Native Infra Provisioning</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-xs">
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface">Nov 14, 2025</span>
+<span class="font-label-md text-label-md text-secondary">Elena Rostova</span>
+</div>
+</td>
+<td class="py-3.5 px-space-xs text-right font-label-md text-label-md text-secondary">
+                45.1 MB
+              </td>
+<td class="py-3.5 px-space-md text-right">
+<button class="inline-flex items-center gap-1 text-primary hover:bg-surface-container-high px-2.5 py-1.5 rounded-lg text-label-md font-label-md transition-colors" onclick="simulateDownload('Terraform_MultiRegion_Env_v1.0.zip')">
+<span class="material-symbols-outlined text-[16px]">download</span>
+<span class="hidden sm:inline">Get</span>
+</button>
+</td>
+</tr>
+<!-- Doc 6 -->
+<tr class="hover:bg-surface-container-low transition-colors group">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-error-container/60 text-error flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[18px]">picture_as_pdf</span>
+</div>
+<div class="min-w-0">
+<p class="font-title text-title text-on-surface truncate group-hover:text-primary transition-colors">ISO_27001_Readiness_SignOff.pdf</p>
+<span class="font-body-sm text-body-sm text-secondary truncate">Global Security Directorate</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-xs">
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface">Nov 15, 2025</span>
+<span class="font-label-md text-label-md text-secondary">Alex Morgan</span>
+</div>
+</td>
+<td class="py-3.5 px-space-xs text-right font-label-md text-label-md text-secondary">
+                1.3 MB
+              </td>
+<td class="py-3.5 px-space-md text-right">
+<button class="inline-flex items-center gap-1 text-primary hover:bg-surface-container-high px-2.5 py-1.5 rounded-lg text-label-md font-label-md transition-colors" onclick="simulateDownload('ISO_27001_Readiness_SignOff.pdf')">
+<span class="material-symbols-outlined text-[16px]">download</span>
+<span class="hidden sm:inline">Get</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Vault Footer / Status -->
+<div class="p-space-md bg-surface-container-low/30 mt-auto flex items-center justify-between text-body-sm text-secondary">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span>AWS S3 Object Lock Enabled • WORM Compliant</span>
+</div>
+<span class="font-label-md text-label-md text-primary hover:underline cursor-pointer" onclick="document.getElementById('fileUploadInput').click()">+ Quick File Upload</span>
+</div>
+</section>
+<!-- Part B: Technical Issues & Defect Tracker -->
+<section class="xl:col-span-6 bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col transition-all duration-300" id="bugSection">
+<div class="px-space-md py-4 bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-highest flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[20px]">troubleshoot</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Technical Issues &amp; Defects</h2>
+<p class="font-body-sm text-body-sm text-secondary">Active operational incidents, bugs, and latency regressions</p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="text-primary hover:text-primary-container p-1 rounded hover:bg-surface-container transition-colors" onclick="toggleModal('newIssueModal', true)" title="Create New Defect">
+<span class="material-symbols-outlined text-[20px]">add_box</span>
+</button>
+</div>
+</div>
+<!-- Issues Table Container -->
+<div class="overflow-x-auto">
+<table class="w-full text-left" id="issuesTable">
+<thead>
+<tr class="bg-surface-container-low/50 text-secondary font-label-caps text-label-caps uppercase border-b-0">
+<th class="py-3 px-space-md">ID &amp; Title</th>
+<th class="py-3 px-space-xs">Severity</th>
+<th class="py-3 px-space-xs">Engineer</th>
+<th class="py-3 px-space-md text-right">Status</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-body-md font-body-md text-on-surface" id="issuesListBody">
+<!-- ISS-401 -->
+<tr class="hover:bg-surface-container-low transition-colors group cursor-pointer" onclick="viewIssueDetail('ISS-401', 'eBPF Kernel Memory Leak on Node Pool 4', 'Critical', 'Open', 'Elena Rostova', 'Kubernetes daemonset crashing under saturated ingress throughput during high-traffic load tests.')">
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-label-caps text-label-caps bg-surface-container-high text-primary px-1.5 py-0.5 rounded">ISS-401</span>
+<span class="font-title text-title text-on-surface truncate group-hover:text-primary transition-colors">eBPF Kernel Memory Leak on Node Pool 4</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary mt-0.5 truncate">Service: k8s-dataplane-cluster-c</span>
+</div>
+</td>
+<td class="py-3.5 px-space-xs">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-label-md font-label-md bg-error-container text-on-error-container">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>Critical
+                </span>
+</td>
+<td class="py-3.5 px-space-xs">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed text-label-caps">ER</div>
+<span class="font-body-sm text-body-sm text-on-surface truncate">Elena Rostova</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<span class="inline-block px-2.5 py-1 rounded-lg text-label-md font-label-md bg-surface-container text-on-surface">Open</span>
+</td>
+</tr>
+<!-- ISS-402 -->
+<tr class="hover:bg-surface-container-low transition-colors group cursor-pointer" onclick="viewIssueDetail('ISS-402', 'OAuth2 Callback Timeout in Safari 17.4', 'Major', 'In Triage', 'Marcus Vance', 'Cross-site cookie isolation policies blocking redirect handshake when running federated SSO sessions.')">
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-label-caps text-label-caps bg-surface-container-high text-primary px-1.5 py-0.5 rounded">ISS-402</span>
+<span class="font-title text-title text-on-surface truncate group-hover:text-primary transition-colors">OAuth2 Callback Timeout in Safari 17.4</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary mt-0.5 truncate">Service: auth-gateway-idp</span>
+</div>
+</td>
+<td class="py-3.5 px-space-xs">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-label-md font-label-md bg-secondary-container text-on-secondary-container">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>Major
+                </span>
+</td>
+<td class="py-3.5 px-space-xs">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed text-label-caps">MV</div>
+<span class="font-body-sm text-body-sm text-on-surface truncate">Marcus Vance</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<span class="inline-block px-2.5 py-1 rounded-lg text-label-md font-label-md bg-surface-container-high text-primary font-medium">In Triage</span>
+</td>
+</tr>
+<!-- ISS-403 -->
+<tr class="hover:bg-surface-container-low transition-colors group cursor-pointer" onclick="viewIssueDetail('ISS-403', 'Redis Sentinel Quorum Flapping during Failover', 'Critical', 'Open', 'Liam Thorne', 'Split-brain edge case detected during scheduled maintenance drill in Frankfurt eu-central-1 datacenter.')">
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-label-caps text-label-caps bg-surface-container-high text-primary px-1.5 py-0.5 rounded">ISS-403</span>
+<span class="font-title text-title text-on-surface truncate group-hover:text-primary transition-colors">Redis Sentinel Quorum Flapping during Failover</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary mt-0.5 truncate">Service: cache-sentinel-prod</span>
+</div>
+</td>
+<td class="py-3.5 px-space-xs">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-label-md font-label-md bg-error-container text-on-error-container">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>Critical
+                </span>
+</td>
+<td class="py-3.5 px-space-xs">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed text-label-caps">LT</div>
+<span class="font-body-sm text-body-sm text-on-surface truncate">Liam Thorne</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<span class="inline-block px-2.5 py-1 rounded-lg text-label-md font-label-md bg-surface-container text-on-surface">Open</span>
+</td>
+</tr>
+<!-- ISS-404 -->
+<tr class="hover:bg-surface-container-low transition-colors group cursor-pointer" onclick="viewIssueDetail('ISS-404', 'Stripe Webhook Signature Verification Flake', 'Minor', 'Resolved', 'Sarah Chen', 'Timestamp drift &gt;300s triggering intermittent rejection on queued bulk billing subscriptions.')">
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-label-caps text-label-caps bg-surface-container-high text-primary px-1.5 py-0.5 rounded">ISS-404</span>
+<span class="font-title text-title text-on-surface truncate group-hover:text-primary transition-colors">Stripe Webhook Signature Verification Flake</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary mt-0.5 truncate">Service: payment-billing-svc</span>
+</div>
+</td>
+<td class="py-3.5 px-space-xs">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-label-md font-label-md bg-surface-container-high text-secondary">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>Minor
+                </span>
+</td>
+<td class="py-3.5 px-space-xs">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-primary-fixed-dim flex items-center justify-center text-on-primary text-label-caps">SC</div>
+<span class="font-body-sm text-body-sm text-on-surface truncate">Sarah Chen</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<span class="inline-block px-2.5 py-1 rounded-lg text-label-md font-label-md bg-secondary-fixed text-on-secondary-fixed">Resolved</span>
+</td>
+</tr>
+<!-- ISS-405 -->
+<tr class="hover:bg-surface-container-low transition-colors group cursor-pointer" onclick="viewIssueDetail('ISS-405', 'PostgreSQL Deadlock on Bulk Ledger Ingestion', 'Major', 'In Triage', 'Elena Rostova', 'Row-lock contention on invoice line items table during midnight reporting cron executions.')">
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-label-caps text-label-caps bg-surface-container-high text-primary px-1.5 py-0.5 rounded">ISS-405</span>
+<span class="font-title text-title text-on-surface truncate group-hover:text-primary transition-colors">PostgreSQL Deadlock on Bulk Ledger Ingestion</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary mt-0.5 truncate">Service: db-aurora-cluster</span>
+</div>
+</td>
+<td class="py-3.5 px-space-xs">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-label-md font-label-md bg-secondary-container text-on-secondary-container">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>Major
+                </span>
+</td>
+<td class="py-3.5 px-space-xs">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed text-label-caps">ER</div>
+<span class="font-body-sm text-body-sm text-on-surface truncate">Elena Rostova</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<span class="inline-block px-2.5 py-1 rounded-lg text-label-md font-label-md bg-surface-container-high text-primary font-medium">In Triage</span>
+</td>
+</tr>
+<!-- ISS-406 -->
+<tr class="hover:bg-surface-container-low transition-colors group cursor-pointer" onclick="viewIssueDetail('ISS-406', 'GraphQL Schema Introspection Disabled in Staging', 'Minor', 'Closed', 'DevOps Automations', 'Configuration drift caused environment flag to default to strict production hardening profile.')">
+<td class="py-3.5 px-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-label-caps text-label-caps bg-surface-container-high text-primary px-1.5 py-0.5 rounded">ISS-406</span>
+<span class="font-title text-title text-on-surface truncate group-hover:text-primary transition-colors">GraphQL Schema Introspection Disabled in Staging</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary mt-0.5 truncate">Service: api-gateway-mesh</span>
+</div>
+</td>
+<td class="py-3.5 px-space-xs">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-label-md font-label-md bg-surface-container-high text-secondary">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>Minor
+                </span>
+</td>
+<td class="py-3.5 px-space-xs">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-surface-container-highest flex items-center justify-center text-secondary text-label-caps">DA</div>
+<span class="font-body-sm text-body-sm text-on-surface truncate">DevOps Bot</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<span class="inline-block px-2.5 py-1 rounded-lg text-label-md font-label-md bg-surface-container text-secondary">Closed</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Tracker Footer -->
+<div class="p-space-md bg-surface-container-low/30 mt-auto flex items-center justify-between text-body-sm text-secondary">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-tertiary">sync</span>
+<span>Jira &amp; PagerDuty Webhook Sync Active</span>
+</div>
+<button class="font-label-md text-label-md text-primary hover:underline" onclick="toggleModal('newIssueModal', true)">
+          + Quick Ticket
+        </button>
+</div>
+</section>
+</div>
+<!-- Bottom Visual SRE Telemetry & Document Lifecycle Context Banner -->
+<div class="mt-space-lg grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Visual 1: Document Versioning Assurance -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container-low flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[26px]">verified_user</span>
+</div>
+<div class="min-w-0">
+<span class="font-title text-title text-on-surface block">Immutable Version Control</span>
+<p class="font-body-sm text-body-sm text-secondary truncate">All documents digitally signed with SHA-256 integrity hashes.</p>
+</div>
+</div>
+<!-- Visual 2: Continuous SRE Triage -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container-low flex items-center justify-center text-tertiary flex-shrink-0">
+<span class="material-symbols-outlined text-[26px]">monitoring</span>
+</div>
+<div class="min-w-0">
+<span class="font-title text-title text-on-surface block">SLA &amp; Pager Escalations</span>
+<p class="font-body-sm text-body-sm text-secondary truncate">P1 tickets routed to On-Call Leads within 15 minutes guaranteed.</p>
+</div>
+</div>
+<!-- Visual 3: Automated Evidence Collection -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container-low flex items-center justify-center text-secondary flex-shrink-0">
+<span class="material-symbols-outlined text-[26px]">fact_check</span>
+</div>
+<div class="min-w-0">
+<span class="font-title text-title text-on-surface block">Auditor Ready Vault</span>
+<p class="font-body-sm text-body-sm text-secondary truncate">Direct zero-trust access export for SOC2 Type II auditors.</p>
+</div>
+</div>
+</div>
+<!-- Interactive Slide-over / Modal: Report New Defect -->
+<div class="fixed inset-0 z-50 flex items-center justify-center bg-inverse-surface/40 backdrop-blur-sm hidden transition-opacity" id="newIssueModal">
+<div class="bg-surface-container-lowest w-full max-w-xl rounded-xl shadow-xl overflow-hidden p-space-lg mx-4 animate-in fade-in zoom-in-95">
+<div class="flex items-center justify-between pb-space-sm mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">pest_control</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Report Technical Defect</h3>
+<p class="font-body-sm text-body-sm text-secondary">Generate tracked ticket with severity telemetry</p>
+</div>
+</div>
+<button class="text-secondary hover:text-on-surface p-1 rounded-lg hover:bg-surface-container-low" onclick="toggleModal('newIssueModal', false)">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<form class="space-y-space-md" onsubmit="handleNewIssueSubmit(event)">
+<div>
+<label class="block font-label-md text-label-md text-secondary mb-1">Issue Title &amp; Scope</label>
+<input class="w-full bg-surface-container-low text-on-surface px-3 py-2 rounded-lg font-body-md text-body-md border-0 outline-none focus:bg-surface-container" id="inputIssueTitle" placeholder="e.g. gRPC Connection Drain Failure on Gateway-02" required="" type="text"/>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div>
+<label class="block font-label-md text-label-md text-secondary mb-1">Severity / Urgency</label>
+<select class="w-full bg-surface-container-low text-on-surface px-3 py-2 rounded-lg font-body-md text-body-md border-0 outline-none cursor-pointer" id="inputIssueSeverity">
+<option value="Critical">Critical (P1 Outage/Data Leak)</option>
+<option selected="" value="Major">Major (P2 Core Degradation)</option>
+<option value="Minor">Minor (P3 Non-blocking Edge)</option>
+</select>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-secondary mb-1">Assigned Lead</label>
+<select class="w-full bg-surface-container-low text-on-surface px-3 py-2 rounded-lg font-body-md text-body-md border-0 outline-none cursor-pointer" id="inputIssueAssignee">
+<option value="Elena Rostova">Elena Rostova (Principal SRE)</option>
+<option value="Marcus Vance">Marcus Vance (SecOps Lead)</option>
+<option value="Sarah Chen">Sarah Chen (Platform Eng)</option>
+<option value="Liam Thorne">Liam Thorne (Database Admin)</option>
+</select>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-secondary mb-1">Technical Context &amp; Stack Traces</label>
+<textarea class="w-full bg-surface-container-low text-on-surface px-3 py-2 rounded-lg font-body-md text-body-md border-0 outline-none focus:bg-surface-container resize-none" id="inputIssueDescription" placeholder="Provide reproduction steps, affected microservice, or kernel metrics..." required="" rows="3"></textarea>
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-space-sm">
+<button class="px-4 py-2 rounded-xl text-secondary hover:text-on-surface font-label-lg text-label-lg" onclick="toggleModal('newIssueModal', false)" type="button">
+            Cancel
+          </button>
+<button class="px-5 py-2 rounded-xl bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg shadow-sm transition-all flex items-center gap-1.5" type="submit">
+<span class="material-symbols-outlined text-[18px]">send</span>
+            Submit &amp; Route
+          </button>
+</div>
+</form>
+</div>
+</div>
+<!-- Interactive Modal: Issue Detail Inspector -->
+<div class="fixed inset-0 z-50 flex items-center justify-center bg-inverse-surface/40 backdrop-blur-sm hidden transition-opacity" id="issueDetailModal">
+<div class="bg-surface-container-lowest w-full max-w-lg rounded-xl shadow-xl overflow-hidden p-space-lg mx-4 animate-in fade-in zoom-in-95">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-2">
+<span class="font-label-caps text-label-caps bg-primary text-on-primary px-2 py-0.5 rounded" id="detailBadgeId">ISS-401</span>
+<span class="font-label-caps text-label-caps bg-error-container text-on-error-container px-2 py-0.5 rounded" id="detailBadgeSev">Critical</span>
+</div>
+<button class="text-secondary hover:text-on-surface p-1 rounded-lg hover:bg-surface-container-low" onclick="toggleModal('issueDetailModal', false)">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2" id="detailTitle">Title</h3>
+<p class="font-body-md text-body-md text-secondary mb-space-md bg-surface-container-low p-space-sm rounded-lg" id="detailDesc">Technical context detail.</p>
+<div class="grid grid-cols-2 gap-space-sm font-body-sm text-body-sm mb-space-md">
+<div>
+<span class="text-secondary block font-label-caps text-label-caps uppercase">Engineer</span>
+<span class="font-title text-title text-on-surface" id="detailEngineer">Elena Rostova</span>
+</div>
+<div>
+<span class="text-secondary block font-label-caps text-label-caps uppercase">Status</span>
+<span class="font-title text-title text-primary" id="detailStatus">In Triage</span>
+</div>
+</div>
+<div class="flex justify-end gap-2 pt-2">
+<button class="px-4 py-2 bg-surface-container-low hover:bg-surface-container text-on-surface rounded-xl font-label-lg text-label-lg" onclick="toggleModal('issueDetailModal', false)">
+          Close Inspector
+        </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Client-side Operational Micro-interactions -->
+<script>
+  // Ensure Active Sidebar State is set to 'Documents & Issues'
+  (function setActiveNav() {
+    const navLinks = document.querySelectorAll('aside nav a');
+    navLinks.forEach(link => {
+      if (link.getAttribute('data-path') === 'documents-issues') {
+        link.className = 'flex items-center gap-space-sm px-space-sm py-2 rounded-xl transition-colors font-headline-sm text-headline-sm bg-surface-container-low text-primary-container font-semibold';
+      }
+    });
+  })();
+
+  function toggleModal(modalId, show) {
+    const modal = document.getElementById(modalId);
+    if (!modal) return;
+    if (show) {
+      modal.classList.remove('hidden');
+    } else {
+      modal.classList.add('hidden');
+    }
+  }
+
+  function viewIssueDetail(id, title, severity, status, engineer, description) {
+    document.getElementById('detailBadgeId').textContent = id;
+    document.getElementById('detailBadgeSev').textContent = severity;
+    document.getElementById('detailTitle').textContent = title;
+    document.getElementById('detailDesc').textContent = description;
+    document.getElementById('detailEngineer').textContent = engineer;
+    document.getElementById('detailStatus').textContent = status;
+
+    const sevBadge = document.getElementById('detailBadgeSev');
+    if (severity === 'Critical') {
+      sevBadge.className = 'font-label-caps text-label-caps bg-error-container text-on-error-container px-2 py-0.5 rounded font-bold';
+    } else if (severity === 'Major') {
+      sevBadge.className = 'font-label-caps text-label-caps bg-secondary-container text-on-secondary-container px-2 py-0.5 rounded font-bold';
+    } else {
+      sevBadge.className = 'font-label-caps text-label-caps bg-surface-container-high text-secondary px-2 py-0.5 rounded font-bold';
+    }
+
+    toggleModal('issueDetailModal', true);
+  }
+
+  function simulateFileUpload(event) {
+    const file = event.target.files[0];
+    if (!file) return;
+
+    const fileName = file.name;
+    const fileSizeMB = (file.size / (1024 * 1024)).toFixed(1) + ' MB';
+    const alertBox = document.getElementById('uploadAlert');
+    const alertText = document.getElementById('uploadAlertText');
+
+    alertText.textContent = `File "${fileName}" (${fileSizeMB}) uploaded and scanned. Verified clean with zero vulnerability signatures.`;
+    alertBox.classList.remove('hidden');
+
+    // Prepend to documents table
+    const tableBody = document.getElementById('docsListBody');
+    const newRow = document.createElement('tr');
+    newRow.className = 'hover:bg-surface-container-low transition-colors group animate-in fade-in';
+    newRow.innerHTML = `
+      <td class="py-3.5 px-space-md">
+        <div class="flex items-center gap-space-sm">
+          <div class="w-8 h-8 rounded-lg bg-primary-fixed text-primary flex items-center justify-center flex-shrink-0">
+            <span class="material-symbols-outlined text-[18px]">verified</span>
+          </div>
+          <div class="min-w-0">
+            <p class="font-title text-title text-on-surface truncate group-hover:text-primary transition-colors">${fileName}</p>
+            <span class="font-body-sm text-body-sm text-secondary truncate">Uploaded by Active Session</span>
+          </div>
+        </div>
+      </td>
+      <td class="py-3.5 px-space-xs">
+        <div class="flex flex-col">
+          <span class="font-body-sm text-body-sm text-on-surface">Just Now</span>
+          <span class="font-label-md text-label-md text-secondary">Alex Morgan</span>
+        </div>
+      </td>
+      <td class="py-3.5 px-space-xs text-right font-label-md text-label-md text-secondary">
+        ${fileSizeMB}
+      </td>
+      <td class="py-3.5 px-space-md text-right">
+        <button onclick="simulateDownload('${fileName}')" class="inline-flex items-center gap-1 text-primary hover:bg-surface-container-high px-2.5 py-1.5 rounded-lg text-label-md font-label-md transition-colors">
+          <span class="material-symbols-outlined text-[16px]">download</span>
+          <span class="hidden sm:inline">Get</span>
+        </button>
+      </td>
+    `;
+    tableBody.insertBefore(newRow, tableBody.firstChild);
+  }
+
+  function simulateDownload(docName) {
+    const alertBox = document.getElementById('uploadAlert');
+    const alertText = document.getElementById('uploadAlertText');
+    alertText.textContent = `Downloading "${docName}" with secure ephemeral token...`;
+    alertBox.classList.remove('hidden');
+    setTimeout(() => {
+      alertText.textContent = `Download complete for "${docName}". Access log written to compliance ledger.`;
+    }, 1200);
+  }
+
+  function handleNewIssueSubmit(event) {
+    event.preventDefault();
+    const title = document.getElementById('inputIssueTitle').value;
+    const severity = document.getElementById('inputIssueSeverity').value;
+    const assignee = document.getElementById('inputIssueAssignee').value;
+    const desc = document.getElementById('inputIssueDescription').value;
+
+    const nextId = 'ISS-407';
+
+    const tableBody = document.getElementById('issuesListBody');
+    const newRow = document.createElement('tr');
+    newRow.className = 'hover:bg-surface-container-low transition-colors group cursor-pointer animate-in fade-in';
+    newRow.onclick = function() {
+      viewIssueDetail(nextId, title, severity, 'Open', assignee, desc);
+    };
+
+    let badgeClass = 'bg-secondary-container text-on-secondary-container';
+    let dotClass = 'bg-secondary';
+    if (severity === 'Critical') {
+      badgeClass = 'bg-error-container text-on-error-container';
+      dotClass = 'bg-error';
+    } else if (severity === 'Minor') {
+      badgeClass = 'bg-surface-container-high text-secondary';
+      dotClass = 'bg-secondary';
+    }
+
+    const initials = assignee.split(' ').map(n => n[0]).join('');
+
+    newRow.innerHTML = `
+      <td class="py-3.5 px-space-md">
+        <div class="flex flex-col">
+          <div class="flex items-center gap-2">
+            <span class="font-label-caps text-label-caps bg-surface-container-high text-primary px-1.5 py-0.5 rounded">${nextId}</span>
+            <span class="font-title text-title text-on-surface truncate group-hover:text-primary transition-colors">${title}</span>
+          </div>
+          <span class="font-body-sm text-body-sm text-secondary mt-0.5 truncate">User Reported Defect</span>
+        </div>
+      </td>
+      <td class="py-3.5 px-space-xs">
+        <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-label-md font-label-md ${badgeClass}">
+          <span class="w-1.5 h-1.5 rounded-full ${dotClass}"></span>${severity}
+        </span>
+      </td>
+      <td class="py-3.5 px-space-xs">
+        <div class="flex items-center gap-2">
+          <div class="w-6 h-6 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed text-label-caps">${initials}</div>
+          <span class="font-body-sm text-body-sm text-on-surface truncate">${assignee}</span>
+        </div>
+      </td>
+      <td class="py-3.5 px-space-md text-right">
+        <span class="inline-block px-2.5 py-1 rounded-lg text-label-md font-label-md bg-surface-container text-on-surface">Open</span>
+      </td>
+    `;
+
+    tableBody.insertBefore(newRow, tableBody.firstChild);
+    toggleModal('newIssueModal', false);
+
+    // Provide affirmative notification
+    const alertBox = document.getElementById('uploadAlert');
+    const alertText = document.getElementById('uploadAlertText');
+    alertText.textContent = `Defect ${nextId} dispatched to ${assignee} and queued in high-priority triage pipeline.`;
+    alertBox.classList.remove('hidden');
+
+    event.target.reset();
+  }
+
+  function switchViewMode(mode) {
+    const docSec = document.getElementById('docSection');
+    const bugSec = document.getElementById('bugSection');
+    const btnAll = document.getElementById('btnTabAll');
+    const btnDocs = document.getElementById('btnTabDocs');
+    const btnBugs = document.getElementById('btnTabBugs');
+
+    // Reset base button styling
+    [btnAll, btnDocs, btnBugs].forEach(b => {
+      b.className = 'px-4 py-1.5 rounded-lg text-title font-title text-secondary hover:text-on-surface transition-all flex items-center gap-2';
+    });
+
+    if (mode === 'split') {
+      docSec.classList.remove('hidden', 'xl:col-span-12');
+      docSec.classList.add('xl:col-span-6');
+      bugSec.classList.remove('hidden', 'xl:col-span-12');
+      bugSec.classList.add('xl:col-span-6');
+      btnAll.className = 'px-4 py-1.5 rounded-lg text-title font-title text-on-surface bg-surface-container-lowest shadow-sm transition-all flex items-center gap-2';
+    } else if (mode === 'docs') {
+      docSec.classList.remove('hidden', 'xl:col-span-6');
+      docSec.classList.add('xl:col-span-12');
+      bugSec.classList.add('hidden');
+      btnDocs.className = 'px-4 py-1.5 rounded-lg text-title font-title text-on-surface bg-surface-container-lowest shadow-sm transition-all flex items-center gap-2';
+    } else if (mode === 'bugs') {
+      bugSec.classList.remove('hidden', 'xl:col-span-6');
+      bugSec.classList.add('xl:col-span-12');
+      docSec.classList.add('hidden');
+      btnBugs.className = 'px-4 py-1.5 rounded-lg text-title font-title text-on-surface bg-surface-container-lowest shadow-sm transition-all flex items-center gap-2';
+    }
+  }
+
+  function filterContent() {
+    const query = document.getElementById('filterInput').value.toLowerCase();
+    
+    // Filter docs
+    const docRows = document.querySelectorAll('#docsListBody tr');
+    docRows.forEach(row => {
+      const text = row.innerText.toLowerCase();
+      row.style.display = text.includes(query) ? '' : 'none';
+    });
+
+    // Filter issues
+    const issueRows = document.querySelectorAll('#issuesListBody tr');
+    issueRows.forEach(row => {
+      const text = row.innerText.toLowerCase();
+      row.style.display = text.includes(query) ? '' : 'none';
+    });
+  }
+</script></main><footer class="w-full bg-surface-container-lowest px-gutter py-space-md shadow-[0_1px_8px_rgba(0,0,0,0.04)] flex flex-col md:flex-row items-center justify-between gap-space-sm"><div class="flex items-center gap-space-xs text-on-surface-variant"><span class="w-2 h-2 rounded-full bg-[#10b981]"></span><span class="font-label-md text-label-md text-on-surface">All Systems Operational</span><span class="text-outline-variant px-space-xs">|</span><span class="font-body-sm text-body-sm text-secondary">© 2025 NovaTech Solutions. All rights reserved.</span></div><div class="font-body-sm text-body-sm text-secondary">University Demonstration &amp; Prototype System Architecture</div></footer></div></body></html>

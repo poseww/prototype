@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-container":"#1a1f2e","surface-bright":"#343948","on-error":"#690005","surface-container-highest":"#303444","on-secondary":"#1000a9","on-background":"#dee2f6","inverse-on-surface":"#2b303f","on-error-container":"#ffdad6","tertiary-fixed-dim":"#4cd7f6","error-container":"#93000a","on-surface":"#dee2f6","error":"#ffb4ab","surface-tint":"#00dce6","surface-container-lowest":"#090e1c","outline":"#849495","inverse-surface":"#dee2f6","inverse-primary":"#00696f","secondary":"#c0c1ff","background":"#0e1321","on-primary-fixed":"#002022","on-secondary-container":"#b0b2ff","tertiary-fixed":"#acedff","secondary-fixed":"#e1e0ff","on-secondary-fixed-variant":"#2f2ebe","on-tertiary":"#003640","secondary-fixed-dim":"#c0c1ff","on-tertiary-fixed":"#001f26","on-primary-fixed-variant":"#004f53","surface-dim":"#0e1321","primary-fixed":"#6ff6ff","on-secondary-fixed":"#07006c","on-primary":"#00373a","tertiary-container":"#91e8ff","primary-container":"#00f2fe","surface":"#0e1321","primary-fixed-dim":"#00dce6","surface-variant":"#303444","surface-container-high":"#252a39","on-primary-container":"#006a70","on-surface-variant":"#b9cacb","surface-container-low":"#161b2a","primary":"#e0fdff","outline-variant":"#3a494b","on-tertiary-container":"#00697c","secondary-container":"#3131c0","on-tertiary-fixed-variant":"#004e5c","tertiary":"#ecfaff"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{"margin-sm":"1rem","gutter-sm":"1rem","margin":"2rem","space-md":"1rem","space-xl":"2.5rem","space-sm":"0.5rem","space-xs":"0.25rem","gutter":"1.5rem","space-lg":"1.5rem"},fontFamily:{"display-hero":["Plus Jakarta Sans"],"label-md":["Inter"],"body-sm":["Inter"],"headline-md":["Plus Jakarta Sans"],"body-md":["Inter"],"telemetry-badge":["JetBrains Mono"],"headline-lg-mobile":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"display-hero-mobile":["Plus Jakarta Sans"],"body-lg":["Inter"],"code-sm":["JetBrains Mono"]},fontSize:{"display-hero":["64px",{lineHeight:"72px",letterSpacing:"-0.03em",fontWeight:"800"}],"label-md":["14px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"500"}],"body-sm":["13px",{lineHeight:"20px",fontWeight:"400"}],"headline-md":["28px",{lineHeight:"36px",letterSpacing:"-0.02em",fontWeight:"600"}],"body-md":["15px",{lineHeight:"24px",fontWeight:"400"}],"telemetry-badge":["11px",{lineHeight:"14px",letterSpacing:"0.06em",fontWeight:"600"}],"headline-lg-mobile":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"700"}],"headline-sm":["20px",{lineHeight:"28px",letterSpacing:"-0.015em",fontWeight:"600"}],"headline-lg":["44px",{lineHeight:"52px",letterSpacing:"-0.025em",fontWeight:"700"}],"display-hero-mobile":["38px",{lineHeight:"44px",letterSpacing:"-0.02em",fontWeight:"800"}],"body-lg":["18px",{lineHeight:"28px",fontWeight:"400"}],"code-sm":["13px",{lineHeight:"20px",fontWeight:"400"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 left-0 right-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="h-20 w-full px-margin flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-xl"><a class="flex items-center gap-space-sm group focus:outline-none" data-path="overview" href="#"><img alt="Novatech Solutions Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XvGaUeSnA7tEGN1SZR69tl8X6NtNTUXKvcbSNy74eWsFOsyLZdRIgLeNxt4w-MBWO3a97N5ge695EBih58iNPBNA0cWoFB6E2kBubOE3C01CQl70lggtz3zjUyw853Px5o2gazRTQ5z_ckTuWKNlgdUinar_Yw5gDLnLE21cWtXIgddRZbG4sl_ru_SOgQnl-aXyXiLW-6lRof95njire8Ucc-DY2hSpmy8X4UkauD"/><span class="font-headline-sm text-headline-sm tracking-tight text-primary font-bold">Novatech<span class="text-primary-container font-normal ml-space-xs">Solutions</span></span></a><nav class="hidden xl:flex items-center gap-space-lg" data-active-classes="text-primary font-semibold"><a aria-current="page" class="transition-colors text-primary font-semibold" data-path="overview" href="#">Overview</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="solutions-and-capabilities" href="#">Solutions &amp; Capabilities</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors inline-flex items-center gap-space-xs" data-path="live-sandbox" href="#"><span>Live Sandbox</span><span class="font-telemetry-badge text-telemetry-badge px-1.5 py-0.5 rounded bg-primary-container/10 text-primary-container shadow-[0_0_12px_rgba(0,242,254,0.3)] animate-pulse">LIVE</span></a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="case-studies" href="#">Case Studies</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="contact-estimator" href="#">Contact / Estimator</a></nav></div><div class="flex items-center gap-space-md"><a class="hidden md:inline-flex font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors px-space-sm py-space-xs" data-path="documentation" href="#">Documentation</a><a class="font-label-md text-label-md px-space-md py-2.5 rounded-lg bg-gradient-to-r from-primary-container to-secondary font-semibold text-background hover:brightness-110 shadow-[0_0_20px_rgba(0,242,254,0.35)] transition-all flex items-center gap-space-xs" data-path="contact-estimator" href="#"><span class="material-symbols-outlined text-[18px] text-background">bolt</span><span>Request Enterprise Demo</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0 ml-space-xs"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Ambient Glow Field -->
+<div class="relative w-full overflow-hidden">
+<div class="absolute -top-40 left-1/2 -translate-x-1/2 w-[900px] h-[480px] bg-gradient-to-b from-primary-container/15 via-secondary/10 to-transparent blur-3xl pointer-events-none rounded-full"></div>
+<div class="absolute top-96 -left-48 w-[400px] h-[400px] bg-primary-container/10 blur-[140px] pointer-events-none rounded-full"></div>
+<div class="absolute top-80 -right-48 w-[450px] h-[450px] bg-secondary-container/25 blur-[150px] pointer-events-none rounded-full"></div>
+<!-- Hero Section -->
+<section class="relative max-w-7xl mx-auto px-margin pt-12 pb-20 lg:pt-16 lg:pb-28">
+<div class="flex flex-col items-center text-center space-y-space-md max-w-4xl mx-auto">
+<!-- Telemetry Status Chip -->
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-high/90 shadow-[0_0_16px_rgba(0,242,254,0.15)]">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+<span class="font-telemetry-badge text-telemetry-badge text-primary-container">MESH ENGINE V4.8 • HYPERSCALE ACTIVE</span>
+<span class="text-on-surface-variant font-telemetry-badge text-telemetry-badge ml-1 pl-2 border-l border-outline-variant">99.999% SLA</span>
+</div>
+<!-- Headline -->
+<h1 class="font-display-hero text-display-hero text-primary tracking-tight">
+          Next-Generation <span class="bg-gradient-to-r from-primary-container via-tertiary-container to-secondary bg-clip-text text-transparent">Autonomous</span> Infrastructure &amp; Enterprise Intelligence.
+        </h1>
+<!-- Subhead -->
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl leading-relaxed">
+          Accelerating digital transformation with resilient distributed cloud architectures, real-time AI agents, and zero-trust telemetry designed for zero downtime.
+        </p>
+<!-- CTA Cluster -->
+<div class="flex flex-wrap items-center justify-center gap-space-md pt-space-sm">
+<a class="px-7 py-3.5 rounded-lg bg-gradient-to-r from-primary-container to-secondary font-label-md text-label-md font-semibold text-background hover:brightness-110 shadow-[0_0_30px_rgba(0,242,254,0.4)] transition-all flex items-center gap-2" data-path="live-sandbox" href="#">
+<span class="material-symbols-outlined text-[20px]">terminal</span>
+<span>Launch Live Sandbox</span>
+</a>
+<a class="px-7 py-3.5 rounded-lg bg-surface-container-high font-label-md text-label-md text-on-surface hover:text-primary hover:bg-surface-bright shadow-md transition-all flex items-center gap-2" data-path="contact-estimator" href="#">
+<span class="material-symbols-outlined text-[20px]">calendar_today</span>
+<span>Schedule Architecture Review</span>
+</a>
+</div>
+<!-- Live Node Count Signal -->
+<div class="flex items-center gap-6 pt-2 text-on-surface-variant font-telemetry-badge text-telemetry-badge">
+<span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span> 184 PoPs Worldwide</span>
+<span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Zero Cold-Start Routing</span>
+<span class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed-dim"></span> FIPS 140-3 Validated</span>
+</div>
+</div>
+<!-- Interactive Live Preview Console (Bento Hero Feature) -->
+<div class="mt-14 w-full rounded-xl bg-surface-container-low shadow-[0_24px_60px_-15px_rgba(0,0,0,0.8)] overflow-hidden">
+<!-- Terminal Header -->
+<div class="px-space-md py-3 bg-surface-container-lowest flex flex-wrap items-center justify-between gap-4">
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-full bg-error/70 inline-block"></span>
+<span class="w-3 h-3 rounded-full bg-secondary-container inline-block"></span>
+<span class="w-3 h-3 rounded-full bg-primary-container/70 inline-block"></span>
+</div>
+<div class="flex items-center gap-2 font-telemetry-badge text-telemetry-badge text-on-surface-variant">
+<span class="material-symbols-outlined text-[15px] text-primary-container">monitoring</span>
+<span>cluster.global.nova-mesh // node-us-east-cluster-04</span>
+</div>
+</div>
+<!-- Console Navigation Tabs -->
+<div class="flex items-center gap-1 bg-surface-container-high p-1 rounded-lg" id="consoleTabContainer">
+<button class="console-tab-btn active px-3 py-1 text-telemetry-badge font-telemetry-badge rounded bg-primary-container text-background font-semibold transition-all" id="tab-scaling" onclick="switchTab('scaling')">
+              Autonomous Scaling
+            </button>
+<button class="console-tab-btn px-3 py-1 text-telemetry-badge font-telemetry-badge rounded text-on-surface-variant hover:text-on-surface transition-all" id="tab-threat" onclick="switchTab('threat')">
+              Threat Matrix
+            </button>
+<button class="console-tab-btn px-3 py-1 text-telemetry-badge font-telemetry-badge rounded text-on-surface-variant hover:text-on-surface transition-all" id="tab-vector" onclick="switchTab('vector')">
+              Vector Ingestion
+            </button>
+</div>
+<div class="hidden sm:flex items-center gap-3">
+<span class="inline-flex items-center gap-1 text-[11px] font-telemetry-badge text-primary-container">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-ping"></span> STREAM LIVE
+            </span>
+</div>
+</div>
+<!-- Telemetry Summary Bar -->
+<div class="grid grid-cols-2 md:grid-cols-4 bg-surface-container-high/60 px-space-md py-space-sm gap-4">
+<div class="flex flex-col">
+<span class="font-telemetry-badge text-telemetry-badge text-on-surface-variant">THROUGHPUT</span>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-sm text-headline-sm text-primary font-bold tracking-tight" id="metricThroughput">942.8k</span>
+<span class="font-code-sm text-code-sm text-primary-container">req/s</span>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-telemetry-badge text-telemetry-badge text-on-surface-variant">GLOBAL P99 LATENCY</span>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-sm text-headline-sm text-primary font-bold tracking-tight" id="metricLatency">1.38</span>
+<span class="font-code-sm text-tertiary-fixed-dim">ms</span>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-telemetry-badge text-telemetry-badge text-on-surface-variant">CLUSTER HEALTH</span>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-sm text-headline-sm text-primary font-bold tracking-tight">99.999%</span>
+<span class="font-code-sm text-primary-container">OPT</span>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-telemetry-badge text-telemetry-badge text-on-surface-variant">ACTIVE AUTOPILOT</span>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-sm text-headline-sm text-secondary font-bold tracking-tight" id="metricNodes">1,248</span>
+<span class="font-code-sm text-secondary">shards</span>
+</div>
+</div>
+</div>
+<!-- Interactive Body Panel -->
+<div class="p-space-md lg:p-space-lg grid grid-cols-1 lg:grid-cols-12 gap-space-lg bg-surface-container-lowest/80">
+<!-- Visual Waveform & Dynamic SVG -->
+<div class="lg:col-span-8 space-y-space-md flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<div class="space-y-0.5">
+<span class="font-label-md text-label-md text-on-surface font-semibold" id="tabTitle">Autonomous Dynamic Load Orchestration</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant" id="tabDesc">Automated re-allocation across multi-region serverless clusters in sub-millisecond cycles.</p>
+</div>
+<span class="font-telemetry-badge text-telemetry-badge text-primary-container px-2 py-0.5 rounded bg-surface-container-high" id="tabStatus">AUTOPILOT: ENGAGED</span>
+</div>
+<!-- SVG Real-time Telemetry Visualization -->
+<div class="h-44 w-full bg-surface-container-low/70 rounded-lg p-3 flex flex-col justify-end relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/10 via-transparent to-transparent pointer-events-none"></div>
+<!-- Sparkline Graph -->
+<svg class="w-full h-28 overflow-visible" preserveaspectratio="none" viewbox="0 0 700 120">
+<defs>
+<lineargradient id="waveGrad" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#00f2fe" stop-opacity="0.45"></stop>
+<stop offset="100%" stop-color="#3131c0" stop-opacity="0.0"></stop>
+</lineargradient>
+</defs>
+<path d="M0,80 Q70,40 140,65 T280,30 T420,55 T560,20 T700,45 L700,120 L0,120 Z" fill="url(#waveGrad)" id="sparklineArea"></path>
+<path d="M0,80 Q70,40 140,65 T280,30 T420,55 T560,20 T700,45" fill="none" id="sparklinePath" stroke="#00f2fe" stroke-linecap="round" stroke-width="2.5"></path>
+<!-- Pulse points -->
+<circle class="animate-ping" cx="280" cy="30" fill="#00f2fe" r="4"></circle>
+<circle cx="280" cy="30" fill="#ffffff" r="3"></circle>
+<circle cx="560" cy="20" fill="#c0c1ff" r="4"></circle>
+</svg>
+<!-- Axis Markers -->
+<div class="flex justify-between items-center text-[10px] font-telemetry-badge text-on-surface-variant pt-2">
+<span>T-60s (BASE LOAD)</span>
+<span>T-30s (SPIKE DETECTED)</span>
+<span>T-10s (SHARDS PROVISIONED)</span>
+<span class="text-primary-container font-semibold">T-0s (CONVERGED)</span>
+</div>
+</div>
+<!-- Terminal Log Stream -->
+<div class="font-code-sm text-code-sm bg-surface-container-high/90 p-space-sm rounded-lg text-on-surface-variant space-y-1">
+<div class="flex items-center justify-between text-[11px] text-outline font-telemetry-badge pb-1 border-b border-surface-container">
+<span>EVENT LOG STREAM</span>
+<span class="text-primary-container">AUTONOMOUS DISPATCH</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-secondary font-semibold">[08:42:19.004]</span>
+<span class="text-on-surface">Auto-mesh rebalanced 14,200 pods across us-east-1 and eu-central-1.</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-secondary font-semibold">[08:42:19.412]</span>
+<span class="text-tertiary-fixed-dim">Zero-loss vector pipeline synched 4.9M embeddings in 88ms.</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="text-primary-container font-semibold">[08:42:20.109]</span>
+<span class="text-primary">Egress throttle 0%; latency floor nominal across Tier 1 carriers.</span>
+</div>
+</div>
+</div>
+<!-- Quick Interactive Control Drawer -->
+<div class="lg:col-span-4 flex flex-col justify-between space-y-space-md bg-surface-container-high/40 p-space-md rounded-lg">
+<div>
+<span class="font-label-md text-label-md text-primary font-semibold uppercase tracking-wider block">Real-Time Simulation</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Stress-test mesh orchestration directly inside the browser environment.</p>
+<div class="mt-space-md space-y-space-sm">
+<div>
+<div class="flex justify-between font-telemetry-badge text-telemetry-badge text-on-surface-variant mb-1">
+<span>SYNTHETIC INGESTION VOLUME</span>
+<span class="text-primary-container font-semibold" id="sliderVal">1,000,000 req/s</span>
+</div>
+<input class="w-full h-1.5 bg-surface-container-highest rounded-lg appearance-none cursor-pointer accent-primary-container" id="loadSlider" max="2500000" min="100000" step="50000" type="range" value="1000000"/>
+</div>
+<div class="p-space-sm bg-surface-container-high rounded space-y-2">
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Replication Topology:</span>
+<span class="text-on-surface font-semibold">Anycast Active-Active</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Consensus Algorithm:</span>
+<span class="text-on-surface font-semibold">Raft-Quantum 2.4</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Auto-Failover Delta:</span>
+<span class="text-primary-container font-semibold">&lt; 14ms (Instant)</span>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-space-sm">
+<a class="w-full py-2.5 rounded bg-surface-container text-center font-label-md text-label-md text-primary-container hover:bg-surface-bright transition-all flex items-center justify-center gap-2" data-path="live-sandbox" href="#">
+<span class="material-symbols-outlined text-[18px]">open_in_new</span>
+<span>Open Full Telemetry Suite</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Enterprise Trust & Metrics Section -->
+<section class="w-full bg-surface-container-lowest py-space-xl">
+<div class="max-w-7xl mx-auto px-margin space-y-space-lg">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div>
+<span class="font-telemetry-badge text-telemetry-badge text-primary-container tracking-widest uppercase">Verified Enterprise Footprint</span>
+<h2 class="font-headline-md text-headline-md text-primary font-bold mt-1">Engineered for Global Tier-1 Deployments</h2>
+</div>
+<div class="flex items-center gap-space-sm text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-primary-container text-[18px]">verified</span>
+<span>Independently attested audits and enterprise compliance standards.</span>
+</div>
+</div>
+<!-- Live Enterprise Stats Strip -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div class="p-space-lg rounded-xl bg-surface-container-low shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-telemetry-badge text-telemetry-badge text-on-surface-variant">FINANCIAL SETTLEMENT</span>
+<span class="material-symbols-outlined text-primary-container text-[20px]">account_balance</span>
+</div>
+<div class="my-space-md">
+<div class="font-headline-lg text-headline-lg text-primary font-extrabold tracking-tight">$4.2B+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Processed daily across high-frequency payment gateways &amp; sovereign ledger fabrics.</p>
+</div>
+<span class="font-telemetry-badge text-telemetry-badge text-primary-container flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">trending_up</span> +38% YoY Volume Scaling
+          </span>
+</div>
+<div class="p-space-lg rounded-xl bg-surface-container-low shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-telemetry-badge text-telemetry-badge text-on-surface-variant">PERIMETER DEFENSE</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">security</span>
+</div>
+<div class="my-space-md">
+<div class="font-headline-lg text-headline-lg text-secondary font-extrabold tracking-tight">14.8M</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Critical threats, DDoS vectors, and zero-day memory exploits blocked automatically each week.</p>
+</div>
+<span class="font-telemetry-badge text-telemetry-badge text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">shield</span> Quantum-Safe Cipher Active
+          </span>
+</div>
+<div class="p-space-lg rounded-xl bg-surface-container-low shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-telemetry-badge text-telemetry-badge text-on-surface-variant">SYSTEM AVAILABILITY</span>
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-[20px]">speed</span>
+</div>
+<div class="my-space-md">
+<div class="font-headline-lg text-headline-lg text-primary font-extrabold tracking-tight">99.999%</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Enforced multi-zone contractual SLA uptime guarantee backed by financial escrow policies.</p>
+</div>
+<span class="font-telemetry-badge text-telemetry-badge text-tertiary-fixed-dim flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> Zero Unplanned Outages in 2024
+          </span>
+</div>
+</div>
+<!-- Trust Badges & Partner Ribbons -->
+<div class="pt-space-md flex flex-wrap items-center justify-between gap-6 py-4 rounded-xl bg-surface-container px-space-md">
+<div class="font-telemetry-badge text-telemetry-badge text-on-surface-variant tracking-wider uppercase font-semibold">
+          Certified Compliances:
+        </div>
+<div class="flex flex-wrap items-center gap-6 md:gap-10">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-[20px]">verified_user</span>
+<span class="font-telemetry-badge text-telemetry-badge text-on-surface">SOC2 TYPE II</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-[20px]">lock</span>
+<span class="font-telemetry-badge text-telemetry-badge text-on-surface">ISO/IEC 27001</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-[20px]">health_and_safety</span>
+<span class="font-telemetry-badge text-telemetry-badge text-on-surface">HIPAA COMPLIANT</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-[20px]">policy</span>
+<span class="font-telemetry-badge text-telemetry-badge text-on-surface">FedRAMP HIGH READY</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-[20px]">credit_card</span>
+<span class="font-telemetry-badge text-telemetry-badge text-on-surface">PCI-DSS 4.0 L1</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Four Core Solution Pillars -->
+<section class="max-w-7xl mx-auto px-margin py-20 lg:py-28 w-full space-y-space-xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="space-y-2 max-w-2xl">
+<div class="font-telemetry-badge text-telemetry-badge text-primary-container uppercase tracking-wider">Enterprise Architecture Capabilities</div>
+<h2 class="font-headline-lg text-headline-lg text-primary font-bold">Engineered for Hyperscale Demands</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Replace fragile microservices and uncoordinated legacy stacks with a resilient, self-healing computation substrate.</p>
+</div>
+<a class="inline-flex items-center gap-2 font-label-md text-label-md text-primary-container hover:text-primary transition-colors" data-path="solutions-and-capabilities" href="#">
+<span>Explore Full Capability Catalog</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+<!-- Bento Grid for 4 Pillars -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<!-- Pillar 1 -->
+<div class="group relative rounded-xl bg-surface-container-low p-space-lg hover:bg-surface-container transition-all duration-300 shadow-md hover:-translate-y-1">
+<div class="flex items-start justify-between">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center text-primary-container group-hover:bg-primary-container group-hover:text-background transition-all">
+<span class="material-symbols-outlined text-[26px]">hub</span>
+</div>
+<span class="font-telemetry-badge text-telemetry-badge px-2 py-0.5 rounded bg-surface-container-high text-primary-container">PILLAR // 01</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold mt-space-md">Autonomous Cloud Infrastructure</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs leading-relaxed">
+          Decentralized orchestrator with multi-region intelligent auto-routing. Seamlessly mitigates localized datacenter brownouts through automated stateful container shifts in under 50ms.
+        </p>
+<div class="mt-space-md pt-space-md border-t border-surface-container-highest/60 flex flex-wrap gap-2">
+<span class="font-telemetry-badge text-telemetry-badge px-2 py-1 rounded bg-surface-container text-on-surface-variant">Multi-Cloud Mesh</span>
+<span class="font-telemetry-badge text-telemetry-badge px-2 py-1 rounded bg-surface-container text-on-surface-variant">Automated Evacuation</span>
+<span class="font-telemetry-badge text-telemetry-badge px-2 py-1 rounded bg-surface-container text-on-surface-variant">Zero Config CI/CD</span>
+</div>
+</div>
+<!-- Pillar 2 -->
+<div class="group relative rounded-xl bg-surface-container-low p-space-lg hover:bg-surface-container transition-all duration-300 shadow-md hover:-translate-y-1">
+<div class="flex items-start justify-between">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-background transition-all">
+<span class="material-symbols-outlined text-[26px]">psychology</span>
+</div>
+<span class="font-telemetry-badge text-telemetry-badge px-2 py-0.5 rounded bg-surface-container-high text-secondary">PILLAR // 02</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold mt-space-md">Real-Time Enterprise AI &amp; Data Fabric</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs leading-relaxed">
+          High-bandwidth inference clustering and millisecond vector pipelines. Connect proprietary databases to sovereign LLM agents with hardware-enforced data privacy boundaries.
+        </p>
+<div class="mt-space-md pt-space-md border-t border-surface-container-highest/60 flex flex-wrap gap-2">
+<span class="font-telemetry-badge text-telemetry-badge px-2 py-1 rounded bg-surface-container text-on-surface-variant">Vector Streaming</span>
+<span class="font-telemetry-badge text-telemetry-badge px-2 py-1 rounded bg-surface-container text-on-surface-variant">Deterministic RAG</span>
+<span class="font-telemetry-badge text-telemetry-badge px-2 py-1 rounded bg-surface-container text-on-surface-variant">Sovereign GPUs</span>
+</div>
+</div>
+<!-- Pillar 3 -->
+<div class="group relative rounded-xl bg-surface-container-low p-space-lg hover:bg-surface-container transition-all duration-300 shadow-md hover:-translate-y-1">
+<div class="flex items-start justify-between">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center text-tertiary-fixed-dim group-hover:bg-tertiary-fixed-dim group-hover:text-background transition-all">
+<span class="material-symbols-outlined text-[26px]">enhanced_encryption</span>
+</div>
+<span class="font-telemetry-badge text-telemetry-badge px-2 py-0.5 rounded bg-surface-container-high text-tertiary-fixed-dim">PILLAR // 03</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold mt-space-md">Zero-Trust &amp; Quantum-Safe Defense</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs leading-relaxed">
+          Continuous cryptographic identity verification across edge nodes. Implements post-quantum lattice-based encryption (Kyber-1024) protecting confidential corporate communications.
+        </p>
+<div class="mt-space-md pt-space-md border-t border-surface-container-highest/60 flex flex-wrap gap-2">
+<span class="font-telemetry-badge text-telemetry-badge px-2 py-1 rounded bg-surface-container text-on-surface-variant">Lattice Kyber-1024</span>
+<span class="font-telemetry-badge text-telemetry-badge px-2 py-1 rounded bg-surface-container text-on-surface-variant">Ephemeral mTLS</span>
+<span class="font-telemetry-badge text-telemetry-badge px-2 py-1 rounded bg-surface-container text-on-surface-variant">Memory Guard</span>
+</div>
+</div>
+<!-- Pillar 4 -->
+<div class="group relative rounded-xl bg-surface-container-low p-space-lg hover:bg-surface-container transition-all duration-300 shadow-md hover:-translate-y-1">
+<div class="flex items-start justify-between">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-background transition-all">
+<span class="material-symbols-outlined text-[26px]">memory</span>
+</div>
+<span class="font-telemetry-badge text-telemetry-badge px-2 py-0.5 rounded bg-surface-container-high text-primary">PILLAR // 04</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-semibold mt-space-md">Mission-Critical Legacy Modernization</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs leading-relaxed">
+          Non-invasive bi-directional stragglers strangulation patterns. Modernize mainframe and legacy COBOL/Java monoliths with real-time replication overlays without maintenance windows.
+        </p>
+<div class="mt-space-md pt-space-md border-t border-surface-container-highest/60 flex flex-wrap gap-2">
+<span class="font-telemetry-badge text-telemetry-badge px-2 py-1 rounded bg-surface-container text-on-surface-variant">Zero-Downtime Migration</span>
+<span class="font-telemetry-badge text-telemetry-badge px-2 py-1 rounded bg-surface-container text-on-surface-variant">CDC Streaming</span>
+<span class="font-telemetry-badge text-telemetry-badge px-2 py-1 rounded bg-surface-container text-on-surface-variant">Dual-Write Guarantees</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Live Architecture Preview Teaser -->
+<section class="w-full bg-surface-container-lowest py-20">
+<div class="max-w-7xl mx-auto px-margin space-y-space-lg">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div>
+<span class="font-telemetry-badge text-telemetry-badge text-primary-container uppercase tracking-wider">Topological Visualizer</span>
+<h2 class="font-headline-md text-headline-md text-primary font-bold mt-1">Multi-Cloud Mesh Topology &amp; Packet Journey</h2>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-4 py-2 rounded bg-surface-container-high hover:bg-surface-bright font-telemetry-badge text-telemetry-badge text-on-surface transition-all flex items-center gap-2" id="toggleLatencyMode">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span id="latencyModeText">MODE: OPTIMAL LATENCY ROUTE</span>
+</button>
+</div>
+</div>
+<!-- Architecture Canvas Mockup Component -->
+<div class="w-full rounded-xl bg-surface-container-low p-space-lg shadow-xl relative overflow-hidden">
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-lg items-center relative z-10">
+<!-- Node A: Ingress -->
+<div class="p-space-md rounded-lg bg-surface-container flex flex-col space-y-space-sm border-l-4 border-primary-container">
+<div class="flex items-center justify-between">
+<span class="font-telemetry-badge text-telemetry-badge text-primary-container font-semibold">EDGE INGRESS LAYER</span>
+<span class="material-symbols-outlined text-primary-container text-[18px]">dns</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-primary font-bold">Anycast Global Edge</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Global DNS resolving across 184 edge POPs with micro-caching and TLS 1.3 termination.</p>
+<div class="font-telemetry-badge text-telemetry-badge text-on-surface-variant flex justify-between pt-2">
+<span>LATENCY: 0.4ms</span>
+<span class="text-primary-container">HEALTHY</span>
+</div>
+</div>
+<!-- Mid Node: Dynamic Router (Interactive Canvas Center) -->
+<div class="p-space-md rounded-lg bg-surface-container flex flex-col space-y-space-sm border-l-4 border-secondary">
+<div class="flex items-center justify-between">
+<span class="font-telemetry-badge text-telemetry-badge text-secondary font-semibold">NEURAL ROUTING MESH</span>
+<span class="material-symbols-outlined text-secondary text-[18px]">memory</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-primary font-bold">Novatech Core Mesh</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Autonomous telemetry-driven micro-sharding with real-time congestion mitigation.</p>
+<div class="font-telemetry-badge text-telemetry-badge text-on-surface-variant flex justify-between pt-2">
+<span id="meshLatencyMetric">TRANSIT: 0.8ms</span>
+<span class="text-secondary">ACTIVE</span>
+</div>
+</div>
+<!-- Node C: Egress / Storage -->
+<div class="p-space-md rounded-lg bg-surface-container flex flex-col space-y-space-sm border-l-4 border-tertiary-fixed-dim">
+<div class="flex items-center justify-between">
+<span class="font-telemetry-badge text-telemetry-badge text-tertiary-fixed-dim font-semibold">PERSISTENCE FABRIC</span>
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-[18px]">database</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-primary font-bold">Distributed Datastores</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Multi-master Raft consensus across isolated sovereign cloud regions.</p>
+<div class="font-telemetry-badge text-telemetry-badge text-on-surface-variant flex justify-between pt-2">
+<span>SYNC DELTA: 0.18ms</span>
+<span class="text-tertiary-fixed-dim">CONSISTENT</span>
+</div>
+</div>
+</div>
+<!-- Connection Pipeline Visual Overlay -->
+<div class="mt-space-lg pt-space-md border-t border-surface-container-high flex flex-col md:flex-row items-center justify-between gap-4 font-telemetry-badge text-telemetry-badge text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+<span>Packet Path: Edge (Frankfurt) ➔ Neural Gateway (us-east) ➔ Persistence Tier (Cross-Region)</span>
+</div>
+<div class="flex items-center gap-4">
+<span>TOTAL ROUNDTRIP: <strong class="text-primary-container" id="totalTripMetric">1.38ms</strong></span>
+<a class="text-primary hover:underline" data-path="live-sandbox" href="#">Interact with Topology ➔</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Client Validation & Executive Proof -->
+<section class="max-w-7xl mx-auto px-margin py-20 lg:py-28 w-full">
+<div class="rounded-xl bg-surface-container-high/40 p-space-lg lg:p-space-xl relative overflow-hidden shadow-xl">
+<div class="absolute -right-24 -bottom-24 w-96 h-96 bg-primary-container/5 rounded-full blur-3xl pointer-events-none"></div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
+<!-- Quote Details -->
+<div class="lg:col-span-8 space-y-space-md">
+<div class="flex items-center gap-2 text-primary-container">
+<span class="material-symbols-outlined text-[24px]">format_quote</span>
+<span class="font-telemetry-badge text-telemetry-badge font-semibold">ENTERPRISE CASE STUDY: GLOBAL CAPITAL FINTECH</span>
+</div>
+<p class="font-headline-md text-headline-md text-primary font-medium leading-relaxed">
+            “Migrating our core clearinghouse systems to Novatech took our p99 latency from 48ms down to 1.4ms flat. We survived Black Friday peak volume with 0 dropped frames and zero human operator intervention.”
+          </p>
+<div class="flex items-center gap-space-md pt-space-xs">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest overflow-hidden flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary-container text-[28px]">badge</span>
+</div>
+<div>
+<div class="font-label-md text-label-md text-primary font-bold">Marcus Vance</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Chief Technology Officer, Global Clearinghouse Network</div>
+</div>
+</div>
+</div>
+<!-- Verified Outcome Card -->
+<div class="lg:col-span-4 bg-surface-container-low p-space-lg rounded-xl space-y-space-sm shadow-md">
+<span class="font-telemetry-badge text-telemetry-badge text-secondary font-semibold uppercase">Validated Outcomes</span>
+<div class="space-y-3 pt-2">
+<div>
+<div class="text-headline-sm font-headline-sm text-primary font-bold">96.8%</div>
+<div class="text-body-sm font-body-sm text-on-surface-variant">Reduction in transaction tail latency</div>
+</div>
+<div class="w-full h-1 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary-container w-[96%]"></div>
+</div>
+<div class="pt-2">
+<div class="text-headline-sm font-headline-sm text-secondary font-bold">$12.4M</div>
+<div class="text-body-sm font-body-sm text-on-surface-variant">Annual infrastructure cloud compute savings</div>
+</div>
+<div class="w-full h-1 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary w-[84%]"></div>
+</div>
+<div class="pt-2">
+<div class="text-headline-sm font-headline-sm text-tertiary-fixed-dim font-bold">0 Sec</div>
+<div class="text-body-sm font-body-sm text-on-surface-variant">Customer-facing downtime during 2024 peak runs</div>
+</div>
+</div>
+<div class="pt-space-xs">
+<a class="inline-flex items-center gap-1.5 font-telemetry-badge text-telemetry-badge text-primary-container hover:underline" data-path="case-studies" href="#">
+<span>Read Marcus's full case paper</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- High-Impact Interactive Sandbox CTA Banner -->
+<section class="max-w-7xl mx-auto px-margin pb-20 w-full">
+<div class="rounded-xl bg-gradient-to-r from-surface-container-high via-surface-container to-surface-container-low p-space-xl shadow-2xl relative overflow-hidden flex flex-col lg:flex-row items-center justify-between gap-space-lg">
+<div class="absolute -left-20 -top-20 w-72 h-72 bg-primary-container/10 rounded-full blur-2xl pointer-events-none"></div>
+<div class="absolute -right-20 -bottom-20 w-72 h-72 bg-secondary/15 rounded-full blur-2xl pointer-events-none"></div>
+<div class="space-y-space-xs max-w-2xl relative z-10">
+<span class="font-telemetry-badge text-telemetry-badge text-primary-container uppercase font-semibold">NO SALES CALL REQUIRED</span>
+<h2 class="font-headline-lg text-headline-lg text-primary font-bold">Ready to stress-test your architecture?</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Deploy synthetic 1,000,000 req/s load pipelines directly into our ephemeral test clusters. Experience sub-millisecond automated failover in real time.
+        </p>
+</div>
+<div class="flex flex-col sm:flex-row items-center gap-space-md shrink-0 relative z-10 w-full sm:w-auto">
+<a class="w-full sm:w-auto px-8 py-4 rounded-lg bg-gradient-to-r from-primary-container to-secondary font-label-md text-label-md font-semibold text-background hover:brightness-110 shadow-[0_0_24px_rgba(0,242,254,0.35)] transition-all flex items-center justify-center gap-2" data-path="live-sandbox" href="#">
+<span class="material-symbols-outlined text-[20px]">bolt</span>
+<span>Open Interactive Sandbox</span>
+</a>
+<a class="w-full sm:w-auto px-6 py-4 rounded-lg bg-surface-container-high hover:bg-surface-bright font-label-md text-label-md text-on-surface hover:text-primary transition-all flex items-center justify-center gap-2" data-path="contact-estimator" href="#">
+<span>Cost &amp; Sizing Estimator</span>
+</a>
+</div>
+</div>
+</section>
+</div>
+<!-- Inline Interactive Script for Live Preview Console Simulation -->
+<script>
+  // Tab Switching State
+  const tabs = {
+    scaling: {
+      title: "Autonomous Dynamic Load Orchestration",
+      desc: "Automated re-allocation across multi-region serverless clusters in sub-millisecond cycles.",
+      status: "AUTOPILOT: ENGAGED",
+      throughput: "942.8k",
+      latency: "1.38",
+      nodes: "1,248",
+      color: "#00f2fe",
+      path: "M0,80 Q70,40 140,65 T280,30 T420,55 T560,20 T700,45"
+    },
+    threat: {
+      title: "Active Threat Matrix & Quantum Isolation",
+      desc: "Kyber-1024 cryptographic verification inspecting incoming packet anomalies via eBPF probes.",
+      status: "THREAT LEVEL: NOMINAL",
+      throughput: "1,120.4k",
+      latency: "1.04",
+      nodes: "1,890",
+      color: "#c0c1ff",
+      path: "M0,60 Q90,80 180,40 T360,70 T540,25 T700,50"
+    },
+    vector: {
+      title: "Real-Time Dense Vector Search Shards",
+      desc: "Distributed HNSW graph ingestion stream processing 4.9M token chunks across parallel memory rings.",
+      status: "INGESTION: STEADY-STATE",
+      throughput: "880.2k",
+      latency: "1.82",
+      nodes: "960",
+      color: "#4cd7f6",
+      path: "M0,45 Q60,20 160,80 T320,35 T480,85 T700,30"
+    }
+  };
+
+  function switchTab(tabKey) {
+    const data = tabs[tabKey];
+    if (!data) return;
+
+    // Button states
+    document.querySelectorAll('.console-tab-btn').forEach(btn => {
+      btn.classList.remove('bg-primary-container', 'text-background', 'font-semibold');
+      btn.classList.add('text-on-surface-variant');
+    });
+    const activeBtn = document.getElementById('tab-' + tabKey);
+    if (activeBtn) {
+      activeBtn.classList.remove('text-on-surface-variant');
+      activeBtn.classList.add('bg-primary-container', 'text-background', 'font-semibold');
+    }
+
+    // Dynamic Text Content
+    document.getElementById('tabTitle').innerText = data.title;
+    document.getElementById('tabDesc').innerText = data.desc;
+    document.getElementById('tabStatus').innerText = data.status;
+    document.getElementById('metricThroughput').innerText = data.throughput;
+    document.getElementById('metricLatency').innerText = data.latency;
+    document.getElementById('metricNodes').innerText = data.nodes;
+
+    // SVG Line Shift
+    const pathElem = document.getElementById('sparklinePath');
+    const areaElem = document.getElementById('sparklineArea');
+    if (pathElem && areaElem) {
+      pathElem.setAttribute('d', data.path);
+      pathElem.setAttribute('stroke', data.color);
+      areaElem.setAttribute('d', data.path + ' L700,120 L0,120 Z');
+    }
+  }
+
+  // Slider load simulator
+  const slider = document.getElementById('loadSlider');
+  const sliderVal = document.getElementById('sliderVal');
+  const metricThroughput = document.getElementById('metricThroughput');
+
+  if (slider && sliderVal) {
+    slider.addEventListener('input', (e) => {
+      const val = parseInt(e.target.value, 10);
+      sliderVal.innerText = (val / 1000).toLocaleString() + 'k req/s';
+      if (metricThroughput) {
+        metricThroughput.innerText = (val / 1000).toFixed(1) + 'k';
+      }
+    });
+  }
+
+  // Topology latency route toggle
+  const toggleBtn = document.getElementById('toggleLatencyMode');
+  const latencyModeText = document.getElementById('latencyModeText');
+  const meshLatencyMetric = document.getElementById('meshLatencyMetric');
+  const totalTripMetric = document.getElementById('totalTripMetric');
+  let isAggressiveMode = false;
+
+  if (toggleBtn && latencyModeText) {
+    toggleBtn.addEventListener('click', () => {
+      isAggressiveMode = !isAggressiveMode;
+      if (isAggressiveMode) {
+        latencyModeText.innerText = "MODE: ZERO-LOSS QUANTUM CHANNEL";
+        if (meshLatencyMetric) meshLatencyMetric.innerText = "TRANSIT: 0.3ms";
+        if (totalTripMetric) totalTripMetric.innerText = "0.88ms";
+      } else {
+        latencyModeText.innerText = "MODE: OPTIMAL LATENCY ROUTE";
+        if (meshLatencyMetric) meshLatencyMetric.innerText = "TRANSIT: 0.8ms";
+        if (totalTripMetric) totalTripMetric.innerText = "1.38ms";
+      }
+    });
+  }
+</script></main><footer class="w-full bg-surface-container-lowest mt-space-xl"><div class="w-full px-margin py-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl pb-space-xl"><div class="lg:col-span-2 space-y-space-md"><div class="flex items-center gap-space-sm"><img alt="Novatech Solutions Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XvGaUeSnA7tEGN1SZR69tl8X6NtNTUXKvcbSNy74eWsFOsyLZdRIgLeNxt4w-MBWO3a97N5ge695EBih58iNPBNA0cWoFB6E2kBubOE3C01CQl70lggtz3zjUyw853Px5o2gazRTQ5z_ckTuWKNlgdUinar_Yw5gDLnLE21cWtXIgddRZbG4sl_ru_SOgQnl-aXyXiLW-6lRof95njire8Ucc-DY2hSpmy8X4UkauD"/><span class="font-headline-sm text-headline-sm text-primary font-bold">Novatech Solutions</span></div><p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm">High-throughput mission-critical compute infrastructure and enterprise cognitive orchestration engineered for hyperscale deployments.</p><div class="flex items-center gap-space-md pt-space-xs"><div class="inline-flex items-center gap-2 px-space-sm py-1 rounded bg-surface-container-high"><span class="w-2 h-2 rounded-full bg-primary-container animate-ping"></span><span class="font-telemetry-badge text-telemetry-badge text-primary-container tracking-wider">SYSTEMS OPERATIONAL</span></div><span class="font-code-sm text-code-sm text-on-surface-variant">99.995% SLA</span></div></div><div class="space-y-space-sm"><div class="font-label-md text-label-md text-primary font-semibold tracking-wide uppercase">Solutions</div><ul class="space-y-2 font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" data-path="solutions-and-capabilities" href="#">Distributed Compute</a></li><li><a class="hover:text-primary transition-colors" data-path="solutions-and-capabilities" href="#">Low-Latency Mesh</a></li><li><a class="hover:text-primary transition-colors" data-path="solutions-and-capabilities" href="#">Autonomous Guardrails</a></li><li><a class="hover:text-primary transition-colors" data-path="solutions-and-capabilities" href="#">Neural Routing Engine</a></li></ul></div><div class="space-y-space-sm"><div class="font-label-md text-label-md text-primary font-semibold tracking-wide uppercase">Company</div><ul class="space-y-2 font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" data-path="overview" href="#">About Platform</a></li><li><a class="hover:text-primary transition-colors" data-path="case-studies" href="#">Customer Outcomes</a></li><li><a class="hover:text-primary transition-colors" data-path="documentation" href="#">Architecture Papers</a></li><li><a class="hover:text-primary transition-colors" data-path="contact-estimator" href="#">Procurement &amp; Partners</a></li></ul></div><div class="space-y-space-sm"><div class="font-label-md text-label-md text-primary font-semibold tracking-wide uppercase">Security &amp; Audits</div><div class="space-y-2.5"><div class="flex items-center gap-2 p-2 rounded bg-surface-container-low"><span class="material-symbols-outlined text-primary-container text-[18px]">verified_user</span><div class="flex flex-col"><span class="font-telemetry-badge text-telemetry-badge text-on-surface font-semibold">SOC2 TYPE II</span><span class="text-[10px] text-on-surface-variant leading-none">Attested &amp; Certified</span></div></div><div class="flex items-center gap-2 p-2 rounded bg-surface-container-low"><span class="material-symbols-outlined text-primary-container text-[18px]">shield</span><div class="flex flex-col"><span class="font-telemetry-badge text-telemetry-badge text-on-surface font-semibold">ISO/IEC 27001</span><span class="text-[10px] text-on-surface-variant leading-none">Global ISMS Standard</span></div></div></div></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant font-body-sm text-body-sm"><div>© 2025 Novatech Solutions Inc. All rights reserved. Deep-Tech Distributed Infrastructure.</div><div class="flex items-center gap-space-lg"><a class="hover:text-on-surface transition-colors" data-path="documentation" href="#">Privacy Shield</a><a class="hover:text-on-surface transition-colors" data-path="documentation" href="#">Trust Center</a><a class="hover:text-on-surface transition-colors" data-path="documentation" href="#">Master Services Agreement</a></div></div></div></footer></body></html>

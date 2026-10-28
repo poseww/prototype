@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"background":"#f8f9ff","on-surface-variant":"#434655","outline-variant":"#c4c5d7","secondary-fixed":"#dae2fd","surface-container-low":"#eff4ff","error-container":"#ffdad6","on-primary-fixed-variant":"#0039b5","on-primary-fixed":"#001551","primary-fixed-dim":"#b7c4ff","on-background":"#0b1c30","on-tertiary":"#ffffff","secondary":"#565e74","on-surface":"#0b1c30","tertiary-fixed":"#dbe1ff","error":"#ba1a1a","on-secondary-container":"#5c647a","surface-variant":"#d3e4fe","inverse-primary":"#b7c4ff","on-tertiary-fixed":"#00174b","on-primary-container":"#cad3ff","on-secondary-fixed":"#131b2e","surface-container-highest":"#d3e4fe","on-primary":"#ffffff","surface":"#f8f9ff","inverse-on-surface":"#eaf1ff","on-tertiary-fixed-variant":"#003ea8","secondary-container":"#dae2fd","surface-container":"#e5eeff","on-secondary":"#ffffff","on-secondary-fixed-variant":"#3f465c","on-error-container":"#93000a","outline":"#747686","primary-container":"#1d4ed8","tertiary-container":"#0051d6","surface-container-high":"#dce9ff","surface-dim":"#cbdbf5","primary-fixed":"#dce1ff","tertiary-fixed-dim":"#b4c5ff","tertiary":"#003ca3","surface-tint":"#2151da","primary":"#0037b0","on-error":"#ffffff","surface-container-lowest":"#ffffff","inverse-surface":"#213145","secondary-fixed-dim":"#bec6e0","on-tertiary-container":"#c9d4ff","surface-bright":"#f8f9ff"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"gutter":"1.5rem","space-xl":"2rem","space-lg":"1.5rem","gutter-sm":"1rem","space-md":"1rem","margin":"2rem","space-sm":"0.5rem","margin-mobile":"1rem","space-xs":"0.25rem"},fontFamily:{"title":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"label-caps":["Plus Jakarta Sans"],"display":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"]},fontSize:{"title":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"400"}],"body-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"700"}],"headline-lg-mobile":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"700"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.005em","fontWeight":"500"}],"label-caps":["11px",{"lineHeight":"14px","letterSpacing":"0.06em","fontWeight":"700"}],"display":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"headline-sm":["16px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"600"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest z-50 flex flex-col shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-space-md flex items-center gap-space-sm bg-surface-container-lowest"><img alt="NovaTech Solutions Portal Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UrmuOcV0k5SwkNjdal6LCe0FGEsQOl8xqrIG7P3lDLpVGm5nzhIi_H2do5BtI5Mb8ZY6gCH8B4lQqVx5_DRnFAmDD7YEamQwt9jHSQ1YEM9sVvZ28zbbkHVBo0ghYBlad-mHguqQlsZiV0o0XoQ7gcaViFLHRxghzkXZz4mea0kpDxeCsjBZCx1a6TmsbPbF3nfmvpzFc6WkASk8XJ8K9NyhdjOQbewu3e4wBjaDhg"/><div class="flex flex-col"><span class="font-title text-title text-on-surface">NovaTech</span><span class="font-label-caps text-label-caps text-secondary uppercase">IT PM Portal</span></div></div><div class="flex-1 overflow-y-auto px-space-sm py-space-sm"><div class="px-space-sm py-space-xs font-label-caps text-label-caps text-secondary uppercase">Core Navigation</div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-surface-container-low text-primary-container font-headline-sm"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="management-dashboard" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span>Dashboard</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl transition-colors bg-surface-container-low text-primary-container font-headline-sm" data-path="client-management" href="#"><span class="material-symbols-outlined text-[20px]">business</span><span>Client Management</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="proposals-requests" href="#"><span class="material-symbols-outlined text-[20px]">request_quote</span><span>Proposals &amp; Requests</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="projects-milestones" href="#"><span class="material-symbols-outlined text-[20px]">flag</span><span>Projects &amp; Milestones</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="employees-tasks" href="#"><span class="material-symbols-outlined text-[20px]">assignment_ind</span><span>Employees &amp; Tasks</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="documents-issues" href="#"><span class="material-symbols-outlined text-[20px]">folder_supervised</span><span>Documents &amp; Issues</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="client-meetings-change-requests" href="#"><span class="material-symbols-outlined text-[20px]">published_with_changes</span><span>Meetings &amp; Changes</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="supplier-management" href="#"><span class="material-symbols-outlined text-[20px]">inventory_2</span><span>Supplier Management</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="financials-invoices" href="#"><span class="material-symbols-outlined text-[20px]">receipt_long</span><span>Financials &amp; Invoices</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="project-completion-sign-off" href="#"><span class="material-symbols-outlined text-[20px]">verified</span><span>Completion &amp; Sign-Off</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="reports-analytics" href="#"><span class="material-symbols-outlined text-[20px]">insights</span><span>Reports &amp; Analytics</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="user-role-permissions" href="#"><span class="material-symbols-outlined text-[20px]">admin_panel_settings</span><span>User &amp; Roles</span></a></nav></div><div class="p-space-sm bg-surface-container-low flex items-center justify-between text-on-surface-variant"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-primary-container"></span><span class="font-label-md text-label-md">Production Cloud</span></div><a class="text-secondary hover:text-primary transition-colors flex items-center" data-path="login-portal-gateway" href="#" title="Log Out"><span class="material-symbols-outlined text-[18px]">logout</span></a></div></aside><div class="pl-64 flex flex-col min-h-screen"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md flex-1 max-w-md"><div class="flex items-center w-full bg-surface-container-low px-space-sm py-space-xs rounded-xl gap-space-xs text-on-surface-variant"><span class="material-symbols-outlined text-[18px]">search</span><input class="bg-transparent border-0 outline-none text-body-sm font-body-sm text-on-surface placeholder:text-secondary w-full" placeholder="Search projects, clients, tickets..." type="text"/></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs bg-surface-container-low px-space-sm py-space-xs rounded-xl"><span class="material-symbols-outlined text-[18px] text-secondary">swap_horiz</span><label class="font-label-md text-label-md text-secondary">Role:</label><select class="bg-transparent font-title text-title text-on-surface border-0 outline-none cursor-pointer"><option selected="" value="admin">Administrator</option><option value="pm">Project Manager</option><option value="employee">Employee</option><option value="finance">Finance Officer</option><option value="client">Client</option><option value="management">Management</option></select></div><button class="relative p-space-xs text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-error"></span></button><div class="flex items-center gap-space-sm pl-space-sm"><div class="flex flex-col text-right"><span class="font-title text-title text-on-surface">Alex Morgan</span><span class="font-body-sm text-body-sm text-secondary">Senior Administrator</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 w-full pt-16 px-gutter pb-space-xl bg-surface"><div class="flex flex-col w-full gap-space-lg">
+<!-- Feedback Toast Container -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none flex items-center gap-space-sm bg-inverse-surface text-inverse-on-surface px-space-md py-space-sm rounded-xl shadow-xl" id="toast-notification">
+<span class="material-symbols-outlined text-[20px] text-primary-fixed">check_circle</span>
+<span class="font-title text-title" id="toast-message">Client record synchronized successfully</span>
+</div>
+<!-- Header Section with KPI Metric Highlights -->
+<section class="flex flex-col gap-space-md">
+<div class="flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-caps text-label-caps text-primary uppercase">Enterprise Relations</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-primary font-label-caps text-label-caps font-bold">Q2 Governance</span>
+</div>
+<div class="flex items-baseline gap-space-sm flex-wrap">
+<h1 class="font-display text-display text-on-surface tracking-tight">Client Directory &amp; Relationship Management</h1>
+<span class="px-space-sm py-1 rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md">
+            42 Registered Clients
+          </span>
+</div>
+<p class="font-body-md text-body-md text-secondary max-w-3xl">
+          Centralized customer repository, contract portfolio health, SLA status tiers, and cross-functional project pipeline telemetry.
+        </p>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="h-[38px] px-space-md rounded-lg bg-surface-container-lowest text-on-surface font-title text-title shadow-sm hover:bg-surface-container-low transition-colors flex items-center gap-space-xs" id="export-btn">
+<span class="material-symbols-outlined text-[18px] text-secondary">file_download</span>
+          Export Ledger
+        </button>
+<button class="h-[38px] px-space-md rounded-lg bg-primary-container text-on-primary font-title text-title shadow-md hover:bg-tertiary-container transition-all flex items-center gap-space-xs" id="open-register-modal-btn">
+<span class="material-symbols-outlined text-[18px]">person_add</span>
+          + Register New Client
+        </button>
+</div>
+</div>
+<!-- Quick Stats Bento Strip -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-secondary uppercase">Active Accounts</span>
+<span class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">domain_verification</span>
+</span>
+</div>
+<div class="mt-space-sm flex items-baseline justify-between">
+<span class="font-headline-lg text-headline-lg text-on-surface">34</span>
+<span class="font-label-md text-label-md text-primary font-bold">81% Portfolio</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-secondary uppercase">Aggregated LTV</span>
+<span class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[18px]">account_balance</span>
+</span>
+</div>
+<div class="mt-space-sm flex items-baseline justify-between">
+<span class="font-headline-lg text-headline-lg text-on-surface">$24.85M</span>
+<span class="font-label-md text-label-md text-secondary">+14.2% YoY</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-secondary uppercase">Ongoing Engagements</span>
+<span class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[18px]">pending_actions</span>
+</span>
+</div>
+<div class="mt-space-sm flex items-baseline justify-between">
+<span class="font-headline-lg text-headline-lg text-on-surface">68 SOWs</span>
+<span class="font-label-md text-label-md text-primary">12 Due Q3</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-secondary uppercase">Retention &amp; NPS</span>
+<span class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">thumb_up</span>
+</span>
+</div>
+<div class="mt-space-sm flex items-baseline justify-between">
+<span class="font-headline-lg text-headline-lg text-on-surface">96.4%</span>
+<span class="font-label-md text-label-md text-secondary">+2.1 pts</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Expandable Interactive Client Registration Card -->
+<section class="hidden transition-all duration-300" id="registration-drawer">
+<div class="bg-surface-container-lowest rounded-xl shadow-md p-space-lg flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-primary-container text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">add_business</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">New Client Organization Intake</h2>
+<p class="font-body-sm text-body-sm text-secondary">Fill in mandatory corporate credentials, commercial parameters, and assigned account manager.</p>
+</div>
+</div>
+<button class="text-secondary hover:text-on-surface p-1 rounded-lg hover:bg-surface-container transition-colors" id="close-registration-drawer">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<form class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md" id="new-client-form">
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface">Company Name <span class="text-error">*</span></label>
+<input class="h-[38px] px-3 rounded-lg bg-surface-container-low text-body-md font-body-md text-on-surface placeholder:text-secondary outline-none focus:bg-surface-container-lowest transition-all" id="reg-company-name" placeholder="e.g. Cerner Global Health" required="" type="text"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface">Industry Domain <span class="text-error">*</span></label>
+<select class="h-[38px] px-3 rounded-lg bg-surface-container-low text-body-md font-body-md text-on-surface outline-none focus:bg-surface-container-lowest transition-all" id="reg-industry" required="">
+<option value="">Select Domain...</option>
+<option value="Fintech &amp; Banking">Fintech &amp; Banking</option>
+<option value="Healthcare &amp; BioTech">Healthcare &amp; BioTech</option>
+<option value="Supply Chain &amp; Logistics">Supply Chain &amp; Logistics</option>
+<option value="Omnichannel Retail">Omnichannel Retail</option>
+<option value="Energy &amp; Utilities">Energy &amp; Utilities</option>
+<option value="Public Sector">Public Sector</option>
+</select>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface">Primary Contact Person <span class="text-error">*</span></label>
+<input class="h-[38px] px-3 rounded-lg bg-surface-container-low text-body-md font-body-md text-on-surface placeholder:text-secondary outline-none focus:bg-surface-container-lowest transition-all" id="reg-contact-person" placeholder="Full name and corporate title" required="" type="text"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface">Corporate Email <span class="text-error">*</span></label>
+<input class="h-[38px] px-3 rounded-lg bg-surface-container-low text-body-md font-body-md text-on-surface placeholder:text-secondary outline-none focus:bg-surface-container-lowest transition-all" id="reg-corporate-email" placeholder="corporate.point@domain.com" required="" type="email"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface">Direct Phone Number</label>
+<input class="h-[38px] px-3 rounded-lg bg-surface-container-low text-body-md font-body-md text-on-surface placeholder:text-secondary outline-none focus:bg-surface-container-lowest transition-all" id="reg-phone" placeholder="+1 (555) 019-2831" type="text"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface">Initial Budget Allocation (USD)</label>
+<input class="h-[38px] px-3 rounded-lg bg-surface-container-low text-body-md font-body-md text-on-surface placeholder:text-secondary outline-none focus:bg-surface-container-lowest transition-all" id="reg-budget" placeholder="250000" type="number"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface">Assigned Account Lead <span class="text-error">*</span></label>
+<select class="h-[38px] px-3 rounded-lg bg-surface-container-low text-body-md font-body-md text-on-surface outline-none focus:bg-surface-container-lowest transition-all" id="reg-lead" required="">
+<option value="Elena Rostova">Elena Rostova (Principal Dir.)</option>
+<option value="Marcus Sterling">Marcus Sterling (VP Tech Accounts)</option>
+<option value="Sarah Jenkins">Sarah Jenkins (Sr. Delivery Mgr.)</option>
+<option value="David Chen">David Chen (Enterprise Solutions)</option>
+</select>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface">Initial Account Status</label>
+<select class="h-[38px] px-3 rounded-lg bg-surface-container-low text-body-md font-body-md text-on-surface outline-none focus:bg-surface-container-lowest transition-all" id="reg-status">
+<option value="Active">Active Partner</option>
+<option value="Onboarding">Onboarding Pilot</option>
+<option value="Prospective">Prospective RFP</option>
+</select>
+</div>
+<div class="flex flex-col gap-1 lg:col-span-4">
+<label class="font-label-md text-label-md text-on-surface">Headquarters / Billing Address</label>
+<input class="h-[38px] px-3 rounded-lg bg-surface-container-low text-body-md font-body-md text-on-surface placeholder:text-secondary outline-none focus:bg-surface-container-lowest transition-all" id="reg-address" placeholder="100 Enterprise Way, Suite 400, Chicago, IL 60601, USA" type="text"/>
+</div>
+<div class="lg:col-span-4 flex items-center justify-end gap-space-sm pt-space-xs">
+<button class="h-[38px] px-space-md rounded-lg bg-surface-container-low text-secondary font-title text-title hover:bg-surface-container hover:text-on-surface transition-colors" id="cancel-registration-btn" type="button">
+            Discard
+          </button>
+<button class="h-[38px] px-space-lg rounded-lg bg-primary-container text-on-primary font-title text-title shadow hover:bg-tertiary-container transition-all flex items-center gap-space-xs" type="submit">
+<span class="material-symbols-outlined text-[18px]">save</span>
+            Save Client
+          </button>
+</div>
+</form>
+</div>
+</section>
+<!-- Filter, Search & Segment Bar -->
+<section class="bg-surface-container-lowest rounded-xl shadow-sm p-space-md flex flex-col md:flex-row items-stretch md:items-center justify-between gap-space-md">
+<!-- Search Query Input -->
+<div class="flex items-center gap-space-xs bg-surface-container-low rounded-lg px-space-sm h-[38px] flex-1 max-w-md">
+<span class="material-symbols-outlined text-[18px] text-secondary">search</span>
+<input class="bg-transparent text-body-md font-body-md text-on-surface placeholder:text-secondary outline-none w-full" id="client-search-input" placeholder="Search by Company Name or Client ID (e.g. CLT-1001)..." type="text"/>
+<button class="hidden text-secondary hover:text-on-surface text-[14px]" id="clear-search-btn">✕</button>
+</div>
+<!-- Filter Toolset -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="flex items-center gap-1 bg-surface-container-low rounded-lg px-2 h-[38px]">
+<span class="material-symbols-outlined text-[16px] text-secondary">filter_alt</span>
+<select class="bg-transparent font-title text-title text-on-surface outline-none cursor-pointer" id="filter-industry">
+<option value="ALL">All Industries</option>
+<option value="Fintech &amp; Banking">Fintech &amp; Banking</option>
+<option value="Healthcare &amp; BioTech">Healthcare &amp; BioTech</option>
+<option value="Supply Chain &amp; Logistics">Supply Chain &amp; Logistics</option>
+<option value="Retail &amp; Commerce">Retail &amp; Commerce</option>
+</select>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-low rounded-lg px-2 h-[38px]">
+<span class="material-symbols-outlined text-[16px] text-secondary">toggle_on</span>
+<select class="bg-transparent font-title text-title text-on-surface outline-none cursor-pointer" id="filter-status">
+<option value="ALL">All Statuses</option>
+<option value="Active">Active</option>
+<option value="Onboarding">Onboarding</option>
+<option value="Prospective">Prospective</option>
+<option value="Inactive">Inactive</option>
+</select>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-low rounded-lg px-2 h-[38px]">
+<span class="material-symbols-outlined text-[16px] text-secondary">sort</span>
+<select class="bg-transparent font-title text-title text-on-surface outline-none cursor-pointer" id="sort-selector">
+<option value="ltv-desc">Highest LTV</option>
+<option value="name-asc">Company Name (A-Z)</option>
+<option value="projects-desc">Most Active SOWs</option>
+<option value="id-asc">Client ID</option>
+</select>
+</div>
+<button class="h-[38px] px-3 rounded-lg bg-surface-container text-secondary font-title text-title hover:text-on-surface hover:bg-surface-container-high transition-colors" id="reset-filters-btn" title="Reset Filters">
+        Reset
+      </button>
+</div>
+</section>
+<!-- Main Split Layout: Data Table + Detail & Project History Drawer -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg items-start">
+<!-- Client Data Table (Span 8 or full when closed) -->
+<div class="xl:col-span-8 flex flex-col gap-space-md">
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<!-- Table Top Meta -->
+<div class="px-space-md py-space-sm bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-xs text-on-surface font-title text-title">
+<span class="material-symbols-outlined text-[18px] text-primary">corporate_fare</span>
+<span>Master Client Ledger</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary" id="filtered-counter">Showing 5 of 5 accounts</span>
+</div>
+<!-- Table Container -->
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-secondary font-label-caps text-label-caps uppercase tracking-wider">
+<th class="py-3 px-space-md">Client ID</th>
+<th class="py-3 px-space-md">Company</th>
+<th class="py-3 px-space-md">Primary Contact</th>
+<th class="py-3 px-space-md text-center">Projects</th>
+<th class="py-3 px-space-md text-right">Lifetime Value</th>
+<th class="py-3 px-space-md text-center">Status</th>
+<th class="py-3 px-space-md text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y-0" id="client-table-body">
+<!-- Client Row 1 (Apex - Default Selected) -->
+<tr class="client-row cursor-pointer transition-colors bg-surface-container-low hover:bg-surface-container group" data-client-id="CLT-1001">
+<td class="py-space-md px-space-md font-mono text-body-sm font-semibold text-primary">CLT-1001</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center font-title text-title text-primary font-bold">
+                      AF
+                    </div>
+<div class="flex flex-col">
+<span class="font-title text-title text-on-surface group-hover:text-primary transition-colors">Apex Financial Systems</span>
+<span class="font-body-sm text-body-sm text-secondary">Fintech &amp; Banking</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-title text-title text-on-surface">Dr. Ronald Vane</span>
+<span class="font-body-sm text-body-sm text-secondary">ronald.v@apexfin.com</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-center">
+<span class="inline-flex items-center justify-center px-2 py-0.5 rounded-full bg-surface-container font-title text-title text-on-surface">3</span>
+</td>
+<td class="py-space-md px-space-md text-right font-title text-title text-on-surface font-mono">$8,450,000</td>
+<td class="py-space-md px-space-md text-center">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-label-md font-label-md bg-surface-container-high text-primary">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+                    Active
+                  </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="select-client-action p-1 rounded hover:bg-surface-container-highest text-secondary hover:text-primary transition-colors" title="Inspect Record">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="edit-client-action p-1 rounded hover:bg-surface-container-highest text-secondary hover:text-on-surface transition-colors" title="Edit Parameters">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="history-client-action p-1 rounded hover:bg-surface-container-highest text-secondary hover:text-on-surface transition-colors" title="Audit Trail">
+<span class="material-symbols-outlined text-[18px]">history</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Client Row 2 (MedTech Innovations) -->
+<tr class="client-row cursor-pointer transition-colors bg-surface-container-lowest hover:bg-surface-container-low group" data-client-id="CLT-1002">
+<td class="py-space-md px-space-md font-mono text-body-sm font-semibold text-primary">CLT-1002</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center font-title text-title text-tertiary font-bold">
+                      MT
+                    </div>
+<div class="flex flex-col">
+<span class="font-title text-title text-on-surface group-hover:text-primary transition-colors">MedTech Innovations</span>
+<span class="font-body-sm text-body-sm text-secondary">Healthcare &amp; BioTech</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-title text-title text-on-surface">Claire Zimmerman</span>
+<span class="font-body-sm text-body-sm text-secondary">c.zimmerman@medtech.org</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-center">
+<span class="inline-flex items-center justify-center px-2 py-0.5 rounded-full bg-surface-container font-title text-title text-on-surface">2</span>
+</td>
+<td class="py-space-md px-space-md text-right font-title text-title text-on-surface font-mono">$5,120,000</td>
+<td class="py-space-md px-space-md text-center">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-label-md font-label-md bg-surface-container-high text-primary">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+                    Active
+                  </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="select-client-action p-1 rounded hover:bg-surface-container-highest text-secondary hover:text-primary transition-colors" title="Inspect Record">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="edit-client-action p-1 rounded hover:bg-surface-container-highest text-secondary hover:text-on-surface transition-colors" title="Edit Parameters">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="history-client-action p-1 rounded hover:bg-surface-container-highest text-secondary hover:text-on-surface transition-colors" title="Audit Trail">
+<span class="material-symbols-outlined text-[18px]">history</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Client Row 3 (Global Logistics Co) -->
+<tr class="client-row cursor-pointer transition-colors bg-surface-container-lowest hover:bg-surface-container-low group" data-client-id="CLT-1003">
+<td class="py-space-md px-space-md font-mono text-body-sm font-semibold text-primary">CLT-1003</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center font-title text-title text-secondary font-bold">
+                      GL
+                    </div>
+<div class="flex flex-col">
+<span class="font-title text-title text-on-surface group-hover:text-primary transition-colors">Global Logistics Co</span>
+<span class="font-body-sm text-body-sm text-secondary">Supply Chain &amp; Logistics</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-title text-title text-on-surface">Tariq Al-Mansoor</span>
+<span class="font-body-sm text-body-sm text-secondary">tariq.m@globallog.com</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-center">
+<span class="inline-flex items-center justify-center px-2 py-0.5 rounded-full bg-surface-container font-title text-title text-on-surface">4</span>
+</td>
+<td class="py-space-md px-space-md text-right font-title text-title text-on-surface font-mono">$6,780,000</td>
+<td class="py-space-md px-space-md text-center">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-label-md font-label-md bg-surface-container-high text-primary">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+                    Active
+                  </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="select-client-action p-1 rounded hover:bg-surface-container-highest text-secondary hover:text-primary transition-colors" title="Inspect Record">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="edit-client-action p-1 rounded hover:bg-surface-container-highest text-secondary hover:text-on-surface transition-colors" title="Edit Parameters">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="history-client-action p-1 rounded hover:bg-surface-container-highest text-secondary hover:text-on-surface transition-colors" title="Audit Trail">
+<span class="material-symbols-outlined text-[18px]">history</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Client Row 4 (SkyLine Retail) -->
+<tr class="client-row cursor-pointer transition-colors bg-surface-container-lowest hover:bg-surface-container-low group" data-client-id="CLT-1004">
+<td class="py-space-md px-space-md font-mono text-body-sm font-semibold text-primary">CLT-1004</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center font-title text-title text-on-surface font-bold">
+                      SR
+                    </div>
+<div class="flex flex-col">
+<span class="font-title text-title text-on-surface group-hover:text-primary transition-colors">SkyLine Retail</span>
+<span class="font-body-sm text-body-sm text-secondary">Retail &amp; Commerce</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-title text-title text-on-surface">Amara Nwosu</span>
+<span class="font-body-sm text-body-sm text-secondary">anwosu@skylineretail.io</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-center">
+<span class="inline-flex items-center justify-center px-2 py-0.5 rounded-full bg-surface-container font-title text-title text-on-surface">1</span>
+</td>
+<td class="py-space-md px-space-md text-right font-title text-title text-on-surface font-mono">$1,850,000</td>
+<td class="py-space-md px-space-md text-center">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-label-md font-label-md bg-secondary-container text-on-secondary-container">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                    Onboarding
+                  </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="select-client-action p-1 rounded hover:bg-surface-container-highest text-secondary hover:text-primary transition-colors" title="Inspect Record">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="edit-client-action p-1 rounded hover:bg-surface-container-highest text-secondary hover:text-on-surface transition-colors" title="Edit Parameters">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="history-client-action p-1 rounded hover:bg-surface-container-highest text-secondary hover:text-on-surface transition-colors" title="Audit Trail">
+<span class="material-symbols-outlined text-[18px]">history</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Client Row 5 (Beacon Cybernetics - Prospective) -->
+<tr class="client-row cursor-pointer transition-colors bg-surface-container-lowest hover:bg-surface-container-low group" data-client-id="CLT-1005">
+<td class="py-space-md px-space-md font-mono text-body-sm font-semibold text-primary">CLT-1005</td>
+<td class="py-space-md px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center font-title text-title text-primary font-bold">
+                      BC
+                    </div>
+<div class="flex flex-col">
+<span class="font-title text-title text-on-surface group-hover:text-primary transition-colors">Beacon Cybernetics</span>
+<span class="font-body-sm text-body-sm text-secondary">Fintech &amp; Banking</span>
+</div>
+</div>
+</td>
+<td class="py-space-md px-space-md">
+<div class="flex flex-col">
+<span class="font-title text-title text-on-surface">Gwen Stacy</span>
+<span class="font-body-sm text-body-sm text-secondary">gstacy@beaconcyber.com</span>
+</div>
+</td>
+<td class="py-space-md px-space-md text-center">
+<span class="inline-flex items-center justify-center px-2 py-0.5 rounded-full bg-surface-container font-title text-title text-on-surface">0</span>
+</td>
+<td class="py-space-md px-space-md text-right font-title text-title text-on-surface font-mono">$650,000</td>
+<td class="py-space-md px-space-md text-center">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-label-md font-label-md bg-surface-container text-on-surface-variant">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+                    Prospective
+                  </span>
+</td>
+<td class="py-space-md px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="select-client-action p-1 rounded hover:bg-surface-container-highest text-secondary hover:text-primary transition-colors" title="Inspect Record">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="edit-client-action p-1 rounded hover:bg-surface-container-highest text-secondary hover:text-on-surface transition-colors" title="Edit Parameters">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="history-client-action p-1 rounded hover:bg-surface-container-highest text-secondary hover:text-on-surface transition-colors" title="Audit Trail">
+<span class="material-symbols-outlined text-[18px]">history</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Pagination & Bulk Details -->
+<div class="p-space-sm bg-surface-container-low flex flex-wrap items-center justify-between text-secondary gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="font-body-sm text-body-sm">Rows per page:</span>
+<select class="bg-surface-container-lowest font-body-sm text-body-sm text-on-surface rounded px-2 py-1 outline-none">
+<option>10</option>
+<option>25</option>
+<option>50</option>
+</select>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="p-1 rounded hover:bg-surface-container-highest text-secondary disabled:opacity-30" disabled="">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<span class="font-body-sm text-body-sm text-on-surface px-2">Page 1 of 5</span>
+<button class="p-1 rounded hover:bg-surface-container-highest text-secondary">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Account Management Cadence Info Card -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-md flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">verified_user</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Enterprise SLA Compliance Monitor</span>
+<span class="font-body-sm text-body-sm text-secondary">All clients have signed master service agreements with active SOC2 &amp; HIPAA business associate covenants.</span>
+</div>
+</div>
+<button class="whitespace-nowrap px-space-md py-2 rounded-lg bg-surface-container text-on-surface font-title text-title hover:bg-surface-container-high transition-colors" id="view-compliance-btn">
+          View Master Agreements
+        </button>
+</div>
+</div>
+<!-- Client Detail & Project History Drawer (Span 4) -->
+<div class="xl:col-span-4 flex flex-col gap-space-md sticky top-20">
+<div class="bg-surface-container-lowest rounded-xl shadow-md p-space-lg flex flex-col gap-space-md" id="client-detail-card">
+<!-- Selected Client Header -->
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center font-display text-headline-md text-primary font-bold" id="detail-badge">
+              AF
+            </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-mono text-body-sm text-primary font-bold" id="detail-id">CLT-1001</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-primary font-label-caps text-label-caps font-bold" id="detail-status">Active</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface" id="detail-title">Apex Financial Systems</h3>
+<span class="font-body-sm text-body-sm text-secondary" id="detail-industry">Fintech &amp; Tier-1 Commercial Banking</span>
+</div>
+</div>
+<button class="p-1 rounded-lg hover:bg-surface-container text-secondary hover:text-on-surface transition-colors" id="open-client-menu">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+<!-- Corporate Contact Details -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col gap-space-xs">
+<span class="font-label-caps text-label-caps text-secondary uppercase">Account Leadership &amp; Contact</span>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-xs mt-1">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-secondary">Primary Contact</span>
+<span class="font-title text-title text-on-surface" id="detail-contact-name">Dr. Ronald Vane</span>
+<span class="font-body-sm text-body-sm text-secondary">Chief Information Officer</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-secondary">Assigned Lead (NovaTech)</span>
+<span class="font-title text-title text-on-surface">Elena Rostova</span>
+<span class="font-body-sm text-body-sm text-primary">Principal Delivery Dir.</span>
+</div>
+</div>
+<div class="flex flex-col pt-space-xs">
+<span class="font-label-md text-label-md text-secondary">Corporate Comms</span>
+<div class="flex items-center gap-space-xs text-body-sm font-body-sm text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-secondary">mail</span>
+<span id="detail-contact-email">ronald.v@apexfin.com</span>
+</div>
+<div class="flex items-center gap-space-xs text-body-sm font-body-sm text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-secondary">call</span>
+<span id="detail-contact-phone">+1 (212) 890-4412 (Direct Wire)</span>
+</div>
+</div>
+</div>
+<!-- Quick Action CTAs -->
+<div class="grid grid-cols-3 gap-space-xs">
+<button class="client-quick-action flex flex-col items-center justify-center p-2 rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors gap-1 text-center" data-action="new-request">
+<span class="material-symbols-outlined text-[20px] text-primary">add_task</span>
+<span class="font-label-caps text-label-caps text-on-surface">New SOW</span>
+</button>
+<button class="client-quick-action flex flex-col items-center justify-center p-2 rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors gap-1 text-center" data-action="send-message">
+<span class="material-symbols-outlined text-[20px] text-primary">outgoing_mail</span>
+<span class="font-label-caps text-label-caps text-on-surface">Message</span>
+</button>
+<button class="client-quick-action flex flex-col items-center justify-center p-2 rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors gap-1 text-center" data-action="view-invoices">
+<span class="material-symbols-outlined text-[20px] text-primary">receipt</span>
+<span class="font-label-caps text-label-caps text-on-surface">Invoices</span>
+</button>
+</div>
+<!-- Client Financial Health Gauge (Inline SVG Chart) -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-secondary uppercase">Contract Financial Cap</span>
+<span class="font-headline-md text-headline-md text-on-surface font-mono">$8.45M</span>
+<span class="font-body-sm text-body-sm text-primary">78% Utilized ($6.59M invoiced)</span>
+</div>
+<!-- Gauge Radial SVG -->
+<div class="relative w-16 h-16 flex items-center justify-center">
+<svg class="w-16 h-16 transform -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-container" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-primary-container" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="78, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<span class="absolute font-label-caps text-label-caps text-on-surface font-bold">78%</span>
+</div>
+</div>
+<!-- Project History & Submissions -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-secondary uppercase">Project Portfolio &amp; SOWs</span>
+<span class="font-body-sm text-body-sm text-primary font-semibold">3 Linked Tracks</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<!-- Project 1: Cloud Banking Migration -->
+<div class="p-space-sm rounded-lg bg-surface-container-lowest hover:bg-surface-container-low transition-colors flex flex-col gap-1 shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-title text-title text-on-surface">Cloud Banking Migration</span>
+<span class="inline-flex items-center px-2 py-0.5 rounded text-label-caps font-label-caps bg-surface-container-high text-primary font-bold">
+                  Completed
+                </span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary">Core ledger AWS GovCloud migration across 4 multiregional clusters.</p>
+<div class="flex items-center justify-between font-label-md text-label-md text-secondary mt-1">
+<span>Budget: $3.2M</span>
+<span>Signed Off: Jan 2025</span>
+</div>
+</div>
+<!-- Project 2: Core Microservices Re-platforming -->
+<div class="p-space-sm rounded-lg bg-surface-container-lowest hover:bg-surface-container-low transition-colors flex flex-col gap-1 shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-title text-title text-on-surface">Core Microservices Re-platforming</span>
+<span class="inline-flex items-center px-2 py-0.5 rounded text-label-caps font-label-caps bg-surface-container-high text-primary font-bold">
+                  In Progress (65%)
+                </span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary">Decoupling mainframe monolith to Quarkus/Kafka microservice event mesh.</p>
+<!-- Progress Bar -->
+<div class="w-full bg-surface-container rounded-full h-1.5 mt-1 overflow-hidden">
+<div class="bg-primary-container h-1.5 rounded-full" style="width: 65%"></div>
+</div>
+<div class="flex items-center justify-between font-label-md text-label-md text-secondary mt-1">
+<span>Milestone 4 of 6</span>
+<span>Target: Oct 2025</span>
+</div>
+</div>
+<!-- Project 3: AI Fraud Detection MVP -->
+<div class="p-space-sm rounded-lg bg-surface-container-lowest hover:bg-surface-container-low transition-colors flex flex-col gap-1 shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-title text-title text-on-surface">AI Fraud Detection MVP</span>
+<span class="inline-flex items-center px-2 py-0.5 rounded text-label-caps font-label-caps bg-secondary-container text-on-secondary-container font-bold">
+                  Proposal Pending
+                </span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary">Real-time transaction anomaly model integration for automated wire reviews.</p>
+<div class="flex items-center justify-between font-label-md text-label-md text-secondary mt-1">
+<span>Estimated: $1.8M</span>
+<span>Review Date: In 4 Days</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Detail Panel Footer / Action -->
+<div class="pt-space-xs flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-secondary">Last updated: 14 mins ago</span>
+<button class="font-title text-title text-primary hover:underline flex items-center gap-1" id="deep-dive-btn">
+            Deep Dive Client Hub
+            <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive JavaScript Engine -->
+<script>
+    (function initClientManagement() {
+      // Mock Client Dataset
+      const clientDirectory = [
+        {
+          id: 'CLT-1001',
+          name: 'Apex Financial Systems',
+          badge: 'AF',
+          industry: 'Fintech & Banking',
+          contact: 'Dr. Ronald Vane',
+          role: 'Chief Information Officer',
+          email: 'ronald.v@apexfin.com',
+          phone: '+1 (212) 890-4412 (Direct Wire)',
+          projectsCount: 3,
+          ltv: '$8,450,000',
+          ltvRaw: 8450000,
+          status: 'Active',
+          address: '745 7th Ave, New York, NY 10019',
+          lead: 'Elena Rostova',
+          projects: [
+            { title: 'Cloud Banking Migration', status: 'Completed', badgeClass: 'bg-surface-container-high text-primary', desc: 'Core ledger AWS GovCloud migration across 4 multiregional clusters.', meta: 'Budget: $3.2M | Signed Off: Jan 2025' },
+            { title: 'Core Microservices Re-platforming', status: 'In Progress (65%)', progress: 65, badgeClass: 'bg-surface-container-high text-primary', desc: 'Decoupling mainframe monolith to Quarkus/Kafka microservice event mesh.', meta: 'Milestone 4 of 6 | Target: Oct 2025' },
+            { title: 'AI Fraud Detection MVP', status: 'Proposal Pending', badgeClass: 'bg-secondary-container text-on-secondary-container', desc: 'Real-time transaction anomaly model integration for automated wire reviews.', meta: 'Estimated: $1.8M | Review Date: In 4 Days' }
+          ]
+        },
+        {
+          id: 'CLT-1002',
+          name: 'MedTech Innovations',
+          badge: 'MT',
+          industry: 'Healthcare & BioTech',
+          contact: 'Claire Zimmerman',
+          role: 'VP Medical Devices & Software',
+          email: 'c.zimmerman@medtech.org',
+          phone: '+1 (617) 495-1000',
+          projectsCount: 2,
+          ltv: '$5,120,000',
+          ltvRaw: 5120000,
+          status: 'Active',
+          address: '400 Technology Square, Cambridge, MA 02139',
+          lead: 'Sarah Jenkins',
+          projects: [
+            { title: 'HL7 / FHIR Integration API Suite', status: 'Completed', badgeClass: 'bg-surface-container-high text-primary', desc: 'Compliant bi-directional hospital data interchange architecture.', meta: 'Budget: $2.1M | Signed Off: Nov 2024' },
+            { title: 'Clinical Telemetry Real-time Gateway', status: 'In Progress (40%)', progress: 40, badgeClass: 'bg-surface-container-high text-primary', desc: 'IoT sensor ingestion mesh supporting 10,000 concurrent patient monitors.', meta: 'Milestone 2 of 5 | Target: Dec 2025' }
+          ]
+        },
+        {
+          id: 'CLT-1003',
+          name: 'Global Logistics Co',
+          badge: 'GL',
+          industry: 'Supply Chain & Logistics',
+          contact: 'Tariq Al-Mansoor',
+          role: 'Global Supply Chain Director',
+          email: 'tariq.m@globallog.com',
+          phone: '+1 (312) 782-9900',
+          projectsCount: 4,
+          ltv: '$6,780,000',
+          ltvRaw: 6780000,
+          status: 'Active',
+          address: '150 N Riverside Plaza, Chicago, IL 60606',
+          lead: 'David Chen',
+          projects: [
+            { title: 'Predictive Freight Tracking Engine', status: 'Completed', badgeClass: 'bg-surface-container-high text-primary', desc: 'Machine-learning voyage arrival time estimation with port congestion analysis.', meta: 'Budget: $2.5M | Signed Off: Feb 2025' },
+            { title: 'Autonomous Warehouse WMS Sync', status: 'In Progress (82%)', progress: 82, badgeClass: 'bg-surface-container-high text-primary', desc: 'Robotic fleet integration with SAP S/4HANA backbone.', meta: 'Milestone 5 of 6 | Target: Sep 2025' },
+            { title: 'Cross-Border Customs API Hub', status: 'Completed', badgeClass: 'bg-surface-container-high text-primary', desc: 'Automated tariff clearance documentation generator.', meta: 'Budget: $1.9M | Signed Off: Dec 2024' }
+          ]
+        },
+        {
+          id: 'CLT-1004',
+          name: 'SkyLine Retail',
+          badge: 'SR',
+          industry: 'Retail & Commerce',
+          contact: 'Amara Nwosu',
+          role: 'Head of Omnichannel Experience',
+          email: 'anwosu@skylineretail.io',
+          phone: '+1 (415) 392-1200',
+          projectsCount: 1,
+          ltv: '$1,850,000',
+          ltvRaw: 1850000,
+          status: 'Onboarding',
+          address: '555 Mission St, San Francisco, CA 94105',
+          lead: 'Marcus Sterling',
+          projects: [
+            { title: 'Headless Commerce Migration', status: 'In Progress (20%)', progress: 20, badgeClass: 'bg-surface-container-high text-primary', desc: 'Next.js storefront rewrite with unified customer loyalty token engine.', meta: 'Phase 1 Architecture | Target: Jan 2026' }
+          ]
+        },
+        {
+          id: 'CLT-1005',
+          name: 'Beacon Cybernetics',
+          badge: 'BC',
+          industry: 'Fintech & Banking',
+          contact: 'Gwen Stacy',
+          role: 'Chief Risk Officer',
+          email: 'gstacy@beaconcyber.com',
+          phone: '+1 (206) 555-0188',
+          projectsCount: 0,
+          ltv: '$650,000',
+          ltvRaw: 650000,
+          status: 'Prospective',
+          address: '1201 3rd Ave, Seattle, WA 98101',
+          lead: 'Elena Rostova',
+          projects: [
+            { title: 'Zero-Trust Architecture Feasibility Study', status: 'Proposal Pending', badgeClass: 'bg-secondary-container text-on-secondary-container', desc: 'Vendor assessment and perimeter virtualization blueprinting.', meta: 'RFP Proposal Submitted | Deciding: Next Week' }
+          ]
+        }
+      ];
+
+      // DOM Elements
+      const openRegBtn = document.getElementById('open-register-modal-btn');
+      const regDrawer = document.getElementById('registration-drawer');
+      const closeRegBtn = document.getElementById('close-registration-drawer');
+      const cancelRegBtn = document.getElementById('cancel-registration-btn');
+      const clientForm = document.getElementById('new-client-form');
+      const toast = document.getElementById('toast-notification');
+      const toastMsg = document.getElementById('toast-message');
+      const searchInput = document.getElementById('client-search-input');
+      const clearSearchBtn = document.getElementById('clear-search-btn');
+      const filterIndustry = document.getElementById('filter-industry');
+      const filterStatus = document.getElementById('filter-status');
+      const sortSelector = document.getElementById('sort-selector');
+      const tableBody = document.getElementById('client-table-body');
+      const counterLabel = document.getElementById('filtered-counter');
+      const resetFiltersBtn = document.getElementById('reset-filters-btn');
+
+      // Drawer Elements
+      const detailBadge = document.getElementById('detail-badge');
+      const detailId = document.getElementById('detail-id');
+      const detailStatus = document.getElementById('detail-status');
+      const detailTitle = document.getElementById('detail-title');
+      const detailIndustry = document.getElementById('detail-industry');
+      const detailContactName = document.getElementById('detail-contact-name');
+      const detailContactEmail = document.getElementById('detail-contact-email');
+      const detailContactPhone = document.getElementById('detail-contact-phone');
+
+      function showToast(message) {
+        toastMsg.textContent = message;
+        toast.classList.remove('translate-y-24', 'opacity-0');
+        toast.classList.add('translate-y-0', 'opacity-100');
+        setTimeout(() => {
+          toast.classList.add('translate-y-24', 'opacity-0');
+          toast.classList.remove('translate-y-0', 'opacity-100');
+        }, 3200);
+      }
+
+      // Toggle Registration Drawer
+      openRegBtn.addEventListener('click', () => {
+        regDrawer.classList.toggle('hidden');
+        if (!regDrawer.classList.contains('hidden')) {
+          regDrawer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+
+      const hideRegistration = () => regDrawer.classList.add('hidden');
+      closeRegBtn.addEventListener('click', hideRegistration);
+      cancelRegBtn.addEventListener('click', hideRegistration);
+
+      // Handle New Client Registration
+      clientForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const companyName = document.getElementById('reg-company-name').value.trim();
+        const industry = document.getElementById('reg-industry').value;
+        const contactPerson = document.getElementById('reg-contact-person').value.trim();
+        const email = document.getElementById('reg-corporate-email').value.trim();
+        const phone = document.getElementById('reg-phone').value.trim() || '+1 (800) 555-0100';
+        const budgetVal = parseFloat(document.getElementById('reg-budget').value) || 250000;
+        const lead = document.getElementById('reg-lead').value;
+        const status = document.getElementById('reg-status').value;
+        const address = document.getElementById('reg-address').value.trim() || 'Headquarters Undisclosed';
+
+        const nextIdNumber = 1001 + clientDirectory.length;
+        const newId = `CLT-${nextIdNumber}`;
+
+        const initials = companyName
+          .split(' ')
+          .map(w => w[0])
+          .slice(0, 2)
+          .join('')
+          .toUpperCase() || 'NC';
+
+        const newClient = {
+          id: newId,
+          name: companyName,
+          badge: initials,
+          industry: industry,
+          contact: contactPerson,
+          role: 'Primary Executive Sponsor',
+          email: email,
+          phone: phone,
+          projectsCount: 1,
+          ltv: `$${budgetVal.toLocaleString()}`,
+          ltvRaw: budgetVal,
+          status: status,
+          address: address,
+          lead: lead,
+          projects: [
+            {
+              title: 'Initial Scoping & Discovery SOW',
+              status: 'Proposal Pending',
+              badgeClass: 'bg-secondary-container text-on-secondary-container',
+              desc: 'Initial baseline system discovery and cloud target architecture assessment.',
+              meta: `Estimated: $${budgetVal.toLocaleString()} | Assigned Lead: ${lead}`
+            }
+          ]
+        };
+
+        clientDirectory.unshift(newClient);
+        renderTable();
+        selectClient(newClient.id);
+        clientForm.reset();
+        hideRegistration();
+        showToast(`Client ${companyName} (${newId}) successfully registered`);
+      });
+
+      // Quick Actions Click Handler
+      document.querySelectorAll('.client-quick-action').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          const action = btn.getAttribute('data-action');
+          if (action === 'new-request') {
+            showToast('Drafting new SOW request ticket in Project Milestone pipeline...');
+          } else if (action === 'send-message') {
+            showToast(`Opening corporate communication channel with ${detailContactEmail.textContent}...`);
+          } else if (action === 'view-invoices') {
+            showToast(`Navigating to Financials & Invoices for ${detailId.textContent}...`);
+          }
+        });
+      });
+
+      document.getElementById('export-btn').addEventListener('click', () => {
+        showToast('Exporting client directory as encrypted CSV & JSON audit bundle...');
+      });
+
+      document.getElementById('view-compliance-btn').addEventListener('click', () => {
+        showToast('Retrieving SOC2 compliance records and MSA signatures...');
+      });
+
+      document.getElementById('deep-dive-btn').addEventListener('click', () => {
+        showToast(`Opening complete 360-degree telemetry dashboard for ${detailTitle.textContent}...`);
+      });
+
+      // Selection & Drawer Synchronization
+      function selectClient(clientId) {
+        const client = clientDirectory.find(c => c.id === clientId);
+        if (!client) return;
+
+        // Visual selection on rows
+        document.querySelectorAll('.client-row').forEach(row => {
+          if (row.getAttribute('data-client-id') === clientId) {
+            row.classList.add('bg-surface-container-low');
+            row.classList.remove('bg-surface-container-lowest');
+          } else {
+            row.classList.remove('bg-surface-container-low');
+            row.classList.add('bg-surface-container-lowest');
+          }
+        });
+
+        // Update Details Panel
+        detailBadge.textContent = client.badge;
+        detailId.textContent = client.id;
+        detailStatus.textContent = client.status;
+        detailTitle.textContent = client.name;
+        detailIndustry.textContent = client.industry;
+        detailContactName.textContent = client.contact;
+        detailContactEmail.textContent = client.email;
+        detailContactPhone.textContent = client.phone;
+
+        // Render Projects in right panel
+        const projectContainer = document.querySelector('#client-detail-card .flex.flex-col.gap-space-xs');
+        if (projectContainer) {
+          projectContainer.innerHTML = '';
+          client.projects.forEach(p => {
+            const card = document.createElement('div');
+            card.className = 'p-space-sm rounded-lg bg-surface-container-lowest hover:bg-surface-container-low transition-colors flex flex-col gap-1 shadow-sm';
+            
+            let progressHtml = '';
+            if (p.progress !== undefined) {
+              progressHtml = `
+                <div class="w-full bg-surface-container rounded-full h-1.5 mt-1 overflow-hidden">
+                  <div class="bg-primary-container h-1.5 rounded-full" style="width: ${p.progress}%"></div>
+                </div>
+              `;
+            }
+
+            card.innerHTML = `
+              <div class="flex items-center justify-between">
+                <span class="font-title text-title text-on-surface">${p.title}</span>
+                <span class="inline-flex items-center px-2 py-0.5 rounded text-label-caps font-label-caps ${p.badgeClass} font-bold">
+                  ${p.status}
+                </span>
+              </div>
+              <p class="font-body-sm text-body-sm text-secondary">${p.desc}</p>
+              ${progressHtml}
+              <div class="flex items-center justify-between font-label-md text-label-md text-secondary mt-1">
+                <span>${p.meta}</span>
+              </div>
+            `;
+            projectContainer.appendChild(card);
+          });
+        }
+      }
+
+      // Filter and Render Logic
+      function getFilteredData() {
+        const query = searchInput.value.toLowerCase().trim();
+        const ind = filterIndustry.value;
+        const st = filterStatus.value;
+        const sortVal = sortSelector.value;
+
+        return clientDirectory.filter(c => {
+          const matchQuery = !query || 
+            c.name.toLowerCase().includes(query) || 
+            c.id.toLowerCase().includes(query) ||
+            c.contact.toLowerCase().includes(query);
+          const matchIndustry = (ind === 'ALL') || (c.industry === ind);
+          const matchStatus = (st === 'ALL') || (c.status === st);
+          return matchQuery && matchIndustry && matchStatus;
+        }).sort((a, b) => {
+          if (sortVal === 'ltv-desc') return b.ltvRaw - a.ltvRaw;
+          if (sortVal === 'name-asc') return a.name.localeCompare(b.name);
+          if (sortVal === 'projects-desc') return b.projectsCount - a.projectsCount;
+          if (sortVal === 'id-asc') return a.id.localeCompare(b.id);
+          return 0;
+        });
+      }
+
+      function renderTable() {
+        const data = getFilteredData();
+        tableBody.innerHTML = '';
+        counterLabel.textContent = `Showing ${data.length} of ${clientDirectory.length} accounts`;
+
+        if (data.length === 0) {
+          tableBody.innerHTML = `
+            <tr>
+              <td colspan="7" class="py-space-xl text-center text-secondary">
+                <span class="material-symbols-outlined text-[36px] text-outline mb-2">person_search</span>
+                <p class="font-title text-title">No client accounts matching current criteria</p>
+                <p class="font-body-sm text-body-sm text-secondary">Try modifying your industry, status filters, or search keywords.</p>
+              </td>
+            </tr>
+          `;
+          return;
+        }
+
+        data.forEach(client => {
+          const tr = document.createElement('tr');
+          tr.setAttribute('data-client-id', client.id);
+          tr.className = `client-row cursor-pointer transition-colors ${detailId.textContent === client.id ? 'bg-surface-container-low' : 'bg-surface-container-lowest'} hover:bg-surface-container group`;
+
+          // Status Badge styling logic
+          let statusBadgeClass = 'bg-surface-container-high text-primary';
+          let dotColorClass = 'bg-primary-container';
+          if (client.status === 'Onboarding') {
+            statusBadgeClass = 'bg-secondary-container text-on-secondary-container';
+            dotColorClass = 'bg-secondary';
+          } else if (client.status === 'Prospective') {
+            statusBadgeClass = 'bg-surface-container text-on-surface-variant';
+            dotColorClass = 'bg-outline';
+          } else if (client.status === 'Inactive') {
+            statusBadgeClass = 'bg-error-container text-on-error-container';
+            dotColorClass = 'bg-error';
+          }
+
+          tr.innerHTML = `
+            <td class="py-space-md px-space-md font-mono text-body-sm font-semibold text-primary">${client.id}</td>
+            <td class="py-space-md px-space-md">
+              <div class="flex items-center gap-space-sm">
+                <div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center font-title text-title text-primary font-bold">
+                  ${client.badge}
+                </div>
+                <div class="flex flex-col">
+                  <span class="font-title text-title text-on-surface group-hover:text-primary transition-colors">${client.name}</span>
+                  <span class="font-body-sm text-body-sm text-secondary">${client.industry}</span>
+                </div>
+              </div>
+            </td>
+            <td class="py-space-md px-space-md">
+              <div class="flex flex-col">
+                <span class="font-title text-title text-on-surface">${client.contact}</span>
+                <span class="font-body-sm text-body-sm text-secondary">${client.email}</span>
+              </div>
+            </td>
+            <td class="py-space-md px-space-md text-center">
+              <span class="inline-flex items-center justify-center px-2 py-0.5 rounded-full bg-surface-container font-title text-title text-on-surface">${client.projectsCount}</span>
+            </td>
+            <td class="py-space-md px-space-md text-right font-title text-title text-on-surface font-mono">${client.ltv}</td>
+            <td class="py-space-md px-space-md text-center">
+              <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-label-md font-label-md ${statusBadgeClass}">
+                <span class="w-1.5 h-1.5 rounded-full ${dotColorClass}"></span>
+                ${client.status}
+              </span>
+            </td>
+            <td class="py-space-md px-space-md text-right">
+              <div class="flex items-center justify-end gap-1">
+                <button class="select-client-action p-1 rounded hover:bg-surface-container-highest text-secondary hover:text-primary transition-colors" title="Inspect Record">
+                  <span class="material-symbols-outlined text-[18px]">visibility</span>
+                </button>
+                <button class="edit-client-action p-1 rounded hover:bg-surface-container-highest text-secondary hover:text-on-surface transition-colors" title="Edit Parameters">
+                  <span class="material-symbols-outlined text-[18px]">edit</span>
+                </button>
+                <button class="history-client-action p-1 rounded hover:bg-surface-container-highest text-secondary hover:text-on-surface transition-colors" title="Audit Trail">
+                  <span class="material-symbols-outlined text-[18px]">history</span>
+                </button>
+              </div>
+            </td>
+          `;
+
+          // Event Listeners on Row
+          tr.addEventListener('click', (e) => {
+            if (e.target.closest('button')) return; // Allow action buttons priority
+            selectClient(client.id);
+          });
+
+          // Row Buttons
+          const selectBtn = tr.querySelector('.select-client-action');
+          const editBtn = tr.querySelector('.edit-client-action');
+          const histBtn = tr.querySelector('.history-client-action');
+
+          selectBtn.addEventListener('click', (ev) => {
+            ev.stopPropagation();
+            selectClient(client.id);
+          });
+
+          editBtn.addEventListener('click', (ev) => {
+            ev.stopPropagation();
+            showToast(`Editing parameters for ${client.name} (${client.id})...`);
+          });
+
+          histBtn.addEventListener('click', (ev) => {
+            ev.stopPropagation();
+            showToast(`Loading chronological audit trail for ${client.id}...`);
+          });
+
+          tableBody.appendChild(tr);
+        });
+      }
+
+      // Search & Filter listeners
+      searchInput.addEventListener('input', () => {
+        if (searchInput.value.length > 0) {
+          clearSearchBtn.classList.remove('hidden');
+        } else {
+          clearSearchBtn.classList.add('hidden');
+        }
+        renderTable();
+      });
+
+      clearSearchBtn.addEventListener('click', () => {
+        searchInput.value = '';
+        clearSearchBtn.classList.add('hidden');
+        renderTable();
+      });
+
+      filterIndustry.addEventListener('change', renderTable);
+      filterStatus.addEventListener('change', renderTable);
+      sortSelector.addEventListener('change', renderTable);
+
+      resetFiltersBtn.addEventListener('click', () => {
+        searchInput.value = '';
+        clearSearchBtn.classList.add('hidden');
+        filterIndustry.value = 'ALL';
+        filterStatus.value = 'ALL';
+        sortSelector.value = 'ltv-desc';
+        renderTable();
+        showToast('Search filters successfully reset');
+      });
+
+      // Initial Selection
+      selectClient('CLT-1001');
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest px-gutter py-space-md shadow-[0_1px_8px_rgba(0,0,0,0.04)] flex flex-col md:flex-row items-center justify-between gap-space-sm"><div class="flex items-center gap-space-xs text-on-surface-variant"><span class="w-2 h-2 rounded-full bg-[#10b981]"></span><span class="font-label-md text-label-md text-on-surface">All Systems Operational</span><span class="text-outline-variant px-space-xs">|</span><span class="font-body-sm text-body-sm text-secondary">© 2025 NovaTech Solutions. All rights reserved.</span></div><div class="font-body-sm text-body-sm text-secondary">University Demonstration &amp; Prototype System Architecture</div></footer></div></body></html>

@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-container":"#1a1f2e","surface-bright":"#343948","on-error":"#690005","surface-container-highest":"#303444","on-secondary":"#1000a9","on-background":"#dee2f6","inverse-on-surface":"#2b303f","on-error-container":"#ffdad6","tertiary-fixed-dim":"#4cd7f6","error-container":"#93000a","on-surface":"#dee2f6","error":"#ffb4ab","surface-tint":"#00dce6","surface-container-lowest":"#090e1c","outline":"#849495","inverse-surface":"#dee2f6","inverse-primary":"#00696f","secondary":"#c0c1ff","background":"#0e1321","on-primary-fixed":"#002022","on-secondary-container":"#b0b2ff","tertiary-fixed":"#acedff","secondary-fixed":"#e1e0ff","on-secondary-fixed-variant":"#2f2ebe","on-tertiary":"#003640","secondary-fixed-dim":"#c0c1ff","on-tertiary-fixed":"#001f26","on-primary-fixed-variant":"#004f53","surface-dim":"#0e1321","primary-fixed":"#6ff6ff","on-secondary-fixed":"#07006c","on-primary":"#00373a","tertiary-container":"#91e8ff","primary-container":"#00f2fe","surface":"#0e1321","primary-fixed-dim":"#00dce6","surface-variant":"#303444","surface-container-high":"#252a39","on-primary-container":"#006a70","on-surface-variant":"#b9cacb","surface-container-low":"#161b2a","primary":"#e0fdff","outline-variant":"#3a494b","on-tertiary-container":"#00697c","secondary-container":"#3131c0","on-tertiary-fixed-variant":"#004e5c","tertiary":"#ecfaff"},borderRadius:{DEFAULT:"0.125rem",lg:"0.25rem",xl:"0.5rem",full:"0.75rem"},spacing:{"margin-sm":"1rem","gutter-sm":"1rem","margin":"2rem","space-md":"1rem","space-xl":"2.5rem","space-sm":"0.5rem","space-xs":"0.25rem","gutter":"1.5rem","space-lg":"1.5rem"},fontFamily:{"display-hero":["Plus Jakarta Sans"],"label-md":["Inter"],"body-sm":["Inter"],"headline-md":["Plus Jakarta Sans"],"body-md":["Inter"],"telemetry-badge":["JetBrains Mono"],"headline-lg-mobile":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"display-hero-mobile":["Plus Jakarta Sans"],"body-lg":["Inter"],"code-sm":["JetBrains Mono"]},fontSize:{"display-hero":["64px",{lineHeight:"72px",letterSpacing:"-0.03em",fontWeight:"800"}],"label-md":["14px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"500"}],"body-sm":["13px",{lineHeight:"20px",fontWeight:"400"}],"headline-md":["28px",{lineHeight:"36px",letterSpacing:"-0.02em",fontWeight:"600"}],"body-md":["15px",{lineHeight:"24px",fontWeight:"400"}],"telemetry-badge":["11px",{lineHeight:"14px",letterSpacing:"0.06em",fontWeight:"600"}],"headline-lg-mobile":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"700"}],"headline-sm":["20px",{lineHeight:"28px",letterSpacing:"-0.015em",fontWeight:"600"}],"headline-lg":["44px",{lineHeight:"52px",letterSpacing:"-0.025em",fontWeight:"700"}],"display-hero-mobile":["38px",{lineHeight:"44px",letterSpacing:"-0.02em",fontWeight:"800"}],"body-lg":["18px",{lineHeight:"28px",fontWeight:"400"}],"code-sm":["13px",{lineHeight:"20px",fontWeight:"400"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 left-0 right-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="h-20 w-full px-margin flex items-center justify-between gap-space-lg"><div class="flex items-center gap-space-xl"><a class="flex items-center gap-space-sm group focus:outline-none" data-path="overview" href="#"><img alt="Novatech Solutions Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XvGaUeSnA7tEGN1SZR69tl8X6NtNTUXKvcbSNy74eWsFOsyLZdRIgLeNxt4w-MBWO3a97N5ge695EBih58iNPBNA0cWoFB6E2kBubOE3C01CQl70lggtz3zjUyw853Px5o2gazRTQ5z_ckTuWKNlgdUinar_Yw5gDLnLE21cWtXIgddRZbG4sl_ru_SOgQnl-aXyXiLW-6lRof95njire8Ucc-DY2hSpmy8X4UkauD"/><span class="font-headline-sm text-headline-sm tracking-tight text-primary font-bold">Novatech<span class="text-primary-container font-normal ml-space-xs">Solutions</span></span></a><nav class="hidden xl:flex items-center gap-space-lg" data-active-classes="text-primary font-semibold"><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="overview" href="#">Overview</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="solutions-and-capabilities" href="#">Solutions &amp; Capabilities</a><a aria-current="page" class="transition-colors inline-flex items-center gap-space-xs text-primary font-semibold" data-path="live-sandbox" href="#"><span>Live Sandbox</span><span class="font-telemetry-badge text-telemetry-badge px-1.5 py-0.5 rounded bg-primary-container/10 text-primary-container shadow-[0_0_12px_rgba(0,242,254,0.3)] animate-pulse">LIVE</span></a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="case-studies" href="#">Case Studies</a><a class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="contact-estimator" href="#">Contact / Estimator</a></nav></div><div class="flex items-center gap-space-md"><a class="hidden md:inline-flex font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors px-space-sm py-space-xs" data-path="documentation" href="#">Documentation</a><a class="font-label-md text-label-md px-space-md py-2.5 rounded-lg bg-gradient-to-r from-primary-container to-secondary font-semibold text-background hover:brightness-110 shadow-[0_0_20px_rgba(0,242,254,0.35)] transition-all flex items-center gap-space-xs" data-path="contact-estimator" href="#"><span class="material-symbols-outlined text-[18px] text-background">bolt</span><span>Request Enterprise Demo</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0 ml-space-xs"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-background min-h-screen"><div class="flex flex-col w-full">
+<div class="relative w-full overflow-hidden px-margin py-space-xl">
+<div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[720px] h-[360px] bg-gradient-to-b from-primary-container/15 via-secondary-container/10 to-transparent blur-3xl pointer-events-none rounded-full"></div>
+<div class="relative max-w-[1440px] mx-auto flex flex-col gap-space-xl">
+<div class="flex flex-col lg:flex-row items-start lg:items-end justify-between gap-space-lg">
+<div class="space-y-space-sm max-w-3xl">
+<div class="inline-flex items-center gap-space-xs px-3 py-1 rounded-full bg-surface-container-high/80 backdrop-blur-md shadow-sm">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-ping"></span>
+<span class="font-telemetry-badge text-telemetry-badge text-primary-container">LIVE ENVIRONMENT // SANDBOX v4.8</span>
+<span class="text-on-surface-variant font-code-sm text-code-sm">:: TIER-1 KERNEL</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">
+            Test-Drive Novatech Enterprise Platform in Real Time
+          </h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+            Simulate hyperscale compute loads, inject systemic chaos, inspect sub-millisecond p99 metrics, and audit autonomic failover across global edge topologies.
+          </p>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm bg-surface-container-high/90 backdrop-blur-xl p-space-sm rounded-xl shadow-xl w-full lg:w-auto">
+<div class="flex flex-col gap-1 min-w-[170px] flex-1 sm:flex-initial">
+<span class="font-telemetry-badge text-[10px] text-on-surface-variant uppercase tracking-wider">Region Target</span>
+<div class="relative">
+<select class="w-full bg-surface-container-lowest text-on-surface font-label-md text-label-md px-3 py-2 rounded-lg appearance-none cursor-pointer focus:outline-none focus:bg-surface-container" id="regionSelect">
+<option value="iad">US-East (N. Virginia)</option>
+<option value="fra">EU-Central (Frankfurt)</option>
+<option value="hnd">AP-East (Tokyo)</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-2.5 text-[18px] text-on-surface-variant pointer-events-none">expand_more</span>
+</div>
+</div>
+<div class="flex flex-col gap-1 min-w-[210px] flex-1 sm:flex-initial">
+<div class="flex items-center justify-between">
+<span class="font-telemetry-badge text-[10px] text-on-surface-variant uppercase tracking-wider">Target Profile</span>
+<span class="font-code-sm text-[11px] text-primary-container" id="loadProfileLabel">500k RPS</span>
+</div>
+<input class="w-full h-2 bg-surface-container-lowest rounded-lg appearance-none cursor-pointer accent-primary-container" id="loadProfileRange" max="3" min="1" step="1" type="range" value="2"/>
+<div class="flex justify-between font-telemetry-badge text-[9px] text-on-surface-variant">
+<span>10k</span>
+<span>500k</span>
+<span>2.5M</span>
+</div>
+</div>
+<button class="self-end px-3.5 py-2 rounded-lg bg-surface-container-lowest hover:bg-surface-container-highest text-on-surface font-label-md text-label-md transition-colors flex items-center gap-1.5 shadow-sm" id="btnResetSandbox">
+<span class="material-symbols-outlined text-[16px] text-primary-container">restart_alt</span>
+<span>Reset</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<div class="lg:col-span-4 space-y-space-md">
+<div class="bg-surface-container-high rounded-xl p-space-lg shadow-xl space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary-container text-[20px]">tune</span>
+<span class="font-headline-sm text-[16px] text-primary">Runtime Directives</span>
+</div>
+<span class="font-telemetry-badge text-telemetry-badge text-on-surface-variant bg-surface-container-lowest px-2 py-0.5 rounded">SYNCED</span>
+</div>
+<div class="space-y-space-sm">
+<label class="flex items-center justify-between p-3 rounded-lg bg-surface-container-lowest/80 cursor-pointer hover:bg-surface-container-lowest transition-colors">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-container text-[20px]">hub</span>
+<div>
+<div class="font-label-md text-label-md text-on-surface font-medium">Auto-Scaling Mesh</div>
+<div class="font-body-sm text-[11px] text-on-surface-variant">Sub-5ms pod hydration across edge nodes</div>
+</div>
+</div>
+<input checked="" class="w-4 h-4 accent-primary-container cursor-pointer rounded" id="toggleMesh" type="checkbox"/>
+</label>
+<label class="flex items-center justify-between p-3 rounded-lg bg-surface-container-lowest/80 cursor-pointer hover:bg-surface-container-lowest transition-colors">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-[20px]">shield_lock</span>
+<div>
+<div class="font-label-md text-label-md text-on-surface font-medium">AI Guardrails &amp; Redaction</div>
+<div class="font-body-sm text-[11px] text-on-surface-variant">PII token anonymizer at ingress gateway</div>
+</div>
+</div>
+<input checked="" class="w-4 h-4 accent-primary-container cursor-pointer rounded" id="toggleAI" type="checkbox"/>
+</label>
+<label class="flex items-center justify-between p-3 rounded-lg bg-surface-container-lowest/80 cursor-pointer hover:bg-surface-container-lowest transition-colors">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-[20px]">key</span>
+<div>
+<div class="font-label-md text-label-md text-on-surface font-medium">Quantum-Safe TLS</div>
+<div class="font-body-sm text-[11px] text-on-surface-variant">Kyber-768 post-quantum cryptographic tunnel</div>
+</div>
+</div>
+<input checked="" class="w-4 h-4 accent-primary-container cursor-pointer rounded" id="toggleTLS" type="checkbox"/>
+</label>
+<label class="flex items-center justify-between p-3 rounded-lg bg-surface-container-lowest/80 cursor-pointer hover:bg-surface-container-lowest transition-colors">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-container text-[20px]">bolt</span>
+<div>
+<div class="font-label-md text-label-md text-on-surface font-medium">Global Edge Caching</div>
+<div class="font-body-sm text-[11px] text-on-surface-variant">Distributed NVMe memory tier (99.4% hit)</div>
+</div>
+</div>
+<input checked="" class="w-4 h-4 accent-primary-container cursor-pointer rounded" id="toggleEdge" type="checkbox"/>
+</label>
+</div>
+<div class="space-y-space-xs pt-space-xs">
+<div class="flex justify-between items-center font-label-md text-label-md">
+<span class="text-on-surface">Simulated Traffic Influx</span>
+<span class="font-code-sm text-code-sm text-primary-container" id="trafficSpeedText">640 MB/s</span>
+</div>
+<input class="w-full h-2 bg-surface-container-lowest rounded-lg appearance-none cursor-pointer accent-primary-container" id="trafficSlider" max="2500" min="100" step="20" type="range" value="640"/>
+<div class="flex justify-between font-telemetry-badge text-[10px] text-on-surface-variant">
+<span>100 MB/s</span>
+<span>In-Memory Routing</span>
+<span>2.5 GB/s</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-high rounded-xl p-space-lg shadow-xl space-y-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-error text-[20px]">warning</span>
+<span class="font-headline-sm text-[16px] text-primary">Chaos Engineering Labs</span>
+</div>
+<span class="font-telemetry-badge text-[10px] text-error bg-error-container/40 px-2 py-0.5 rounded">SIMULATOR</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Inject intentional catastrophic faults into the live cluster to witness automated sub-millisecond recovery routines.
+            </p>
+<div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-1 gap-2.5">
+<button class="w-full text-left p-3 rounded-lg bg-surface-container-lowest hover:bg-surface-container-highest transition-all flex items-center justify-between group" id="btnChaosNode">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-primary-container text-[18px] group-hover:rotate-12 transition-transform">cloud_off</span>
+<div>
+<div class="font-label-md text-label-md text-on-surface font-semibold">Simulate Node Failure</div>
+<div class="font-body-sm text-[11px] text-on-surface-variant">Terminate 3 primary edge pods</div>
+</div>
+</div>
+<span class="font-telemetry-badge text-[10px] text-primary-container px-2 py-1 rounded bg-surface-container-high">KILL</span>
+</button>
+<button class="w-full text-left p-3 rounded-lg bg-surface-container-lowest hover:bg-surface-container-highest transition-all flex items-center justify-between group" id="btnChaosDdos">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[18px] group-hover:scale-110 transition-transform">flash_on</span>
+<div>
+<div class="font-label-md text-label-md text-on-surface font-semibold">Trigger DDOS Assault</div>
+<div class="font-body-sm text-[11px] text-on-surface-variant">Bombard SYN flood at 10M pkts/s</div>
+</div>
+</div>
+<span class="font-telemetry-badge text-[10px] text-secondary px-2 py-1 rounded bg-surface-container-high">FLOOD</span>
+</button>
+<button class="w-full text-left p-3 rounded-lg bg-surface-container-lowest hover:bg-surface-container-highest transition-all flex items-center justify-between group" id="btnChaosSpike">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-[18px] group-hover:translate-x-1 transition-transform">water_damage</span>
+<div>
+<div class="font-label-md text-label-md text-on-surface font-semibold">Inject Packet Corruptions</div>
+<div class="font-body-sm text-[11px] text-on-surface-variant">Introduce 18% entropy jitter</div>
+</div>
+</div>
+<span class="font-telemetry-badge text-[10px] text-tertiary-fixed-dim px-2 py-1 rounded bg-surface-container-high">INJECT</span>
+</button>
+</div>
+</div>
+</div>
+<div class="lg:col-span-8 space-y-space-md">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-sm">
+<div class="bg-surface-container-high rounded-xl p-space-md shadow-lg flex flex-col justify-between">
+<span class="font-telemetry-badge text-[10px] text-on-surface-variant uppercase">CPU Core Allocation</span>
+<div class="my-2 flex items-baseline gap-2">
+<span class="font-headline-md text-headline-md text-primary font-bold" id="metricCpu">28.4%</span>
+<span class="font-body-sm text-[11px] text-primary-container">64 Cores</span>
+</div>
+<div class="w-full bg-surface-container-lowest h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full transition-all duration-500" id="metricCpuBar" style="width: 28%"></div>
+</div>
+</div>
+<div class="bg-surface-container-high rounded-xl p-space-md shadow-lg flex flex-col justify-between">
+<span class="font-telemetry-badge text-[10px] text-on-surface-variant uppercase">Latency p50 / p99</span>
+<div class="my-2 flex items-baseline gap-1.5">
+<span class="font-headline-md text-headline-md text-primary font-bold" id="metricP50">0.8ms</span>
+<span class="text-on-surface-variant text-[13px]">/</span>
+<span class="font-code-sm text-code-sm text-secondary font-semibold" id="metricP99">2.1ms</span>
+</div>
+<span class="font-telemetry-badge text-[10px] text-primary-container">Zero Jitter Protocol</span>
+</div>
+<div class="bg-surface-container-high rounded-xl p-space-md shadow-lg flex flex-col justify-between">
+<span class="font-telemetry-badge text-[10px] text-on-surface-variant uppercase">Packet Drop SLA</span>
+<div class="my-2 flex items-baseline gap-2">
+<span class="font-headline-md text-headline-md text-primary font-bold" id="metricError">0.0001%</span>
+<span class="font-body-sm text-[11px] text-on-surface-variant">TCP/eBPF</span>
+</div>
+<span class="font-telemetry-badge text-[10px] text-primary-container">99.999% Conformance</span>
+</div>
+<div class="bg-surface-container-high rounded-xl p-space-md shadow-lg flex flex-col justify-between">
+<span class="font-telemetry-badge text-[10px] text-on-surface-variant uppercase">Active Edge Shards</span>
+<div class="my-2 flex items-baseline gap-2">
+<span class="font-headline-md text-headline-md text-primary font-bold" id="metricShards">144/144</span>
+<span class="font-body-sm text-[11px] text-tertiary-fixed-dim">Mesh ON</span>
+</div>
+<span class="font-telemetry-badge text-[10px] text-primary-container">Quorum Consensus</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-md">
+<div class="md:col-span-7 bg-surface-container-high rounded-xl p-space-md shadow-xl flex flex-col justify-between">
+<div class="flex items-center justify-between mb-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-[18px]">account_tree</span>
+<span class="font-label-md text-label-md text-primary font-semibold">Dynamic Topology &amp; Node Weights</span>
+</div>
+<span class="font-telemetry-badge text-[10px] text-on-surface-variant">AUTO-BALANCING</span>
+</div>
+<div class="relative bg-surface-container-lowest rounded-lg p-4 h-56 flex flex-col justify-between overflow-hidden">
+<svg class="absolute inset-0 w-full h-full pointer-events-none opacity-40">
+<line id="link1" stroke="#00f2fe" stroke-dasharray="4" stroke-width="2" x1="20%" x2="50%" y1="50%" y2="25%"></line>
+<line id="link2" stroke="#00f2fe" stroke-dasharray="4" stroke-width="2" x1="20%" x2="50%" y1="50%" y2="75%"></line>
+<line id="link3" stroke="#c0c1ff" stroke-width="2" x1="50%" x2="80%" y1="25%" y2="50%"></line>
+<line id="link4" stroke="#c0c1ff" stroke-width="2" x1="50%" x2="80%" y1="75%" y2="50%"></line>
+</svg>
+<div class="flex justify-between items-center relative z-10 h-full">
+<div class="flex flex-col items-center">
+<div class="w-12 h-12 rounded-xl bg-primary-container/20 border border-primary-container flex items-center justify-center shadow-lg transition-all duration-300" id="nodeIngress">
+<span class="material-symbols-outlined text-primary-container text-[22px]">dns</span>
+</div>
+<span class="font-code-sm text-[11px] text-primary mt-1 font-semibold">INGRESS</span>
+<span class="font-telemetry-badge text-[9px] text-on-surface-variant">eBPF Mux</span>
+</div>
+<div class="flex flex-col justify-between h-40">
+<div class="flex flex-col items-center">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high border border-primary-container/40 flex items-center justify-center transition-all duration-300" id="nodeShardA">
+<span class="material-symbols-outlined text-primary-fixed text-[22px]">memory</span>
+</div>
+<span class="font-code-sm text-[11px] text-on-surface mt-1">POD-A1</span>
+<span class="font-telemetry-badge text-[9px] text-primary-container" id="shardALabel">48% Load</span>
+</div>
+<div class="flex flex-col items-center">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high border border-primary-container/40 flex items-center justify-center transition-all duration-300" id="nodeShardB">
+<span class="material-symbols-outlined text-secondary text-[22px]">memory</span>
+</div>
+<span class="font-code-sm text-[11px] text-on-surface mt-1">POD-B4</span>
+<span class="font-telemetry-badge text-[9px] text-secondary" id="shardBLabel">52% Load</span>
+</div>
+</div>
+<div class="flex flex-col items-center">
+<div class="w-12 h-12 rounded-xl bg-secondary-container/50 border border-secondary flex items-center justify-center shadow-lg transition-all duration-300" id="nodeConsensus">
+<span class="material-symbols-outlined text-secondary text-[22px]">verified</span>
+</div>
+<span class="font-code-sm text-[11px] text-secondary mt-1 font-semibold">RAFT DB</span>
+<span class="font-telemetry-badge text-[9px] text-on-surface-variant">0.1ms Quorum</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-[11px] font-code-sm text-on-surface-variant pt-2 border-t border-outline-variant/30 relative z-10">
+<span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-primary-container"></span> Healthy</span>
+<span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-secondary"></span> Synchronized</span>
+<span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-error animate-pulse"></span> Zero Degraded</span>
+</div>
+</div>
+</div>
+<div class="md:col-span-5 bg-surface-container-high rounded-xl p-space-md shadow-xl flex flex-col justify-between">
+<div class="flex items-center justify-between mb-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">ssid_chart</span>
+<span class="font-label-md text-label-md text-primary font-semibold">Latency Quantile Wave</span>
+</div>
+<span class="font-telemetry-badge text-[10px] text-primary-container">LIVE 1s FFT</span>
+</div>
+<div class="bg-surface-container-lowest rounded-lg p-3 h-56 flex flex-col justify-between">
+<svg class="w-full h-36 overflow-visible" viewbox="0 0 300 120">
+<defs>
+<lineargradient id="latencyGradient" x1="0%" x2="0%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#00f2fe" stop-opacity="0.45"></stop>
+<stop offset="100%" stop-color="#00f2fe" stop-opacity="0.0"></stop>
+</lineargradient>
+</defs>
+<path d="M 0 100 L 0 70 Q 50 30 100 65 T 200 45 T 300 50 L 300 120 L 0 120 Z" fill="url(#latencyGradient)" id="graphLatencyFill"></path>
+<path d="M 0 70 Q 50 30 100 65 T 200 45 T 300 50" fill="none" id="graphLatencyLine" stroke="#00f2fe" stroke-linecap="round" stroke-width="2.5"></path>
+<line stroke="#3a494b" stroke-dasharray="3" stroke-width="1" x1="0" x2="300" y1="35" y2="35"></line>
+<text class="text-[9px] font-code-sm" fill="#849495" x="260" y="30">SLA: 5ms</text>
+</svg>
+<div class="grid grid-cols-3 gap-2 text-center pt-2 border-t border-outline-variant/30">
+<div>
+<div class="font-telemetry-badge text-[9px] text-on-surface-variant">MIN</div>
+<div class="font-code-sm text-[12px] text-on-surface font-semibold">0.42ms</div>
+</div>
+<div>
+<div class="font-telemetry-badge text-[9px] text-on-surface-variant">AVG</div>
+<div class="font-code-sm text-[12px] text-primary-container font-semibold">0.91ms</div>
+</div>
+<div>
+<div class="font-telemetry-badge text-[9px] text-on-surface-variant">MAX</div>
+<div class="font-code-sm text-[12px] text-secondary font-semibold" id="metricMaxLatency">2.41ms</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-2xl space-y-space-sm border border-outline-variant/30">
+<div class="flex items-center justify-between pb-2 border-b border-outline-variant/30">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-error/70"></span>
+<span class="w-3 h-3 rounded-full bg-tertiary-container/70"></span>
+<span class="w-3 h-3 rounded-full bg-primary-container/70"></span>
+<span class="ml-2 font-code-sm text-[12px] text-on-surface-variant">novatech-telemetry-stream.sock</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="font-telemetry-badge text-[10px] text-primary-container flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-ping"></span> STREAM ACTIVE
+                </span>
+<button class="font-telemetry-badge text-[10px] text-on-surface-variant hover:text-on-surface" id="btnClearLogs">CLEAR</button>
+</div>
+</div>
+<div class="font-code-sm text-[12px] text-on-surface-variant h-44 overflow-y-auto space-y-1.5 pr-2 select-text scrollbar-thin" id="terminalBody">
+<div class="flex items-start gap-2">
+<span class="text-outline">10:42:01.002</span>
+<span class="text-primary-container font-semibold">[INIT]</span>
+<span class="text-on-surface">Cluster initialized across iad-01, iad-02, iad-03. eBPF socket intercept armed.</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="text-outline">10:42:01.450</span>
+<span class="text-secondary font-semibold">[TLS]</span>
+<span>Kyber-768 quantum handshake verified with upstream gateway peer.</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="text-outline">10:42:02.110</span>
+<span class="text-tertiary font-semibold">[ROUTER]</span>
+<span>Dynamic traffic weighting established at 500,000 RPS. Baseline latency: 0.81ms.</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="text-outline">10:42:03.018</span>
+<span class="text-primary-container font-semibold">[GUARD]</span>
+<span>Ingress scanner active. 0 false-positives; zero PII leakage detected.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-high rounded-xl p-space-lg shadow-2xl space-y-space-md">
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-sm">
+<div class="space-y-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-container text-[20px]">terminal</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Ultra-Lean Integration API</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Deploy mission-critical routing, guardrails, and mesh compute in 3 lines of native code.</p>
+</div>
+<div class="flex items-center gap-2">
+<div class="flex p-1 rounded-lg bg-surface-container-lowest gap-1" id="sdkTabGroup">
+<button class="sdk-tab px-3 py-1.5 rounded-md font-label-md text-[13px] bg-primary-container text-background font-semibold transition-all" data-tab="python">Python</button>
+<button class="sdk-tab px-3 py-1.5 rounded-md font-label-md text-[13px] text-on-surface-variant hover:text-on-surface transition-all" data-tab="node">Node.js</button>
+<button class="sdk-tab px-3 py-1.5 rounded-md font-label-md text-[13px] text-on-surface-variant hover:text-on-surface transition-all" data-tab="go">Go</button>
+<button class="sdk-tab px-3 py-1.5 rounded-md font-label-md text-[13px] text-on-surface-variant hover:text-on-surface transition-all" data-tab="curl">cURL</button>
+</div>
+<button class="p-2 rounded-lg bg-surface-container-lowest hover:bg-surface-container-highest text-on-surface transition-colors" id="btnCopySnippet" title="Copy Snippet">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+</button>
+</div>
+</div>
+<div class="relative bg-surface-container-lowest rounded-xl p-space-md font-code-sm text-code-sm overflow-x-auto shadow-inner border border-outline-variant/30">
+<div class="code-view space-y-1" id="codePython">
+<div><span class="text-secondary font-semibold">import</span> <span class="text-on-surface">novatech_mesh</span> <span class="text-secondary font-semibold">as</span> <span class="text-tertiary">nova</span></div>
+<div class="pt-2"><span class="text-on-surface-variant"># Connect directly to regional kernel endpoint</span></div>
+<div><span class="text-on-surface">client</span> = <span class="text-primary-container">nova.MeshClient</span>(region=<span class="text-tertiary-fixed-dim">"us-east-1"</span>, quantum_tls=<span class="text-primary-container">True</span>)</div>
+<div><span class="text-on-surface">stream</span> = <span class="text-on-surface">client.orchestrate</span>(route=<span class="text-tertiary-fixed-dim">"production-live"</span>, guardrails=<span class="text-primary-container">True</span>)</div>
+<div><span class="text-secondary font-semibold">await</span> <span class="text-on-surface">stream.dispatch_hyperscale</span>(concurrency=<span class="text-primary-container">500_000</span>)</div>
+</div>
+<div class="code-view hidden space-y-1" id="codeNode">
+<div><span class="text-secondary font-semibold">import</span> { NovatechCluster } <span class="text-secondary font-semibold">from</span> <span class="text-tertiary-fixed-dim">'@novatech/mesh-sdk'</span>;</div>
+<div class="pt-2"><span class="text-on-surface-variant">// Zero configuration auto-discovery over eBPF socket</span></div>
+<div><span class="text-secondary font-semibold">const</span> <span class="text-on-surface">cluster</span> = <span class="text-secondary font-semibold">new</span> <span class="text-primary-container">NovatechCluster</span>({ region: <span class="text-tertiary-fixed-dim">'us-east-1'</span>, p99EnforceMs: <span class="text-primary-container">3</span> });</div>
+<div><span class="text-secondary font-semibold">const</span> <span class="text-on-surface">session</span> = <span class="text-secondary font-semibold">await</span> <span class="text-on-surface">cluster</span>.<span class="text-primary-container">connectPipeline</span>({ aiRedact: <span class="text-primary-container">true</span> });</div>
+<div><span class="text-on-surface">session</span>.<span class="text-tertiary">listenTelemetry</span>((<span class="text-on-surface">metrics</span>) =&gt; <span class="text-on-surface">console</span>.<span class="text-primary-container">log</span>(<span class="text-on-surface">metrics</span>.p99));</div>
+</div>
+<div class="code-view hidden space-y-1" id="codeGo">
+<div><span class="text-secondary font-semibold">package</span> <span class="text-on-surface">main</span></div>
+<div><span class="text-secondary font-semibold">import</span> <span class="text-tertiary-fixed-dim">"github.com/novatech/engine-go/v4"</span></div>
+<div class="pt-2"><span class="text-secondary font-semibold">func</span> <span class="text-primary-container">main</span>() {</div>
+<div class="pl-4"><span class="text-on-surface">engine</span>, _ := <span class="text-on-surface">novatech</span>.<span class="text-primary-container">NewFabric</span>(<span class="text-on-surface">novatech</span>.<span class="text-tertiary">Config</span>{Region: <span class="text-tertiary-fixed-dim">"iad"</span>, ResilienceMode: <span class="text-primary-container">"hardened"</span>})</div>
+<div class="pl-4"><span class="text-secondary font-semibold">defer</span> <span class="text-on-surface">engine</span>.<span class="text-primary-container">Close</span>()</div>
+<div class="pl-4"><span class="text-on-surface">engine</span>.<span class="text-primary-container">Dispatch</span>(<span class="text-on-surface">context</span>.<span class="text-primary-container">Background</span>(), <span class="text-tertiary-fixed-dim">"event.telemetry.inbound"</span>)</div>
+<div>}</div>
+</div>
+<div class="code-view hidden space-y-1" id="codeCurl">
+<div><span class="text-on-surface">curl -X POST https://api.novatech.network/v4/cluster/scale \</span></div>
+<div class="pl-4"><span class="text-on-surface">-H </span><span class="text-tertiary-fixed-dim">"Authorization: Bearer $NOVATECH_ENTERPRISE_KEY" \</span></div>
+<div class="pl-4"><span class="text-on-surface">-H </span><span class="text-tertiary-fixed-dim">"Content-Type: application/json" \</span></div>
+<div class="pl-4"><span class="text-on-surface">-d </span><span class="text-secondary">'{ "region": "iad", "mesh": true, "tls_standard": "kyber768", "target_rps": 500000 }'</span></div>
+</div>
+</div>
+<div class="flex flex-wrap items-center justify-between gap-space-md pt-space-xs">
+<div class="flex items-center gap-space-md">
+<button class="px-4 py-2.5 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-md text-label-md flex items-center gap-2 transition-colors" id="btnExportConfig">
+<span class="material-symbols-outlined text-[18px] text-primary-container">download</span>
+<span>Export YAML Spec</span>
+</button>
+<span class="text-on-surface-variant font-code-sm text-[12px] hidden md:inline">OpenAPI 3.1 &amp; Terraform Providers Available</span>
+</div>
+<div class="flex items-center gap-3">
+<a class="px-4 py-2.5 rounded-lg bg-surface-container hover:bg-surface-container-highest text-on-surface font-label-md text-label-md transition-colors" data-path="documentation" href="#">
+              Read SDK Docs
+            </a>
+<a class="px-5 py-2.5 rounded-lg bg-gradient-to-r from-primary-container to-secondary text-background font-label-md text-label-md font-semibold hover:brightness-110 shadow-[0_0_24px_rgba(0,242,254,0.35)] transition-all flex items-center gap-2" data-path="contact-estimator" href="#">
+<span class="material-symbols-outlined text-[18px]">rocket_launch</span>
+<span>Request Custom POC Tenant</span>
+</a>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<div class="relative rounded-xl overflow-hidden group shadow-lg bg-surface-container-high">
+<div class="w-full h-48 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="High security high-tech enterprise data center server room illuminated by glowing cyan and indigo LED arrays in futuristic racks, ultra clean architectural photography, deep obsidian tones and precision optics." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDlpLJclEWtvDOdf9p5-ecfaUfnnRzBPUx_wt9D40tNuteDhHN-zpgOOlOvHxh6fr_PlaI8AFM-YLx5ydqkehgZHa76xvCBVvE8rmO4wak55mBWD3raDPgNknxk3oqQh4iRpE3x01z3lvmGxCjz6zxXyAhHp4hik1pqk6qloNajcON9FedEDzyZNDW39foBh2E0EH3m08u9yKuU9DyVgwmExwf2vQP8da2xVGorFC0')"></div>
+<div class="p-space-md space-y-1">
+<span class="font-telemetry-badge text-[10px] text-primary-container">GLOBAL FOOTPRINT</span>
+<h4 class="font-headline-sm text-[18px] text-primary">Edge Micro-PoPs in 82 Metros</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Zero cross-region hairpins. Autonomous traffic steering via custom Anycast BGP routes.</p>
+</div>
+</div>
+<div class="relative rounded-xl overflow-hidden group shadow-lg bg-surface-container-high">
+<div class="w-full h-48 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Futuristic security operations center visualization with neural graph topology, quantum encryption telemetry and real time threat detection dashboards, cinematic cyberpunk corporate lighting in cyan and deep navy." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuADM58Tr43yUD2OrLBKn9ypqtvOTaPa-Eslqlhlw-7RXKXNblFAmdxAa4q4_tdMKfMQj6oqk4CBDSsYhcCp6Q9v-161TfhyWvsfn-1d1Bn7rRnaWFzdHjCz6uWQIjLIB2_InpoqGAupT3_jSEDrVZNhiP_taOjQn2AlB1O7s6XlUdjNYJxJuG3vlZlv9dzv1WZNYqwPnM0K3HhlL6haRpWWwe7mErnCxdRCdOiP3WI')"></div>
+<div class="p-space-md space-y-1">
+<span class="font-telemetry-badge text-[10px] text-secondary">AIR-TIGHT DEFENSE</span>
+<h4 class="font-headline-sm text-[18px] text-primary">Autonomous DDoS &amp; Bot Scrub</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Line-rate scrubbing across 40 Tbps backbones without sacrificing genuine user roundtrips.</p>
+</div>
+</div>
+<div class="relative rounded-xl overflow-hidden group shadow-lg bg-surface-container-high">
+<div class="w-full h-48 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Close-up macro of an ultra modern custom semiconductor silicon wafer with photonics interconnects and luminous light paths, crystalline precision engineering in cyan and deep slate violet." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDzSZKXYn1isYOFHl2di-qoTpcO-s3xLOMaoy88C1NLvXdL1ETVcWVDAbJVXTQdt7N20N-PAg95-zKL7twTZXGhNSTpQTxc8kk2Hiuc2bs6ZUjZlehFAlsGXYtPGrObeBPvVPHTpkXHRkR8IUe-kdBIJmJrYV2gLQjZqdyJvJOPueFAFxEtUXEWEW_8UMd--oEd0scE4sj5-WZXmprNNoh4I-pjvq09YU3Tr0h75ps')"></div>
+<div class="p-space-md space-y-1">
+<span class="font-telemetry-badge text-[10px] text-tertiary-fixed-dim">HARDWARE ACCELERATION</span>
+<h4 class="font-headline-sm text-[18px] text-primary">SmartNIC Kernel Bypass</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">DPDK and raw eBPF packet drivers eliminating Linux kernel network stack latency taxes.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+(() => {
+  const profileRange = document.getElementById('loadProfileRange');
+  const profileLabel = document.getElementById('loadProfileLabel');
+  const metricCpu = document.getElementById('metricCpu');
+  const metricCpuBar = document.getElementById('metricCpuBar');
+  const metricP50 = document.getElementById('metricP50');
+  const metricP99 = document.getElementById('metricP99');
+  const metricError = document.getElementById('metricError');
+  const metricShards = document.getElementById('metricShards');
+  const metricMaxLatency = document.getElementById('metricMaxLatency');
+  const trafficSlider = document.getElementById('trafficSlider');
+  const trafficSpeedText = document.getElementById('trafficSpeedText');
+  const terminalBody = document.getElementById('terminalBody');
+  const btnReset = document.getElementById('btnResetSandbox');
+  const btnClearLogs = document.getElementById('btnClearLogs');
+  const btnChaosNode = document.getElementById('btnChaosNode');
+  const btnChaosDdos = document.getElementById('btnChaosDdos');
+  const btnChaosSpike = document.getElementById('btnChaosSpike');
+  const shardALabel = document.getElementById('shardALabel');
+  const shardBLabel = document.getElementById('shardBLabel');
+  const nodeShardA = document.getElementById('nodeShardA');
+  const nodeShardB = document.getElementById('nodeShardB');
+  const graphLatencyLine = document.getElementById('graphLatencyLine');
+  const graphLatencyFill = document.getElementById('graphLatencyFill');
+
+  const addLog = (tag, message, colorClass = 'text-primary-container') => {
+    if (!terminalBody) return;
+    const now = new Date();
+    const timeStr = now.toTimeString().split(' ')[0] + '.' + String(now.getMilliseconds()).padStart(3, '0');
+    const logItem = document.createElement('div');
+    logItem.className = 'flex items-start gap-2';
+    logItem.innerHTML = `<span class="text-outline">${timeStr}</span><span class="${colorClass} font-semibold">[${tag}]</span><span class="text-on-surface">${message}</span>`;
+    terminalBody.appendChild(logItem);
+    terminalBody.scrollTop = terminalBody.scrollHeight;
+  };
+
+  const updateProfile = (val) => {
+    if (val === '1') {
+      profileLabel.innerText = '10k RPS';
+      metricCpu.innerText = '11.2%';
+      metricCpuBar.style.width = '11%';
+      metricP50.innerText = '0.3ms';
+      metricP99.innerText = '1.1ms';
+      metricError.innerText = '0.0000%';
+      metricMaxLatency.innerText = '1.24ms';
+      trafficSlider.value = 240;
+      trafficSpeedText.innerText = '240 MB/s';
+      addLog('PROFILE', 'Scale downgraded to Baseline workload (10k RPS). Pods idling in low-power standby.');
+    } else if (val === '2') {
+      profileLabel.innerText = '500k RPS';
+      metricCpu.innerText = '28.4%';
+      metricCpuBar.style.width = '28%';
+      metricP50.innerText = '0.8ms';
+      metricP99.innerText = '2.1ms';
+      metricError.innerText = '0.0001%';
+      metricMaxLatency.innerText = '2.41ms';
+      trafficSlider.value = 640;
+      trafficSpeedText.innerText = '640 MB/s';
+      addLog('PROFILE', 'Workload configured to Peak Cyber Monday (500k RPS). Shards balanced.');
+    } else {
+      profileLabel.innerText = '2.5M RPS';
+      metricCpu.innerText = '74.8%';
+      metricCpuBar.style.width = '75%';
+      metricP50.innerText = '1.6ms';
+      metricP99.innerText = '3.8ms';
+      metricError.innerText = '0.0004%';
+      metricMaxLatency.innerText = '4.95ms';
+      trafficSlider.value = 2100;
+      trafficSpeedText.innerText = '2.1 GB/s';
+      addLog('PROFILE', 'STRESS TEST INITIATED (2.5M RPS). Auto-elastic horizontal pods spawned across Tier-1 datacenters.', 'text-secondary');
+    }
+  };
+
+  profileRange?.addEventListener('input', (e) => {
+    updateProfile(e.target.value);
+  });
+
+  trafficSlider?.addEventListener('input', (e) => {
+    const val = parseInt(e.target.value);
+    trafficSpeedText.innerText = val >= 1000 ? (val / 1000).toFixed(1) + ' GB/s' : val + ' MB/s';
+  });
+
+  trafficSlider?.addEventListener('change', (e) => {
+    addLog('BANDWIDTH', `Ingress pipe modulated to ${trafficSpeedText.innerText}. Buffer rings adjusted.`);
+  });
+
+  document.getElementById('regionSelect')?.addEventListener('change', (e) => {
+    const regionNames = { iad: 'US-East (N. Virginia)', fra: 'EU-Central (Frankfurt)', hnd: 'AP-East (Tokyo)' };
+    addLog('TOPOLOGY', `Switched routing origin to ${regionNames[e.target.value]}. Global latency recalculating...`);
+  });
+
+  ['toggleMesh', 'toggleAI', 'toggleTLS', 'toggleEdge'].forEach(id => {
+    const el = document.getElementById(id);
+    el?.addEventListener('change', () => {
+      const state = el.checked ? 'ENABLED' : 'DISABLED';
+      const label = el.closest('label').querySelector('.font-medium').innerText;
+      addLog('POLICY', `Directives update: [${label}] &rarr; ${state}`, el.checked ? 'text-primary-container' : 'text-error');
+    });
+  });
+
+  btnChaosNode?.addEventListener('click', () => {
+    nodeShardA.classList.add('bg-error/30', 'border-error');
+    shardALabel.innerText = '0% OFFLINE';
+    shardALabel.classList.add('text-error');
+    shardBLabel.innerText = '100% RE-ROUTED';
+    shardBLabel.classList.add('text-primary-container');
+    addLog('CHAOS', 'NODE POD-A1 TERMINATED BY OPERATOR! Commencing automated fast-failover.', 'text-error');
+    
+    setTimeout(() => {
+      addLog('HEAL', 'Sub-millisecond failover succeeded. 100% ingress streams re-routed to POD-B4 within 3.2ms.', 'text-secondary');
+    }, 400);
+
+    setTimeout(() => {
+      nodeShardA.classList.remove('bg-error/30', 'border-error');
+      shardALabel.innerText = '48% Load';
+      shardALabel.classList.remove('text-error');
+      shardBLabel.innerText = '52% Load';
+      shardBLabel.classList.remove('text-primary-container');
+      addLog('HEAL', 'POD-A1 health checks verified. Re-joining distributed quorum.', 'text-primary-container');
+    }, 2500);
+  });
+
+  btnChaosDdos?.addEventListener('click', () => {
+    metricError.innerText = '0.003%';
+    metricP99.innerText = '4.9ms';
+    graphLatencyLine.setAttribute('stroke', '#ffb4ab');
+    addLog('SECURITY', 'CRITICAL: SYN FLOOD DETECTED (10M pkts/s). eBPF scrubbing filters triggered.', 'text-error');
+
+    setTimeout(() => {
+      addLog('SHIELD', '99.999% of malicious payloads blackholed at edge border gateway. Zero dropped valid sessions.', 'text-primary-container');
+      metricError.innerText = '0.0001%';
+      metricP99.innerText = '2.1ms';
+      graphLatencyLine.setAttribute('stroke', '#00f2fe');
+    }, 1800);
+  });
+
+  btnChaosSpike?.addEventListener('click', () => {
+    addLog('CHAOS', 'Injecting 18% simulated packet jitter and bit errors...', 'text-tertiary-fixed-dim');
+    metricP99.innerText = '6.2ms';
+    setTimeout(() => {
+      addLog('FORWARD-EC', 'Reed-Solomon Forward Error Correction reconstructed all lost frames.', 'text-primary-container');
+      metricP99.innerText = '2.1ms';
+    }, 1200);
+  });
+
+  btnReset?.addEventListener('click', () => {
+    profileRange.value = 2;
+    updateProfile('2');
+    document.getElementById('regionSelect').value = 'iad';
+    ['toggleMesh', 'toggleAI', 'toggleTLS', 'toggleEdge'].forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.checked = true;
+    });
+    addLog('SYSTEM', 'Sandbox sandbox-v4.8 factory-reset to nominal baseline.');
+  });
+
+  btnClearLogs?.addEventListener('click', () => {
+    terminalBody.innerHTML = '';
+    addLog('TERMINAL', 'Log stream cleared. Waiting for event telemetry.');
+  });
+
+  const tabButtons = document.querySelectorAll('.sdk-tab');
+  const codeViews = document.querySelectorAll('.code-view');
+  tabButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const tabName = btn.getAttribute('data-tab');
+      tabButtons.forEach(b => {
+        b.className = 'sdk-tab px-3 py-1.5 rounded-md font-label-md text-[13px] text-on-surface-variant hover:text-on-surface transition-all';
+      });
+      btn.className = 'sdk-tab px-3 py-1.5 rounded-md font-label-md text-[13px] bg-primary-container text-background font-semibold transition-all';
+
+      codeViews.forEach(v => v.classList.add('hidden'));
+      if (tabName === 'python') document.getElementById('codePython')?.classList.remove('hidden');
+      if (tabName === 'node') document.getElementById('codeNode')?.classList.remove('hidden');
+      if (tabName === 'go') document.getElementById('codeGo')?.classList.remove('hidden');
+      if (tabName === 'curl') document.getElementById('codeCurl')?.classList.remove('hidden');
+    });
+  });
+
+  document.getElementById('btnCopySnippet')?.addEventListener('click', (e) => {
+    const activeView = Array.from(codeViews).find(v => !v.classList.contains('hidden'));
+    if (activeView) {
+      navigator.clipboard?.writeText(activeView.innerText).catch(() => {});
+      const originalText = e.currentTarget.innerHTML;
+      e.currentTarget.innerHTML = '<span class="material-symbols-outlined text-[18px] text-primary-container">check</span>';
+      setTimeout(() => {
+        e.currentTarget.innerHTML = originalText;
+      }, 1500);
+      addLog('CLI', 'API Snippet copied to system clipboard.');
+    }
+  });
+
+  document.getElementById('btnExportConfig')?.addEventListener('click', () => {
+    const yaml = `# Novatech Platform Topology Spec v4.8\ncluster:\n  region: ${document.getElementById('regionSelect').value}\n  profile_rps: ${profileLabel.innerText}\n  tls: kyber768\n  ebpf_acceleration: true\n  resilience_mesh: true\n`;
+    const blob = new Blob([yaml], { type: 'text/yaml' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'novatech-topology.yaml';
+    a.click();
+    URL.revokeObjectURL(url);
+    addLog('CONFIG', 'Exported active sandbox configuration as novatech-topology.yaml');
+  });
+
+  setInterval(() => {
+    if (Math.random() > 0.4) {
+      const ms = (0.7 + Math.random() * 0.3).toFixed(2);
+      const randP = Math.floor(Math.random() * 8) + 1;
+      const shards = ['iad-shard-01', 'iad-shard-02', 'fra-transit-04'];
+      const chosenShard = shards[Math.floor(Math.random() * shards.length)];
+      addLog('ROUTING', `Packet burst [seq:${Math.floor(Math.random()*90000)}] routed via ${chosenShard} in ${ms}ms.`);
+    }
+  }, 4500);
+})();
+</script></main><footer class="w-full bg-surface-container-lowest mt-space-xl"><div class="w-full px-margin py-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl pb-space-xl"><div class="lg:col-span-2 space-y-space-md"><div class="flex items-center gap-space-sm"><img alt="Novatech Solutions Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XvGaUeSnA7tEGN1SZR69tl8X6NtNTUXKvcbSNy74eWsFOsyLZdRIgLeNxt4w-MBWO3a97N5ge695EBih58iNPBNA0cWoFB6E2kBubOE3C01CQl70lggtz3zjUyw853Px5o2gazRTQ5z_ckTuWKNlgdUinar_Yw5gDLnLE21cWtXIgddRZbG4sl_ru_SOgQnl-aXyXiLW-6lRof95njire8Ucc-DY2hSpmy8X4UkauD"/><span class="font-headline-sm text-headline-sm text-primary font-bold">Novatech Solutions</span></div><p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm">High-throughput mission-critical compute infrastructure and enterprise cognitive orchestration engineered for hyperscale deployments.</p><div class="flex items-center gap-space-md pt-space-xs"><div class="inline-flex items-center gap-2 px-space-sm py-1 rounded bg-surface-container-high"><span class="w-2 h-2 rounded-full bg-primary-container animate-ping"></span><span class="font-telemetry-badge text-telemetry-badge text-primary-container tracking-wider">SYSTEMS OPERATIONAL</span></div><span class="font-code-sm text-code-sm text-on-surface-variant">99.995% SLA</span></div></div><div class="space-y-space-sm"><div class="font-label-md text-label-md text-primary font-semibold tracking-wide uppercase">Solutions</div><ul class="space-y-2 font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" data-path="solutions-and-capabilities" href="#">Distributed Compute</a></li><li><a class="hover:text-primary transition-colors" data-path="solutions-and-capabilities" href="#">Low-Latency Mesh</a></li><li><a class="hover:text-primary transition-colors" data-path="solutions-and-capabilities" href="#">Autonomous Guardrails</a></li><li><a class="hover:text-primary transition-colors" data-path="solutions-and-capabilities" href="#">Neural Routing Engine</a></li></ul></div><div class="space-y-space-sm"><div class="font-label-md text-label-md text-primary font-semibold tracking-wide uppercase">Company</div><ul class="space-y-2 font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" data-path="overview" href="#">About Platform</a></li><li><a class="hover:text-primary transition-colors" data-path="case-studies" href="#">Customer Outcomes</a></li><li><a class="hover:text-primary transition-colors" data-path="documentation" href="#">Architecture Papers</a></li><li><a class="hover:text-primary transition-colors" data-path="contact-estimator" href="#">Procurement &amp; Partners</a></li></ul></div><div class="space-y-space-sm"><div class="font-label-md text-label-md text-primary font-semibold tracking-wide uppercase">Security &amp; Audits</div><div class="space-y-2.5"><div class="flex items-center gap-2 p-2 rounded bg-surface-container-low"><span class="material-symbols-outlined text-primary-container text-[18px]">verified_user</span><div class="flex flex-col"><span class="font-telemetry-badge text-telemetry-badge text-on-surface font-semibold">SOC2 TYPE II</span><span class="text-[10px] text-on-surface-variant leading-none">Attested &amp; Certified</span></div></div><div class="flex items-center gap-2 p-2 rounded bg-surface-container-low"><span class="material-symbols-outlined text-primary-container text-[18px]">shield</span><div class="flex flex-col"><span class="font-telemetry-badge text-telemetry-badge text-on-surface font-semibold">ISO/IEC 27001</span><span class="text-[10px] text-on-surface-variant leading-none">Global ISMS Standard</span></div></div></div></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant font-body-sm text-body-sm"><div>© 2025 Novatech Solutions Inc. All rights reserved. Deep-Tech Distributed Infrastructure.</div><div class="flex items-center gap-space-lg"><a class="hover:text-on-surface transition-colors" data-path="documentation" href="#">Privacy Shield</a><a class="hover:text-on-surface transition-colors" data-path="documentation" href="#">Trust Center</a><a class="hover:text-on-surface transition-colors" data-path="documentation" href="#">Master Services Agreement</a></div></div></div></footer></body></html>

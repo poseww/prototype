@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"background":"#f8f9ff","on-surface-variant":"#434655","outline-variant":"#c4c5d7","secondary-fixed":"#dae2fd","surface-container-low":"#eff4ff","error-container":"#ffdad6","on-primary-fixed-variant":"#0039b5","on-primary-fixed":"#001551","primary-fixed-dim":"#b7c4ff","on-background":"#0b1c30","on-tertiary":"#ffffff","secondary":"#565e74","on-surface":"#0b1c30","tertiary-fixed":"#dbe1ff","error":"#ba1a1a","on-secondary-container":"#5c647a","surface-variant":"#d3e4fe","inverse-primary":"#b7c4ff","on-tertiary-fixed":"#00174b","on-primary-container":"#cad3ff","on-secondary-fixed":"#131b2e","surface-container-highest":"#d3e4fe","on-primary":"#ffffff","surface":"#f8f9ff","inverse-on-surface":"#eaf1ff","on-tertiary-fixed-variant":"#003ea8","secondary-container":"#dae2fd","surface-container":"#e5eeff","on-secondary":"#ffffff","on-secondary-fixed-variant":"#3f465c","on-error-container":"#93000a","outline":"#747686","primary-container":"#1d4ed8","tertiary-container":"#0051d6","surface-container-high":"#dce9ff","surface-dim":"#cbdbf5","primary-fixed":"#dce1ff","tertiary-fixed-dim":"#b4c5ff","tertiary":"#003ca3","surface-tint":"#2151da","primary":"#0037b0","on-error":"#ffffff","surface-container-lowest":"#ffffff","inverse-surface":"#213145","secondary-fixed-dim":"#bec6e0","on-tertiary-container":"#c9d4ff","surface-bright":"#f8f9ff"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"gutter":"1.5rem","space-xl":"2rem","space-lg":"1.5rem","gutter-sm":"1rem","space-md":"1rem","margin":"2rem","space-sm":"0.5rem","margin-mobile":"1rem","space-xs":"0.25rem"},fontFamily:{"title":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"label-caps":["Plus Jakarta Sans"],"display":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"]},fontSize:{"title":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"400"}],"body-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"700"}],"headline-lg-mobile":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"700"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.005em","fontWeight":"500"}],"label-caps":["11px",{"lineHeight":"14px","letterSpacing":"0.06em","fontWeight":"700"}],"display":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"headline-sm":["16px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"600"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest z-50 flex flex-col shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-space-md flex items-center gap-space-sm bg-surface-container-lowest"><img alt="NovaTech Solutions Portal Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UrmuOcV0k5SwkNjdal6LCe0FGEsQOl8xqrIG7P3lDLpVGm5nzhIi_H2do5BtI5Mb8ZY6gCH8B4lQqVx5_DRnFAmDD7YEamQwt9jHSQ1YEM9sVvZ28zbbkHVBo0ghYBlad-mHguqQlsZiV0o0XoQ7gcaViFLHRxghzkXZz4mea0kpDxeCsjBZCx1a6TmsbPbF3nfmvpzFc6WkASk8XJ8K9NyhdjOQbewu3e4wBjaDhg"/><div class="flex flex-col"><span class="font-title text-title text-on-surface">NovaTech</span><span class="font-label-caps text-label-caps text-secondary uppercase">IT PM Portal</span></div></div><div class="flex-1 overflow-y-auto px-space-sm py-space-sm"><div class="px-space-sm py-space-xs font-label-caps text-label-caps text-secondary uppercase">Core Navigation</div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-surface-container-low text-primary-container font-headline-sm"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="management-dashboard" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span>Dashboard</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="client-management" href="#"><span class="material-symbols-outlined text-[20px]">business</span><span>Client Management</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="proposals-requests" href="#"><span class="material-symbols-outlined text-[20px]">request_quote</span><span>Proposals &amp; Requests</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="projects-milestones" href="#"><span class="material-symbols-outlined text-[20px]">flag</span><span>Projects &amp; Milestones</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="employees-tasks" href="#"><span class="material-symbols-outlined text-[20px]">assignment_ind</span><span>Employees &amp; Tasks</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="documents-issues" href="#"><span class="material-symbols-outlined text-[20px]">folder_supervised</span><span>Documents &amp; Issues</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="client-meetings-change-requests" href="#"><span class="material-symbols-outlined text-[20px]">published_with_changes</span><span>Meetings &amp; Changes</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="supplier-management" href="#"><span class="material-symbols-outlined text-[20px]">inventory_2</span><span>Supplier Management</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="financials-invoices" href="#"><span class="material-symbols-outlined text-[20px]">receipt_long</span><span>Financials &amp; Invoices</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="project-completion-sign-off" href="#"><span class="material-symbols-outlined text-[20px]">verified</span><span>Completion &amp; Sign-Off</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="reports-analytics" href="#"><span class="material-symbols-outlined text-[20px]">insights</span><span>Reports &amp; Analytics</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="user-role-permissions" href="#"><span class="material-symbols-outlined text-[20px]">admin_panel_settings</span><span>User &amp; Roles</span></a></nav></div><div class="p-space-sm bg-surface-container-low flex items-center justify-between text-on-surface-variant"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-primary-container"></span><span class="font-label-md text-label-md">Production Cloud</span></div><a class="text-secondary hover:text-primary transition-colors flex items-center" data-path="login-portal-gateway" href="#" title="Log Out"><span class="material-symbols-outlined text-[18px]">logout</span></a></div></aside><div class="pl-64 flex flex-col min-h-screen"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md flex-1 max-w-md"><div class="flex items-center w-full bg-surface-container-low px-space-sm py-space-xs rounded-xl gap-space-xs text-on-surface-variant"><span class="material-symbols-outlined text-[18px]">search</span><input class="bg-transparent border-0 outline-none text-body-sm font-body-sm text-on-surface placeholder:text-secondary w-full" placeholder="Search projects, clients, tickets..." type="text"/></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs bg-surface-container-low px-space-sm py-space-xs rounded-xl"><span class="material-symbols-outlined text-[18px] text-secondary">swap_horiz</span><label class="font-label-md text-label-md text-secondary">Role:</label><select class="bg-transparent font-title text-title text-on-surface border-0 outline-none cursor-pointer"><option selected="" value="admin">Administrator</option><option value="pm">Project Manager</option><option value="employee">Employee</option><option value="finance">Finance Officer</option><option value="client">Client</option><option value="management">Management</option></select></div><button class="relative p-space-xs text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-error"></span></button><div class="flex items-center gap-space-sm pl-space-sm"><div class="flex flex-col text-right"><span class="font-title text-title text-on-surface">Alex Morgan</span><span class="font-body-sm text-body-sm text-secondary">Senior Administrator</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 w-full pt-16 px-gutter pb-space-xl bg-surface"><div class="flex flex-col w-full">
+<!-- Top Context Header & Breadcrumbs -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm mb-space-lg">
+<div>
+<div class="flex items-center gap-space-xs text-secondary mb-space-xs">
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-on-surface-variant">Enterprise Governance</span>
+<span class="material-symbols-outlined text-[14px] text-secondary">chevron_right</span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-primary font-semibold">Stakeholder Collaboration &amp; Scope Management</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<h1 class="font-display text-display text-on-surface tracking-tight">Client Communication &amp; Change Orders</h1>
+<span class="bg-surface-container-high text-primary font-label-md text-label-md px-space-xs py-0.5 rounded-full flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+          Live Sync Active
+        </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+        Orchestrate multi-stakeholder alignments, formal technical minutes, and legally binding scope change approvals across client portfolio engagements.
+      </p>
+</div>
+<!-- Quick Global Actions -->
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="px-space-md h-10 rounded-xl bg-surface-container-lowest text-on-surface font-title text-title shadow-sm hover:bg-surface-container-low transition-all flex items-center gap-space-xs" onclick="document.getElementById('meeting-modal').classList.remove('hidden')">
+<span class="material-symbols-outlined text-[18px] text-primary">calendar_month</span>
+        Schedule Client Sync
+      </button>
+<button class="px-space-md h-10 rounded-xl bg-primary text-on-primary font-title text-title shadow-sm hover:bg-tertiary-container transition-all flex items-center gap-space-xs" onclick="document.getElementById('change-request-anchor').scrollIntoView({behavior: 'smooth'})">
+<span class="material-symbols-outlined text-[18px]">add_moderator</span>
+        Initiate Change Request
+      </button>
+</div>
+</div>
+<!-- Key Performance & Governance KPI Tiles -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md mb-space-lg">
+<!-- Upcoming Meetings -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<span class="font-label-caps text-label-caps text-secondary uppercase">Upcoming Meetings</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">groups</span>
+</div>
+</div>
+<div class="my-space-xs">
+<div class="font-display text-display text-on-surface">4</div>
+<div class="font-body-sm text-body-sm text-secondary">Scheduled for this operating week</div>
+</div>
+<div class="flex items-center gap-1.5 text-on-tertiary-fixed-variant bg-surface-container-low py-1 px-2 rounded-lg font-label-md text-label-md w-fit">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+        Next: Today @ 14:00 EST
+      </div>
+</div>
+<!-- Open Change Requests -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<span class="font-label-caps text-label-caps text-secondary uppercase">Open Scope CRs</span>
+<div class="w-8 h-8 rounded-lg bg-secondary-container flex items-center justify-center text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[20px]">pending_actions</span>
+</div>
+</div>
+<div class="my-space-xs">
+<div class="font-display text-display text-on-surface">3</div>
+<div class="font-body-sm text-body-sm text-secondary">Pending multi-tier review</div>
+</div>
+<div class="flex items-center gap-1.5 text-on-surface-variant bg-surface-container py-1 px-2 rounded-lg font-label-md text-label-md w-fit">
+<span class="material-symbols-outlined text-[14px] text-tertiary">hourglass_top</span>
+        2 Client • 1 PM Review
+      </div>
+</div>
+<!-- Pending CR Cost Impact -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<span class="font-label-caps text-label-caps text-secondary uppercase">Cost Impact (Pending)</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[20px]">payments</span>
+</div>
+</div>
+<div class="my-space-xs">
+<div class="font-display text-display text-primary">+$48,500</div>
+<div class="font-body-sm text-body-sm text-secondary">Awaiting formal sign-off funding</div>
+</div>
+<div class="flex items-center gap-1.5 text-on-primary-fixed-variant bg-primary-fixed py-1 px-2 rounded-lg font-label-md text-label-md w-fit">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+        +8.4% Baseline Expansion
+      </div>
+</div>
+<!-- Schedule Drift Variance -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<span class="font-label-caps text-label-caps text-secondary uppercase">Schedule Drift Variance</span>
+<div class="w-8 h-8 rounded-lg bg-error-container flex items-center justify-center text-on-error-container">
+<span class="material-symbols-outlined text-[20px]">timelapse</span>
+</div>
+</div>
+<div class="my-space-xs">
+<div class="font-display text-display text-on-surface">+1.8 <span class="font-headline-sm text-headline-sm font-normal text-secondary">wks</span></div>
+<div class="font-body-sm text-body-sm text-secondary">Aggregated milestone push</div>
+</div>
+<div class="flex items-center gap-1.5 text-error bg-error-container/60 py-1 px-2 rounded-lg font-label-md text-label-md w-fit">
+<span class="material-symbols-outlined text-[14px]">warning</span>
+        Critical Path Impact
+      </div>
+</div>
+</div>
+<!-- Mandatory Governance Policy Rule Highlight -->
+<div class="bg-primary-container text-on-primary p-space-md rounded-xl shadow-sm mb-space-lg flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-xl bg-white/20 backdrop-blur-md flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px] text-white">gavel</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-title text-title uppercase tracking-wide text-on-primary-container">NovaTech Policy Section 4.2</span>
+<span class="font-label-caps text-label-caps bg-white/20 px-2 py-0.5 rounded text-white uppercase">Binding Rule</span>
+</div>
+<p class="font-headline-sm text-headline-sm mt-0.5">
+          "Changes requiring additional payment must be approved by the client before development proceeds."
+        </p>
+<p class="font-body-sm text-body-sm text-on-primary-container mt-1">
+          Zero-code-freeze enforcement active. Engineering tasks associated with unapproved financial changes remain locked in the Jira sprint backlog until digital authorized client signature is recorded.
+        </p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<div class="bg-surface-container-lowest/15 backdrop-blur px-space-sm py-2 rounded-lg text-right">
+<div class="font-label-caps text-label-caps text-on-primary-container uppercase">Audit Engine</div>
+<div class="font-label-md text-label-md font-semibold text-white">ISO/IEC 27001 Validated</div>
+</div>
+</div>
+</div>
+<!-- Main Dual Engine Workplane -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT PANEL: Meeting Management & Minutes (5 cols on xl) -->
+<div class="xl:col-span-5 flex flex-col gap-space-lg">
+<!-- Upcoming Syncs Section -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">handshake</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Client Meetings</h2>
+</div>
+<button class="font-label-md text-label-md text-primary hover:text-tertiary font-semibold flex items-center gap-1" onclick="document.getElementById('meeting-modal').classList.remove('hidden')">
+<span class="material-symbols-outlined text-[16px]">add_circle</span>
+            New Sync
+          </button>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Meeting Card 1 -->
+<div class="p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps bg-surface-container-high text-primary px-2 py-0.5 rounded font-semibold uppercase">PRJ-NOV-2025-101</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full font-label-md text-label-md bg-surface-container-highest text-tertiary">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                Confirmed
+              </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">Sprint 24 Architecture Review</h3>
+<p class="font-body-sm text-body-sm text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">domain</span> Apex Financial Systems
+            </p>
+<div class="flex items-center gap-space-md text-on-surface-variant font-body-sm text-body-sm my-1">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">schedule</span>
+                Today, 14:00 - 15:30 EST
+              </span>
+</div>
+<!-- Attendees with Avatars -->
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center -space-x-2">
+<div class="w-7 h-7 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-caps text-label-caps" title="Marcus Vance (Client VP Tech)">MV</div>
+<div class="w-7 h-7 rounded-full bg-tertiary-container text-white flex items-center justify-center font-label-caps text-label-caps" title="Dr. Ronald Vance (Enterprise Architect)">RV</div>
+<div class="w-7 h-7 rounded-full bg-secondary text-white flex items-center justify-center font-label-caps text-label-caps" title="Sarah Lin (NovaTech Lead PM)">SL</div>
+<span class="pl-3 font-body-sm text-body-sm text-secondary">+2 engineers</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-3 py-1.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-colors flex items-center gap-1 shadow-sm" onclick="alert('Launching WebRTC Session #NOV-SYNC-8891')">
+<span class="material-symbols-outlined text-[16px]">videocam</span> Join Room
+                </button>
+</div>
+</div>
+</div>
+<!-- Meeting Card 2 -->
+<div class="p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps bg-surface-container-high text-primary px-2 py-0.5 rounded font-semibold uppercase">PRJ-NOV-2025-084</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full font-label-md text-label-md bg-secondary-container text-on-secondary-container">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                In 2 Days
+              </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">Scope Negotiation &amp; CR-104 Deep Dive</h3>
+<p class="font-body-sm text-body-sm text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">domain</span> OmniCloud Banking Corp
+            </p>
+<div class="flex items-center gap-space-md text-on-surface-variant font-body-sm text-body-sm my-1">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">calendar_today</span>
+                Thursday, 10:30 EST
+              </span>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center -space-x-2">
+<div class="w-7 h-7 rounded-full bg-inverse-surface text-inverse-on-surface flex items-center justify-center font-label-caps text-label-caps" title="Alex Morgan (Lead Admin)">AM</div>
+<div class="w-7 h-7 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center font-label-caps text-label-caps" title="Claire Chen (CFO Client)">CC</div>
+</div>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors flex items-center gap-1" onclick="document.getElementById('meeting-notes-drawer').scrollIntoView({behavior:'smooth'})">
+<span class="material-symbols-outlined text-[16px]">description</span> Agenda &amp; Notes
+              </button>
+</div>
+</div>
+<!-- Meeting Card 3 (Completed) -->
+<div class="p-space-md rounded-xl bg-surface-container-low opacity-90 flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps bg-surface-container-high text-secondary px-2 py-0.5 rounded font-semibold uppercase">PRJ-NOV-2025-102</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full font-label-md text-label-md bg-surface-container-lowest text-secondary">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+                Completed
+              </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">Bi-Weekly Governance &amp; SLA Check</h3>
+<p class="font-body-sm text-body-sm text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">domain</span> Sentinel Defense Logistics
+            </p>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-body-sm text-body-sm text-secondary">Yesterday • Sign-off logged</span>
+<button class="px-2 py-1 text-primary hover:underline font-label-md text-label-md flex items-center gap-1" onclick="alert('Viewing archived transcript NOV-M-4421')">
+                View Minutes <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Recent Meeting Minutes & Notes Log -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-md" id="meeting-notes-drawer">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">history_edu</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Recent Minutes &amp; Action Items</h2>
+</div>
+<span class="font-label-caps text-label-caps text-secondary uppercase bg-surface-container-low px-2 py-0.5 rounded">Synced 10m ago</span>
+</div>
+<div class="flex flex-col gap-space-md">
+<!-- Minute Log Entry -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="font-title text-title text-on-surface">Architecture Council #19: Security Ingestion</div>
+<span class="font-body-sm text-body-sm text-secondary">May 18, 2025</span>
+</div>
+<div class="text-on-surface-variant font-body-sm text-body-sm leading-relaxed mt-1">
+<p class="font-semibold text-on-surface mb-1">Executive Summary:</p>
+              Reviewed Kafka streaming latency thresholds under 12,000 peak concurrent queries. Client security leads confirmed encryption requirement for PCI-DSS compliance token store.
+            </div>
+<div class="mt-2 bg-surface-container-lowest p-space-sm rounded-lg flex flex-col gap-1.5">
+<span class="font-label-caps text-label-caps text-primary uppercase font-bold">Action Items &amp; Commitments:</span>
+<ul class="font-body-sm text-body-sm text-on-surface space-y-1 list-disc list-inside">
+<li><span class="font-medium text-on-surface">NovaTech Architecture:</span> Deliver revised HSM key distribution schematic by Friday.</li>
+<li><span class="font-medium text-on-surface">Marcus Vance (Client):</span> Authorize budget reallocation for dedicated Kafka broker instances.</li>
+<li><span class="font-medium text-on-surface">Security Audit Team:</span> Validate synthetic test data compliance checklist.</li>
+</ul>
+</div>
+<div class="mt-2 flex items-center justify-between text-secondary font-body-sm text-body-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary">check_box</span> 2 of 3 Actions In-Progress
+              </span>
+<button class="text-primary hover:text-primary-container font-label-md text-label-md flex items-center gap-1 font-semibold" onclick="alert('Exporting PDF audit protocol...')">
+<span class="material-symbols-outlined text-[16px]">picture_as_pdf</span> Export Protocol
+              </button>
+</div>
+</div>
+<!-- Client Feedback Log Snippet -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="font-title text-title text-on-surface">Stakeholder Pulse &amp; Feedback Entry</div>
+<span class="font-label-caps text-label-caps text-primary bg-surface-container-high px-2 py-0.5 rounded">CSAT: 4.8/5.0</span>
+</div>
+<blockquote class="font-body-sm text-body-sm italic text-on-surface-variant pl-space-sm border-l-2 border-primary-container my-1">
+              "The prototype deployment demonstrated at Monday's review exceeded throughput goals. Change Request CR-104 is fully aligned with our Q3 compliance mandates."
+            </blockquote>
+<div class="text-right font-label-caps text-label-caps text-secondary uppercase">
+              — Dr. Ronald Vance, VP Enterprise Architecture
+            </div>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT PANEL: Scope Change Requests (CR Governance) (7 cols on xl) -->
+<div class="xl:col-span-7 flex flex-col gap-space-lg" id="change-request-anchor">
+<!-- Interactive Change Request Form (Level 1 Elevation) -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[24px]">assignment_turned_in</span>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Scope Change Request (CR) Initiation</h2>
+<p class="font-body-sm text-body-sm text-secondary">Authorized Project Managers &amp; Account Directors Only</p>
+</div>
+</div>
+<span class="bg-surface-container text-on-surface-variant font-label-caps text-label-caps px-2 py-1 rounded uppercase tracking-wider font-semibold">Standard Protocol RFC-09</span>
+</div>
+<form class="flex flex-col gap-space-md" id="cr-submission-form" onsubmit="event.preventDefault(); alert('CR-106 Created and Dispatched for Formal Client Billing Authorization'); this.reset();">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Project Selection -->
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface-variant font-semibold">Active Project Engagement <span class="text-error">*</span></label>
+<select class="h-10 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary outline-none transition-all" required="">
+<option value="PRJ-NOV-2025-101">PRJ-NOV-2025-101: OmniCloud Banking Core Modernization</option>
+<option value="PRJ-NOV-2025-102">PRJ-NOV-2025-102: Apex Real-Time Clearing Hub</option>
+<option value="PRJ-NOV-2025-084">PRJ-NOV-2025-084: Sentinel Zero-Trust Identity Mesh</option>
+</select>
+</div>
+<!-- Change Title -->
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface-variant font-semibold">Change Title / Designation <span class="text-error">*</span></label>
+<input class="h-10 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary outline-none transition-all placeholder:text-secondary" placeholder="e.g. Multi-Region Disaster Recovery Hot Standby" required="" type="text"/>
+</div>
+</div>
+<!-- Reason & Scope Description -->
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface-variant font-semibold">Detailed Reason &amp; Architectural Scope Variance <span class="text-error">*</span></label>
+<textarea class="p-3 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary outline-none transition-all placeholder:text-secondary" placeholder="Specify technical delta from signed Statement of Work (SOW), dependencies, downstream system implications, and client business drivers..." required="" rows="3"></textarea>
+</div>
+<!-- Impact Metrics Grid: Cost, Resources, Schedule -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md p-space-md rounded-xl bg-surface-container-low">
+<!-- Cost Impact -->
+<div class="flex flex-col gap-1">
+<label class="font-label-caps text-label-caps uppercase text-secondary font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">attach_money</span>
+                Cost Impact ($USD)
+              </label>
+<div class="relative">
+<span class="absolute left-3 top-2.5 text-secondary font-title text-title">$</span>
+<input class="w-full h-10 pl-8 pr-3 rounded-lg bg-surface-container-lowest text-on-surface font-title text-title focus:ring-2 focus:ring-primary outline-none" min="0" placeholder="18500" required="" step="500" type="number"/>
+</div>
+<span class="font-body-sm text-body-sm text-secondary">T&amp;M or Fixed Surcharge</span>
+</div>
+<!-- Resource Impact -->
+<div class="flex flex-col gap-1">
+<label class="font-label-caps text-label-caps uppercase text-secondary font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary">engineering</span>
+                Resource Variance
+              </label>
+<div class="relative">
+<input class="w-full h-10 px-3 pr-12 rounded-lg bg-surface-container-lowest text-on-surface font-title text-title focus:ring-2 focus:ring-primary outline-none" min="0" placeholder="120" required="" step="10" type="number"/>
+<span class="absolute right-3 top-2.5 text-secondary font-body-sm text-body-sm">hrs</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary">Sr. Dev / DevOps time</span>
+</div>
+<!-- Schedule Impact -->
+<div class="flex flex-col gap-1">
+<label class="font-label-caps text-label-caps uppercase text-secondary font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-error">calendar_clock</span>
+                Schedule Impact
+              </label>
+<div class="relative">
+<input class="w-full h-10 px-3 pr-14 rounded-lg bg-surface-container-lowest text-on-surface font-title text-title focus:ring-2 focus:ring-primary outline-none" min="0" placeholder="8" required="" step="1" type="number"/>
+<span class="absolute right-3 top-2.5 text-secondary font-body-sm text-body-sm">days</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary">Delivery shift delta</span>
+</div>
+</div>
+<!-- Submission & Safeguard Checkbox -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pt-2">
+<label class="flex items-start gap-2 cursor-pointer max-w-lg">
+<input class="mt-1 w-4 h-4 rounded text-primary focus:ring-primary accent-primary" required="" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+                I verify that this change has been reviewed with the Enterprise Technical Lead and adheres to financial threshold authorization rules.
+              </span>
+</label>
+<button class="px-space-lg h-10 rounded-xl bg-primary text-on-primary font-title text-title shadow-sm hover:bg-tertiary-container transition-all flex items-center justify-center gap-2 shrink-0" type="submit">
+<span class="material-symbols-outlined text-[18px]">send</span> Submit Change Order
+            </button>
+</div>
+</form>
+</div>
+<!-- Active Change Request Registry Table -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Active Scope Change Registry</h2>
+<p class="font-body-sm text-body-sm text-secondary">Real-time status tracking and governance ledger</p>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-body-sm text-body-sm text-secondary">Filter Status:</span>
+<select class="h-8 px-2 rounded-lg bg-surface-container-low text-on-surface font-label-md text-label-md border-0 outline-none">
+<option>All Statuses (4)</option>
+<option>Pending PM Review</option>
+<option>Awaiting Client Payment Approval</option>
+<option>Approved</option>
+</select>
+</div>
+</div>
+<!-- Registry Table View -->
+<div class="overflow-x-auto">
+<table class="w-full text-left">
+<thead>
+<tr class="bg-surface-container-low font-label-caps text-label-caps text-secondary uppercase">
+<th class="py-2.5 px-3 rounded-l-lg">CR Identifier &amp; Title</th>
+<th class="py-2.5 px-3">Date</th>
+<th class="py-2.5 px-3">Requester</th>
+<th class="py-2.5 px-3 text-right">Cost Impact</th>
+<th class="py-2.5 px-3 text-right">Shift</th>
+<th class="py-2.5 px-3">Status Governance</th>
+<th class="py-2.5 px-3 text-right rounded-r-lg">Action</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container font-body-md text-body-md text-on-surface">
+<!-- Row 1: CR-104 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3 px-3">
+<div class="font-title text-title text-on-surface">CR-104</div>
+<div class="font-body-sm text-body-sm text-secondary truncate max-w-xs" title="Real-time Fraud Anomaly Detection Pipeline">
+                    Real-time Fraud Anomaly Detection Pipeline
+                  </div>
+</td>
+<td class="py-3 px-3 font-body-sm text-body-sm text-secondary whitespace-nowrap">May 16, 2025</td>
+<td class="py-3 px-3 font-body-sm text-body-sm">
+<div class="font-medium text-on-surface">Apex Financial</div>
+<div class="text-secondary text-[11px]">M. Vance (VP)</div>
+</td>
+<td class="py-3 px-3 text-right font-title text-title text-primary whitespace-nowrap">+$24,000</td>
+<td class="py-3 px-3 text-right font-body-sm text-body-sm text-on-surface whitespace-nowrap">+10 days</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full font-label-md text-label-md bg-secondary-container text-on-secondary-container whitespace-nowrap">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                    Awaiting Client Payment
+                  </span>
+</td>
+<td class="py-3 px-3 text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1 rounded text-primary hover:bg-surface-container-low" onclick="alert('Notification resent to Apex Financial billing department for authorized signature.')" title="Resend Authorization Link">
+<span class="material-symbols-outlined text-[18px]">send</span>
+</button>
+<button class="p-1 rounded text-secondary hover:bg-surface-container-low" onclick="alert('Viewing CR-104 comprehensive scope matrix')" title="Details">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: CR-105 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3 px-3">
+<div class="font-title text-title text-on-surface">CR-105</div>
+<div class="font-body-sm text-body-sm text-secondary truncate max-w-xs" title="Multi-tenant SSO Integration &amp; Okta Gateway">
+                    Multi-tenant SSO Integration &amp; Okta Gateway
+                  </div>
+</td>
+<td class="py-3 px-3 font-body-sm text-body-sm text-secondary whitespace-nowrap">May 17, 2025</td>
+<td class="py-3 px-3 font-body-sm text-body-sm">
+<div class="font-medium text-on-surface">OmniCloud Corp</div>
+<div class="text-secondary text-[11px]">S. Lin (PM)</div>
+</td>
+<td class="py-3 px-3 text-right font-title text-title text-primary whitespace-nowrap">+$12,500</td>
+<td class="py-3 px-3 text-right font-body-sm text-body-sm text-on-surface whitespace-nowrap">+4 days</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full font-label-md text-label-md bg-surface-container-high text-primary whitespace-nowrap">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                    Pending PM Review
+                  </span>
+</td>
+<td class="py-3 px-3 text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-1">
+<button class="px-2 py-1 bg-primary text-on-primary rounded text-label-md font-label-md hover:bg-tertiary transition-colors" onclick="alert('CR-105 Approved by Senior PM Alex Morgan. Dispatched to Client for Payment sign-off.')">
+                      Review &amp; Sign
+                    </button>
+</div>
+</td>
+</tr>
+<!-- Row 3: CR-103 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3 px-3">
+<div class="font-title text-title text-on-surface">CR-103</div>
+<div class="font-body-sm text-body-sm text-secondary truncate max-w-xs" title="FedRAMP Moderate Container Hardening">
+                    FedRAMP Moderate Container Hardening
+                  </div>
+</td>
+<td class="py-3 px-3 font-body-sm text-body-sm text-secondary whitespace-nowrap">May 12, 2025</td>
+<td class="py-3 px-3 font-body-sm text-body-sm">
+<div class="font-medium text-on-surface">Sentinel Logistics</div>
+<div class="text-secondary text-[11px]">J. Doe (Dir)</div>
+</td>
+<td class="py-3 px-3 text-right font-title text-title text-on-surface whitespace-nowrap">+$12,000</td>
+<td class="py-3 px-3 text-right font-body-sm text-body-sm text-on-surface whitespace-nowrap">+3 days</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full font-label-md text-label-md bg-surface-container-highest text-tertiary whitespace-nowrap">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+                    Approved &amp; Funded
+                  </span>
+</td>
+<td class="py-3 px-3 text-right whitespace-nowrap">
+<span class="font-label-caps text-label-caps text-secondary uppercase bg-surface-container-low px-2 py-1 rounded">Active Sprint</span>
+</td>
+</tr>
+<!-- Row 4: CR-101 -->
+<tr class="hover:bg-surface-container-low/60 transition-colors opacity-75">
+<td class="py-3 px-3">
+<div class="font-title text-title text-on-surface">CR-101</div>
+<div class="font-body-sm text-body-sm text-secondary truncate max-w-xs" title="Legacy Oracle DB Direct Connector">
+                    Legacy Oracle DB Direct Connector
+                  </div>
+</td>
+<td class="py-3 px-3 font-body-sm text-body-sm text-secondary whitespace-nowrap">May 04, 2025</td>
+<td class="py-3 px-3 font-body-sm text-body-sm">
+<div class="font-medium text-on-surface">Apex Financial</div>
+<div class="text-secondary text-[11px]">Client Rep</div>
+</td>
+<td class="py-3 px-3 text-right font-body-sm text-body-sm text-secondary whitespace-nowrap">$0</td>
+<td class="py-3 px-3 text-right font-body-sm text-body-sm text-secondary whitespace-nowrap">--</td>
+<td class="py-3 px-3">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full font-label-md text-label-md bg-error-container text-on-error-container whitespace-nowrap">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+                    Rejected / Withdrawn
+                  </span>
+</td>
+<td class="py-3 px-3 text-right whitespace-nowrap">
+<span class="font-body-sm text-body-sm text-secondary">Archived</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Scope & Cost Cumulative Distribution Mini Sparkline -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col md:flex-row md:items-center justify-between gap-space-md mt-2">
+<div class="flex items-center gap-space-md">
+<!-- Inline SVG Gauge -->
+<svg class="w-14 h-14 shrink-0 text-primary" viewbox="0 0 36 36">
+<path class="text-surface-container-high stroke-current" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-width="3.5"></path>
+<path class="text-primary stroke-current" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke-dasharray="72, 100" stroke-linecap="round" stroke-width="3.5"></path>
+<text class="fill-current font-bold text-[8px] text-center" text-anchor="middle" x="18" y="20.5">72%</text>
+</svg>
+<div>
+<div class="font-title text-title text-on-surface">CR Scope Variance Absorption Index</div>
+<div class="font-body-sm text-body-sm text-secondary">Projected budget contingency buffer remains resilient at $142,000 threshold.</div>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-label-caps text-label-caps text-secondary uppercase">Drift Alert:</span>
+<span class="font-label-md text-label-md text-on-surface bg-surface-container-lowest px-2.5 py-1 rounded-lg">Low Risk to SOW Deliverable 4</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Modal: Schedule Online Meeting (Hidden by default) -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-inverse-surface/40 backdrop-blur-sm hidden" id="meeting-modal">
+<div class="bg-surface-container-lowest w-full max-w-xl rounded-2xl shadow-2xl p-space-lg flex flex-col gap-space-md relative max-h-[921px] overflow-y-auto">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">video_call</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Schedule Online Sync</h3>
+<p class="font-body-sm text-body-sm text-secondary">Generate video bridge &amp; calendar invite protocol</p>
+</div>
+</div>
+<button class="p-1 rounded-lg hover:bg-surface-container-low text-secondary hover:text-on-surface" onclick="document.getElementById('meeting-modal').classList.add('hidden')">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<form class="flex flex-col gap-space-md" onsubmit="event.preventDefault(); alert('Sync Invitation and Secure Video Room Link dispatched to all attendees.'); document.getElementById('meeting-modal').classList.add('hidden');">
+<!-- Meeting Topic -->
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface-variant font-semibold">Meeting Topic / Headline</label>
+<input class="h-10 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:ring-2 focus:ring-primary outline-none" required="" type="text" value="Sprint 25 Architecture &amp; Delivery Alignment"/>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Client Org -->
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface-variant font-semibold">Client Organization</label>
+<select class="h-10 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:ring-2 focus:ring-primary outline-none">
+<option>Apex Financial Systems</option>
+<option>OmniCloud Banking Corp</option>
+<option>Sentinel Defense Logistics</option>
+</select>
+</div>
+<!-- Video Conference Link / Room -->
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface-variant font-semibold">Video Link / Conference Room</label>
+<div class="relative">
+<input class="w-full h-10 px-3 pr-8 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:ring-2 focus:ring-primary outline-none" required="" type="text" value="https://meet.novatech.internal/prj-apex-syn"/>
+<span class="material-symbols-outlined text-[18px] text-secondary absolute right-2.5 top-2.5">videocam</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<!-- Date -->
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface-variant font-semibold">Date</label>
+<input class="h-10 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:ring-2 focus:ring-primary outline-none" required="" type="date" value="2025-05-22"/>
+</div>
+<!-- Time -->
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface-variant font-semibold">Time &amp; Duration</label>
+<input class="h-10 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:ring-2 focus:ring-primary outline-none" required="" type="text" value="14:00 - 15:00 EST (60 min)"/>
+</div>
+</div>
+<!-- Agenda Topics -->
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface-variant font-semibold">Agenda Items</label>
+<textarea class="p-3 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:ring-2 focus:ring-primary outline-none" rows="2">1. Microservices deployment pipeline validation
+2. Scope Change CR-104 final sign-off status
+3. Q3 User Acceptance Testing schedule</textarea>
+</div>
+<!-- Add Attendees -->
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface-variant font-semibold">Attendees (Client &amp; NovaTech)</label>
+<div class="flex flex-wrap gap-1.5 p-2 rounded-lg bg-surface-container-low">
+<span class="inline-flex items-center gap-1 bg-surface-container-lowest px-2 py-1 rounded text-body-sm font-medium text-on-surface">
+              marcus.v@apexfinancial.com <span class="material-symbols-outlined text-[14px] text-secondary cursor-pointer">close</span>
+</span>
+<span class="inline-flex items-center gap-1 bg-surface-container-lowest px-2 py-1 rounded text-body-sm font-medium text-on-surface">
+              alex.m@novatech.internal <span class="material-symbols-outlined text-[14px] text-secondary cursor-pointer">close</span>
+</span>
+<span class="inline-flex items-center gap-1 bg-surface-container-lowest px-2 py-1 rounded text-body-sm font-medium text-on-surface">
+              sarah.lin@novatech.internal <span class="material-symbols-outlined text-[14px] text-secondary cursor-pointer">close</span>
+</span>
+</div>
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-space-xs">
+<button class="px-space-md h-10 rounded-xl bg-surface-container-low text-on-surface font-title text-title hover:bg-surface-container transition-colors" onclick="document.getElementById('meeting-modal').classList.add('hidden')" type="button">
+            Cancel
+          </button>
+<button class="px-space-lg h-10 rounded-xl bg-primary text-on-primary font-title text-title hover:bg-tertiary transition-colors flex items-center gap-2 shadow-sm" type="submit">
+<span class="material-symbols-outlined text-[18px]">event_available</span>
+            Schedule Sync
+          </button>
+</div>
+</form>
+</div>
+</div>
+<!-- Enterprise Governance & Audit Compliance Sign-off Footer Strip -->
+<div class="mt-space-xl p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col md:flex-row items-center justify-between gap-space-md text-secondary">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[22px]">verified_user</span>
+</div>
+<div>
+<div class="font-title text-title text-on-surface">Immutable Cryptographic Audit Ledger #NT-AUD-99214</div>
+<p class="font-body-sm text-body-sm text-secondary">
+          All client communications, meeting transcripts, and approved scope orders are digitally fingerprinted under SHA-256 for legal contractual compliance.
+        </p>
+</div>
+</div>
+<div class="flex items-center gap-space-lg shrink-0">
+<div class="flex flex-col text-right">
+<span class="font-label-caps text-label-caps uppercase text-secondary">Authorized Program Officer</span>
+<span class="font-title text-title text-on-surface">Alex Morgan, PMP</span>
+<span class="font-body-sm text-body-sm text-tertiary">Signed 2025-05-19 09:32 UTC</span>
+</div>
+<div class="h-8 w-px bg-surface-container-high hidden sm:block"></div>
+<div class="flex flex-col text-right">
+<span class="font-label-caps text-label-caps uppercase text-secondary">Lead Client Counterpart</span>
+<span class="font-title text-title text-on-surface">Marcus Vance, VP</span>
+<span class="font-body-sm text-body-sm text-primary">Signed 2025-05-19 10:14 UTC</span>
+</div>
+</div>
+</div>
+</div></main><footer class="w-full bg-surface-container-lowest px-gutter py-space-md shadow-[0_1px_8px_rgba(0,0,0,0.04)] flex flex-col md:flex-row items-center justify-between gap-space-sm"><div class="flex items-center gap-space-xs text-on-surface-variant"><span class="w-2 h-2 rounded-full bg-[#10b981]"></span><span class="font-label-md text-label-md text-on-surface">All Systems Operational</span><span class="text-outline-variant px-space-xs">|</span><span class="font-body-sm text-body-sm text-secondary">© 2025 NovaTech Solutions. All rights reserved.</span></div><div class="font-body-sm text-body-sm text-secondary">University Demonstration &amp; Prototype System Architecture</div></footer></div></body></html>

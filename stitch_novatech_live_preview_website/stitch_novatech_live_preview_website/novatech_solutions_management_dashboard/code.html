@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"background":"#f8f9ff","on-surface-variant":"#434655","outline-variant":"#c4c5d7","secondary-fixed":"#dae2fd","surface-container-low":"#eff4ff","error-container":"#ffdad6","on-primary-fixed-variant":"#0039b5","on-primary-fixed":"#001551","primary-fixed-dim":"#b7c4ff","on-background":"#0b1c30","on-tertiary":"#ffffff","secondary":"#565e74","on-surface":"#0b1c30","tertiary-fixed":"#dbe1ff","error":"#ba1a1a","on-secondary-container":"#5c647a","surface-variant":"#d3e4fe","inverse-primary":"#b7c4ff","on-tertiary-fixed":"#00174b","on-primary-container":"#cad3ff","on-secondary-fixed":"#131b2e","surface-container-highest":"#d3e4fe","on-primary":"#ffffff","surface":"#f8f9ff","inverse-on-surface":"#eaf1ff","on-tertiary-fixed-variant":"#003ea8","secondary-container":"#dae2fd","surface-container":"#e5eeff","on-secondary":"#ffffff","on-secondary-fixed-variant":"#3f465c","on-error-container":"#93000a","outline":"#747686","primary-container":"#1d4ed8","tertiary-container":"#0051d6","surface-container-high":"#dce9ff","surface-dim":"#cbdbf5","primary-fixed":"#dce1ff","tertiary-fixed-dim":"#b4c5ff","tertiary":"#003ca3","surface-tint":"#2151da","primary":"#0037b0","on-error":"#ffffff","surface-container-lowest":"#ffffff","inverse-surface":"#213145","secondary-fixed-dim":"#bec6e0","on-tertiary-container":"#c9d4ff","surface-bright":"#f8f9ff"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"gutter":"1.5rem","space-xl":"2rem","space-lg":"1.5rem","gutter-sm":"1rem","space-md":"1rem","margin":"2rem","space-sm":"0.5rem","margin-mobile":"1rem","space-xs":"0.25rem"},fontFamily:{"title":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"label-caps":["Plus Jakarta Sans"],"display":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"]},fontSize:{"title":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"400"}],"body-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"700"}],"headline-lg-mobile":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"700"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.005em","fontWeight":"500"}],"label-caps":["11px",{"lineHeight":"14px","letterSpacing":"0.06em","fontWeight":"700"}],"display":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"headline-sm":["16px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"600"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest z-50 flex flex-col shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-space-md flex items-center gap-space-sm bg-surface-container-lowest"><img alt="NovaTech Solutions Portal Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UrmuOcV0k5SwkNjdal6LCe0FGEsQOl8xqrIG7P3lDLpVGm5nzhIi_H2do5BtI5Mb8ZY6gCH8B4lQqVx5_DRnFAmDD7YEamQwt9jHSQ1YEM9sVvZ28zbbkHVBo0ghYBlad-mHguqQlsZiV0o0XoQ7gcaViFLHRxghzkXZz4mea0kpDxeCsjBZCx1a6TmsbPbF3nfmvpzFc6WkASk8XJ8K9NyhdjOQbewu3e4wBjaDhg"/><div class="flex flex-col"><span class="font-title text-title text-on-surface">NovaTech</span><span class="font-label-caps text-label-caps text-secondary uppercase">IT PM Portal</span></div></div><div class="flex-1 overflow-y-auto px-space-sm py-space-sm"><div class="px-space-sm py-space-xs font-label-caps text-label-caps text-secondary uppercase">Core Navigation</div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-surface-container-low text-primary-container font-headline-sm"><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl transition-colors bg-surface-container-low text-primary-container font-headline-sm" data-path="management-dashboard" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span>Dashboard</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="client-management" href="#"><span class="material-symbols-outlined text-[20px]">business</span><span>Client Management</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="proposals-requests" href="#"><span class="material-symbols-outlined text-[20px]">request_quote</span><span>Proposals &amp; Requests</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="projects-milestones" href="#"><span class="material-symbols-outlined text-[20px]">flag</span><span>Projects &amp; Milestones</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="employees-tasks" href="#"><span class="material-symbols-outlined text-[20px]">assignment_ind</span><span>Employees &amp; Tasks</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="documents-issues" href="#"><span class="material-symbols-outlined text-[20px]">folder_supervised</span><span>Documents &amp; Issues</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="client-meetings-change-requests" href="#"><span class="material-symbols-outlined text-[20px]">published_with_changes</span><span>Meetings &amp; Changes</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="supplier-management" href="#"><span class="material-symbols-outlined text-[20px]">inventory_2</span><span>Supplier Management</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="financials-invoices" href="#"><span class="material-symbols-outlined text-[20px]">receipt_long</span><span>Financials &amp; Invoices</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="project-completion-sign-off" href="#"><span class="material-symbols-outlined text-[20px]">verified</span><span>Completion &amp; Sign-Off</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="reports-analytics" href="#"><span class="material-symbols-outlined text-[20px]">insights</span><span>Reports &amp; Analytics</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="user-role-permissions" href="#"><span class="material-symbols-outlined text-[20px]">admin_panel_settings</span><span>User &amp; Roles</span></a></nav></div><div class="p-space-sm bg-surface-container-low flex items-center justify-between text-on-surface-variant"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-primary-container"></span><span class="font-label-md text-label-md">Production Cloud</span></div><a class="text-secondary hover:text-primary transition-colors flex items-center" data-path="login-portal-gateway" href="#" title="Log Out"><span class="material-symbols-outlined text-[18px]">logout</span></a></div></aside><div class="pl-64 flex flex-col min-h-screen"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md flex-1 max-w-md"><div class="flex items-center w-full bg-surface-container-low px-space-sm py-space-xs rounded-xl gap-space-xs text-on-surface-variant"><span class="material-symbols-outlined text-[18px]">search</span><input class="bg-transparent border-0 outline-none text-body-sm font-body-sm text-on-surface placeholder:text-secondary w-full" placeholder="Search projects, clients, tickets..." type="text"/></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs bg-surface-container-low px-space-sm py-space-xs rounded-xl"><span class="material-symbols-outlined text-[18px] text-secondary">swap_horiz</span><label class="font-label-md text-label-md text-secondary">Role:</label><select class="bg-transparent font-title text-title text-on-surface border-0 outline-none cursor-pointer"><option selected="" value="admin">Administrator</option><option value="pm">Project Manager</option><option value="employee">Employee</option><option value="finance">Finance Officer</option><option value="client">Client</option><option value="management">Management</option></select></div><button class="relative p-space-xs text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-error"></span></button><div class="flex items-center gap-space-sm pl-space-sm"><div class="flex flex-col text-right"><span class="font-title text-title text-on-surface">Alex Morgan</span><span class="font-body-sm text-body-sm text-secondary">Senior Administrator</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 w-full pt-16 px-gutter pb-space-xl bg-surface"><div class="flex flex-col w-full gap-space-lg">
+<!-- Executive Welcome Header -->
+<div class="flex flex-col xl:flex-row xl:items-center justify-between gap-space-md bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-caps text-label-caps text-primary uppercase">Executive Overview</span>
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+<span class="font-body-sm text-body-sm text-secondary" id="live-calendar-date">Thursday, May 15, 2025</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface">
+        Welcome back, Alex Morgan
+      </h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        Role: <span class="font-title text-title text-on-surface">Management / Administrator</span> — Real-time governance &amp; enterprise telemetry.
+      </p>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="flex items-center bg-surface-container-low rounded-xl p-1 gap-1">
+<button class="px-space-sm py-1.5 rounded-lg font-label-md text-label-md bg-surface-container-lowest text-primary shadow-sm transition-all" onclick="setPeriod(this, 'month')">This Month</button>
+<button class="px-space-sm py-1.5 rounded-lg font-label-md text-label-md text-secondary hover:text-on-surface transition-all" onclick="setPeriod(this, 'q2')">Q2 2025</button>
+<button class="px-space-sm py-1.5 rounded-lg font-label-md text-label-md text-secondary hover:text-on-surface transition-all" onclick="setPeriod(this, 'ytd')">Year to Date</button>
+</div>
+<button class="flex items-center gap-space-xs bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg px-space-md h-[38px] rounded-lg shadow-sm transition-colors" onclick="triggerExportNotice()">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Export Executive Summary</span>
+</button>
+</div>
+</div>
+<!-- Notification Banner for Demo Interaction -->
+<div class="hidden flex items-center justify-between bg-primary-container text-on-primary px-space-md py-space-sm rounded-lg shadow-md transition-all" id="export-toast">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[20px]">task_alt</span>
+<span class="font-body-md text-body-md">Executive Summary PDF &amp; telemetry payload compiled successfully.</span>
+</div>
+<button class="text-on-primary hover:opacity-80" onclick="this.parentElement.classList.add('hidden')">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<!-- 4 Top KPI Summary Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<!-- Card 1: Active Projects -->
+<div class="flex flex-col bg-surface-container-lowest p-space-md rounded-xl shadow-sm gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-secondary uppercase">Active Projects</span>
+<span class="w-8 h-8 rounded-lg bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">rocket_launch</span>
+</span>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-display text-display text-on-surface">18</span>
+<span class="font-body-sm text-body-sm text-secondary">/ 48 overall</span>
+</div>
+<div class="flex items-center justify-between text-secondary font-body-sm text-body-sm">
+<span class="flex items-center gap-0.5 text-on-tertiary-fixed-variant font-label-md text-label-md bg-secondary-fixed px-1.5 py-0.5 rounded">
+<span class="material-symbols-outlined text-[14px]">trending_up</span> +3 this month
+        </span>
+<span>72% sprint load</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-1.5 overflow-hidden mt-1">
+<div class="bg-primary h-1.5 rounded-full" style="width: 72%;"></div>
+</div>
+</div>
+<!-- Card 2: Registered Clients -->
+<div class="flex flex-col bg-surface-container-lowest p-space-md rounded-xl shadow-sm gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-secondary uppercase">Registered Clients</span>
+<span class="w-8 h-8 rounded-lg bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">corporate_fare</span>
+</span>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-display text-display text-on-surface">42</span>
+<span class="font-body-sm text-body-sm text-secondary">Enterprise Accts</span>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm text-secondary">
+<span class="flex items-center gap-0.5 text-on-tertiary-fixed-variant font-label-md text-label-md bg-secondary-fixed px-1.5 py-0.5 rounded">
+<span class="material-symbols-outlined text-[14px]">add_circle</span> +2 onboarded
+        </span>
+<span class="font-label-md text-label-md text-on-surface">100% SLA uptime</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-1.5 overflow-hidden mt-1">
+<div class="bg-tertiary-container h-1.5 rounded-full" style="width: 95%;"></div>
+</div>
+</div>
+<!-- Card 3: Employees / Capacity -->
+<div class="flex flex-col bg-surface-container-lowest p-space-md rounded-xl shadow-sm gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-secondary uppercase">Talent Capacity</span>
+<span class="w-8 h-8 rounded-lg bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">group</span>
+</span>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-display text-display text-on-surface">65</span>
+<span class="font-body-sm text-body-sm text-secondary">Engineers &amp; PMs</span>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm text-secondary">
+<span class="font-label-md text-label-md text-on-surface">88% Allocated</span>
+<span class="font-label-md text-label-md text-secondary">8 benches avail</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-1.5 overflow-hidden mt-1">
+<div class="bg-primary-container h-1.5 rounded-full" style="width: 88%;"></div>
+</div>
+</div>
+<!-- Card 4: Pending Payments & Receivables -->
+<div class="flex flex-col bg-surface-container-lowest p-space-md rounded-xl shadow-sm gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-secondary uppercase">Net Unsettled Flow</span>
+<span class="w-8 h-8 rounded-lg bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">account_balance_wallet</span>
+</span>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-display text-display text-on-surface">$148,500</span>
+<span class="font-body-sm text-body-sm text-secondary">due</span>
+</div>
+<div class="flex items-center justify-between text-[11px] font-label-caps">
+<span class="text-on-surface font-title text-body-sm">Rec: +$204.0k</span>
+<span class="text-error font-title text-body-sm">Pay: -$55.5k</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-1.5 overflow-hidden mt-1 flex">
+<div class="bg-primary h-1.5" style="width: 78.6%;"></div>
+<div class="bg-error h-1.5" style="width: 21.4%;"></div>
+</div>
+</div>
+</div>
+<!-- Middle Row: Status Summary & Financials Matrix -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md">
+<!-- Project Status Breakdown (7 Cols) -->
+<div class="lg:col-span-7 flex flex-col bg-surface-container-lowest p-space-lg rounded-xl shadow-sm gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Project Status Summaries</span>
+<span class="font-body-sm text-body-sm text-secondary">Portfolio lifecycle distribution across 48 contracted engagements</span>
+</div>
+<span class="font-label-md text-label-md px-2 py-1 rounded bg-surface-container-low text-primary">Live Sync</span>
+</div>
+<!-- Segmented Breakdown Progress Bar -->
+<div class="flex flex-col gap-space-xs">
+<div class="h-3 w-full rounded-full bg-surface-container overflow-hidden flex">
+<div class="bg-secondary transition-all" style="width: 8.33%;" title="Not Started: 4"></div>
+<div class="bg-primary-container transition-all" style="width: 29.17%;" title="In Progress: 14"></div>
+<div class="bg-primary transition-all" style="width: 58.33%;" title="Completed: 28"></div>
+<div class="bg-error transition-all" style="width: 4.17%;" title="On Hold: 2"></div>
+</div>
+<div class="flex items-center justify-between text-secondary font-label-caps text-label-caps">
+<span>Not Started (8.3%)</span>
+<span>In Progress (29.2%)</span>
+<span>Completed (58.3%)</span>
+<span>On Hold (4.2%)</span>
+</div>
+</div>
+<!-- Status Pills Grid -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm pt-space-xs">
+<div class="flex flex-col p-space-sm rounded-xl bg-surface-container-low gap-1">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="font-label-caps text-label-caps text-secondary uppercase">Not Started</span>
+</div>
+<span class="font-headline-md text-headline-md text-on-surface">4</span>
+<span class="font-body-sm text-body-sm text-secondary">Awaiting kick-off</span>
+</div>
+<div class="flex flex-col p-space-sm rounded-xl bg-surface-container gap-1">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<span class="font-label-caps text-label-caps text-primary uppercase">In Progress</span>
+</div>
+<span class="font-headline-md text-headline-md text-primary">14</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Active sprints</span>
+</div>
+<div class="flex flex-col p-space-sm rounded-xl bg-surface-container-low gap-1">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+<span class="font-label-caps text-label-caps text-primary uppercase">Completed</span>
+</div>
+<span class="font-headline-md text-headline-md text-on-surface">28</span>
+<span class="font-body-sm text-body-sm text-secondary">Verified sign-offs</span>
+</div>
+<div class="flex flex-col p-space-sm rounded-xl bg-error-container/40 gap-1">
+<div class="flex items-center gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-error"></span>
+<span class="font-label-caps text-label-caps text-error uppercase">On Hold</span>
+</div>
+<span class="font-headline-md text-headline-md text-error">2</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Client sign-off wait</span>
+</div>
+</div>
+<!-- Quick Executive Team Context -->
+<div class="flex items-center gap-space-md p-space-sm bg-surface-container-low rounded-xl">
+<img class="w-16 h-12 rounded-lg object-cover" data-alt="Modern architectural glass facade of NovaTech corporate headquarters showcasing enterprise high-technology project governance and modern clean engineering style in daylight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJAbYjMKs9BoWSkGy2QUMP5LdP_fnWTHk5IdSjV50R30lp3O5Z0fGGuQUGqhAVZg4GuSLHLINx8b6hGS4EMc7_k3eCeMB9rsf5LsgiTrq97MqJp5AEPY083thq0XOcG1gtbI19I-f-TxeqFS7nd-vMuvqPNd7t87VY7xHq_qVtR2oyHO5mHxoH45FPnHjVsIThoGml8ah5n2DvKyEMxoMnM0Q5FPo2s_d4pPwIMY4"/>
+<div class="flex flex-col min-w-0">
+<span class="font-title text-title text-on-surface truncate">Engineering Governance Protocol Active</span>
+<span class="font-body-sm text-body-sm text-secondary truncate">All 14 active deployments adhere to ISO-27001 and NovaTech Q3 CI/CD gates.</span>
+</div>
+</div>
+</div>
+<!-- Monthly Financial Health Widget (5 Cols) -->
+<div class="lg:col-span-5 flex flex-col bg-surface-container-lowest p-space-lg rounded-xl shadow-sm gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Monthly Financial Health</span>
+<span class="font-body-sm text-body-sm text-secondary">Fiscal reconciliation for current cycle</span>
+</div>
+<span class="font-label-md text-label-md text-on-primary bg-primary px-2 py-0.5 rounded">Margin: 70.1%</span>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="flex flex-col p-space-sm rounded-xl bg-surface-container-low">
+<span class="font-label-caps text-label-caps text-secondary uppercase">Client Revenue</span>
+<span class="font-headline-md text-headline-md text-on-surface mt-1">$382,000</span>
+<span class="font-body-sm text-body-sm text-primary flex items-center gap-0.5 mt-0.5">
+<span class="material-symbols-outlined text-[14px]">arrow_upward</span> +14.2% YoY
+          </span>
+</div>
+<div class="flex flex-col p-space-sm rounded-xl bg-surface-container-low">
+<span class="font-label-caps text-label-caps text-secondary uppercase">Supplier Payments</span>
+<span class="font-headline-md text-headline-md text-on-surface mt-1">$114,200</span>
+<span class="font-body-sm text-body-sm text-secondary flex items-center gap-0.5 mt-0.5">
+<span class="material-symbols-outlined text-[14px]">schedule</span> Net-30 Terms
+          </span>
+</div>
+</div>
+<!-- Financial Health Net Margin Accent Banner -->
+<div class="flex flex-col bg-surface-container-high p-space-md rounded-xl gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-title text-title text-on-surface">Consolidated Net Margin</span>
+<span class="font-headline-md text-headline-md text-primary">$267,800</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-2 overflow-hidden flex">
+<div class="bg-primary h-2" style="width: 70.1%;"></div>
+<div class="bg-outline h-2" style="width: 29.9%;"></div>
+</div>
+<div class="flex items-center justify-between text-secondary font-body-sm text-body-sm">
+<span>EBITDA Margin: healthy</span>
+<span>Target baseline: 65.0%</span>
+</div>
+</div>
+<div class="flex items-center justify-between text-secondary font-body-sm text-body-sm pt-1">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">verified_user</span> Audited by FinCore
+        </span>
+<button class="font-label-md text-label-md text-primary hover:underline flex items-center gap-0.5" onclick="alert('Navigating to detailed Financial Ledger...')">
+          View Ledger <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Bottom Bento: Strategic Project Progress + Deadlines & Feeds -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md">
+<!-- Strategic Projects Progress (7 Cols) -->
+<div class="lg:col-span-7 flex flex-col bg-surface-container-lowest p-space-lg rounded-xl shadow-sm gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Strategic Projects &amp; Milestones</span>
+<span class="font-body-sm text-body-sm text-secondary">High-visibility mission critical deliverables tracking</span>
+</div>
+<button class="font-label-md text-label-md text-primary hover:text-primary-container flex items-center gap-1">
+          Filter Projects <span class="material-symbols-outlined text-[16px]">tune</span>
+</button>
+</div>
+<div class="flex flex-col gap-space-md">
+<!-- Project 1 -->
+<div class="flex flex-col p-space-md rounded-xl bg-surface-container-low gap-space-xs hover:bg-surface-container transition-colors">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded-lg bg-surface-container-lowest flex items-center justify-center text-primary font-title text-title">01</span>
+<div class="flex flex-col">
+<span class="font-title text-title text-on-surface">OmniCloud Banking Portal</span>
+<span class="font-body-sm text-body-sm text-secondary">Lead: Sarah Lin • Apex Financial Holdings</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-label-md text-label-md px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed">In Progress</span>
+<span class="font-title text-title text-primary">78%</span>
+</div>
+</div>
+<div class="w-full bg-surface-container-lowest rounded-full h-2 overflow-hidden mt-1">
+<div class="bg-primary h-2 rounded-full transition-all duration-500" style="width: 78%;"></div>
+</div>
+<div class="flex items-center justify-between text-secondary font-body-sm text-body-sm">
+<span>Milestone 4: Core Ledger Dual-Integration</span>
+<span>Target: Jun 04, 2025</span>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="flex flex-col p-space-md rounded-xl bg-surface-container-low gap-space-xs hover:bg-surface-container transition-colors">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded-lg bg-surface-container-lowest flex items-center justify-center text-primary font-title text-title">02</span>
+<div class="flex flex-col">
+<span class="font-title text-title text-on-surface">HealthPulse Telemedicine App</span>
+<span class="font-body-sm text-body-sm text-secondary">Lead: Marcus Wright • MediGlobal Group</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-label-md text-label-md px-2.5 py-0.5 rounded-full bg-surface-container-high text-primary">In Progress</span>
+<span class="font-title text-title text-primary-container">92%</span>
+</div>
+</div>
+<div class="w-full bg-surface-container-lowest rounded-full h-2 overflow-hidden mt-1">
+<div class="bg-primary-container h-2 rounded-full transition-all duration-500" style="width: 92%;"></div>
+</div>
+<div class="flex items-center justify-between text-secondary font-body-sm text-body-sm">
+<span>Milestone 5: HIPAA End-to-End Audit &amp; Deploy</span>
+<span>Target: May 26, 2025</span>
+</div>
+</div>
+<!-- Project 3 -->
+<div class="flex flex-col p-space-md rounded-xl bg-surface-container-low gap-space-xs hover:bg-surface-container transition-colors">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded-lg bg-surface-container-lowest flex items-center justify-center text-primary font-title text-title">03</span>
+<div class="flex flex-col">
+<span class="font-title text-title text-on-surface">NexGen Logistics Fleet ERP</span>
+<span class="font-body-sm text-body-sm text-secondary">Lead: Elena Rostova • TransContinent Freight</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-label-md text-label-md px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed">In Progress</span>
+<span class="font-title text-title text-on-surface">45%</span>
+</div>
+</div>
+<div class="w-full bg-surface-container-lowest rounded-full h-2 overflow-hidden mt-1">
+<div class="bg-secondary h-2 rounded-full transition-all duration-500" style="width: 45%;"></div>
+</div>
+<div class="flex items-center justify-between text-secondary font-body-sm text-body-sm">
+<span>Milestone 2: Telematics Sensor API Pipeline</span>
+<span>Target: Jul 12, 2025</span>
+</div>
+</div>
+<!-- Project 4 -->
+<div class="flex flex-col p-space-md rounded-xl bg-surface-container-low gap-space-xs hover:bg-surface-container transition-colors">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded-lg bg-surface-container-lowest flex items-center justify-center text-primary font-title text-title">04</span>
+<div class="flex flex-col">
+<span class="font-title text-title text-on-surface">CyberShield Zero-Trust Audit</span>
+<span class="font-body-sm text-body-sm text-secondary">Lead: Dev Patel • SecureMatrix Defense</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-label-md text-label-md px-2.5 py-0.5 rounded-full bg-surface-container-highest text-primary">Completed</span>
+<span class="font-title text-title text-primary">100%</span>
+</div>
+</div>
+<div class="w-full bg-surface-container-lowest rounded-full h-2 overflow-hidden mt-1">
+<div class="bg-primary h-2 rounded-full transition-all duration-500" style="width: 100%;"></div>
+</div>
+<div class="flex items-center justify-between text-secondary font-body-sm text-body-sm">
+<span>Final Deliverable: Penetration Sign-Off Certificate</span>
+<span class="font-label-md text-label-md text-primary">Closed May 10</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Side: Deadlines + Activity Feed (5 Cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<!-- Upcoming Deadlines & Milestones (Next 14 Days) -->
+<div class="flex flex-col bg-surface-container-lowest p-space-lg rounded-xl shadow-sm gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Upcoming Deadlines</span>
+<span class="font-body-sm text-body-sm text-secondary">Crucial milestones within 14 days</span>
+</div>
+<span class="w-7 h-7 rounded-lg bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[16px]">event_upcoming</span>
+</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Deadline 1: Critical -->
+<div class="flex items-center justify-between p-space-sm bg-surface-container-low rounded-xl">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-9 h-9 rounded-lg bg-error/10 text-error flex flex-col items-center justify-center font-title text-title">
+<span class="text-[12px] leading-none">19</span>
+<span class="text-[9px] uppercase leading-none font-bold">May</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title text-title text-on-surface truncate">HealthPulse Stage Gate 4</span>
+<span class="font-body-sm text-body-sm text-secondary truncate">PM: Marcus Wright</span>
+</div>
+</div>
+<span class="font-label-caps text-label-caps px-2 py-0.5 rounded bg-error text-on-error uppercase font-bold shrink-0">Urgent</span>
+</div>
+<!-- Deadline 2: Medium -->
+<div class="flex items-center justify-between p-space-sm bg-surface-container-low rounded-xl">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-9 h-9 rounded-lg bg-surface-container-high text-primary flex flex-col items-center justify-center font-title text-title">
+<span class="text-[12px] leading-none">24</span>
+<span class="text-[9px] uppercase leading-none font-bold">May</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title text-title text-on-surface truncate">OmniCloud Penetration Test</span>
+<span class="font-body-sm text-body-sm text-secondary truncate">PM: Sarah Lin</span>
+</div>
+</div>
+<span class="font-label-caps text-label-caps px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container uppercase shrink-0">Medium</span>
+</div>
+<!-- Deadline 3: Normal -->
+<div class="flex items-center justify-between p-space-sm bg-surface-container-low rounded-xl">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-9 h-9 rounded-lg bg-surface-container-high text-on-surface-variant flex flex-col items-center justify-center font-title text-title">
+<span class="text-[12px] leading-none">28</span>
+<span class="text-[9px] uppercase leading-none font-bold">May</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title text-title text-on-surface truncate">RetailCore Sprint 6 Demo</span>
+<span class="font-body-sm text-body-sm text-secondary truncate">PM: David Zhao</span>
+</div>
+</div>
+<span class="font-label-caps text-label-caps px-2 py-0.5 rounded bg-surface-container-highest text-secondary uppercase shrink-0">Normal</span>
+</div>
+</div>
+</div>
+<!-- Real-time Activity Feed -->
+<div class="flex flex-col bg-surface-container-lowest p-space-lg rounded-xl shadow-sm gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Recent Activity Feed</span>
+<span class="font-body-sm text-body-sm text-secondary">Chronological event audit log</span>
+</div>
+<span class="flex h-2 w-2 relative">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Feed Item 1 -->
+<div class="flex items-start gap-space-sm">
+<span class="w-7 h-7 rounded-full bg-secondary-fixed flex items-center justify-center text-on-tertiary-fixed-variant shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[15px]">verified</span>
+</span>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md text-on-surface">Proposal <strong>#PR-2025-08</strong> approved by FinEdge Corp</span>
+<span class="font-body-sm text-body-sm text-secondary">22 minutes ago • Commercial value $190,000</span>
+</div>
+</div>
+<!-- Feed Item 2 -->
+<div class="flex items-start gap-space-sm">
+<span class="w-7 h-7 rounded-full bg-surface-container-high flex items-center justify-center text-primary shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[15px]">flag</span>
+</span>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md text-on-surface">Milestone 3 completed for <strong>RetailCore Mobile</strong></span>
+<span class="font-body-sm text-body-sm text-secondary">1 hour ago • Verified by QA Automation</span>
+</div>
+</div>
+<!-- Feed Item 3 -->
+<div class="flex items-start gap-space-sm">
+<span class="w-7 h-7 rounded-full bg-secondary-fixed-dim flex items-center justify-center text-on-surface shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[15px]">rule</span>
+</span>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md text-on-surface">Change Request <strong>#CR-04</strong> submitted</span>
+<span class="font-body-sm text-body-sm text-secondary">3 hours ago • Scope variance +40 engineering hrs</span>
+</div>
+</div>
+<!-- Feed Item 4 -->
+<div class="flex items-start gap-space-sm">
+<span class="w-7 h-7 rounded-full bg-surface-container-highest flex items-center justify-center text-primary-container shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[15px]">payments</span>
+</span>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md text-on-surface">Supplier <strong>CloudGrid Solutions</strong> invoice settled</span>
+<span class="font-body-sm text-body-sm text-secondary">5 hours ago • Amount $24,500 processed</span>
+</div>
+</div>
+</div>
+<div class="pt-space-xs flex justify-center">
+<button class="font-label-md text-label-md text-secondary hover:text-primary transition-colors flex items-center gap-1" onclick="alert('Displaying exhaustive corporate audit trail...')">
+            View Complete Audit Log <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Visual Enterprise Banner (Context & Identity) -->
+<div class="relative overflow-hidden rounded-xl bg-gradient-to-r from-primary to-primary-container text-on-primary p-space-lg shadow-sm">
+<div class="relative z-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<img class="w-16 h-16 rounded-xl object-cover" data-alt="Corporate technology team collaborating in a modern glass conference room with digital architecture dashboards on screens, bright natural morning lighting, professional enterprise setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4EQk3p7MbbO4I2GNUV-pJRb3xjJyX-2ZXsXQWB22QoqQySg2YkBTzao3RrQ_11wPALp-ZbUakYRSRXiOSrdKXZY3X52xnHaHZKjxKthYjrp07_ej-IZTwBLdRXgwQdtmzW1rSFvRPRC1VTbgXi1g-oGiDyBEeP34vK2T9H7q7TT09jWvT2jsWx7br5nBpWHruNYS27whG7opM5mGmbSO17g1JSK2_IO4oMEmjmJU"/>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-primary">Q2 Portfolio Review Scheduled</span>
+<span class="font-body-md text-body-md text-on-primary-container">Next Board &amp; Stakeholder sync on May 22, 2025 at 14:00 EST. 6 Project Managers on deck.</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="bg-surface-container-lowest text-primary hover:bg-surface-container-low font-label-lg text-label-lg px-space-md h-[38px] rounded-lg shadow-sm transition-colors" onclick="alert('Opening Board Agenda Pack...')">
+          Access Agenda Pack
+        </button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function setPeriod(btn, period) {
+    const parent = btn.parentElement;
+    parent.querySelectorAll('button').forEach(b => {
+      b.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+      b.classList.add('text-secondary');
+    });
+    btn.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+    btn.classList.remove('text-secondary');
+  }
+
+  function triggerExportNotice() {
+    const toast = document.getElementById('export-toast');
+    if (toast) {
+      toast.classList.remove('hidden');
+      setTimeout(() => {
+        toast.classList.add('hidden');
+      }, 5000);
+    }
+  }
+</script></main><footer class="w-full bg-surface-container-lowest px-gutter py-space-md shadow-[0_1px_8px_rgba(0,0,0,0.04)] flex flex-col md:flex-row items-center justify-between gap-space-sm"><div class="flex items-center gap-space-xs text-on-surface-variant"><span class="w-2 h-2 rounded-full bg-[#10b981]"></span><span class="font-label-md text-label-md text-on-surface">All Systems Operational</span><span class="text-outline-variant px-space-xs">|</span><span class="font-body-sm text-body-sm text-secondary">© 2025 NovaTech Solutions. All rights reserved.</span></div><div class="font-body-sm text-body-sm text-secondary">University Demonstration &amp; Prototype System Architecture</div></footer></div></body></html>

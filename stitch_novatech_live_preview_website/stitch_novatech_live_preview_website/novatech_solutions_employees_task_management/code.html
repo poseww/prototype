@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"background":"#f8f9ff","on-surface-variant":"#434655","outline-variant":"#c4c5d7","secondary-fixed":"#dae2fd","surface-container-low":"#eff4ff","error-container":"#ffdad6","on-primary-fixed-variant":"#0039b5","on-primary-fixed":"#001551","primary-fixed-dim":"#b7c4ff","on-background":"#0b1c30","on-tertiary":"#ffffff","secondary":"#565e74","on-surface":"#0b1c30","tertiary-fixed":"#dbe1ff","error":"#ba1a1a","on-secondary-container":"#5c647a","surface-variant":"#d3e4fe","inverse-primary":"#b7c4ff","on-tertiary-fixed":"#00174b","on-primary-container":"#cad3ff","on-secondary-fixed":"#131b2e","surface-container-highest":"#d3e4fe","on-primary":"#ffffff","surface":"#f8f9ff","inverse-on-surface":"#eaf1ff","on-tertiary-fixed-variant":"#003ea8","secondary-container":"#dae2fd","surface-container":"#e5eeff","on-secondary":"#ffffff","on-secondary-fixed-variant":"#3f465c","on-error-container":"#93000a","outline":"#747686","primary-container":"#1d4ed8","tertiary-container":"#0051d6","surface-container-high":"#dce9ff","surface-dim":"#cbdbf5","primary-fixed":"#dce1ff","tertiary-fixed-dim":"#b4c5ff","tertiary":"#003ca3","surface-tint":"#2151da","primary":"#0037b0","on-error":"#ffffff","surface-container-lowest":"#ffffff","inverse-surface":"#213145","secondary-fixed-dim":"#bec6e0","on-tertiary-container":"#c9d4ff","surface-bright":"#f8f9ff"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"gutter":"1.5rem","space-xl":"2rem","space-lg":"1.5rem","gutter-sm":"1rem","space-md":"1rem","margin":"2rem","space-sm":"0.5rem","margin-mobile":"1rem","space-xs":"0.25rem"},fontFamily:{"title":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"label-caps":["Plus Jakarta Sans"],"display":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"]},fontSize:{"title":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"400"}],"body-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"700"}],"headline-lg-mobile":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"700"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.005em","fontWeight":"500"}],"label-caps":["11px",{"lineHeight":"14px","letterSpacing":"0.06em","fontWeight":"700"}],"display":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"headline-sm":["16px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"600"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest z-50 flex flex-col shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-space-md flex items-center gap-space-sm bg-surface-container-lowest"><img alt="NovaTech Solutions Portal Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UrmuOcV0k5SwkNjdal6LCe0FGEsQOl8xqrIG7P3lDLpVGm5nzhIi_H2do5BtI5Mb8ZY6gCH8B4lQqVx5_DRnFAmDD7YEamQwt9jHSQ1YEM9sVvZ28zbbkHVBo0ghYBlad-mHguqQlsZiV0o0XoQ7gcaViFLHRxghzkXZz4mea0kpDxeCsjBZCx1a6TmsbPbF3nfmvpzFc6WkASk8XJ8K9NyhdjOQbewu3e4wBjaDhg"/><div class="flex flex-col"><span class="font-title text-title text-on-surface">NovaTech</span><span class="font-label-caps text-label-caps text-secondary uppercase">IT PM Portal</span></div></div><div class="flex-1 overflow-y-auto px-space-sm py-space-sm"><div class="px-space-sm py-space-xs font-label-caps text-label-caps text-secondary uppercase">Core Navigation</div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-surface-container-low text-primary-container font-headline-sm"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="management-dashboard" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span>Dashboard</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="client-management" href="#"><span class="material-symbols-outlined text-[20px]">business</span><span>Client Management</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="proposals-requests" href="#"><span class="material-symbols-outlined text-[20px]">request_quote</span><span>Proposals &amp; Requests</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="projects-milestones" href="#"><span class="material-symbols-outlined text-[20px]">flag</span><span>Projects &amp; Milestones</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="employees-tasks" href="#"><span class="material-symbols-outlined text-[20px]">assignment_ind</span><span>Employees &amp; Tasks</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="documents-issues" href="#"><span class="material-symbols-outlined text-[20px]">folder_supervised</span><span>Documents &amp; Issues</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="client-meetings-change-requests" href="#"><span class="material-symbols-outlined text-[20px]">published_with_changes</span><span>Meetings &amp; Changes</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="supplier-management" href="#"><span class="material-symbols-outlined text-[20px]">inventory_2</span><span>Supplier Management</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="financials-invoices" href="#"><span class="material-symbols-outlined text-[20px]">receipt_long</span><span>Financials &amp; Invoices</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="project-completion-sign-off" href="#"><span class="material-symbols-outlined text-[20px]">verified</span><span>Completion &amp; Sign-Off</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="reports-analytics" href="#"><span class="material-symbols-outlined text-[20px]">insights</span><span>Reports &amp; Analytics</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="user-role-permissions" href="#"><span class="material-symbols-outlined text-[20px]">admin_panel_settings</span><span>User &amp; Roles</span></a></nav></div><div class="p-space-sm bg-surface-container-low flex items-center justify-between text-on-surface-variant"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-primary-container"></span><span class="font-label-md text-label-md">Production Cloud</span></div><a class="text-secondary hover:text-primary transition-colors flex items-center" data-path="login-portal-gateway" href="#" title="Log Out"><span class="material-symbols-outlined text-[18px]">logout</span></a></div></aside><div class="pl-64 flex flex-col min-h-screen"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md flex-1 max-w-md"><div class="flex items-center w-full bg-surface-container-low px-space-sm py-space-xs rounded-xl gap-space-xs text-on-surface-variant"><span class="material-symbols-outlined text-[18px]">search</span><input class="bg-transparent border-0 outline-none text-body-sm font-body-sm text-on-surface placeholder:text-secondary w-full" placeholder="Search projects, clients, tickets..." type="text"/></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs bg-surface-container-low px-space-sm py-space-xs rounded-xl"><span class="material-symbols-outlined text-[18px] text-secondary">swap_horiz</span><label class="font-label-md text-label-md text-secondary">Role:</label><select class="bg-transparent font-title text-title text-on-surface border-0 outline-none cursor-pointer"><option selected="" value="admin">Administrator</option><option value="pm">Project Manager</option><option value="employee">Employee</option><option value="finance">Finance Officer</option><option value="client">Client</option><option value="management">Management</option></select></div><button class="relative p-space-xs text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-error"></span></button><div class="flex items-center gap-space-sm pl-space-sm"><div class="flex flex-col text-right"><span class="font-title text-title text-on-surface">Alex Morgan</span><span class="font-body-sm text-body-sm text-secondary">Senior Administrator</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 w-full pt-16 px-gutter pb-space-xl bg-surface"><div class="flex flex-col w-full">
+<!-- Interactive Navigation Synchronizer -->
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const activeLink = document.querySelector('aside nav a[data-path="employees-tasks"]');
+      if (activeLink) {
+        document.querySelectorAll('aside nav a').forEach(el => {
+          el.classList.remove('bg-surface-container-low', 'text-primary-container', 'font-headline-sm');
+          el.classList.add('text-on-surface-variant');
+        });
+        activeLink.classList.add('bg-surface-container-low', 'text-primary-container', 'font-headline-sm');
+        activeLink.classList.remove('text-on-surface-variant');
+      }
+    });
+  </script>
+<!-- Title & Action Command Bar -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md mb-space-lg">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs mb-1">
+<span class="font-label-caps text-label-caps text-primary tracking-widest uppercase">Resource &amp; Sprint Operations</span>
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span class="font-label-caps text-label-caps text-secondary">Sprint 24-Q2-W7</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface">Workforce Allocation &amp; Task Operations</h1>
+<p class="font-body-md text-body-md text-secondary">Talent capacity, skills matrix matching, agile task board, and developer sprint tracking</p>
+</div>
+<!-- Action Controls -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<button class="h-[38px] px-4 rounded-lg bg-surface-container-lowest text-error hover:bg-error-container hover:text-on-error-container font-label-lg text-label-lg shadow-sm transition-all flex items-center gap-space-xs cursor-pointer" onclick="document.getElementById('blockerModal').classList.remove('hidden')">
+<span class="material-symbols-outlined text-[18px]">warning</span>
+<span>Report Blocker</span>
+</button>
+<button class="h-[38px] px-4 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-lg text-label-lg shadow-md hover:shadow-lg transition-all flex items-center gap-space-xs cursor-pointer" onclick="document.getElementById('createTaskModal').classList.remove('hidden')">
+<span class="material-symbols-outlined text-[18px]">add_task</span>
+<span>Create New Task</span>
+</button>
+</div>
+</div>
+<!-- Key Metrics Row (4 Bento KPI Cards with SVG Sparkline / Donut) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md mb-space-lg">
+<!-- Card 1: Total Roster -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-shadow relative overflow-hidden">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-caps text-label-caps text-secondary uppercase">Total Engineering Roster</span>
+<div class="w-7 h-7 rounded-lg bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">groups</span>
+</div>
+</div>
+<div class="flex items-baseline gap-space-xs mb-1">
+<span class="font-display text-display text-on-surface">65</span>
+<span class="font-label-md text-label-md text-secondary">Staff Engineers</span>
+</div>
+<div class="flex items-center gap-space-xs text-body-sm font-body-sm text-secondary">
+<span class="inline-flex items-center text-primary-container font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px]">trending_up</span>+4
+        </span>
+<span>onboarded this cycle</span>
+</div>
+<!-- Subtle Ambient Indicator Line -->
+<div class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-primary-container via-surface-container-high to-transparent"></div>
+</div>
+<!-- Card 2: Billable Utilization -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-shadow relative overflow-hidden">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-caps text-label-caps text-secondary uppercase">Billable Utilization</span>
+<div class="w-7 h-7 rounded-lg bg-surface-container-low flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[18px]">pie_chart</span>
+</div>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<div class="flex items-baseline gap-space-xs mb-1">
+<span class="font-display text-display text-on-surface">88.4%</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary">Target: 85.0% threshold</span>
+</div>
+<!-- Inline Radial Progress SVG -->
+<div class="relative w-12 h-12 flex items-center justify-center">
+<svg class="w-12 h-12 -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-container" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-primary-container" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="88.4, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<span class="absolute font-label-caps text-[10px] text-primary-container font-bold">88%</span>
+</div>
+</div>
+<div class="absolute bottom-0 left-0 right-0 h-1 bg-primary-container"></div>
+</div>
+<!-- Card 3: Overdue Tasks -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-shadow relative overflow-hidden">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-caps text-label-caps text-error uppercase">Overdue Tasks</span>
+<div class="w-7 h-7 rounded-lg bg-error-container flex items-center justify-center text-error">
+<span class="material-symbols-outlined text-[18px]">crisis_alert</span>
+</div>
+</div>
+<div class="flex items-baseline gap-space-xs mb-1">
+<span class="font-display text-display text-error">3</span>
+<span class="font-label-md text-label-md text-secondary">Require Intervention</span>
+</div>
+<div class="flex items-center gap-space-xs text-body-sm font-body-sm text-error">
+<span class="material-symbols-outlined text-[16px]">priority_high</span>
+<span>2 blockers tagged on Cloud Migrations</span>
+</div>
+<div class="absolute bottom-0 left-0 right-0 h-1 bg-error"></div>
+</div>
+<!-- Card 4: Sprints Active -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-shadow relative overflow-hidden">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-label-caps text-label-caps text-secondary uppercase">Sprints Active</span>
+<div class="w-7 h-7 rounded-lg bg-surface-container-low flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[18px]">rocket_launch</span>
+</div>
+</div>
+<div class="flex items-baseline gap-space-xs mb-1">
+<span class="font-display text-display text-on-surface">4</span>
+<span class="font-label-md text-label-md text-secondary">Cross-Functional Squads</span>
+</div>
+<div class="flex items-center gap-space-xs text-body-sm font-body-sm text-secondary">
+<span class="material-symbols-outlined text-[16px] text-primary">schedule</span>
+<span>Next sprint turnover in 3 days</span>
+</div>
+<div class="absolute bottom-0 left-0 right-0 h-1 bg-tertiary"></div>
+</div>
+</div>
+<!-- Priority Attention / Deadline Highlight Banner -->
+<div class="bg-gradient-to-r from-surface-container to-surface-container-low rounded-xl p-space-md shadow-sm mb-space-lg flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-xl bg-error-container text-error flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">assignment_late</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-title text-title text-on-surface">Urgent Alert: 3 Tasks Past SLA Window</span>
+<span class="px-2 py-0.5 rounded-full bg-error text-on-error font-label-caps text-label-caps">Action Required</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary">Terraform script drift on NovaShield Enterprise &amp; Payment Gateway Webhook integration have pending approvals.</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm shrink-0 w-full md:w-auto">
+<button class="h-9 px-3.5 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md hover:bg-surface-container shadow-sm transition-colors flex items-center gap-1 cursor-pointer" onclick="filterOverdueTasks()">
+<span class="material-symbols-outlined text-[16px] text-error">filter_list</span>
+<span>Filter 3 Overdue</span>
+</button>
+<button class="h-9 px-3.5 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-colors flex items-center gap-1 cursor-pointer" onclick="document.getElementById('blockerModal').classList.remove('hidden')">
+<span class="material-symbols-outlined text-[16px]">sync_problem</span>
+<span>Triage Blocker</span>
+</button>
+</div>
+</div>
+<!-- Employee Skills & Availability Matrix Section -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-md mb-space-lg">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pb-space-sm mb-space-sm">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">badge</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Employee Skills &amp; Availability Matrix</h2>
+</div>
+<span class="font-body-sm text-body-sm text-secondary">Active technical staff workload allocation &amp; expertise mapping</span>
+</div>
+<!-- Filter Tags -->
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="font-label-caps text-label-caps text-secondary uppercase mr-1">Filter Skill:</span>
+<button class="skill-btn px-2.5 py-1 rounded-md text-label-md font-label-md bg-primary-container text-on-primary transition-colors cursor-pointer" onclick="filterStaffSkill('ALL')">All</button>
+<button class="skill-btn px-2.5 py-1 rounded-md text-label-md font-label-md bg-surface-container-low text-secondary hover:text-on-surface transition-colors cursor-pointer" onclick="filterStaffSkill('AWS')">AWS</button>
+<button class="skill-btn px-2.5 py-1 rounded-md text-label-md font-label-md bg-surface-container-low text-secondary hover:text-on-surface transition-colors cursor-pointer" onclick="filterStaffSkill('Kubernetes')">Kubernetes</button>
+<button class="skill-btn px-2.5 py-1 rounded-md text-label-md font-label-md bg-surface-container-low text-secondary hover:text-on-surface transition-colors cursor-pointer" onclick="filterStaffSkill('React')">React</button>
+<button class="skill-btn px-2.5 py-1 rounded-md text-label-md font-label-md bg-surface-container-low text-secondary hover:text-on-surface transition-colors cursor-pointer" onclick="filterStaffSkill('Go')">Go</button>
+<button class="skill-btn px-2.5 py-1 rounded-md text-label-md font-label-md bg-surface-container-low text-secondary hover:text-on-surface transition-colors cursor-pointer" onclick="filterStaffSkill('Python')">Python</button>
+</div>
+</div>
+<!-- Staff Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-space-md" id="staffGrid">
+<!-- Staff Card 1 -->
+<div class="staff-card bg-surface-container-low rounded-xl p-space-md hover:shadow-md transition-all flex flex-col justify-between" data-skills="AWS,Terraform,Kubernetes">
+<div>
+<div class="flex items-start justify-between gap-space-xs mb-space-sm">
+<div class="flex items-center gap-space-sm">
+<img class="w-12 h-12 rounded-full object-cover shadow-sm" data-alt="Professional studio portrait of an experienced senior male enterprise cloud architect with glasses, neat beard, wearing a navy collared shirt against a soft neutral studio background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvo0PL2dTmEmlCjI8sqOp0R6OQl33fGZ3yIYTzdThCsDfSNqcnF2opA3r109rH1udQd49-E0hNUHqqX6VwLKLipxrW74AhkyzBffnrfXN6VeSHdjWZibuTeKxY8mlGXpJXRoQCxG1nuUa_zljRipNV3EtMJOAq1KUIFa4gIGSoUF_E2eva7s-FoRecPr7EwFhAme2ZW6vBuTB0yMrt7AGor0_x6mbPE_Hc3H8eKSE"/>
+<div class="flex flex-col">
+<span class="font-title text-title text-on-surface">Dr. Ronald Vance</span>
+<span class="font-body-sm text-body-sm text-secondary">Senior Cloud Architect</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-error-container text-error font-label-caps text-label-caps">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>At Capacity
+            </span>
+</div>
+<div class="mb-space-sm">
+<span class="font-label-caps text-label-caps text-secondary block mb-1 uppercase">Assigned Projects</span>
+<div class="flex flex-wrap gap-1">
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest text-on-surface-variant font-label-md text-label-md shadow-sm">NovaShield SecOps</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest text-on-surface-variant font-label-md text-label-md shadow-sm">GovCloud FedRAMP</span>
+</div>
+</div>
+</div>
+<div>
+<span class="font-label-caps text-label-caps text-secondary block mb-1 uppercase">Core Skills</span>
+<div class="flex flex-wrap gap-1">
+<span class="px-2 py-0.5 rounded-md bg-secondary-container text-on-secondary-fixed font-label-caps text-label-caps">AWS</span>
+<span class="px-2 py-0.5 rounded-md bg-secondary-container text-on-secondary-fixed font-label-caps text-label-caps">Kubernetes</span>
+<span class="px-2 py-0.5 rounded-md bg-secondary-container text-on-secondary-fixed font-label-caps text-label-caps">Terraform</span>
+</div>
+<div class="mt-3 pt-2 flex items-center justify-between text-body-sm font-body-sm text-secondary">
+<span>Sprint Load: <strong>100%</strong></span>
+<span class="text-primary font-label-md text-label-md cursor-pointer hover:underline" onclick="assignTaskToStaff('Dr. Ronald Vance')">Reassign</span>
+</div>
+</div>
+</div>
+<!-- Staff Card 2 -->
+<div class="staff-card bg-surface-container-low rounded-xl p-space-md hover:shadow-md transition-all flex flex-col justify-between" data-skills="React,Go,Python">
+<div>
+<div class="flex items-start justify-between gap-space-xs mb-space-sm">
+<div class="flex items-center gap-space-sm">
+<img class="w-12 h-12 rounded-full object-cover shadow-sm" data-alt="Professional headshot of a smiling female full-stack lead software developer with stylish modern glasses, dark hair tied back, wearing an emerald cardigan in a bright architectural tech office." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBi6GMhWq566Sk1jUG3Nwlo4GJpq9YW9d_2BACulrfouVv_NvdwV6PJPc5FJAZWftHBdw_otBNQtMDjP515omsVC5u5idDKkpr_vhoweXpxUmYTeD2GJ98C5T8WHNaq4EZDVtBxC0G-2LOjxeyR_25umb5eWUu6pp4Sbnvz5I842vMc4TDokIGkhLDeeBpa05kGs2KO2_fIgmXuh5xscjF9pI2N92I33z0mYMSjP6Y"/>
+<div class="flex flex-col">
+<span class="font-title text-title text-on-surface">Maya Lin-Sanchez</span>
+<span class="font-body-sm text-body-sm text-secondary">Full Stack Lead</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-caps text-label-caps">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>50% Booked
+            </span>
+</div>
+<div class="mb-space-sm">
+<span class="font-label-caps text-label-caps text-secondary block mb-1 uppercase">Assigned Projects</span>
+<div class="flex flex-wrap gap-1">
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest text-on-surface-variant font-label-md text-label-md shadow-sm">Fintech Portal v4</span>
+</div>
+</div>
+</div>
+<div>
+<span class="font-label-caps text-label-caps text-secondary block mb-1 uppercase">Core Skills</span>
+<div class="flex flex-wrap gap-1">
+<span class="px-2 py-0.5 rounded-md bg-secondary-container text-on-secondary-fixed font-label-caps text-label-caps">React</span>
+<span class="px-2 py-0.5 rounded-md bg-secondary-container text-on-secondary-fixed font-label-caps text-label-caps">Go</span>
+<span class="px-2 py-0.5 rounded-md bg-secondary-container text-on-secondary-fixed font-label-caps text-label-caps">Python</span>
+</div>
+<div class="mt-3 pt-2 flex items-center justify-between text-body-sm font-body-sm text-secondary">
+<span>Sprint Load: <strong>50%</strong> (20 hrs left)</span>
+<span class="text-primary font-label-md text-label-md cursor-pointer hover:underline" onclick="assignTaskToStaff('Maya Lin-Sanchez')">Assign Task</span>
+</div>
+</div>
+</div>
+<!-- Staff Card 3 -->
+<div class="staff-card bg-surface-container-low rounded-xl p-space-md hover:shadow-md transition-all flex flex-col justify-between" data-skills="Python,AWS">
+<div>
+<div class="flex items-start justify-between gap-space-xs mb-space-sm">
+<div class="flex items-center gap-space-sm">
+<img class="w-12 h-12 rounded-full object-cover shadow-sm" data-alt="Professional corporate headshot of a young male QA automation test specialist wearing minimalist round spectacles and a dark blazer in a softly blurred modern server room backdrop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbHABw0gI3EfPKyTv9be5OQ-PYF5taWStAf9Km1A4vXFa7p21zbMzf-TMZTwo9tcZoZdHRfFlyn0oSgq5L0r1EMKBFJr1KiFTGTr2NKigpgVTRXtsEVq7oMMVbS9WZERJSSe6TLkSuuZ9aLpPBZpederzI0-ZxjWJ6ofqDrKfmwH0DwK8WN7Zxp66toCXHJN7DA0KGbH0Ncgu-F399SD881dnVM0YKbnfMOsxImPI"/>
+<div class="flex flex-col">
+<span class="font-title text-title text-on-surface">Tariq Al-Mansoor</span>
+<span class="font-body-sm text-body-sm text-secondary">QA Automation Specialist</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-highest text-primary font-label-caps text-label-caps">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>Available
+            </span>
+</div>
+<div class="mb-space-sm">
+<span class="font-label-caps text-label-caps text-secondary block mb-1 uppercase">Assigned Projects</span>
+<div class="flex flex-wrap gap-1">
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest text-on-surface-variant font-label-md text-label-md shadow-sm">Core Regression Suite</span>
+</div>
+</div>
+</div>
+<div>
+<span class="font-label-caps text-label-caps text-secondary block mb-1 uppercase">Core Skills</span>
+<div class="flex flex-wrap gap-1">
+<span class="px-2 py-0.5 rounded-md bg-secondary-container text-on-secondary-fixed font-label-caps text-label-caps">Python</span>
+<span class="px-2 py-0.5 rounded-md bg-secondary-container text-on-secondary-fixed font-label-caps text-label-caps">Playwright</span>
+<span class="px-2 py-0.5 rounded-md bg-secondary-container text-on-secondary-fixed font-label-caps text-label-caps">AWS</span>
+</div>
+<div class="mt-3 pt-2 flex items-center justify-between text-body-sm font-body-sm text-secondary">
+<span>Sprint Load: <strong>25%</strong> (30 hrs left)</span>
+<span class="text-primary font-label-md text-label-md cursor-pointer hover:underline" onclick="assignTaskToStaff('Tariq Al-Mansoor')">Assign Task</span>
+</div>
+</div>
+</div>
+<!-- Staff Card 4 -->
+<div class="staff-card bg-surface-container-low rounded-xl p-space-md hover:shadow-md transition-all flex flex-col justify-between" data-skills="Kubernetes,Terraform,AWS">
+<div>
+<div class="flex items-start justify-between gap-space-xs mb-space-sm">
+<div class="flex items-center gap-space-sm">
+<img class="w-12 h-12 rounded-full object-cover shadow-sm" data-alt="Portrait of a female senior DevOps systems engineer smiling confidently with short curly hair, wearing a gray charcoal mock turtleneck sweater against a crisp white and blue tech corporate campus background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkBYAkgExMy7ckCxXrt0TH1olK2qLlmQawc3r3pVhpU3ugUdqb1bM0MWYZ9y054t39YYyZlQ1lMhVVRIBLsIp-VWImzuR0nBTnrr_Cocanuc3HHrhuHP6heWyhwcShR6eFObnHpJvIm-XllxqOnuoV_ErsVj6jW6EPbG04CDyY-bodcUwQILi3YywZMm76fgNdFgWsR9hEav8vPPdzMFJPEme-APK4vd4NytNMu5I"/>
+<div class="flex flex-col">
+<span class="font-title text-title text-on-surface">Elena Rostova</span>
+<span class="font-body-sm text-body-sm text-secondary">DevOps Engineer</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-error-container text-error font-label-caps text-label-caps">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>At Capacity
+            </span>
+</div>
+<div class="mb-space-sm">
+<span class="font-label-caps text-label-caps text-secondary block mb-1 uppercase">Assigned Projects</span>
+<div class="flex flex-wrap gap-1">
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest text-on-surface-variant font-label-md text-label-md shadow-sm">Infra Automation Core</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest text-on-surface-variant font-label-md text-label-md shadow-sm">CI/CD Hardening</span>
+</div>
+</div>
+</div>
+<div>
+<span class="font-label-caps text-label-caps text-secondary block mb-1 uppercase">Core Skills</span>
+<div class="flex flex-wrap gap-1">
+<span class="px-2 py-0.5 rounded-md bg-secondary-container text-on-secondary-fixed font-label-caps text-label-caps">Kubernetes</span>
+<span class="px-2 py-0.5 rounded-md bg-secondary-container text-on-secondary-fixed font-label-caps text-label-caps">Terraform</span>
+<span class="px-2 py-0.5 rounded-md bg-secondary-container text-on-secondary-fixed font-label-caps text-label-caps">AWS</span>
+</div>
+<div class="mt-3 pt-2 flex items-center justify-between text-body-sm font-body-sm text-secondary">
+<span>Sprint Load: <strong>95%</strong> (Critical)</span>
+<span class="text-primary font-label-md text-label-md cursor-pointer hover:underline" onclick="assignTaskToStaff('Elena Rostova')">Review Load</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Task Management Board / Table Container -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col mb-space-lg">
+<!-- Header Bar with Filter & Search Controls -->
+<div class="p-space-md bg-surface-container-lowest flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">task_alt</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Agile Task Operations Registry</h2>
+<span class="font-body-sm text-body-sm text-secondary">Synchronized cross-repository issue &amp; sprint tracking</span>
+</div>
+</div>
+<!-- Quick Table Filter Options -->
+<div class="flex flex-wrap items-center gap-space-xs">
+<div class="relative">
+<input class="h-[36px] pl-8 pr-3 text-body-sm font-body-sm rounded-lg bg-surface-container-low text-on-surface placeholder:text-secondary outline-none w-56" id="taskSearchInput" onkeyup="searchTasks()" placeholder="Filter by Task or Project..." type="text"/>
+<span class="material-symbols-outlined text-[18px] text-secondary absolute left-2 top-2.5">search</span>
+</div>
+<select class="h-[36px] px-3 rounded-lg bg-surface-container-low text-on-surface text-body-sm font-body-sm outline-none cursor-pointer" id="statusFilter" onchange="filterTasksByStatus()">
+<option value="ALL">All Statuses</option>
+<option value="To Do">To Do</option>
+<option value="In Progress">In Progress</option>
+<option value="Under Review">Under Review</option>
+<option value="Completed">Completed</option>
+</select>
+<select class="h-[36px] px-3 rounded-lg bg-surface-container-low text-on-surface text-body-sm font-body-sm outline-none cursor-pointer" id="priorityFilter" onchange="filterTasksByPriority()">
+<option value="ALL">All Priorities</option>
+<option value="Urgent">Urgent</option>
+<option value="High">High</option>
+<option value="Medium">Medium</option>
+<option value="Low">Low</option>
+</select>
+</div>
+</div>
+<!-- Data Table -->
+<div class="w-full overflow-x-auto">
+<table class="w-full text-left border-collapse" id="taskTable">
+<thead>
+<tr class="bg-surface-container-low h-10 text-secondary font-label-caps text-label-caps uppercase">
+<th class="px-space-md py-2">Task ID</th>
+<th class="px-space-md py-2">Task Title</th>
+<th class="px-space-md py-2">Assigned Staff</th>
+<th class="px-space-md py-2">Project</th>
+<th class="px-space-md py-2">Priority</th>
+<th class="px-space-md py-2 text-right">Schedule Window</th>
+<th class="px-space-md py-2">Status</th>
+<th class="px-space-md py-2 text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-low text-body-md font-body-md text-on-surface" id="taskTableBody">
+<!-- Row 1: Overdue & Urgent -->
+<tr class="hover:bg-surface-container-low/50 transition-colors task-row" data-overdue="true" data-priority="Urgent" data-status="In Progress">
+<td class="px-space-md py-3 font-title text-title text-primary">NOV-3810</td>
+<td class="px-space-md py-3">
+<div class="flex flex-col">
+<span class="font-title text-title text-on-surface">Patch Zero-Day Kernel CVE-2025-1882</span>
+<span class="font-body-sm text-body-sm text-error flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">warning</span> Overdue by 2 days (SLA breached)
+                </span>
+</div>
+</td>
+<td class="px-space-md py-3">
+<div class="flex items-center gap-space-xs">
+<div class="w-7 h-7 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-label-caps text-label-caps">RV</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Dr. Ronald Vance</span>
+<span class="text-body-sm font-body-sm text-secondary">Cloud Architect</span>
+</div>
+</div>
+</td>
+<td class="px-space-md py-3">
+<span class="px-2.5 py-1 rounded bg-surface-container font-label-md text-label-md text-on-surface-variant">GovCloud FedRAMP</span>
+</td>
+<td class="px-space-md py-3">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-error-container text-error font-label-caps text-label-caps">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>Urgent
+              </span>
+</td>
+<td class="px-space-md py-3 text-right">
+<span class="text-error font-title text-title">May 12 - May 17</span>
+</td>
+<td class="px-space-md py-3">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-high text-primary font-label-md text-label-md">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>In Progress
+              </span>
+</td>
+<td class="px-space-md py-3 text-right">
+<button class="text-secondary hover:text-primary transition-colors p-1" onclick="openTaskQuickDetail('NOV-3810')" title="View Detail">
+<span class="material-symbols-outlined text-[18px]">open_in_new</span>
+</button>
+</td>
+</tr>
+<!-- Row 2: In Progress -->
+<tr class="hover:bg-surface-container-low/50 transition-colors task-row" data-overdue="false" data-priority="High" data-status="In Progress">
+<td class="px-space-md py-3 font-title text-title text-primary">NOV-3814</td>
+<td class="px-space-md py-3">
+<div class="flex flex-col">
+<span class="font-title text-title text-on-surface">Implement Multi-Tenant JWT Token Rotation</span>
+<span class="font-body-sm text-body-sm text-secondary">Sprint 24 milestone authentication core</span>
+</div>
+</td>
+<td class="px-space-md py-3">
+<div class="flex items-center gap-space-xs">
+<div class="w-7 h-7 rounded-full bg-tertiary-container text-on-tertiary flex items-center justify-center font-label-caps text-label-caps">ML</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Maya Lin-Sanchez</span>
+<span class="text-body-sm font-body-sm text-secondary">Full Stack Lead</span>
+</div>
+</div>
+</td>
+<td class="px-space-md py-3">
+<span class="px-2.5 py-1 rounded bg-surface-container font-label-md text-label-md text-on-surface-variant">Fintech Portal v4</span>
+</td>
+<td class="px-space-md py-3">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-fixed font-label-caps text-label-caps">
+                High
+              </span>
+</td>
+<td class="px-space-md py-3 text-right font-body-sm text-body-sm text-secondary">
+              May 15 - May 22
+            </td>
+<td class="px-space-md py-3">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-high text-primary font-label-md text-label-md">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>In Progress
+              </span>
+</td>
+<td class="px-space-md py-3 text-right">
+<button class="text-secondary hover:text-primary transition-colors p-1" onclick="openTaskQuickDetail('NOV-3814')" title="View Detail">
+<span class="material-symbols-outlined text-[18px]">open_in_new</span>
+</button>
+</td>
+</tr>
+<!-- Row 3: Under Review -->
+<tr class="hover:bg-surface-container-low/50 transition-colors task-row" data-overdue="false" data-priority="Medium" data-status="Under Review">
+<td class="px-space-md py-3 font-title text-title text-primary">NOV-3798</td>
+<td class="px-space-md py-3">
+<div class="flex flex-col">
+<span class="font-title text-title text-on-surface">Automated End-to-End Cypress Flow for Invoicing</span>
+<span class="font-body-sm text-body-sm text-secondary">98 unit tests passing, awaiting QA sign-off</span>
+</div>
+</td>
+<td class="px-space-md py-3">
+<div class="flex items-center gap-space-xs">
+<div class="w-7 h-7 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-label-caps text-label-caps">TM</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Tariq Al-Mansoor</span>
+<span class="text-body-sm font-body-sm text-secondary">QA Automation</span>
+</div>
+</div>
+</td>
+<td class="px-space-md py-3">
+<span class="px-2.5 py-1 rounded bg-surface-container font-label-md text-label-md text-on-surface-variant">Core Regression</span>
+</td>
+<td class="px-space-md py-3">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container text-secondary font-label-caps text-label-caps">
+                Medium
+              </span>
+</td>
+<td class="px-space-md py-3 text-right font-body-sm text-body-sm text-secondary">
+              May 10 - May 19
+            </td>
+<td class="px-space-md py-3">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-md text-label-md">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>Under Review
+              </span>
+</td>
+<td class="px-space-md py-3 text-right">
+<button class="text-secondary hover:text-primary transition-colors p-1" onclick="openTaskQuickDetail('NOV-3798')" title="View Detail">
+<span class="material-symbols-outlined text-[18px]">open_in_new</span>
+</button>
+</td>
+</tr>
+<!-- Row 4: Overdue & High -->
+<tr class="hover:bg-surface-container-low/50 transition-colors task-row" data-overdue="true" data-priority="High" data-status="To Do">
+<td class="px-space-md py-3 font-title text-title text-primary">NOV-3790</td>
+<td class="px-space-md py-3">
+<div class="flex flex-col">
+<span class="font-title text-title text-on-surface">Terraform Drift Reconciliation for AWS EKS</span>
+<span class="font-body-sm text-body-sm text-error flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">warning</span> Overdue by 1 day
+                </span>
+</div>
+</td>
+<td class="px-space-md py-3">
+<div class="flex items-center gap-space-xs">
+<div class="w-7 h-7 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-caps text-label-caps">ER</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Elena Rostova</span>
+<span class="text-body-sm font-body-sm text-secondary">DevOps Engineer</span>
+</div>
+</div>
+</td>
+<td class="px-space-md py-3">
+<span class="px-2.5 py-1 rounded bg-surface-container font-label-md text-label-md text-on-surface-variant">NovaShield SecOps</span>
+</td>
+<td class="px-space-md py-3">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-fixed font-label-caps text-label-caps">
+                High
+              </span>
+</td>
+<td class="px-space-md py-3 text-right font-title text-title text-error">
+              May 08 - May 18
+            </td>
+<td class="px-space-md py-3">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-low text-secondary font-label-md text-label-md">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>To Do
+              </span>
+</td>
+<td class="px-space-md py-3 text-right">
+<button class="text-secondary hover:text-primary transition-colors p-1" onclick="openTaskQuickDetail('NOV-3790')" title="View Detail">
+<span class="material-symbols-outlined text-[18px]">open_in_new</span>
+</button>
+</td>
+</tr>
+<!-- Row 5: Completed -->
+<tr class="hover:bg-surface-container-low/50 transition-colors task-row" data-overdue="false" data-priority="Low" data-status="Completed">
+<td class="px-space-md py-3 font-title text-title text-primary">NOV-3772</td>
+<td class="px-space-md py-3">
+<div class="flex flex-col">
+<span class="font-title text-title text-on-surface line-through text-secondary">Database Indexing for Audit Event Logs</span>
+<span class="font-body-sm text-body-sm text-secondary">Query latency reduced by 44%</span>
+</div>
+</td>
+<td class="px-space-md py-3">
+<div class="flex items-center gap-space-xs">
+<div class="w-7 h-7 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-label-caps text-label-caps">ML</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Maya Lin-Sanchez</span>
+<span class="text-body-sm font-body-sm text-secondary">Full Stack Lead</span>
+</div>
+</div>
+</td>
+<td class="px-space-md py-3">
+<span class="px-2.5 py-1 rounded bg-surface-container font-label-md text-label-md text-on-surface-variant">Fintech Portal v4</span>
+</td>
+<td class="px-space-md py-3">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container text-secondary font-label-caps text-label-caps">
+                Low
+              </span>
+</td>
+<td class="px-space-md py-3 text-right font-body-sm text-body-sm text-secondary">
+              May 02 - May 14
+            </td>
+<td class="px-space-md py-3">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container text-on-secondary-container font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-primary">check_circle</span>Completed
+              </span>
+</td>
+<td class="px-space-md py-3 text-right">
+<button class="text-secondary hover:text-primary transition-colors p-1" onclick="openTaskQuickDetail('NOV-3772')" title="View Detail">
+<span class="material-symbols-outlined text-[18px]">open_in_new</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Pagination / Status Summary Footnote -->
+<div class="p-space-sm bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-space-xs text-body-sm font-body-sm text-secondary">
+<div>Showing <span class="font-title text-title text-on-surface">5</span> of 48 active engineering tickets across 4 sprints</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-3 py-1 rounded bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-colors shadow-sm cursor-pointer font-label-md text-label-md">Previous</button>
+<span class="px-2 font-label-md text-label-md text-on-surface">Page 1 of 10</span>
+<button class="px-3 py-1 rounded bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-colors shadow-sm cursor-pointer font-label-md text-label-md">Next</button>
+</div>
+</div>
+</div>
+<!-- MODAL 1: Create New Task with Skill-Based Employee Assigner -->
+<div class="hidden fixed inset-0 z-50 flex items-center justify-center p-space-md bg-inverse-surface/40 backdrop-blur-sm" id="createTaskModal">
+<div class="bg-surface-container-lowest rounded-xl max-w-xl w-full p-space-lg shadow-xl relative animate-in fade-in zoom-in-95 duration-150">
+<div class="flex items-center justify-between pb-space-sm mb-space-md">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-lg bg-surface-container-low text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">add_task</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Dispatch New Agile Task</h3>
+<span class="font-body-sm text-body-sm text-secondary">Smart skill-match allocation engine</span>
+</div>
+</div>
+<button class="p-1 rounded-md text-secondary hover:text-on-surface transition-colors cursor-pointer" onclick="document.getElementById('createTaskModal').classList.add('hidden')">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<form class="space-y-space-md" id="createTaskForm" onsubmit="handleCreateTask(event)">
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface">Task Title &amp; Specification</label>
+<input class="h-[38px] px-3 rounded-lg bg-surface-container-low text-body-md font-body-md text-on-surface outline-none focus:ring-2 focus:ring-primary-container" id="newTaskTitle" placeholder="e.g., Implement OAuth2 Token Introspection Endpoint" required="" type="text"/>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface">Target Project</label>
+<select class="h-[38px] px-3 rounded-lg bg-surface-container-low text-body-md font-body-md text-on-surface outline-none cursor-pointer" id="newTaskProject">
+<option value="GovCloud FedRAMP">GovCloud FedRAMP</option>
+<option value="Fintech Portal v4">Fintech Portal v4</option>
+<option value="NovaShield SecOps">NovaShield SecOps</option>
+<option value="Core Regression Suite">Core Regression Suite</option>
+</select>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface">Priority Rating</label>
+<select class="h-[38px] px-3 rounded-lg bg-surface-container-low text-body-md font-body-md text-on-surface outline-none cursor-pointer" id="newTaskPriority">
+<option value="Urgent">Urgent (Immediate P1)</option>
+<option selected="" value="High">High (Sprint Critical)</option>
+<option value="Medium">Medium (Standard Backlog)</option>
+<option value="Low">Low (Maintenance)</option>
+</select>
+</div>
+</div>
+<!-- Skill Requirement & Suggested Match Section -->
+<div class="p-space-sm bg-surface-container-low rounded-lg">
+<label class="font-label-caps text-label-caps text-secondary uppercase block mb-1">Required Competency Tag</label>
+<div class="flex flex-wrap gap-1.5 mb-2">
+<span class="px-2 py-0.5 rounded bg-primary-container text-on-primary font-label-caps text-label-caps cursor-pointer">Python</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-secondary font-label-caps text-label-caps cursor-pointer">Kubernetes</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-secondary font-label-caps text-label-caps cursor-pointer">React</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-secondary font-label-caps text-label-caps cursor-pointer">AWS</span>
+</div>
+<div class="flex flex-col gap-1 mt-2">
+<label class="font-label-md text-label-md text-on-surface">Matched Available Engineer</label>
+<select class="h-[38px] px-3 rounded-lg bg-surface-container-lowest text-body-md font-body-md text-on-surface outline-none cursor-pointer" id="newTaskAssignee">
+<option value="Maya Lin-Sanchez">Maya Lin-Sanchez (Full Stack Lead - 50% Booked)</option>
+<option value="Tariq Al-Mansoor">Tariq Al-Mansoor (QA Automation - Available)</option>
+<option value="Dr. Ronald Vance">Dr. Ronald Vance (Cloud Architect - 100% Booked / Overload Risk)</option>
+<option value="Elena Rostova">Elena Rostova (DevOps Engineer - 95% Booked)</option>
+</select>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface">Sprint Start Date</label>
+<input class="h-[38px] px-3 rounded-lg bg-surface-container-low text-body-md font-body-md text-on-surface outline-none" type="date" value="2025-05-19"/>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface">Due Date</label>
+<input class="h-[38px] px-3 rounded-lg bg-surface-container-low text-body-md font-body-md text-on-surface outline-none" type="date" value="2025-05-26"/>
+</div>
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-space-xs">
+<button class="h-[38px] px-4 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high font-label-lg text-label-lg transition-colors cursor-pointer" onclick="document.getElementById('createTaskModal').classList.add('hidden')" type="button">Cancel</button>
+<button class="h-[38px] px-5 rounded-lg bg-primary-container text-on-primary hover:bg-primary font-label-lg text-label-lg transition-colors shadow-sm cursor-pointer flex items-center gap-1" type="submit">
+<span class="material-symbols-outlined text-[18px]">send</span>
+<span>Assign &amp; Launch Task</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+<!-- MODAL 2: Report Blocker / Issue Modal -->
+<div class="hidden fixed inset-0 z-50 flex items-center justify-center p-space-md bg-inverse-surface/40 backdrop-blur-sm" id="blockerModal">
+<div class="bg-surface-container-lowest rounded-xl max-w-lg w-full p-space-lg shadow-xl relative animate-in fade-in zoom-in-95 duration-150">
+<div class="flex items-center justify-between pb-space-sm mb-space-md">
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-lg bg-error-container text-error flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">report</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Escalate Engineering Blocker</h3>
+<span class="font-body-sm text-body-sm text-secondary">Immediate PM sprint intervention triage</span>
+</div>
+</div>
+<button class="p-1 rounded-md text-secondary hover:text-on-surface transition-colors cursor-pointer" onclick="document.getElementById('blockerModal').classList.add('hidden')">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<form class="space-y-space-md" id="blockerForm" onsubmit="handleReportBlocker(event)">
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface">Associated Task / Milestone</label>
+<select class="h-[38px] px-3 rounded-lg bg-surface-container-low text-body-md font-body-md text-on-surface outline-none cursor-pointer">
+<option value="NOV-3810">NOV-3810 - Patch Zero-Day Kernel CVE-2025-1882</option>
+<option value="NOV-3790">NOV-3790 - Terraform Drift Reconciliation for AWS EKS</option>
+<option value="NOV-3814">NOV-3814 - Multi-Tenant JWT Token Rotation</option>
+</select>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface">Blocker Severity</label>
+<div class="grid grid-cols-3 gap-2">
+<label class="flex items-center gap-2 p-2 rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container">
+<input checked="" class="text-primary-container" name="severity" type="radio" value="Critical"/>
+<span class="font-label-md text-label-md text-error">Critical</span>
+</label>
+<label class="flex items-center gap-2 p-2 rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container">
+<input name="severity" type="radio" value="Major"/>
+<span class="font-label-md text-label-md text-secondary">Major</span>
+</label>
+<label class="flex items-center gap-2 p-2 rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container">
+<input name="severity" type="radio" value="Impediment"/>
+<span class="font-label-md text-label-md text-secondary">Dependency</span>
+</label>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface">Blocker Description &amp; Root Cause</label>
+<textarea class="p-3 rounded-lg bg-surface-container-low text-body-md font-body-md text-on-surface outline-none resize-none" placeholder="Describe the blocking issue, waiting dependency, or technical constraint..." required="" rows="3"></textarea>
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-space-xs">
+<button class="h-[38px] px-4 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high font-label-lg text-label-lg transition-colors cursor-pointer" onclick="document.getElementById('blockerModal').classList.add('hidden')" type="button">Dismiss</button>
+<button class="h-[38px] px-5 rounded-lg bg-error text-on-error hover:bg-error/90 font-label-lg text-label-lg transition-colors shadow-sm cursor-pointer flex items-center gap-1" type="submit">
+<span class="material-symbols-outlined text-[18px]">notification_important</span>
+<span>Broadcast Blocker</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+<!-- Notification Toast Container -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none" id="toastNotification">
+<div class="bg-inverse-surface text-inverse-on-surface px-4 py-3 rounded-xl shadow-xl flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary-fixed text-[20px]" id="toastIcon">check_circle</span>
+<span class="font-label-md text-label-md" id="toastMessage">Action completed successfully.</span>
+</div>
+</div>
+<!-- Inline Micro-Interaction Logic -->
+<script>
+    // Toast notification utility
+    function showToast(msg, icon = 'check_circle') {
+      const toast = document.getElementById('toastNotification');
+      const msgEl = document.getElementById('toastMessage');
+      const iconEl = document.getElementById('toastIcon');
+      msgEl.textContent = msg;
+      iconEl.textContent = icon;
+      toast.classList.remove('translate-y-24', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+      setTimeout(() => {
+        toast.classList.add('translate-y-24', 'opacity-0');
+        toast.classList.remove('translate-y-0', 'opacity-100');
+      }, 3500);
+    }
+
+    // Filter staff cards by skill
+    function filterStaffSkill(skill) {
+      document.querySelectorAll('.skill-btn').forEach(btn => {
+        if (btn.textContent.trim().toUpperCase() === skill.toUpperCase() || (skill === 'ALL' && btn.textContent.trim() === 'All')) {
+          btn.classList.add('bg-primary-container', 'text-on-primary');
+          btn.classList.remove('bg-surface-container-low', 'text-secondary');
+        } else {
+          btn.classList.remove('bg-primary-container', 'text-on-primary');
+          btn.classList.add('bg-surface-container-low', 'text-secondary');
+        }
+      });
+
+      const cards = document.querySelectorAll('.staff-card');
+      cards.forEach(card => {
+        const skills = card.getAttribute('data-skills') || '';
+        if (skill === 'ALL' || skills.includes(skill)) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    }
+
+    // Quick Task search filter
+    function searchTasks() {
+      const query = document.getElementById('taskSearchInput').value.toLowerCase();
+      const rows = document.querySelectorAll('.task-row');
+      rows.forEach(row => {
+        const text = row.textContent.toLowerCase();
+        row.style.display = text.includes(query) ? '' : 'none';
+      });
+    }
+
+    // Filter tasks by status dropdown
+    function filterTasksByStatus() {
+      const filterVal = document.getElementById('statusFilter').value;
+      const rows = document.querySelectorAll('.task-row');
+      rows.forEach(row => {
+        const status = row.getAttribute('data-status');
+        if (filterVal === 'ALL' || status === filterVal) {
+          row.style.display = '';
+        } else {
+          row.style.display = 'none';
+        }
+      });
+    }
+
+    // Filter tasks by priority dropdown
+    function filterTasksByPriority() {
+      const prioVal = document.getElementById('priorityFilter').value;
+      const rows = document.querySelectorAll('.task-row');
+      rows.forEach(row => {
+        const prio = row.getAttribute('data-priority');
+        if (prioVal === 'ALL' || prio === prioVal) {
+          row.style.display = '';
+        } else {
+          row.style.display = 'none';
+        }
+      });
+    }
+
+    // Filter overdue tasks button from banner
+    function filterOverdueTasks() {
+      const rows = document.querySelectorAll('.task-row');
+      rows.forEach(row => {
+        const isOverdue = row.getAttribute('data-overdue') === 'true';
+        row.style.display = isOverdue ? '' : 'none';
+      });
+      showToast('Filtered view: 3 Overdue SLA tasks displayed', 'priority_high');
+    }
+
+    // Prepopulate staff assignment in modal
+    function assignTaskToStaff(staffName) {
+      document.getElementById('createTaskModal').classList.remove('hidden');
+      const select = document.getElementById('newTaskAssignee');
+      for (let i = 0; i < select.options.length; i++) {
+        if (select.options[i].text.includes(staffName)) {
+          select.selectedIndex = i;
+          break;
+        }
+      }
+    }
+
+    // Handle Task creation
+    function handleCreateTask(e) {
+      e.preventDefault();
+      const title = document.getElementById('newTaskTitle').value;
+      const assignee = document.getElementById('newTaskAssignee').value;
+      const project = document.getElementById('newTaskProject').value;
+      const priority = document.getElementById('newTaskPriority').value;
+
+      // Close modal
+      document.getElementById('createTaskModal').classList.add('hidden');
+      document.getElementById('createTaskForm').reset();
+
+      // Dynamically add row to task table
+      const tbody = document.getElementById('taskTableBody');
+      const newRow = document.createElement('tr');
+      newRow.className = 'hover:bg-surface-container-low/50 transition-colors task-row animate-in fade-in';
+      newRow.setAttribute('data-status', 'To Do');
+      newRow.setAttribute('data-priority', priority);
+      newRow.setAttribute('data-overdue', 'false');
+
+      const taskId = 'NOV-' + Math.floor(3820 + Math.random() * 50);
+
+      newRow.innerHTML = `
+        <td class="px-space-md py-3 font-title text-title text-primary">${taskId}</td>
+        <td class="px-space-md py-3">
+          <div class="flex flex-col">
+            <span class="font-title text-title text-on-surface">${title}</span>
+            <span class="font-body-sm text-body-sm text-secondary">Recently created task</span>
+          </div>
+        </td>
+        <td class="px-space-md py-3">
+          <div class="flex items-center gap-space-xs">
+            <div class="w-7 h-7 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-label-caps text-label-caps">
+              ${assignee.split(' ').map(n=>n[0]).slice(0,2).join('')}
+            </div>
+            <div class="flex flex-col">
+              <span class="font-label-md text-label-md text-on-surface">${assignee}</span>
+              <span class="text-body-sm font-body-sm text-secondary">Assignee</span>
+            </div>
+          </div>
+        </td>
+        <td class="px-space-md py-3">
+          <span class="px-2.5 py-1 rounded bg-surface-container font-label-md text-label-md text-on-surface-variant">${project}</span>
+        </td>
+        <td class="px-space-md py-3">
+          <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-high text-primary-container font-label-caps text-label-caps">
+            ${priority}
+          </span>
+        </td>
+        <td class="px-space-md py-3 text-right font-body-sm text-body-sm text-secondary">
+          May 19 - May 26
+        </td>
+        <td class="px-space-md py-3">
+          <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-low text-secondary font-label-md text-label-md">
+            <span class="w-1.5 h-1.5 rounded-full bg-outline"></span>To Do
+          </span>
+        </td>
+        <td class="px-space-md py-3 text-right">
+          <button onclick="openTaskQuickDetail('${taskId}')" class="text-secondary hover:text-primary transition-colors p-1" title="View Detail">
+            <span class="material-symbols-outlined text-[18px]">open_in_new</span>
+          </button>
+        </td>
+      `;
+      tbody.prepend(newRow);
+
+      showToast(`Task ${taskId} assigned to ${assignee}`, 'check_circle');
+    }
+
+    // Handle Blocker submission
+    function handleReportBlocker(e) {
+      e.preventDefault();
+      document.getElementById('blockerModal').classList.add('hidden');
+      document.getElementById('blockerForm').reset();
+      showToast('Blocker broadcasted to Project Managers & Slack triage channel', 'warning');
+    }
+
+    // Quick Task detail action
+    function openTaskQuickDetail(taskId) {
+      showToast(`Accessing real-time telemetry & git branch for ${taskId}`, 'info');
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest px-gutter py-space-md shadow-[0_1px_8px_rgba(0,0,0,0.04)] flex flex-col md:flex-row items-center justify-between gap-space-sm"><div class="flex items-center gap-space-xs text-on-surface-variant"><span class="w-2 h-2 rounded-full bg-[#10b981]"></span><span class="font-label-md text-label-md text-on-surface">All Systems Operational</span><span class="text-outline-variant px-space-xs">|</span><span class="font-body-sm text-body-sm text-secondary">© 2025 NovaTech Solutions. All rights reserved.</span></div><div class="font-body-sm text-body-sm text-secondary">University Demonstration &amp; Prototype System Architecture</div></footer></div></body></html>

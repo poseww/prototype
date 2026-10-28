@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"secondary":"#565e74","surface-dim":"#cbdbf5","inverse-on-surface":"#eaf1ff","surface-bright":"#f8f9ff","on-error-container":"#93000a","on-tertiary-fixed-variant":"#003ea8","primary":"#0037b0","on-secondary":"#ffffff","error":"#ba1a1a","on-primary":"#ffffff","surface":"#f8f9ff","on-background":"#0b1c30","surface-variant":"#d3e4fe","on-secondary-fixed":"#131b2e","on-secondary-fixed-variant":"#3f465c","on-primary-fixed":"#001551","tertiary-fixed-dim":"#b4c5ff","on-surface-variant":"#434655","tertiary-fixed":"#dbe1ff","on-error":"#ffffff","surface-tint":"#2151da","on-secondary-container":"#5c647a","background":"#f8f9ff","error-container":"#ffdad6","tertiary-container":"#0051d6","surface-container-lowest":"#ffffff","inverse-primary":"#b7c4ff","surface-container":"#e5eeff","on-tertiary-fixed":"#00174b","surface-container-highest":"#d3e4fe","surface-container-low":"#eff4ff","tertiary":"#003ca3","primary-fixed-dim":"#b7c4ff","secondary-container":"#dae2fd","primary-fixed":"#dce1ff","on-tertiary-container":"#c9d4ff","inverse-surface":"#213145","secondary-fixed":"#dae2fd","on-surface":"#0b1c30","outline":"#747686","secondary-fixed-dim":"#bec6e0","surface-container-high":"#dce9ff","primary-container":"#1d4ed8","on-primary-container":"#cad3ff","on-tertiary":"#ffffff","on-primary-fixed-variant":"#0039b5","outline-variant":"#c4c5d7"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"space-md":"1rem","margin":"2rem","gutter":"1.5rem","space-xl":"2rem","space-xs":"0.25rem","space-lg":"1.5rem","space-sm":"0.5rem","gutter-sm":"1rem","margin-mobile":"1rem"},"fontFamily":{"body-sm":["Plus Jakarta Sans"],"title":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"display":["Plus Jakarta Sans"],"label-caps":["Plus Jakarta Sans"]},"fontSize":{"body-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"400"}],"title":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"600"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"700"}],"body-md":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"headline-lg-mobile":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.005em","fontWeight":"500"}],"headline-sm":["16px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"600"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"400"}],"display":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-caps":["11px",{"lineHeight":"14px","letterSpacing":"0.06em","fontWeight":"700"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest z-50 flex flex-col shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-space-lg flex items-center justify-between bg-surface-container-lowest"><div class="flex items-center gap-space-sm"><div class="w-8 h-8 rounded-xl bg-primary flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-[20px]">hub</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface leading-tight font-bold tracking-tight">NovaTech</span><span class="font-label-caps text-label-caps text-secondary uppercase tracking-wider">Enterprise IT</span></div></div></div><div class="px-space-md py-space-sm"><span class="font-label-caps text-label-caps uppercase text-secondary px-space-sm tracking-wider">Portal Modules</span></div><nav class="flex-1 overflow-y-auto px-space-sm space-y-1 pb-space-lg" data-active-classes="bg-secondary-container text-primary font-title"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span>Dashboard</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="client-management" href="#"><span class="material-symbols-outlined text-[20px]">domain</span><span>Client Management</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="proposals-and-requests" href="#"><span class="material-symbols-outlined text-[20px]">request_quote</span><span>Proposals &amp; Requests</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="projects-and-milestones" href="#"><span class="material-symbols-outlined text-[20px]">alt_route</span><span>Projects &amp; Milestones</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="employees-and-tasks" href="#"><span class="material-symbols-outlined text-[20px]">badge</span><span>Employees &amp; Tasks</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="documents-and-issues" href="#"><span class="material-symbols-outlined text-[20px]">folder_managed</span><span>Documents &amp; Issues</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="meetings-and-changes" href="#"><span class="material-symbols-outlined text-[20px]">published_with_changes</span><span>Meetings &amp; Changes</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="supplier-management" href="#"><span class="material-symbols-outlined text-[20px]">storefront</span><span>Supplier Management</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="financials-and-invoices" href="#"><span class="material-symbols-outlined text-[20px]">account_balance_wallet</span><span>Financials &amp; Invoices</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="completion-and-sign-off" href="#"><span class="material-symbols-outlined text-[20px]">verified</span><span>Completion &amp; Sign-Off</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="reports-and-analytics" href="#"><span class="material-symbols-outlined text-[20px]">insights</span><span>Reports &amp; Analytics</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="users-and-roles" href="#"><span class="material-symbols-outlined text-[20px]">admin_panel_settings</span><span>Users &amp; Roles</span></a></nav><div class="p-space-md bg-surface-container-low mx-space-sm mb-space-sm rounded-xl"><div class="flex items-center justify-between text-secondary mb-1"><span class="font-label-caps text-label-caps uppercase">Service SLA</span><span class="font-label-md text-label-md text-primary font-bold">99.98%</span></div><div class="w-full bg-surface-container-highest rounded-full h-1.5"><div class="bg-primary h-1.5 rounded-full w-11/12"></div></div></div></aside><div class="pl-64 min-h-screen flex flex-col bg-surface"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl z-40 shadow-[0_1px_8px_rgba(0,0,0,0.04)] px-space-xl flex items-center justify-between"><div class="flex items-center gap-space-md flex-1 max-w-xl"><div class="relative w-full"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-secondary text-[20px]">search</span><input class="w-full pl-10 pr-space-md py-2 bg-surface-container-low rounded-xl text-on-surface placeholder:text-outline font-body-md text-body-md focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/20 transition-all" placeholder="Search projects, deliverables, milestones, budgets..." type="search"/></div></div><div class="flex items-center gap-space-md ml-auto"><div class="flex items-center gap-space-xs bg-surface-container-low rounded-xl px-space-sm py-1.5"><span class="material-symbols-outlined text-secondary text-[18px]">switch_account</span><label class="sr-only" for="role-select">Active Portal Role</label><select class="bg-transparent font-title text-title text-on-surface focus:outline-none cursor-pointer pr-1" id="role-select"><option selected="" value="administrator">Administrator</option><option value="project-manager">Project Manager</option><option value="employee">Employee</option><option value="finance-officer">Finance Officer</option><option value="client">Client</option><option value="management">Management</option></select></div><button class="w-9 h-9 rounded-xl bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-colors relative" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-primary ring-2 ring-surface-container-lowest"></span></button><div class="flex items-center gap-space-sm pl-space-xs"><div class="text-right hidden sm:block"><div class="font-title text-title text-on-surface font-semibold">Alex Morgan</div><div class="font-label-md text-label-md text-secondary">Senior Administrator</div></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 px-margin pb-space-xl flex-1 bg-surface"><div class="flex flex-col w-full space-y-gutter">
+<!-- Top Navigation & Breadcrumbs -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm pt-space-xs">
+<div class="flex items-center gap-space-xs text-secondary font-label-md text-label-md">
+<span class="hover:text-primary transition-colors cursor-pointer">Executive Intelligence &amp; BI</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-primary font-bold">Portfolio Performance Telemetry</span>
+</div>
+<div class="flex items-center gap-space-sm self-start md:self-auto">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-high text-primary font-label-caps text-label-caps uppercase tracking-wider">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span> Live Stream Active
+      </span>
+<span class="text-secondary font-body-sm text-body-sm">Sync: 14:02:18 EST</span>
+</div>
+</div>
+<!-- Executive Header & Action Bar -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col xl:flex-row xl:items-center justify-between gap-space-lg relative overflow-hidden">
+<div class="absolute right-0 top-0 bottom-0 w-96 bg-gradient-to-l from-primary/5 via-transparent to-transparent pointer-events-none"></div>
+<div class="space-y-space-xs max-w-3xl z-10">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-xl bg-primary-container text-on-primary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[20px]">insights</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">Executive Reports &amp; Business Analytics</h1>
+</div>
+<p class="font-body-md text-body-md text-secondary leading-relaxed">
+        Real-time telemetry on project completion rates, sprint velocity, fiscal margins, resource burn rates, and supplier expenses across the active enterprise delivery portfolio.
+      </p>
+</div>
+<!-- Controls & Action Toolbar -->
+<div class="flex flex-wrap items-center gap-space-sm z-10">
+<div class="flex items-center bg-surface-container-low rounded-xl px-2 py-1">
+<span class="material-symbols-outlined text-secondary text-[18px] ml-1 mr-1.5">calendar_month</span>
+<label class="sr-only" for="date-range-select">Date Range</label>
+<select class="bg-transparent font-title text-title text-on-surface focus:outline-none cursor-pointer pr-2 py-1" id="date-range-select">
+<option value="fy2025">FY 2025 (Q1-Q3)</option>
+<option value="mtd">Month-to-Date (May)</option>
+<option value="ytd">Year-to-Date</option>
+<option value="custom">Custom Range...</option>
+</select>
+</div>
+<div class="flex items-center bg-surface-container-low rounded-xl px-2 py-1">
+<span class="material-symbols-outlined text-secondary text-[18px] ml-1 mr-1.5">filter_alt</span>
+<label class="sr-only" for="sector-select">Sector Filter</label>
+<select class="bg-transparent font-title text-title text-on-surface focus:outline-none cursor-pointer pr-2 py-1" id="sector-select">
+<option value="all">All Sectors &amp; Squads</option>
+<option value="fintech">Fintech &amp; Banking</option>
+<option value="healthcare">Healthcare Systems</option>
+<option value="infra">Cloud &amp; Core Infrastructure</option>
+</select>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="flex items-center gap-1.5 bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md px-3.5 py-2 rounded-xl transition-all shadow-sm" id="btn-export-pdf" type="button">
+<span class="material-symbols-outlined text-[18px]">picture_as_pdf</span>
+<span>Export .PDF</span>
+</button>
+<button class="flex items-center gap-1.5 bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md px-3 py-2 rounded-xl transition-colors" id="btn-export-csv" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>.CSV</span>
+</button>
+</div>
+</div>
+</div>
+<!-- KPI Metrics Quartet -->
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-gutter">
+<!-- KPI 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow group">
+<div class="flex items-start justify-between">
+<span class="font-label-caps text-label-caps uppercase text-secondary tracking-wider">Delivery Rate</span>
+<span class="w-8 h-8 rounded-xl bg-surface-container-low text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</span>
+</div>
+<div class="mt-space-sm mb-space-xs">
+<div class="font-display text-display text-on-surface font-bold tracking-tight">94.2%</div>
+<div class="font-label-md text-label-md text-secondary mt-0.5">On-Time Project Milestones</div>
+</div>
+<div class="pt-space-sm mt-space-xs flex items-center justify-between bg-surface-container-low/50 -mx-space-md -mb-space-md p-space-sm rounded-b-xl">
+<span class="inline-flex items-center gap-1 text-primary font-bold font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px]">trending_up</span> +2.4% vs FY24
+        </span>
+<span class="font-label-caps text-label-caps text-secondary">Target: 90.0%</span>
+</div>
+</div>
+<!-- KPI 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow group">
+<div class="flex items-start justify-between">
+<span class="font-label-caps text-label-caps uppercase text-secondary tracking-wider">Velocity Index</span>
+<span class="w-8 h-8 rounded-xl bg-surface-container-low text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[18px]">speed</span>
+</span>
+</div>
+<div class="mt-space-sm mb-space-xs">
+<div class="font-display text-display text-on-surface font-bold tracking-tight">84.6</div>
+<div class="font-label-md text-label-md text-secondary mt-0.5">Story Pts / Active Sprint</div>
+</div>
+<div class="pt-space-sm mt-space-xs flex items-center justify-between bg-surface-container-low/50 -mx-space-md -mb-space-md p-space-sm rounded-b-xl">
+<span class="inline-flex items-center gap-1 text-secondary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px]">groups</span> 4 Delivery Squads
+        </span>
+<span class="font-label-caps text-label-caps text-primary font-semibold">+8.1 pts QoQ</span>
+</div>
+</div>
+<!-- KPI 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow group">
+<div class="flex items-start justify-between">
+<span class="font-label-caps text-label-caps uppercase text-secondary tracking-wider">Gross Margin</span>
+<span class="w-8 h-8 rounded-xl bg-surface-container-low text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[18px]">account_balance_wallet</span>
+</span>
+</div>
+<div class="mt-space-sm mb-space-xs">
+<div class="font-display text-display text-on-surface font-bold tracking-tight">70.1%</div>
+<div class="font-label-md text-label-md text-secondary mt-0.5">$521,800 Net Profit</div>
+</div>
+<div class="pt-space-sm mt-space-xs flex items-center justify-between bg-surface-container-low/50 -mx-space-md -mb-space-md p-space-sm rounded-b-xl">
+<span class="font-label-md text-label-md text-secondary">Rev: $784.5k</span>
+<span class="font-label-caps text-label-caps text-primary font-bold">Optimal Range</span>
+</div>
+</div>
+<!-- KPI 4 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow group">
+<div class="flex items-start justify-between">
+<span class="font-label-caps text-label-caps uppercase text-secondary tracking-wider">Defect MTTR</span>
+<span class="w-8 h-8 rounded-xl bg-surface-container-low text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[18px]">timer</span>
+</span>
+</div>
+<div class="mt-space-sm mb-space-xs">
+<div class="font-display text-display text-on-surface font-bold tracking-tight">4.2h</div>
+<div class="font-label-md text-label-md text-secondary mt-0.5">Mean Time to Resolution</div>
+</div>
+<div class="pt-space-sm mt-space-xs flex items-center justify-between bg-surface-container-low/50 -mx-space-md -mb-space-md p-space-sm rounded-b-xl">
+<span class="inline-flex items-center gap-1 text-primary font-bold font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px]">bolt</span> 31% Faster YoY
+        </span>
+<span class="font-label-caps text-label-caps text-secondary">SLA: &lt; 8.0h</span>
+</div>
+</div>
+</div>
+<!-- Primary Analytics Visualizations: Trajectory & Fiscal Waterfall -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-gutter">
+<!-- Chart 1: Project Trajectory (8 Cols) -->
+<div class="xl:col-span-7 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between pb-space-md gap-space-sm">
+<div>
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Delivery &amp; Milestone Trajectory</h2>
+</div>
+<p class="font-body-sm text-body-sm text-secondary mt-1">Planned baseline delivery schedule vs completed deliverables (FY2025)</p>
+</div>
+<div class="flex items-center gap-space-md font-label-caps text-label-caps">
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded bg-surface-container-high"></span>
+<span class="text-secondary">Planned Target</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded bg-primary"></span>
+<span class="text-on-surface font-bold">Delivered</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+<span class="text-secondary">Variance</span>
+</div>
+</div>
+</div>
+<!-- Trajectory Inline SVG Chart -->
+<div class="relative w-full h-64 mt-space-sm select-none">
+<svg class="w-full h-full" preserveaspectratio="none" viewbox="0 0 680 220">
+<!-- Horizontal Grid Lines -->
+<line class="text-surface-container-high" stroke="currentColor" stroke-dasharray="3 3" stroke-width="1" x1="40" x2="660" y1="20" y2="20"></line>
+<line class="text-surface-container-high" stroke="currentColor" stroke-dasharray="3 3" stroke-width="1" x1="40" x2="660" y1="70" y2="70"></line>
+<line class="text-surface-container-high" stroke="currentColor" stroke-dasharray="3 3" stroke-width="1" x1="40" x2="660" y1="120" y2="120"></line>
+<line class="text-surface-container-high" stroke="currentColor" stroke-width="1" x1="40" x2="660" y1="170" y2="170"></line>
+<!-- Axis Labels (Y) -->
+<text class="fill-secondary text-[10px] font-mono" text-anchor="end" x="32" y="24">100</text>
+<text class="fill-secondary text-[10px] font-mono" text-anchor="end" x="32" y="74">75</text>
+<text class="fill-secondary text-[10px] font-mono" text-anchor="end" x="32" y="124">50</text>
+<text class="fill-secondary text-[10px] font-mono" text-anchor="end" x="32" y="174">25</text>
+<!-- Jan -->
+<rect class="fill-surface-container-high" height="90" rx="3" width="16" x="68" y="80"></rect>
+<rect class="fill-primary" height="86" rx="3" width="16" x="88" y="84"></rect>
+<text class="fill-secondary text-[11px] font-mono" text-anchor="middle" x="86" y="192">Jan</text>
+<!-- Feb -->
+<rect class="fill-surface-container-high" height="105" rx="3" width="16" x="118" y="65"></rect>
+<rect class="fill-primary" height="110" rx="3" width="16" x="138" y="60"></rect>
+<text class="fill-secondary text-[11px] font-mono" text-anchor="middle" x="136" y="192">Feb</text>
+<!-- Mar -->
+<rect class="fill-surface-container-high" height="120" rx="3" width="16" x="168" y="50"></rect>
+<rect class="fill-primary" height="122" rx="3" width="16" x="188" y="48"></rect>
+<text class="fill-secondary text-[11px] font-mono" text-anchor="middle" x="186" y="192">Mar</text>
+<!-- Apr -->
+<rect class="fill-surface-container-high" height="115" rx="3" width="16" x="218" y="55"></rect>
+<rect class="fill-primary" height="105" rx="3" width="16" x="238" y="65"></rect>
+<text class="fill-secondary text-[11px] font-mono" text-anchor="middle" x="236" y="192">Apr</text>
+<!-- May -->
+<rect class="fill-surface-container-high" height="130" rx="3" width="16" x="268" y="40"></rect>
+<rect class="fill-primary" height="134" rx="3" width="16" x="288" y="36"></rect>
+<text class="fill-secondary text-[11px] font-mono" text-anchor="middle" x="286" y="192">May</text>
+<!-- Jun -->
+<rect class="fill-surface-container-high" height="125" rx="3" width="16" x="318" y="45"></rect>
+<rect class="fill-primary" height="128" rx="3" width="16" x="338" y="42"></rect>
+<text class="fill-secondary text-[11px] font-mono" text-anchor="middle" x="336" y="192">Jun</text>
+<!-- Jul -->
+<rect class="fill-surface-container-high" height="132" rx="3" width="16" x="368" y="38"></rect>
+<rect class="fill-primary" height="136" rx="3" width="16" x="388" y="34"></rect>
+<text class="fill-secondary text-[11px] font-mono" text-anchor="middle" x="386" y="192">Jul</text>
+<!-- Aug -->
+<rect class="fill-surface-container-high" height="122" rx="3" width="16" x="418" y="48"></rect>
+<rect class="fill-primary" height="126" rx="3" width="16" x="438" y="44"></rect>
+<text class="fill-secondary text-[11px] font-mono" text-anchor="middle" x="436" y="192">Aug</text>
+<!-- Sep -->
+<rect class="fill-surface-container-high" height="138" rx="3" width="16" x="468" y="32"></rect>
+<rect class="fill-primary" height="140" rx="3" width="16" x="488" y="30"></rect>
+<text class="fill-secondary text-[11px] font-mono" text-anchor="middle" x="486" y="192">Sep</text>
+<!-- Oct (Forecast) -->
+<rect class="fill-surface-container-high opacity-60" height="130" rx="3" width="16" x="518" y="40"></rect>
+<rect class="fill-primary/60" height="118" rx="3" stroke-dasharray="2 2" width="16" x="538" y="52"></rect>
+<text class="fill-secondary text-[11px] font-mono" text-anchor="middle" x="536" y="192">Oct*</text>
+<!-- Nov (Forecast) -->
+<rect class="fill-surface-container-high opacity-60" height="135" rx="3" width="16" x="568" y="35"></rect>
+<rect class="fill-primary/60" height="125" rx="3" stroke-dasharray="2 2" width="16" x="588" y="45"></rect>
+<text class="fill-secondary text-[11px] font-mono" text-anchor="middle" x="586" y="192">Nov*</text>
+<!-- Dec (Forecast) -->
+<rect class="fill-surface-container-high opacity-60" height="140" rx="3" width="16" x="618" y="30"></rect>
+<rect class="fill-primary/60" height="132" rx="3" stroke-dasharray="2 2" width="16" x="638" y="38"></rect>
+<text class="fill-secondary text-[11px] font-mono" text-anchor="middle" x="636" y="192">Dec*</text>
+<!-- Trend Spline Line -->
+<path class="text-tertiary-container" d="M 96 84 Q 146 55 196 48 T 296 36 T 396 34 T 496 30" fill="none" stroke="currentColor" stroke-width="2.5"></path>
+<circle class="fill-primary stroke-surface-container-lowest" cx="496" cy="30" r="4.5" stroke-width="2"></circle>
+</svg>
+</div>
+<!-- Trajectory Metric Highlights -->
+<div class="grid grid-cols-3 gap-space-sm pt-space-md mt-auto">
+<div class="bg-surface-container-low rounded-xl p-space-sm">
+<div class="font-label-caps text-label-caps text-secondary uppercase">Milestones Completed</div>
+<div class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1">218 / 231</div>
+<div class="font-label-md text-label-md text-primary font-semibold mt-0.5">94.4% Success Rate</div>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-sm">
+<div class="font-label-caps text-label-caps text-secondary uppercase">Cumulative Variance</div>
+<div class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1">-1.2 Days</div>
+<div class="font-label-md text-label-md text-primary font-semibold mt-0.5">Ahead of baseline</div>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-sm">
+<div class="font-label-caps text-label-caps text-secondary uppercase">Forecast Confidence</div>
+<div class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1">98.1%</div>
+<div class="font-label-md text-label-md text-secondary mt-0.5">Monte Carlo Model</div>
+</div>
+</div>
+</div>
+<!-- Chart 2: Fiscal Waterfall & Expense Composition (5 Cols) -->
+<div class="xl:col-span-5 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary-container"></span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Fiscal Margin Waterfall</h2>
+</div>
+<span class="font-label-caps text-label-caps text-secondary uppercase">USD ($k)</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary">Breakdown from Total Billings through Operational Net</p>
+<!-- Waterfall Steps Bar Composition -->
+<div class="space-y-space-md mt-space-lg">
+<!-- Step 1: Gross Invoiced -->
+<div>
+<div class="flex justify-between items-center font-label-md text-label-md mb-1.5">
+<span class="text-on-surface font-semibold flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary"></span> 1. Invoiced Portfolio Value
+              </span>
+<span class="font-mono font-bold text-on-surface">$784,500</span>
+</div>
+<div class="w-full bg-surface-container-high rounded-full h-3">
+<div class="bg-primary h-3 rounded-full w-full"></div>
+</div>
+</div>
+<!-- Step 2: Collected -->
+<div>
+<div class="flex justify-between items-center font-label-md text-label-md mb-1.5">
+<span class="text-on-surface font-semibold flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span> 2. Cash Collected (81.1%)
+              </span>
+<span class="font-mono font-bold text-on-surface">$636,000</span>
+</div>
+<div class="w-full bg-surface-container-high rounded-full h-3">
+<div class="bg-primary-container h-3 rounded-full w-[81.1%]"></div>
+</div>
+<div class="text-right font-label-caps text-label-caps text-secondary mt-0.5">$148.5k in Net 30/60</div>
+</div>
+<!-- Step 3: Supplier Costs -->
+<div>
+<div class="flex justify-between items-center font-label-md text-label-md mb-1.5">
+<span class="text-on-surface font-semibold flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span> 3. Direct Supplier &amp; Infra Spend
+              </span>
+<span class="font-mono font-bold text-error">-$114,200</span>
+</div>
+<div class="w-full bg-surface-container-high rounded-full h-3">
+<div class="bg-secondary h-3 rounded-full w-[14.5%]"></div>
+</div>
+</div>
+<!-- Step 4: Net Margin -->
+<div class="bg-surface-container-low p-space-md rounded-xl">
+<div class="flex justify-between items-center mb-1">
+<span class="font-title text-title text-on-surface font-bold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">monetization_on</span>
+                4. Net Operating Margin
+              </span>
+<span class="font-headline-md text-headline-md text-primary font-bold font-mono">$521,800</span>
+</div>
+<div class="w-full bg-surface-container-high rounded-full h-2.5 mt-2">
+<div class="bg-primary h-2.5 rounded-full w-[70.1%]"></div>
+</div>
+<div class="flex items-center justify-between mt-2 pt-2 text-secondary font-label-caps text-label-caps">
+<span>Gross Margin Ratio: 70.1%</span>
+<span class="text-primary font-bold">Target Margin: &gt; 65.0%</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Margin Indicator -->
+<div class="mt-space-md p-space-sm bg-surface-container-low rounded-xl flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">shield_with_heart</span>
+<div class="font-body-sm text-body-sm text-on-surface">
+          Budget health index rated <strong>Strong (Grade A)</strong>. Negative drift risk minimized by multi-tier client retainer models.
+        </div>
+</div>
+</div>
+</div>
+<!-- Detailed Analytics Breakdown: Team Productivity, Project Risk, Vendor ROI -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-gutter">
+<!-- Table 1: Employee & Sprint Task Productivity Matrix (7 Cols) -->
+<div class="xl:col-span-7 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">badge</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Squad &amp; Task Productivity Matrix</h2>
+</div>
+<span class="font-label-caps text-label-caps bg-surface-container-low px-2 py-1 rounded text-secondary uppercase font-semibold">Active Sprint 42</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary mb-space-md">Live task progression, story point throughput, and SLA compliance per functional squad</p>
+<!-- Squad Matrix Table -->
+<div class="overflow-x-auto">
+<table class="w-full text-left">
+<thead>
+<tr class="bg-surface-container-low text-secondary font-label-caps text-label-caps uppercase h-10">
+<th class="px-space-md rounded-l-xl">Squad Name / Discipline</th>
+<th class="px-space-sm text-center">Velocity</th>
+<th class="px-space-sm text-center">Completion</th>
+<th class="px-space-sm text-center">SLA Breaches</th>
+<th class="px-space-md text-right rounded-r-xl">Efficiency Score</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-low font-body-md text-body-md">
+<!-- Row 1 -->
+<tr class="h-14 hover:bg-surface-container-low/50 transition-colors">
+<td class="px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-xl bg-surface-container-high text-primary flex items-center justify-center font-bold text-body-sm">
+                      CA
+                    </div>
+<div>
+<div class="font-title text-title text-on-surface font-bold">Cloud Architecture Team</div>
+<div class="font-label-md text-label-md text-secondary">6 Senior Architects • AWS / Azure</div>
+</div>
+</div>
+</td>
+<td class="px-space-sm text-center font-mono font-semibold">92 pts</td>
+<td class="px-space-sm">
+<div class="flex flex-col items-center">
+<span class="font-mono text-body-sm font-bold text-primary">98%</span>
+<div class="w-16 bg-surface-container-high rounded-full h-1.5 mt-1">
+<div class="bg-primary h-1.5 rounded-full w-[98%]"></div>
+</div>
+</div>
+</td>
+<td class="px-space-sm text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-surface-container-high text-primary font-label-md text-label-md font-bold">
+                    0 Breaches
+                  </span>
+</td>
+<td class="px-space-md text-right font-mono font-bold text-on-surface">99.4 / 100</td>
+</tr>
+<!-- Row 2 -->
+<tr class="h-14 hover:bg-surface-container-low/50 transition-colors">
+<td class="px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-xl bg-surface-container-high text-primary flex items-center justify-center font-bold text-body-sm">
+                      FS
+                    </div>
+<div>
+<div class="font-title text-title text-on-surface font-bold">Full Stack Fintech Squad</div>
+<div class="font-label-md text-label-md text-secondary">10 Engineers • Node / Go / React</div>
+</div>
+</div>
+</td>
+<td class="px-space-sm text-center font-mono font-semibold">114 pts</td>
+<td class="px-space-sm">
+<div class="flex flex-col items-center">
+<span class="font-mono text-body-sm font-bold text-on-surface">94%</span>
+<div class="w-16 bg-surface-container-high rounded-full h-1.5 mt-1">
+<div class="bg-primary h-1.5 rounded-full w-[94%]"></div>
+</div>
+</div>
+</td>
+<td class="px-space-sm text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-surface-container-high text-secondary font-label-md text-label-md font-bold">
+                    1 Breach
+                  </span>
+</td>
+<td class="px-space-md text-right font-mono font-bold text-on-surface">93.8 / 100</td>
+</tr>
+<!-- Row 3 -->
+<tr class="h-14 hover:bg-surface-container-low/50 transition-colors">
+<td class="px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-xl bg-surface-container-high text-primary flex items-center justify-center font-bold text-body-sm">
+                      QA
+                    </div>
+<div>
+<div class="font-title text-title text-on-surface font-bold">QA Automation &amp; Testing</div>
+<div class="font-label-md text-label-md text-secondary">4 Engineers • Playwright / PyTest</div>
+</div>
+</div>
+</td>
+<td class="px-space-sm text-center font-mono font-semibold">68 pts</td>
+<td class="px-space-sm">
+<div class="flex flex-col items-center">
+<span class="font-mono text-body-sm font-bold text-primary">100%</span>
+<div class="w-16 bg-surface-container-high rounded-full h-1.5 mt-1">
+<div class="bg-primary h-1.5 rounded-full w-full"></div>
+</div>
+</div>
+</td>
+<td class="px-space-sm text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-surface-container-high text-primary font-label-md text-label-md font-bold">
+                    0 Breaches
+                  </span>
+</td>
+<td class="px-space-md text-right font-mono font-bold text-on-surface">100.0 / 100</td>
+</tr>
+<!-- Row 4 -->
+<tr class="h-14 hover:bg-surface-container-low/50 transition-colors">
+<td class="px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-xl bg-surface-container-high text-primary flex items-center justify-center font-bold text-body-sm">
+                      SR
+                    </div>
+<div>
+<div class="font-title text-title text-on-surface font-bold">DevOps &amp; SRE Squad</div>
+<div class="font-label-md text-label-md text-secondary">5 Engineers • K8s / Terraform</div>
+</div>
+</div>
+</td>
+<td class="px-space-sm text-center font-mono font-semibold">78 pts</td>
+<td class="px-space-sm">
+<div class="flex flex-col items-center">
+<span class="font-mono text-body-sm font-bold text-primary">99%</span>
+<div class="w-16 bg-surface-container-high rounded-full h-1.5 mt-1">
+<div class="bg-primary h-1.5 rounded-full w-[99%]"></div>
+</div>
+</div>
+</td>
+<td class="px-space-sm text-center">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-surface-container-high text-primary font-label-md text-label-md font-bold">
+                    0 Breaches
+                  </span>
+</td>
+<td class="px-space-md text-right font-mono font-bold text-on-surface">99.8 / 100</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="pt-space-md mt-space-sm flex items-center justify-between text-secondary font-label-md text-label-md">
+<span>Displaying 4 of 4 active enterprise sprints</span>
+<button class="text-primary font-bold hover:underline flex items-center gap-1" type="button">
+<span>Drill into Individual Contributor Logs</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Table 2: Vendor Spend & ROI Breakdown (5 Cols) -->
+<div class="xl:col-span-5 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">storefront</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Supplier Expense &amp; ROI</h2>
+</div>
+<span class="font-mono font-bold text-on-surface text-body-md">$114,200 Total</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary mb-space-md">Allocated vendor contracts and realized enterprise return</p>
+<!-- Spend Cards List -->
+<div class="space-y-space-sm">
+<!-- Vendor 1 -->
+<div class="p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-primary text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">cloud</span>
+</div>
+<div>
+<div class="font-title text-title text-on-surface font-bold">CloudGrid Technologies</div>
+<div class="font-label-md text-label-md text-secondary">Cloud Multi-Region IaaS</div>
+</div>
+</div>
+<div class="text-right">
+<div class="font-mono font-bold text-on-surface text-body-lg">$52,400</div>
+<div class="font-label-caps text-label-caps text-primary font-semibold">4.8x ROI Factor</div>
+</div>
+</div>
+<!-- Vendor 2 -->
+<div class="p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-primary-container text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">psychology</span>
+</div>
+<div>
+<div class="font-title text-title text-on-surface font-bold">Algorhythm Labs</div>
+<div class="font-label-md text-label-md text-secondary">Specialized LLM &amp; OCR Engine</div>
+</div>
+</div>
+<div class="text-right">
+<div class="font-mono font-bold text-on-surface text-body-lg">$28,100</div>
+<div class="font-label-caps text-label-caps text-primary font-semibold">3.9x ROI Factor</div>
+</div>
+</div>
+<!-- Vendor 3 -->
+<div class="p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-secondary text-on-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">security</span>
+</div>
+<div>
+<div class="font-title text-title text-on-surface font-bold">SecurePulse Cyber</div>
+<div class="font-label-md text-label-md text-secondary">Pen-testing &amp; SOC2 Audit</div>
+</div>
+</div>
+<div class="text-right">
+<div class="font-mono font-bold text-on-surface text-body-lg">$21,200</div>
+<div class="font-label-caps text-label-caps text-secondary font-semibold">Compliance Reqd</div>
+</div>
+</div>
+<!-- Vendor 4 (Miscellaneous/SaaS Tools) -->
+<div class="p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-surface-container-high text-on-surface flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">more_horiz</span>
+</div>
+<div>
+<div class="font-title text-title text-on-surface font-bold">Auxiliary SaaS &amp; APIs</div>
+<div class="font-label-md text-label-md text-secondary">GitLab, Datadog, Twilio</div>
+</div>
+</div>
+<div class="text-right">
+<div class="font-mono font-bold text-on-surface text-body-lg">$12,500</div>
+<div class="font-label-caps text-label-caps text-secondary">Operational Base</div>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-space-md mt-space-sm flex items-center justify-between bg-surface-container-low p-space-sm rounded-xl">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">verified_user</span>
+<span class="font-body-sm text-body-sm text-secondary">All vendors certified under ISO-27001</span>
+</div>
+<button class="text-primary font-title text-title font-bold hover:underline" type="button">Manage Contracts</button>
+</div>
+</div>
+</div>
+<!-- Row: Portfolio Risk & Overdue Projects Monitor + Scheduled Distribution Card -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-gutter">
+<!-- Active Portfolio Risk & Projects Monitor (8 Cols) -->
+<div class="xl:col-span-8 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between pb-space-sm gap-space-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">warning_amber</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Portfolio Risk &amp; Project Health Monitor</h2>
+</div>
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container-high text-secondary font-label-caps text-label-caps uppercase font-bold">
+              3 Monitored Critical Paths
+            </span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-secondary mb-space-md">Real-time schedule variance, budget burn, and corrective mitigations</p>
+<!-- Projects Table -->
+<div class="overflow-x-auto">
+<table class="w-full text-left">
+<thead>
+<tr class="bg-surface-container-low text-secondary font-label-caps text-label-caps uppercase h-10">
+<th class="px-space-md rounded-l-xl">Project Name / Client</th>
+<th class="px-space-sm text-center">Health</th>
+<th class="px-space-sm text-center">Schedule Variance</th>
+<th class="px-space-sm text-center">Budget Variance</th>
+<th class="px-space-md rounded-r-xl">Corrective Action Status</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-low font-body-md text-body-md">
+<!-- Item 1 -->
+<tr class="h-16 hover:bg-surface-container-low/50 transition-colors">
+<td class="px-space-md">
+<div class="font-title text-title text-on-surface font-bold">Apex Financial Core Gateway</div>
+<div class="font-label-md text-label-md text-secondary">Client: Apex Global Markets • Lead: Sarah Lin</div>
+</td>
+<td class="px-space-sm text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-high text-primary font-label-md text-label-md font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Green
+                  </span>
+</td>
+<td class="px-space-sm text-center font-mono font-bold text-primary">-0.4 wks</td>
+<td class="px-space-sm text-center font-mono font-bold text-on-surface">+1.2%</td>
+<td class="px-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+<span class="text-secondary font-body-sm text-body-sm">Sprint deliverables on track; final UAT scheduled</span>
+</div>
+</td>
+</tr>
+<!-- Item 2 -->
+<tr class="h-16 hover:bg-surface-container-low/50 transition-colors">
+<td class="px-space-md">
+<div class="font-title text-title text-on-surface font-bold">Vortex Media Cloud Migration</div>
+<div class="font-label-md text-label-md text-secondary">Client: Vortex Streaming Corp • Lead: Elena Rostova</div>
+</td>
+<td class="px-space-sm text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-error-container text-on-error-container font-label-md text-label-md font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span> Amber
+                  </span>
+</td>
+<td class="px-space-sm text-center font-mono font-bold text-error">+1.8 wks</td>
+<td class="px-space-sm text-center font-mono font-bold text-error">-4.2%</td>
+<td class="px-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">build</span>
+<span class="text-secondary font-body-sm text-body-sm font-semibold">2 contract engineers redeployed to ingest pipeline</span>
+</div>
+</td>
+</tr>
+<!-- Item 3 -->
+<tr class="h-16 hover:bg-surface-container-low/50 transition-colors">
+<td class="px-space-md">
+<div class="font-title text-title text-on-surface font-bold">OmniHealth Telemetry Node</div>
+<div class="font-label-md text-label-md text-secondary">Client: HealthNet Bio • Lead: Marcus Chen</div>
+</td>
+<td class="px-space-sm text-center">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-high text-primary font-label-md text-label-md font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Green
+                  </span>
+</td>
+<td class="px-space-sm text-center font-mono font-bold text-primary">0.0 wks</td>
+<td class="px-space-sm text-center font-mono font-bold text-on-surface">+0.5%</td>
+<td class="px-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+<span class="text-secondary font-body-sm text-body-sm">FDA 21-CFR Part 11 validation audit cleared</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="pt-space-md mt-space-sm flex items-center justify-between border-t-0 bg-surface-container-low p-space-sm rounded-xl">
+<span class="font-body-sm text-body-sm text-secondary">Schedule variance alerts trigger automatically when milestone drift exceeds 1.0 weeks.</span>
+<button class="text-primary font-title text-title font-bold hover:underline flex items-center gap-1" type="button">
+<span>Configure Risk Triggers</span>
+<span class="material-symbols-outlined text-[16px]">tune</span>
+</button>
+</div>
+</div>
+<!-- Report Automation & Scheduled Distribution Box (4 Cols) -->
+<div class="xl:col-span-4 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="absolute -right-12 -top-12 w-40 h-40 bg-primary/5 rounded-full pointer-events-none"></div>
+<div>
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">forward_to_inbox</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Automated Distribution</h2>
+</div>
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary mb-space-md">Recurring executive synthesis delivered to leadership.</p>
+<!-- Next Scheduled Briefing Card -->
+<div class="bg-surface-container-low p-space-md rounded-xl space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-secondary">Next Cadence Run</span>
+<span class="font-mono font-bold text-primary font-title text-title">May 31, 2025</span>
+</div>
+<div class="font-headline-sm text-headline-sm text-on-surface font-bold">Monthly Board Intelligence Pack</div>
+<div class="font-body-sm text-body-sm text-secondary">Includes full fiscal reconciliation, sprint velocities, and SLA compliance scorecards.</div>
+</div>
+<!-- Recipients List -->
+<div class="mt-space-md space-y-space-xs">
+<span class="font-label-caps text-label-caps uppercase text-secondary block mb-1">Approved Board Recipients (3)</span>
+<div class="flex items-center gap-space-sm p-1.5 rounded-xl hover:bg-surface-container-low transition-colors">
+<div class="w-7 h-7 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-label-caps">AM</div>
+<div class="flex-1 min-w-0">
+<div class="font-title text-title text-on-surface truncate">Alex Morgan</div>
+<div class="font-label-md text-label-md text-secondary truncate">Senior Administrator • IT Dir</div>
+</div>
+<span class="material-symbols-outlined text-primary text-[18px]">verified</span>
+</div>
+<div class="flex items-center gap-space-sm p-1.5 rounded-xl hover:bg-surface-container-low transition-colors">
+<div class="w-7 h-7 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-bold text-label-caps">CT</div>
+<div class="flex-1 min-w-0">
+<div class="font-title text-title text-on-surface truncate">Clara Thorne</div>
+<div class="font-label-md text-label-md text-secondary truncate">Chief Technology Officer</div>
+</div>
+<span class="material-symbols-outlined text-primary text-[18px]">verified</span>
+</div>
+<div class="flex items-center gap-space-sm p-1.5 rounded-xl hover:bg-surface-container-low transition-colors">
+<div class="w-7 h-7 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold text-label-caps">DV</div>
+<div class="flex-1 min-w-0">
+<div class="font-title text-title text-on-surface truncate">Dr. Vance</div>
+<div class="font-label-md text-label-md text-secondary truncate">VP Enterprise Governance</div>
+</div>
+<span class="material-symbols-outlined text-primary text-[18px]">verified</span>
+</div>
+</div>
+</div>
+<!-- Quick Action Trigger -->
+<div class="pt-space-md mt-space-md space-y-space-sm">
+<button class="w-full flex items-center justify-center gap-2 bg-primary hover:bg-primary-container text-on-primary font-label-lg text-label-lg py-2.5 rounded-xl transition-all shadow-sm" id="btn-instant-digest" type="button">
+<span class="material-symbols-outlined text-[18px]">send</span>
+<span>Generate Instant Digest Now</span>
+</button>
+<div class="hidden text-center font-label-md text-label-md text-primary font-bold transition-all" id="digest-feedback">
+          Digest queued and dispatched to 3 recipients.
+        </div>
+</div>
+</div>
+</div>
+<!-- Visual Evidence & Project Telemetry Context Assets -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col md:flex-row items-center justify-between gap-space-lg">
+<div class="flex items-center gap-space-md">
+<img class="w-20 h-20 rounded-xl object-cover shadow-sm flex-shrink-0" data-alt="High tech executive operational center showing mission critical engineering team monitoring multi cloud system architecture telemetry dashboards under cool blue neon lighting in modern enterprise headquarters." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7p8Y5Axv1rvRxgQZ5oGmr0D253grIjAlLG56X8EbGdP-WfC7lvyoOyzzbr-t1jgtu2r7BcexW8S2gQkhBPGjmrVAqRi9cRb4znsyrHaGp1DyXb_spxR6ywHDakcNA8M6XdaA9GCXDHEi-Zucqd6mJfm5FIkteTPPmpBniqqBliJs7Sv4HpTUFDQREdxv_4jUeMgYse-7kf18MT3X5wj3VsPGG3-0vdiel3N8CxAg"/>
+<div>
+<div class="font-title text-title text-on-surface font-bold">Enterprise Audit Trail &amp; Cryptographic Sign-Off</div>
+<p class="font-body-sm text-body-sm text-secondary mt-1">All reports generated from this portal are timestamped with SHA-256 telemetry digests for SOC2 Type II and ISO compliance.</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm flex-shrink-0">
+<img class="w-16 h-16 rounded-xl object-cover shadow-sm hidden lg:block" data-alt="Close up photograph of corporate software audit report documents with high precision bar charts and mechanical fountain pen on clean minimal white executive desk." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBz99_2xTNyukQdSepRFsFeVw_-uN7a5EB33cH3jKSQfKRiodgy5MEfzZNfEsbOcB6cGD1xwC3M1aYDCIELG2a831_KJkykvSAZsGLgs_3ma7al8YvkDnfzQEL4nuIUsFCENxXPw2SLZ4ZoHRxXRPfl8J53KfMaxq5j2msWYW5fSg5g4207tcbB2hddZH145F4SBLPbLW4qjs-nKDDD4k519Se11flVzckc-Vxc2ak"/>
+<div class="text-right">
+<div class="font-mono text-body-sm font-bold text-on-surface">SYS-VER: 4.8.1-PROD</div>
+<div class="font-label-caps text-label-caps text-secondary">Verified by NovaTech SecOps</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Dynamic UI Micro-Interactions for Reports & Analytics
+  document.addEventListener('DOMContentLoaded', () => {
+    // 1. Highlight the active module in the shell sidebar
+    const navItems = document.querySelectorAll('aside nav a');
+    navItems.forEach(item => {
+      if (item.getAttribute('data-path') === 'reports-and-analytics') {
+        item.classList.add('bg-secondary-container', 'text-primary', 'font-title');
+        item.classList.remove('text-on-surface-variant');
+      }
+    });
+
+    // 2. Instant Digest generation button feedback
+    const digestBtn = document.getElementById('btn-instant-digest');
+    const digestFeedback = document.getElementById('digest-feedback');
+    if (digestBtn && digestFeedback) {
+      digestBtn.addEventListener('click', () => {
+        const originalContent = digestBtn.innerHTML;
+        digestBtn.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">refresh</span><span>Compiling Telemetry...</span>';
+        digestBtn.disabled = true;
+        digestBtn.classList.add('opacity-75');
+
+        setTimeout(() => {
+          digestBtn.innerHTML = '<span class="material-symbols-outlined text-[18px]">check_circle</span><span>Dispatched Successfully</span>';
+          digestBtn.classList.remove('opacity-75');
+          digestFeedback.classList.remove('hidden');
+
+          setTimeout(() => {
+            digestBtn.innerHTML = originalContent;
+            digestBtn.disabled = false;
+            digestFeedback.classList.add('hidden');
+          }, 4000);
+        }, 1200);
+      });
+    }
+
+    // 3. Export PDF Action simulation
+    const pdfBtn = document.getElementById('btn-export-pdf');
+    if (pdfBtn) {
+      pdfBtn.addEventListener('click', () => {
+        const prev = pdfBtn.innerHTML;
+        pdfBtn.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">progress_activity</span><span>Rendering...</span>';
+        setTimeout(() => {
+          pdfBtn.innerHTML = '<span class="material-symbols-outlined text-[18px]">done</span><span>Report Ready</span>';
+          setTimeout(() => { pdfBtn.innerHTML = prev; }, 2000);
+        }, 1000);
+      });
+    }
+
+    // 4. Export CSV Action simulation
+    const csvBtn = document.getElementById('btn-export-csv');
+    if (csvBtn) {
+      csvBtn.addEventListener('click', () => {
+        const prev = csvBtn.innerHTML;
+        csvBtn.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-bounce">arrow_downward</span><span>Exporting</span>';
+        setTimeout(() => {
+          csvBtn.innerHTML = prev;
+        }, 1500);
+      });
+    }
+
+    // 5. Date filter listener
+    const dateSelect = document.getElementById('date-range-select');
+    if (dateSelect) {
+      dateSelect.addEventListener('change', (e) => {
+        console.log('Telemetry date timeframe adjusted to:', e.target.value);
+      });
+    }
+  });
+</script></main></div></body></html>

@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"background":"#f8f9ff","on-surface-variant":"#434655","outline-variant":"#c4c5d7","secondary-fixed":"#dae2fd","surface-container-low":"#eff4ff","error-container":"#ffdad6","on-primary-fixed-variant":"#0039b5","on-primary-fixed":"#001551","primary-fixed-dim":"#b7c4ff","on-background":"#0b1c30","on-tertiary":"#ffffff","secondary":"#565e74","on-surface":"#0b1c30","tertiary-fixed":"#dbe1ff","error":"#ba1a1a","on-secondary-container":"#5c647a","surface-variant":"#d3e4fe","inverse-primary":"#b7c4ff","on-tertiary-fixed":"#00174b","on-primary-container":"#cad3ff","on-secondary-fixed":"#131b2e","surface-container-highest":"#d3e4fe","on-primary":"#ffffff","surface":"#f8f9ff","inverse-on-surface":"#eaf1ff","on-tertiary-fixed-variant":"#003ea8","secondary-container":"#dae2fd","surface-container":"#e5eeff","on-secondary":"#ffffff","on-secondary-fixed-variant":"#3f465c","on-error-container":"#93000a","outline":"#747686","primary-container":"#1d4ed8","tertiary-container":"#0051d6","surface-container-high":"#dce9ff","surface-dim":"#cbdbf5","primary-fixed":"#dce1ff","tertiary-fixed-dim":"#b4c5ff","tertiary":"#003ca3","surface-tint":"#2151da","primary":"#0037b0","on-error":"#ffffff","surface-container-lowest":"#ffffff","inverse-surface":"#213145","secondary-fixed-dim":"#bec6e0","on-tertiary-container":"#c9d4ff","surface-bright":"#f8f9ff"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"gutter":"1.5rem","space-xl":"2rem","space-lg":"1.5rem","gutter-sm":"1rem","space-md":"1rem","margin":"2rem","space-sm":"0.5rem","margin-mobile":"1rem","space-xs":"0.25rem"},fontFamily:{"title":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"label-caps":["Plus Jakarta Sans"],"display":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"]},fontSize:{"title":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"400"}],"body-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"700"}],"headline-lg-mobile":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"700"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.005em","fontWeight":"500"}],"label-caps":["11px",{"lineHeight":"14px","letterSpacing":"0.06em","fontWeight":"700"}],"display":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"headline-sm":["16px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"600"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest z-50 flex flex-col shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-space-md flex items-center gap-space-sm bg-surface-container-lowest"><img alt="NovaTech Solutions Portal Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UrmuOcV0k5SwkNjdal6LCe0FGEsQOl8xqrIG7P3lDLpVGm5nzhIi_H2do5BtI5Mb8ZY6gCH8B4lQqVx5_DRnFAmDD7YEamQwt9jHSQ1YEM9sVvZ28zbbkHVBo0ghYBlad-mHguqQlsZiV0o0XoQ7gcaViFLHRxghzkXZz4mea0kpDxeCsjBZCx1a6TmsbPbF3nfmvpzFc6WkASk8XJ8K9NyhdjOQbewu3e4wBjaDhg"/><div class="flex flex-col"><span class="font-title text-title text-on-surface">NovaTech</span><span class="font-label-caps text-label-caps text-secondary uppercase">IT PM Portal</span></div></div><div class="flex-1 overflow-y-auto px-space-sm py-space-sm"><div class="px-space-sm py-space-xs font-label-caps text-label-caps text-secondary uppercase">Core Navigation</div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-surface-container-low text-primary-container font-headline-sm"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="management-dashboard" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span>Dashboard</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="client-management" href="#"><span class="material-symbols-outlined text-[20px]">business</span><span>Client Management</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="proposals-requests" href="#"><span class="material-symbols-outlined text-[20px]">request_quote</span><span>Proposals &amp; Requests</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="projects-milestones" href="#"><span class="material-symbols-outlined text-[20px]">flag</span><span>Projects &amp; Milestones</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="employees-tasks" href="#"><span class="material-symbols-outlined text-[20px]">assignment_ind</span><span>Employees &amp; Tasks</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="documents-issues" href="#"><span class="material-symbols-outlined text-[20px]">folder_supervised</span><span>Documents &amp; Issues</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="client-meetings-change-requests" href="#"><span class="material-symbols-outlined text-[20px]">published_with_changes</span><span>Meetings &amp; Changes</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="supplier-management" href="#"><span class="material-symbols-outlined text-[20px]">inventory_2</span><span>Supplier Management</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="financials-invoices" href="#"><span class="material-symbols-outlined text-[20px]">receipt_long</span><span>Financials &amp; Invoices</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="project-completion-sign-off" href="#"><span class="material-symbols-outlined text-[20px]">verified</span><span>Completion &amp; Sign-Off</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="reports-analytics" href="#"><span class="material-symbols-outlined text-[20px]">insights</span><span>Reports &amp; Analytics</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-xl text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-body-md text-body-md" data-path="user-role-permissions" href="#"><span class="material-symbols-outlined text-[20px]">admin_panel_settings</span><span>User &amp; Roles</span></a></nav></div><div class="p-space-sm bg-surface-container-low flex items-center justify-between text-on-surface-variant"><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-primary-container"></span><span class="font-label-md text-label-md">Production Cloud</span></div><a class="text-secondary hover:text-primary transition-colors flex items-center" data-path="login-portal-gateway" href="#" title="Log Out"><span class="material-symbols-outlined text-[18px]">logout</span></a></div></aside><div class="pl-64 flex flex-col min-h-screen"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md flex-1 max-w-md"><div class="flex items-center w-full bg-surface-container-low px-space-sm py-space-xs rounded-xl gap-space-xs text-on-surface-variant"><span class="material-symbols-outlined text-[18px]">search</span><input class="bg-transparent border-0 outline-none text-body-sm font-body-sm text-on-surface placeholder:text-secondary w-full" placeholder="Search projects, clients, tickets..." type="text"/></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs bg-surface-container-low px-space-sm py-space-xs rounded-xl"><span class="material-symbols-outlined text-[18px] text-secondary">swap_horiz</span><label class="font-label-md text-label-md text-secondary">Role:</label><select class="bg-transparent font-title text-title text-on-surface border-0 outline-none cursor-pointer"><option selected="" value="admin">Administrator</option><option value="pm">Project Manager</option><option value="employee">Employee</option><option value="finance">Finance Officer</option><option value="client">Client</option><option value="management">Management</option></select></div><button class="relative p-space-xs text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-error"></span></button><div class="flex items-center gap-space-sm pl-space-sm"><div class="flex flex-col text-right"><span class="font-title text-title text-on-surface">Alex Morgan</span><span class="font-body-sm text-body-sm text-secondary">Senior Administrator</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 w-full pt-16 px-gutter pb-space-xl bg-surface"><div class="flex flex-col w-full">
+<!-- Nav State Highlighter Script -->
+<script>
+    (function highlightNav() {
+      const navLinks = document.querySelectorAll('aside nav a');
+      navLinks.forEach(link => {
+        if (link.getAttribute('data-path') === 'proposals-requests') {
+          link.className = "flex items-center gap-space-sm px-space-sm py-2 rounded-xl bg-surface-container-low text-primary-container font-headline-sm transition-colors shadow-sm";
+          const icon = link.querySelector('.material-symbols-outlined');
+          if (icon) icon.style.fontVariationSettings = "'FILL' 1";
+        }
+      });
+    })();
+  </script>
+<!-- Ambient Glow Background Decorator -->
+<div class="relative w-full overflow-hidden">
+<div class="absolute -top-24 right-1/4 w-96 h-96 bg-primary-container/5 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute top-48 -right-16 w-80 h-80 bg-tertiary-container/5 rounded-full blur-2xl pointer-events-none"></div>
+<!-- Page Header & Action Matrix -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md mb-space-lg">
+<div class="flex flex-col gap-space-xs max-w-3xl">
+<div class="flex items-center gap-space-xs text-secondary font-label-caps text-label-caps uppercase tracking-wider">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+<span>Commercial Lifecycle Management</span>
+<span class="text-outline-variant font-normal">/</span>
+<span>Stage Gate 01 &amp; 02</span>
+</div>
+<h1 class="font-display text-display text-on-surface tracking-tight">Project Requests &amp; Proposal Governance</h1>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Manage intake client requests, draft proposals, approval workflows, and project charter generation upon deposit confirmation.
+        </p>
+</div>
+<div class="flex items-center gap-space-sm self-start lg:self-auto">
+<button class="px-space-md h-10 rounded-xl bg-surface-container-lowest text-on-surface shadow-sm hover:bg-surface-container-low transition-all font-title text-title flex items-center gap-space-xs" onclick="document.getElementById('intake-drawer').classList.remove('hidden')">
+<span class="material-symbols-outlined text-[18px] text-primary">add_circle</span>
+<span>Log Client Request</span>
+</button>
+<button class="px-space-md h-10 rounded-xl bg-primary-container text-on-primary shadow-md hover:bg-primary transition-all font-title text-title flex items-center gap-space-xs" onclick="openCharterModal('PR-2025-02')">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>Charter Generation</span>
+</button>
+</div>
+</div>
+<!-- Executive Stat Bar with Embedded Spark Micro-Visuals -->
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-space-md mb-space-xl">
+<!-- Stat 1 -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-wider">Total Requests</span>
+<span class="p-1.5 rounded-lg bg-surface-container-low text-primary">
+<span class="material-symbols-outlined text-[18px]">inbox</span>
+</span>
+</div>
+<div class="flex items-baseline justify-between mt-space-sm">
+<div class="font-display text-display text-on-surface font-bold tracking-tight">12</div>
+<span class="font-label-md text-label-md text-primary bg-surface-container-low px-2 py-0.5 rounded-full flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">trending_up</span> +3 new
+          </span>
+</div>
+<div class="w-full bg-surface-container-low h-1.5 rounded-full mt-3 overflow-hidden">
+<div class="bg-primary-container h-full rounded-full w-3/4"></div>
+</div>
+</div>
+<!-- Stat 2 -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-wider">Active Proposals</span>
+<span class="p-1.5 rounded-lg bg-surface-container-low text-tertiary">
+<span class="material-symbols-outlined text-[18px]">assignment_turned_in</span>
+</span>
+</div>
+<div class="flex items-baseline justify-between mt-space-sm">
+<div class="font-display text-display text-on-surface font-bold tracking-tight">08</div>
+<span class="font-label-md text-label-md text-secondary bg-surface-container-low px-2 py-0.5 rounded-full">
+            $1.84M Pipeline
+          </span>
+</div>
+<div class="w-full bg-surface-container-low h-1.5 rounded-full mt-3 overflow-hidden">
+<div class="bg-tertiary h-full rounded-full w-2/3"></div>
+</div>
+</div>
+<!-- Stat 3 -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-wider">Pending Client Approval</span>
+<span class="p-1.5 rounded-lg bg-surface-container-low text-primary-container">
+<span class="material-symbols-outlined text-[18px]">pending_actions</span>
+</span>
+</div>
+<div class="flex items-baseline justify-between mt-space-sm">
+<div class="font-display text-display text-on-surface font-bold tracking-tight">05</div>
+<span class="font-label-md text-label-md text-primary-container bg-surface-container-low px-2 py-0.5 rounded-full flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span> Requires PM Follow-up
+          </span>
+</div>
+<div class="w-full bg-surface-container-low h-1.5 rounded-full mt-3 overflow-hidden">
+<div class="bg-primary-container h-full rounded-full w-5/12"></div>
+</div>
+</div>
+<!-- Stat 4 -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-wider">Expired / Archived</span>
+<span class="p-1.5 rounded-lg bg-surface-container-low text-secondary">
+<span class="material-symbols-outlined text-[18px]">history_toggle_off</span>
+</span>
+</div>
+<div class="flex items-baseline justify-between mt-space-sm">
+<div class="font-display text-display text-on-surface font-bold tracking-tight">03</div>
+<span class="font-label-md text-label-md text-error bg-error-container/50 px-2 py-0.5 rounded-full">
+            2 SLA Breached
+          </span>
+</div>
+<div class="w-full bg-surface-container-low h-1.5 rounded-full mt-3 overflow-hidden">
+<div class="bg-secondary h-full rounded-full w-1/4"></div>
+</div>
+</div>
+</div>
+<!-- Dual Layout: Client Intake Engine & Intake Feed -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg mb-space-xl">
+<!-- Intake Form Bento Card (5 Cols) -->
+<div class="lg:col-span-5 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between relative">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Client Request Intake Gateway</h2>
+</div>
+<span class="font-label-caps text-label-caps bg-surface-container-low text-secondary px-2 py-1 rounded-md uppercase">Direct Channel</span>
+</div>
+<form class="space-y-space-sm flex-1 flex flex-col justify-between" id="request-intake-form" onsubmit="event.preventDefault(); addNewRequest();">
+<div class="space-y-space-sm">
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1">Project Initiative Title *</label>
+<input class="w-full h-10 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest focus:shadow-sm outline-none transition-all placeholder:text-secondary/60" id="req-title" placeholder="e.g. Distributed Core Banking Modernization" required="" type="text" value="Enterprise Telemetry &amp; Log Pipeline Migration"/>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1">Client Entity *</label>
+<input class="w-full h-10 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest outline-none transition-all" id="req-client" placeholder="Corporate Client" required="" type="text" value="Nordic Financial Group"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1">Estimated Budget ($ USD) *</label>
+<input class="w-full h-10 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest outline-none transition-all" id="req-budget" placeholder="$240,000" required="" type="text" value="$285,000"/>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1">Primary Objectives &amp; Scope Summary</label>
+<textarea class="w-full p-3 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest outline-none transition-all resize-none" id="req-desc" placeholder="Provide strategic goals and delivery metrics..." rows="2">Consolidate legacy Elastic search clusters into managed multi-tenant OpenSearch with end-to-end mTLS and automated archival into cold object storage.</textarea>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1">Tech Stack Requirements</label>
+<input class="w-full h-10 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest outline-none transition-all" id="req-tech" placeholder="AWS, Kubernetes, Terraform" type="text" value="AWS EKS, Kafka, FluentBit, OTel"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface-variant mb-1">Target Completion Date</label>
+<input class="w-full h-10 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest outline-none transition-all" id="req-date" type="date" value="2025-11-30"/>
+</div>
+</div>
+</div>
+<div class="pt-space-sm flex items-center justify-between gap-space-sm">
+<span class="font-body-sm text-body-sm text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">lock</span> Encrypted Intake
+            </span>
+<div class="flex gap-space-xs">
+<button class="px-4 h-10 rounded-xl bg-surface-container-low text-secondary hover:text-on-surface transition-colors font-title text-title" type="reset">Clear</button>
+<button class="px-5 h-10 rounded-xl bg-primary-container text-on-primary hover:bg-primary transition-all font-title text-title flex items-center gap-1 shadow-sm" type="submit">
+<span class="material-symbols-outlined text-[18px]">send</span> Submit Request
+              </button>
+</div>
+</div>
+</form>
+</div>
+<!-- Recent Intake Stream / Client Pipeline (7 Cols) -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-space-md">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Client Request Review Queue</h2>
+<p class="font-body-sm text-body-sm text-secondary">Awaiting Technical Feasibility &amp; Pre-Proposal Architecture Scoping</p>
+</div>
+<span class="font-label-md text-label-md text-primary bg-surface-container-low px-2.5 py-1 rounded-full">4 Incoming Requests</span>
+</div>
+<div class="space-y-space-sm overflow-y-auto max-h-[360px] pr-1" id="request-stream">
+<!-- Request Item 1 -->
+<div class="p-space-sm bg-surface-container-low rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm hover:bg-surface-container transition-colors">
+<div class="flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-primary/10 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">cloud_sync</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-title text-title text-on-surface">Zero-Trust Identity Fabric Rollout</span>
+<span class="font-label-caps text-label-caps px-1.5 py-0.5 rounded bg-surface-container-lowest text-secondary uppercase">CR-9921</span>
+</div>
+<div class="font-body-sm text-body-sm text-secondary">Aegis Cyber Defense Inc. • Expected Oct 2025</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-1">Multi-cloud Okta, Keycloak bridging, FIDO2 hardware keys, and IAM role rationalization.</div>
+</div>
+</div>
+<div class="flex sm:flex-col items-center sm:items-end justify-between shrink-0 pl-12 sm:pl-0">
+<span class="font-title text-title text-on-surface font-semibold">$340,000</span>
+<button class="mt-1 px-3 py-1 rounded-lg bg-surface-container-lowest text-primary hover:bg-primary-container hover:text-on-primary transition-all font-label-md text-label-md shadow-xs" onclick="convertRequestToProposal('CR-9921', 'Zero-Trust Identity Fabric Rollout', 'Aegis Cyber Defense Inc.', '$340,000')">
+                Draft Proposal
+              </button>
+</div>
+</div>
+<!-- Request Item 2 -->
+<div class="p-space-sm bg-surface-container-low rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm hover:bg-surface-container transition-colors">
+<div class="flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-tertiary-container/10 text-tertiary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">warehouse</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-title text-title text-on-surface">Automated Supply Chain Orchestrator</span>
+<span class="font-label-caps text-label-caps px-1.5 py-0.5 rounded bg-surface-container-lowest text-secondary uppercase">CR-9918</span>
+</div>
+<div class="font-body-sm text-body-sm text-secondary">Vanguard Logistics Corp • Expected Jan 2026</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-1">Real-time IoT telemetry aggregation, route optimization models, automated manifest verification.</div>
+</div>
+</div>
+<div class="flex sm:flex-col items-center sm:items-end justify-between shrink-0 pl-12 sm:pl-0">
+<span class="font-title text-title text-on-surface font-semibold">$215,000</span>
+<button class="mt-1 px-3 py-1 rounded-lg bg-surface-container-lowest text-primary hover:bg-primary-container hover:text-on-primary transition-all font-label-md text-label-md" onclick="convertRequestToProposal('CR-9918', 'Automated Supply Chain Orchestrator', 'Vanguard Logistics Corp', '$215,000')">
+                Draft Proposal
+              </button>
+</div>
+</div>
+<!-- Request Item 3 -->
+<div class="p-space-sm bg-surface-container-low rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm hover:bg-surface-container transition-colors">
+<div class="flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-secondary-container/30 text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">clinical_notes</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-title text-title text-on-surface">HIPAA Clinical Data Lakehouse Migration</span>
+<span class="font-label-caps text-label-caps px-1.5 py-0.5 rounded bg-surface-container-lowest text-secondary uppercase">CR-9914</span>
+</div>
+<div class="font-body-sm text-body-sm text-secondary">CarePoint Health Systems • Expected Dec 2025</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-1">Snowflake &amp; Databricks PHI compliance segregation with immutable audit trails.</div>
+</div>
+</div>
+<div class="flex sm:flex-col items-center sm:items-end justify-between shrink-0 pl-12 sm:pl-0">
+<span class="font-title text-title text-on-surface font-semibold">$380,000</span>
+<button class="mt-1 px-3 py-1 rounded-lg bg-surface-container-lowest text-primary hover:bg-primary-container hover:text-on-primary transition-all font-label-md text-label-md" onclick="convertRequestToProposal('CR-9914', 'HIPAA Clinical Data Lakehouse Migration', 'CarePoint Health Systems', '$380,000')">
+                Draft Proposal
+              </button>
+</div>
+</div>
+</div>
+<!-- Inline Visual Data Sparkline Graphic -->
+<div class="mt-space-md pt-space-sm flex items-center justify-between bg-surface-container-low/50 px-space-md py-2.5 rounded-xl">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">query_stats</span>
+<span class="font-body-sm text-body-sm text-on-surface">Average Intake Conversion Rate: <strong class="font-title text-title text-primary">76.4%</strong></span>
+</div>
+<!-- Compact SVG Sparkline -->
+<svg class="h-6 w-28 text-primary overflow-visible" fill="none" viewbox="0 0 100 24">
+<path d="M0,18 L18,14 L36,19 L54,8 L72,11 L90,3 L100,5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+<circle cx="100" cy="5" fill="currentColor" r="3"></circle>
+</svg>
+</div>
+</div>
+</div>
+<!-- Active Proposals Master Governance Hub -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden mb-space-lg">
+<!-- Toolbar Header -->
+<div class="p-space-md flex flex-col md:flex-row md:items-center justify-between gap-space-sm bg-surface-container-low/40">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Active Proposals Master Registry</h2>
+<p class="font-body-sm text-body-sm text-secondary">Formal contract documents in active negotiation, client sign-off, or charter trigger stage.</p>
+</div>
+<!-- Filter Pills & Batch Simulator Controls -->
+<div class="flex flex-wrap items-center gap-space-xs">
+<button class="filter-tab px-3 py-1.5 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md transition-all shadow-xs" onclick="filterTable('ALL')">All (5)</button>
+<button class="filter-tab px-3 py-1.5 rounded-lg bg-surface-container-lowest text-secondary hover:text-on-surface font-label-md text-label-md transition-all" onclick="filterTable('Pending Approval')">Pending (2)</button>
+<button class="filter-tab px-3 py-1.5 rounded-lg bg-surface-container-lowest text-secondary hover:text-on-surface font-label-md text-label-md transition-all" onclick="filterTable('Approved')">Approved (1)</button>
+<button class="filter-tab px-3 py-1.5 rounded-lg bg-surface-container-lowest text-secondary hover:text-on-surface font-label-md text-label-md transition-all" onclick="filterTable('Rejected')">Rejected (1)</button>
+<button class="filter-tab px-3 py-1.5 rounded-lg bg-surface-container-lowest text-secondary hover:text-on-surface font-label-md text-label-md transition-all" onclick="filterTable('Expired')">Expired (1)</button>
+</div>
+</div>
+<!-- Action Controller Ribbon for Immediate Simulations -->
+<div class="px-space-md py-2.5 bg-surface-container-lowest flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs text-secondary font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px] text-tertiary">tune</span>
+<span>Simulation &amp; Governance Bar: Select a proposal row to test status triggers</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low text-primary hover:bg-surface-container transition-colors font-title text-title flex items-center gap-1" id="btn-quick-approve" onclick="simulateSelected('Approved')">
+<span class="material-symbols-outlined text-[16px]">thumb_up</span> Approve Proposal
+          </button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low text-error hover:bg-error-container/40 transition-colors font-title text-title flex items-center gap-1" id="btn-quick-reject" onclick="simulateSelected('Rejected')">
+<span class="material-symbols-outlined text-[16px]">thumb_down</span> Reject Proposal
+          </button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-low text-secondary hover:text-on-surface transition-colors font-title text-title flex items-center gap-1" id="btn-quick-expire" onclick="simulateSelected('Expired')">
+<span class="material-symbols-outlined text-[16px]">event_busy</span> Simulate Expiry
+          </button>
+<button class="px-3.5 py-1.5 rounded-lg bg-primary-container text-on-primary hover:bg-primary transition-all font-title text-title flex items-center gap-1 shadow-sm" onclick="triggerSelectedCharter()">
+<span class="material-symbols-outlined text-[16px]">document_scanner</span> Generate Charter &amp; Confirm Initial Payment
+          </button>
+</div>
+</div>
+<!-- Proposals Table -->
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left border-collapse" id="proposals-table">
+<thead>
+<tr class="bg-surface-container-low/70 text-secondary font-label-caps text-label-caps uppercase tracking-wider">
+<th class="py-3 px-space-md w-12 text-center">Sel</th>
+<th class="py-3 px-space-md">Proposal ID</th>
+<th class="py-3 px-space-md">Project Title</th>
+<th class="py-3 px-space-md">Client Organization</th>
+<th class="py-3 px-space-md text-right">Est. Cost</th>
+<th class="py-3 px-space-md">Target Schedule</th>
+<th class="py-3 px-space-md">Approval Deadline</th>
+<th class="py-3 px-space-md">Status</th>
+<th class="py-3 px-space-md text-center">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-low font-body-md text-body-md">
+<!-- Row 1: Approved - Ready for Charter -->
+<tr class="hover:bg-surface-container-low/40 transition-colors group cursor-pointer proposal-row" data-id="PR-2025-01" data-status="Approved">
+<td class="py-3.5 px-space-md text-center">
+<input class="cursor-pointer accent-primary-container" name="selected_proposal" type="radio" value="PR-2025-01"/>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="font-title text-title text-primary">PR-2025-01</span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="font-title text-title text-on-surface">Omnichannel API Gateway &amp; Micro-Mesh</div>
+<div class="font-body-sm text-body-sm text-secondary">Phase II Enterprise Integration</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-xs">
+<div class="w-6 h-6 rounded-full bg-surface-container-high text-primary flex items-center justify-center text-[10px] font-bold">SM</div>
+<span class="text-on-surface">Starlight Media Labs</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-right font-title text-title text-on-surface tabular-nums">$290,000</td>
+<td class="py-3.5 px-space-md">
+<div class="font-body-sm text-body-sm text-on-surface">18 Weeks</div>
+<div class="font-label-caps text-label-caps text-secondary">Q3 2025 - Q4 2025</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="font-body-sm text-body-sm text-secondary">Jun 14, 2025</span>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-label-md font-label-md bg-surface-container-low text-primary">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+                  Approved
+                </span>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-secondary hover:text-primary transition-colors" onclick="openDrawer('PR-2025-01')" title="Inspect Proposal Specs">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-primary-container hover:text-primary transition-colors" onclick="openCharterModal('PR-2025-01')" title="Execute Charter">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: Pending Approval -->
+<tr class="hover:bg-surface-container-low/40 transition-colors group cursor-pointer proposal-row" data-id="PR-2025-02" data-status="Pending Approval">
+<td class="py-3.5 px-space-md text-center">
+<input checked="" class="cursor-pointer accent-primary-container" name="selected_proposal" type="radio" value="PR-2025-02"/>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="font-title text-title text-primary">PR-2025-02</span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="font-title text-title text-on-surface">Automated FinTech Payment Reconciler</div>
+<div class="font-body-sm text-body-sm text-secondary">Zero-Tolerance Ledger Synchronization</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-xs">
+<div class="w-6 h-6 rounded-full bg-surface-container-high text-tertiary flex items-center justify-center text-[10px] font-bold">AP</div>
+<span class="text-on-surface">Apex Payments Europe</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-right font-title text-title text-on-surface tabular-nums">$345,000</td>
+<td class="py-3.5 px-space-md">
+<div class="font-body-sm text-body-sm text-on-surface">24 Weeks</div>
+<div class="font-label-caps text-label-caps text-secondary">Q3 2025 - Q1 2026</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="font-body-sm text-body-sm text-on-surface font-medium text-error flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">warning</span> Jul 02, 2025
+                </span>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-label-md font-label-md bg-secondary-container/50 text-secondary">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                  Pending Approval
+                </span>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-secondary hover:text-primary transition-colors" onclick="openDrawer('PR-2025-02')" title="Inspect Proposal Specs">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-primary-container hover:text-primary transition-colors" onclick="openCharterModal('PR-2025-02')" title="Execute Charter">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: Pending Approval -->
+<tr class="hover:bg-surface-container-low/40 transition-colors group cursor-pointer proposal-row" data-id="PR-2025-03" data-status="Pending Approval">
+<td class="py-3.5 px-space-md text-center">
+<input class="cursor-pointer accent-primary-container" name="selected_proposal" type="radio" value="PR-2025-03"/>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="font-title text-title text-primary">PR-2025-03</span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="font-title text-title text-on-surface">Kubernetes Multi-Cluster Edge Orchestrator</div>
+<div class="font-body-sm text-body-sm text-secondary">Low-latency Distributed Compute Nodes</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-xs">
+<div class="w-6 h-6 rounded-full bg-surface-container-high text-primary flex items-center justify-center text-[10px] font-bold">NT</div>
+<span class="text-on-surface">NextGen Telecom</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-right font-title text-title text-on-surface tabular-nums">$175,000</td>
+<td class="py-3.5 px-space-md">
+<div class="font-body-sm text-body-sm text-on-surface">12 Weeks</div>
+<div class="font-label-caps text-label-caps text-secondary">Q3 2025 - Q4 2025</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="font-body-sm text-body-sm text-secondary">Jul 18, 2025</span>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-label-md font-label-md bg-secondary-container/50 text-secondary">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                  Pending Approval
+                </span>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-secondary hover:text-primary transition-colors" onclick="openDrawer('PR-2025-03')" title="Inspect Proposal Specs">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-primary-container hover:text-primary transition-colors" onclick="openCharterModal('PR-2025-03')" title="Execute Charter">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4: Expired -->
+<tr class="hover:bg-surface-container-low/40 transition-colors group cursor-pointer proposal-row" data-id="PR-2025-04" data-status="Expired">
+<td class="py-3.5 px-space-md text-center">
+<input class="cursor-pointer accent-primary-container" name="selected_proposal" type="radio" value="PR-2025-04"/>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="font-title text-title text-secondary">PR-2025-04</span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="font-title text-title text-secondary line-through">Legacy CRM Cloud Re-Platforming</div>
+<div class="font-body-sm text-body-sm text-secondary/70">Salesforce to Custom Next.js Stack</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-xs">
+<div class="w-6 h-6 rounded-full bg-surface-container text-secondary flex items-center justify-center text-[10px] font-bold">OR</div>
+<span class="text-secondary">Orion Retail Group</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-right font-title text-title text-secondary tabular-nums">$120,000</td>
+<td class="py-3.5 px-space-md">
+<div class="font-body-sm text-body-sm text-secondary">10 Weeks</div>
+<div class="font-label-caps text-label-caps text-secondary/70">Lapsed SLA</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="font-body-sm text-body-sm text-error">May 15, 2025</span>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-label-md font-label-md bg-surface-container text-secondary">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                  Expired
+                </span>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-secondary hover:text-primary transition-colors" onclick="openDrawer('PR-2025-04')" title="Inspect Proposal Specs">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1.5 rounded-lg text-outline-variant opacity-40 cursor-not-allowed" disabled="">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 5: Rejected -->
+<tr class="hover:bg-surface-container-low/40 transition-colors group cursor-pointer proposal-row" data-id="PR-2025-05" data-status="Rejected">
+<td class="py-3.5 px-space-md text-center">
+<input class="cursor-pointer accent-primary-container" name="selected_proposal" type="radio" value="PR-2025-05"/>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="font-title text-title text-secondary">PR-2025-05</span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="font-title text-title text-on-surface">Predictive IoT Maintenance Engine</div>
+<div class="font-body-sm text-body-sm text-secondary">Edge Inference for Robotics Assembly</div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-xs">
+<div class="w-6 h-6 rounded-full bg-surface-container text-secondary flex items-center justify-center text-[10px] font-bold">HM</div>
+<span class="text-on-surface">Helix Machinery Corp</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md text-right font-title text-title text-on-surface tabular-nums">$380,000</td>
+<td class="py-3.5 px-space-md">
+<div class="font-body-sm text-body-sm text-on-surface">26 Weeks</div>
+<div class="font-label-caps text-label-caps text-secondary">Revised Scoping Needed</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="font-body-sm text-body-sm text-secondary">Jun 01, 2025</span>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-label-md font-label-md bg-error-container/60 text-error">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+                  Rejected
+                </span>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<div class="flex items-center justify-center gap-1">
+<button class="p-1.5 rounded-lg hover:bg-surface-container text-secondary hover:text-primary transition-colors" onclick="openDrawer('PR-2025-05')" title="Inspect Proposal Specs">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="p-1.5 rounded-lg text-outline-variant opacity-40 cursor-not-allowed" disabled="">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Footer / Monospaced Status String -->
+<div class="px-space-md py-3 bg-surface-container-low/40 flex flex-col sm:flex-row items-center justify-between text-secondary font-body-sm text-body-sm gap-2">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span>Showing 5 of 5 governance records • Synchronized with Commercial Contract Ledger</span>
+</div>
+<div class="font-mono text-body-sm text-on-surface-variant">
+          AUDIT_SIG: 0x9f88a2...3e17 [VALIDATED]
+        </div>
+</div>
+</div>
+</div>
+<!-- SLIDE-OVER DRAWER: PROPOSAL SPECIFICATION & DELIVERABLES PREVIEW -->
+<div aria-labelledby="slide-over-title" aria-modal="true" class="fixed inset-0 z-50 overflow-hidden hidden" id="proposal-drawer" role="dialog">
+<div class="absolute inset-0 bg-inverse-surface/40 backdrop-blur-sm transition-opacity" onclick="closeDrawer()"></div>
+<div class="fixed inset-y-0 right-0 max-w-full flex pl-10">
+<div class="w-screen max-w-xl bg-surface-container-lowest shadow-xl flex flex-col justify-between">
+<!-- Drawer Header -->
+<div class="p-space-lg bg-surface-container-low flex items-start justify-between">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs mb-1">
+<span class="px-2 py-0.5 rounded font-label-caps text-label-caps bg-primary text-on-primary" id="drawer-id-badge">PR-2025-02</span>
+<span class="font-label-md text-label-md text-secondary">Contract Specification V2.4</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface" id="drawer-title">Automated FinTech Payment Reconciler</h2>
+<div class="font-body-md text-body-md text-on-surface-variant" id="drawer-client">Apex Payments Europe</div>
+</div>
+<button class="p-2 rounded-xl text-secondary hover:text-on-surface hover:bg-surface-container transition-colors" onclick="closeDrawer()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Drawer Content Body -->
+<div class="flex-1 overflow-y-auto p-space-lg space-y-space-lg">
+<!-- Financial Blueprint & Tranches -->
+<div class="p-space-md rounded-xl bg-surface-container-low space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-title text-title text-on-surface">Commercial Terms &amp; Structured Milestones</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold" id="drawer-cost">$345,000 USD</span>
+</div>
+<p class="font-body-sm text-body-sm text-secondary">
+              Strict 3-phase governance disbursement architecture. Sign-off gates trigger automatic banking escrow drawdowns.
+            </p>
+<!-- Tranche Breakdown Visual -->
+<div class="space-y-space-xs pt-space-xs">
+<!-- Tranche 1 -->
+<div class="p- space-sm bg-surface-container-lowest p-3 rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-7 h-7 rounded-lg bg-primary-container text-on-primary flex items-center justify-center font-bold text-label-md">1</div>
+<div>
+<div class="font-title text-title text-on-surface">Initial Commitment Deposit (40%)</div>
+<div class="font-body-sm text-body-sm text-secondary">Upon Charter &amp; Sprint 0 Kickoff</div>
+</div>
+</div>
+<div class="text-right">
+<span class="font-title text-title text-primary">$138,000</span>
+<div class="font-label-caps text-label-caps text-primary">Pending Wire</div>
+</div>
+</div>
+<!-- Tranche 2 -->
+<div class="bg-surface-container-lowest p-3 rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-7 h-7 rounded-lg bg-surface-container text-secondary flex items-center justify-center font-bold text-label-md">2</div>
+<div>
+<div class="font-title text-title text-on-surface">Alpha Release &amp; UAT Acceptance (30%)</div>
+<div class="font-body-sm text-body-sm text-secondary">Week 12 Core Engine Validation</div>
+</div>
+</div>
+<div class="text-right">
+<span class="font-title text-title text-on-surface">$103,500</span>
+<div class="font-label-caps text-label-caps text-secondary">Scheduled</div>
+</div>
+</div>
+<!-- Tranche 3 -->
+<div class="bg-surface-container-lowest p-3 rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-7 h-7 rounded-lg bg-surface-container text-secondary flex items-center justify-center font-bold text-label-md">3</div>
+<div>
+<div class="font-title text-title text-on-surface">Production Sign-Off &amp; Handover (30%)</div>
+<div class="font-body-sm text-body-sm text-secondary">Week 24 Final Acceptance Certificate</div>
+</div>
+</div>
+<div class="text-right">
+<span class="font-title text-title text-on-surface">$103,500</span>
+<div class="font-label-caps text-label-caps text-secondary">Scheduled</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Deliverables Checklist -->
+<div class="space-y-space-xs">
+<h3 class="font-title text-title text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">verified_user</span>
+              Key Deliverables &amp; Engineering Artifacts
+            </h3>
+<div class="space-y-2">
+<div class="p-3 rounded-lg bg-surface-container-low flex items-center justify-between">
+<span class="font-body-md text-body-md text-on-surface">Sub-millisecond Kafka event parser &amp; schema registry</span>
+<span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-low flex items-center justify-between">
+<span class="font-body-md text-body-md text-on-surface">Immutable PostgreSQL audit partition table schema</span>
+<span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-low flex items-center justify-between">
+<span class="font-body-md text-body-md text-on-surface">PCI-DSS Level 1 compliance attestation reports</span>
+<span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-low flex items-center justify-between">
+<span class="font-body-md text-body-md text-on-surface">Terraform automated blue-green infrastructure module</span>
+<span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+</div>
+</div>
+</div>
+<!-- Digital Signature & Authorization Block -->
+<div class="p-space-md rounded-xl bg-surface-container-high/40 space-y-space-xs">
+<div class="font-title text-title text-on-surface">Digital Sign-Off Status</div>
+<div class="grid grid-cols-2 gap-space-sm pt-2">
+<div class="p-3 rounded-lg bg-surface-container-lowest">
+<div class="font-label-caps text-label-caps text-secondary">NovaTech Architect</div>
+<div class="font-title text-title text-on-surface mt-1">Marcus Vance, VP Eng</div>
+<div class="font-body-sm text-body-sm text-primary flex items-center gap-1 mt-1">
+<span class="material-symbols-outlined text-[14px]">check</span> Digitally Signed
+                </div>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-lowest">
+<div class="font-label-caps text-label-caps text-secondary">Client Principal</div>
+<div class="font-title text-title text-on-surface mt-1">Sarah Lin, CTO</div>
+<div class="font-body-sm text-body-sm text-secondary flex items-center gap-1 mt-1">
+<span class="material-symbols-outlined text-[14px]">schedule</span> Pending Client Cryptographic Token
+                </div>
+</div>
+</div>
+</div>
+</div>
+<!-- Drawer Footer Controls -->
+<div class="p-space-md bg-surface-container-low flex items-center justify-between gap-space-sm">
+<button class="px-space-md h-10 rounded-xl bg-surface-container-lowest text-secondary hover:text-on-surface transition-colors font-title text-title" onclick="closeDrawer()">
+            Dismiss
+          </button>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-md h-10 rounded-xl bg-surface-container text-primary hover:bg-surface-container-highest transition-colors font-title text-title" onclick="simulateSelected('Approved'); closeDrawer();">
+              Fast Approve
+            </button>
+<button class="px-space-md h-10 rounded-xl bg-primary-container text-on-primary hover:bg-primary transition-all font-title text-title shadow-md flex items-center gap-1" onclick="closeDrawer(); openCharterModal(document.getElementById('drawer-id-badge').innerText);">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>Issue Project Charter</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- MODAL: PROJECT CHARTER GENERATION & INITIAL DEPOSIT CONFIRMATION -->
+<div aria-labelledby="modal-title" aria-modal="true" class="fixed inset-0 z-50 overflow-y-auto hidden" id="charter-modal" role="dialog">
+<div class="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+<div class="fixed inset-0 bg-inverse-surface/50 backdrop-blur-sm transition-opacity" onclick="closeCharterModal()"></div>
+<span aria-hidden="true" class="hidden sm:inline-block sm:align-middle sm:h-screen">​</span>
+<div class="inline-block align-bottom bg-surface-container-lowest rounded-2xl text-left overflow-hidden shadow-2xl transform transition-all sm:my-8 sm:align-middle sm:max-w-2xl sm:w-full">
+<div class="p-space-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-xl bg-primary-container text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">verified</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface" id="modal-title">Project Charter Execution Gate</h3>
+<p class="font-body-sm text-body-sm text-secondary">Finalizing Commercial Proposal into Active Engineering Sprint</p>
+</div>
+</div>
+<button class="text-secondary hover:text-on-surface p-1 rounded-lg" onclick="closeCharterModal()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="p-space-lg space-y-space-md">
+<div class="bg-surface-container-lowest p-space-md rounded-xl space-y-space-sm">
+<div class="flex justify-between items-center pb-space-xs">
+<span class="font-body-sm text-body-sm text-secondary">Target Proposal Target:</span>
+<span class="font-title text-title text-primary" id="charter-modal-proposal-id">PR-2025-02</span>
+</div>
+<div class="flex justify-between items-center pb-space-xs">
+<span class="font-body-sm text-body-sm text-secondary">Assigned Enterprise Client:</span>
+<span class="font-title text-title text-on-surface" id="charter-modal-client">Apex Payments Europe</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="font-body-sm text-body-sm text-secondary">Total Committed Valuation:</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">$345,000.00 USD</span>
+</div>
+</div>
+<!-- Deposit Confirmation Field -->
+<div class="p-space-md rounded-xl bg-surface-container-low space-y-space-xs">
+<div class="font-title text-title text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">account_balance</span>
+              Tranche 1 Deposit Confirmation (40%)
+            </div>
+<div class="flex items-center justify-between bg-surface-container-lowest p-3 rounded-lg">
+<div>
+<span class="font-body-sm text-body-sm text-secondary">Required Initial Wire:</span>
+<div class="font-title text-title text-primary">$138,000.00 USD</div>
+</div>
+<div class="flex items-center gap-2">
+<input checked="" class="w-4 h-4 rounded accent-primary-container cursor-pointer" id="wire-verify-checkbox" type="checkbox"/>
+<label class="font-label-md text-label-md text-on-surface cursor-pointer" for="wire-verify-checkbox">Wire Cleared in Escrow</label>
+</div>
+</div>
+</div>
+<!-- Generated Reference Display -->
+<div class="p-space-md rounded-xl bg-surface-container-low space-y-2">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-wider">System Assigned Project Reference Key</span>
+<div class="flex items-center justify-between bg-surface-container-lowest px-4 py-3 rounded-xl">
+<span class="font-mono text-headline-sm text-primary font-bold tracking-wider" id="generated-proj-ref">PRJ-NOV-2025-88</span>
+<button class="p-1 rounded text-secondary hover:text-primary" onclick="navigator.clipboard.writeText(document.getElementById('generated-proj-ref').innerText); alert('Copied Project Reference ID!');" title="Copy Reference ID">
+<span class="material-symbols-outlined text-[20px]">content_copy</span>
+</button>
+</div>
+<p class="font-body-sm text-body-sm text-secondary">
+              Confirming execution instantly provisions Jira Boards, Github Repositories, Slack Channels, and updates ERP financial balance books.
+            </p>
+</div>
+</div>
+<div class="p-space-md bg-surface-container-low flex items-center justify-between gap-space-sm">
+<button class="px-space-md h-10 rounded-xl bg-surface-container-lowest text-secondary hover:text-on-surface font-title text-title transition-colors" onclick="closeCharterModal()">
+            Cancel
+          </button>
+<button class="px-space-lg h-10 rounded-xl bg-primary-container text-on-primary hover:bg-primary transition-all font-title text-title shadow-md flex items-center gap-2" onclick="confirmCharterAndRedirect()">
+<span class="material-symbols-outlined text-[18px]">rocket_launch</span>
+<span>Confirm Deposit &amp; Launch Charter</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- MODAL / INTAKE DIRECT DRAWER (POPUP) -->
+<div aria-modal="true" class="fixed inset-0 z-50 overflow-hidden hidden" id="intake-drawer">
+<div class="absolute inset-0 bg-inverse-surface/40 backdrop-blur-sm transition-opacity" onclick="document.getElementById('intake-drawer').classList.add('hidden')"></div>
+<div class="fixed inset-y-0 right-0 max-w-full flex pl-10">
+<div class="w-screen max-w-lg bg-surface-container-lowest shadow-xl flex flex-col justify-between p-space-lg">
+<div class="flex items-center justify-between border-b border-surface-container-low pb-space-sm">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Fast Intake Logging</h3>
+<button class="p-1 text-secondary hover:text-on-surface" onclick="document.getElementById('intake-drawer').classList.add('hidden')">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="py-space-md space-y-space-sm">
+<p class="font-body-sm text-body-sm text-secondary">Quickly record prospective client intake details from discovery calls or email RFPs.</p>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">Client Entity</label>
+<input class="w-full h-10 px-3 rounded-lg bg-surface-container-low text-on-surface outline-none" id="drawer-quick-client" placeholder="Company Name"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">Project Name</label>
+<input class="w-full h-10 px-3 rounded-lg bg-surface-container-low text-on-surface outline-none" id="drawer-quick-name" placeholder="Initiative Headline"/>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-1">Target Budget</label>
+<input class="w-full h-10 px-3 rounded-lg bg-surface-container-low text-on-surface outline-none" id="drawer-quick-budget" placeholder="$250,000"/>
+</div>
+</div>
+<div class="pt-space-md flex justify-end gap-2">
+<button class="px-4 h-10 rounded-xl bg-surface-container-low text-secondary" onclick="document.getElementById('intake-drawer').classList.add('hidden')">Dismiss</button>
+<button class="px-4 h-10 rounded-xl bg-primary-container text-on-primary" onclick="submitQuickIntake()">Save to Queue</button>
+</div>
+</div>
+</div>
+</div>
+<!-- INTERACTIVE CONTROLLER SCRIPT -->
+<script>
+    // Proposal Data Store
+    const proposalsData = {
+      'PR-2025-01': {
+        id: 'PR-2025-01',
+        title: 'Omnichannel API Gateway & Micro-Mesh',
+        client: 'Starlight Media Labs',
+        cost: '$290,000 USD',
+        status: 'Approved',
+        tranche1: '$116,000',
+        tranche2: '$87,000',
+        tranche3: '$87,000'
+      },
+      'PR-2025-02': {
+        id: 'PR-2025-02',
+        title: 'Automated FinTech Payment Reconciler',
+        client: 'Apex Payments Europe',
+        cost: '$345,000 USD',
+        status: 'Pending Approval',
+        tranche1: '$138,000',
+        tranche2: '$103,500',
+        tranche3: '$103,500'
+      },
+      'PR-2025-03': {
+        id: 'PR-2025-03',
+        title: 'Kubernetes Multi-Cluster Edge Orchestrator',
+        client: 'NextGen Telecom',
+        cost: '$175,000 USD',
+        status: 'Pending Approval',
+        tranche1: '$70,000',
+        tranche2: '$52,500',
+        tranche3: '$52,500'
+      },
+      'PR-2025-04': {
+        id: 'PR-2025-04',
+        title: 'Legacy CRM Cloud Re-Platforming',
+        client: 'Orion Retail Group',
+        cost: '$120,000 USD',
+        status: 'Expired',
+        tranche1: '$48,000',
+        tranche2: '$36,000',
+        tranche3: '$36,000'
+      },
+      'PR-2025-05': {
+        id: 'PR-2025-05',
+        title: 'Predictive IoT Maintenance Engine',
+        client: 'Helix Machinery Corp',
+        cost: '$380,000 USD',
+        status: 'Rejected',
+        tranche1: '$152,000',
+        tranche2: '$114,000',
+        tranche3: '$114,000'
+      }
+    };
+
+    // Filter Proposals by Status
+    function filterTable(filterValue) {
+      const rows = document.querySelectorAll('.proposal-row');
+      const tabs = document.querySelectorAll('.filter-tab');
+
+      tabs.forEach(tab => {
+        if (tab.innerText.toUpperCase().includes(filterValue)) {
+          tab.className = "filter-tab px-3 py-1.5 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md transition-all shadow-xs";
+        } else {
+          tab.className = "filter-tab px-3 py-1.5 rounded-lg bg-surface-container-lowest text-secondary hover:text-on-surface font-label-md text-label-md transition-all";
+        }
+      });
+
+      rows.forEach(row => {
+        const rowStatus = row.getAttribute('data-status');
+        if (filterValue === 'ALL' || rowStatus === filterValue) {
+          row.style.display = '';
+        } else {
+          row.style.display = 'none';
+        }
+      });
+    }
+
+    // Get selected proposal row from table
+    function getSelectedProposalId() {
+      const checked = document.querySelector('input[name="selected_proposal"]:checked');
+      return checked ? checked.value : 'PR-2025-02';
+    }
+
+    // Simulate status change
+    function simulateSelected(newStatus) {
+      const id = getSelectedProposalId();
+      const targetRow = document.querySelector(`.proposal-row[data-id="${id}"]`);
+      if (!targetRow) return;
+
+      targetRow.setAttribute('data-status', newStatus);
+      const statusCell = targetRow.querySelector('td:nth-child(8)');
+      
+      let badgeHtml = '';
+      if (newStatus === 'Approved') {
+        badgeHtml = `<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-label-md font-label-md bg-surface-container-low text-primary"><span class="w-2 h-2 rounded-full bg-primary"></span>Approved</span>`;
+      } else if (newStatus === 'Rejected') {
+        badgeHtml = `<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-label-md font-label-md bg-error-container/60 text-error"><span class="w-2 h-2 rounded-full bg-error"></span>Rejected</span>`;
+      } else if (newStatus === 'Expired') {
+        badgeHtml = `<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-label-md font-label-md bg-surface-container text-secondary"><span class="w-2 h-2 rounded-full bg-secondary"></span>Expired</span>`;
+      } else {
+        badgeHtml = `<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-label-md font-label-md bg-secondary-container/50 text-secondary"><span class="w-2 h-2 rounded-full bg-secondary"></span>Pending Approval</span>`;
+      }
+
+      statusCell.innerHTML = badgeHtml;
+      if (proposalsData[id]) proposalsData[id].status = newStatus;
+    }
+
+    // Trigger Charter Execution from Selected
+    function triggerSelectedCharter() {
+      const id = getSelectedProposalId();
+      openCharterModal(id);
+    }
+
+    // Open Proposal Details Slide-Over Drawer
+    function openDrawer(id) {
+      const data = proposalsData[id];
+      if (!data) return;
+
+      document.getElementById('drawer-id-badge').innerText = data.id;
+      document.getElementById('drawer-title').innerText = data.title;
+      document.getElementById('drawer-client').innerText = data.client;
+      document.getElementById('drawer-cost').innerText = data.cost;
+      
+      document.getElementById('proposal-drawer').classList.remove('hidden');
+    }
+
+    function closeDrawer() {
+      document.getElementById('proposal-drawer').classList.add('hidden');
+    }
+
+    // Open Charter Modal
+    function openCharterModal(id) {
+      const data = proposalsData[id] || proposalsData['PR-2025-02'];
+      document.getElementById('charter-modal-proposal-id').innerText = data.id;
+      document.getElementById('charter-modal-client').innerText = data.client;
+      
+      // Random generation for charter token
+      const randomKeySuffix = Math.floor(10 + Math.random() * 89);
+      document.getElementById('generated-proj-ref').innerText = `PRJ-NOV-2025-${randomKeySuffix}`;
+
+      document.getElementById('charter-modal').classList.remove('hidden');
+    }
+
+    function closeCharterModal() {
+      document.getElementById('charter-modal').classList.add('hidden');
+    }
+
+    // Confirm Charter and Show Success Banner / Redirect Simulation
+    function confirmCharterAndRedirect() {
+      const projRef = document.getElementById('generated-proj-ref').innerText;
+      const propId = document.getElementById('charter-modal-proposal-id').innerText;
+      
+      closeCharterModal();
+      
+      // Update the proposal row to 'Approved'
+      const targetRow = document.querySelector(`.proposal-row[data-id="${propId}"]`);
+      if (targetRow) {
+        targetRow.setAttribute('data-status', 'Approved');
+        const statusCell = targetRow.querySelector('td:nth-child(8)');
+        statusCell.innerHTML = `<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-label-md font-label-md bg-surface-container-low text-primary"><span class="w-2 h-2 rounded-full bg-primary"></span>Charter Initialized</span>`;
+      }
+
+      alert(`PROJECT CHARTER SUCCESSFULLY ISSUED!\n\nReference: ${projRef}\nInitial Deposit: Cleared\nDelivery Workspace: Provisioned`);
+    }
+
+    // Add new intake directly from main form
+    function addNewRequest() {
+      const title = document.getElementById('req-title').value;
+      const client = document.getElementById('req-client').value;
+      const budget = document.getElementById('req-budget').value;
+      const desc = document.getElementById('req-desc').value;
+      const date = document.getElementById('req-date').value || '2025-12-31';
+
+      const stream = document.getElementById('request-stream');
+      const newCard = document.createElement('div');
+      const reqId = 'CR-' + Math.floor(1000 + Math.random() * 9000);
+
+      newCard.className = "p-space-sm bg-surface-container-low rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm hover:bg-surface-container transition-colors";
+      newCard.innerHTML = `
+        <div class="flex items-start gap-space-sm">
+          <div class="w-10 h-10 rounded-xl bg-primary/10 text-primary flex items-center justify-center shrink-0">
+            <span class="material-symbols-outlined text-[20px]">assignment_turned_in</span>
+          </div>
+          <div>
+            <div class="flex items-center gap-space-xs">
+              <span class="font-title text-title text-on-surface">${title}</span>
+              <span class="font-label-caps text-label-caps px-1.5 py-0.5 rounded bg-surface-container-lowest text-secondary uppercase">${reqId}</span>
+            </div>
+            <div class="font-body-sm text-body-sm text-secondary">${client} &bull; Expected ${date}</div>
+            <div class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-1">${desc}</div>
+          </div>
+        </div>
+        <div class="flex sm:flex-col items-center sm:items-end justify-between shrink-0 pl-12 sm:pl-0">
+          <span class="font-title text-title text-on-surface font-semibold">${budget}</span>
+          <button onclick="convertRequestToProposal('${reqId}', '${title}', '${client}', '${budget}')" class="mt-1 px-3 py-1 rounded-lg bg-surface-container-lowest text-primary hover:bg-primary-container hover:text-on-primary transition-all font-label-md text-label-md shadow-xs">
+            Draft Proposal
+          </button>
+        </div>
+      `;
+
+      stream.prepend(newCard);
+      alert(`Client Request ${reqId} for ${client} has been recorded into the intake review stream.`);
+      document.getElementById('request-intake-form').reset();
+    }
+
+    // Convert Request into proposal in Table
+    function convertRequestToProposal(reqId, title, client, budget) {
+      const nextProposalNum = 'PR-2025-0' + (Object.keys(proposalsData).length + 1);
+      
+      proposalsData[nextProposalNum] = {
+        id: nextProposalNum,
+        title: title,
+        client: client,
+        cost: budget,
+        status: 'Pending Approval'
+      };
+
+      const tableBody = document.querySelector('#proposals-table tbody');
+      const newRow = document.createElement('tr');
+      newRow.className = "hover:bg-surface-container-low/40 transition-colors group cursor-pointer proposal-row";
+      newRow.setAttribute('data-id', nextProposalNum);
+      newRow.setAttribute('data-status', 'Pending Approval');
+      
+      newRow.innerHTML = `
+        <td class="py-3.5 px-space-md text-center">
+          <input type="radio" name="selected_proposal" value="${nextProposalNum}" class="cursor-pointer accent-primary-container" />
+        </td>
+        <td class="py-3.5 px-space-md">
+          <span class="font-title text-title text-primary">${nextProposalNum}</span>
+        </td>
+        <td class="py-3.5 px-space-md">
+          <div class="font-title text-title text-on-surface">${title}</div>
+          <div class="font-body-sm text-body-sm text-secondary">Transferred from Intake ${reqId}</div>
+        </td>
+        <td class="py-3.5 px-space-md">
+          <div class="flex items-center gap-space-xs">
+            <div class="w-6 h-6 rounded-full bg-surface-container-high text-primary flex items-center justify-center text-[10px] font-bold">NT</div>
+            <span class="text-on-surface">${client}</span>
+          </div>
+        </td>
+        <td class="py-3.5 px-space-md text-right font-title text-title text-on-surface tabular-nums">${budget}</td>
+        <td class="py-3.5 px-space-md">
+          <div class="font-body-sm text-body-sm text-on-surface">16 Weeks</div>
+          <div class="font-label-caps text-label-caps text-secondary">Sprint Planning</div>
+        </td>
+        <td class="py-3.5 px-space-md">
+          <span class="font-body-sm text-body-sm text-secondary">In 30 Days</span>
+        </td>
+        <td class="py-3.5 px-space-md">
+          <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-label-md font-label-md bg-secondary-container/50 text-secondary">
+            <span class="w-2 h-2 rounded-full bg-secondary"></span>
+            Pending Approval
+          </span>
+        </td>
+        <td class="py-3.5 px-space-md text-center">
+          <div class="flex items-center justify-center gap-1">
+            <button onclick="openDrawer('${nextProposalNum}')" class="p-1.5 rounded-lg hover:bg-surface-container text-secondary hover:text-primary transition-colors">
+              <span class="material-symbols-outlined text-[18px]">visibility</span>
+            </button>
+            <button onclick="openCharterModal('${nextProposalNum}')" class="p-1.5 rounded-lg hover:bg-surface-container text-primary-container hover:text-primary transition-colors">
+              <span class="material-symbols-outlined text-[18px]">verified</span>
+            </button>
+          </div>
+        </td>
+      `;
+
+      tableBody.prepend(newRow);
+      alert(`Proposal ${nextProposalNum} created from intake request ${reqId} and loaded into Governance Table.`);
+    }
+
+    function submitQuickIntake() {
+      const client = document.getElementById('drawer-quick-client').value || 'Acme Digital Systems';
+      const name = document.getElementById('drawer-quick-name').value || 'Hybrid Cloud Disaster Recovery Orchestration';
+      const budget = document.getElementById('drawer-quick-budget').value || '$195,000';
+      
+      document.getElementById('intake-drawer').classList.add('hidden');
+      convertRequestToProposal('FAST-' + Math.floor(100+Math.random()*900), name, client, budget);
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest px-gutter py-space-md shadow-[0_1px_8px_rgba(0,0,0,0.04)] flex flex-col md:flex-row items-center justify-between gap-space-sm"><div class="flex items-center gap-space-xs text-on-surface-variant"><span class="w-2 h-2 rounded-full bg-[#10b981]"></span><span class="font-label-md text-label-md text-on-surface">All Systems Operational</span><span class="text-outline-variant px-space-xs">|</span><span class="font-body-sm text-body-sm text-secondary">© 2025 NovaTech Solutions. All rights reserved.</span></div><div class="font-body-sm text-body-sm text-secondary">University Demonstration &amp; Prototype System Architecture</div></footer></div></body></html>
